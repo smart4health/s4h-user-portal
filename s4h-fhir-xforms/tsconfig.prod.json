@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationDir": "dist/typings",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
+  },
+  "include": [ "src/**/*.ts" ],
+  "exclude": [
+    "src/**/viz/**",
+    "src/scratch/**"
+  ]
+}

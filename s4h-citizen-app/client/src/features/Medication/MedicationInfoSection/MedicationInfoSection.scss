@@ -1,0 +1,17 @@
+.MedicationInfoSection {
+  padding-bottom: var(--space-m);
+
+  &__headline {
+    margin-top: 0;
+  }
+
+  &__subtitle {
+    margin-top: var(--space-s);
+    font-size: var(--font-size-mobile-m);
+    color: var(--color-neutral);
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}

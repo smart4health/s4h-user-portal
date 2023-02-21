@@ -1,0 +1,26 @@
+.AccountFormEid {
+  &__content {
+    margin-bottom: var(--space-s);
+  }
+
+  &__info-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__notification-bar {
+    &#{&} {
+      font-size: var(--font-size-desktop-s);
+
+      .notification-bar__content {
+        font-size: var(--font-size-desktop-s);
+      }
+    }
+  }
+
+  &__info-icon svg {
+    width: 20px;
+    height: 20px;
+    color: var(--color-secondary);
+  }
+}

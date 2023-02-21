@@ -1,0 +1,50 @@
+{
+  "author": [
+    {
+      "reference": "#d3675d5c-b904-4f18-bb8c-1eded90cab68"
+    }
+  ],
+  "contained": [
+    {
+      "id": "d3675d5c-b904-4f18-bb8c-1eded90cab68",
+      "resourceType": "Organization"
+    }
+  ],
+  "content": [
+    {
+      "attachment": {
+        "contentType": "image/jpg",
+        "creation": "2020-02-10T16:47:55+01:00",
+        "hash": "ZSaeVjTOyexH+gyiV1vVV/yRJ6E=",
+        "id": "649defe0-0cbd-4d3b-92b1-4a6fee0e30d8",
+        "size": 2051275,
+        "title": "File_10-02-2020-11-16-30-633.jpg"
+      }
+    }
+  ],
+  "context": {
+    "encounter": [
+      {
+        "identifier": {
+          "system": "http://fhir.smart4health.eu/CodeSystem/ittm-visit-id",
+          "value": "test-final"
+        }
+      }
+    ]
+  },
+  "created": "2020-02-10T10:16:40.781+01:00",
+  "description": "ttt +1",
+  "id": "7c2d4577-9a9c-4e83-8c68-ad0518756ce3",
+  "identifier": [
+    {
+      "assigner": {
+        "reference": "89dbc876-ac7c-43b7-8741-25b14065fb91"
+      },
+      "value": "d4l_f_p_t#649defe0-0cbd-4d3b-92b1-4a6fee0e30d8#712fb97c-a219-48ae-a7a8-85b8c937c8cd#44a4317c-6809-40cc-a66b-de58acfe2f44"
+    }
+  ],
+  "indexed": "2020-02-10T16:47:55+01:00",
+  "status": "current",
+  "type": {},
+  "resourceType": "DocumentReference"
+}

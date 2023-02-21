@@ -1,0 +1,47 @@
+{
+    "resourceType": "ValueSet",
+    "language": "en",
+    "url": "http://fhir.smart4health.eu/ValueSet/s4h-standard-document-types",
+    "version": "0.1.0",
+    "id": "s4hstandarddocumenttypes",
+    "name": "S4hStandardDocumentTypes",
+    "status": "draft",
+    "publisher": "D4L data4life gGmbH",
+    "contact": [{
+            "name": "D4L data4life gGmbH",
+            "telecom": [{
+                    "system": "url",
+                    "value": "https://www.data4life.care"
+                }]
+        }],
+    "immutable": false,
+    "compose": {
+        "include": [{
+                "system": "http://loinc.org",
+                "concept": [
+                    { "code": "11524-6" },
+                    { "code": "11502-2" },
+                    { "code": "25056-3" },
+                    { "code": "25071-2" },
+                    { "code": "25045-6" },
+                    { "code": "43468-8" },
+                    { "code": "34848-2" },
+                    { "code": "68629-5" }
+                ]
+            }]
+    },
+    "expansion": {
+        "identifier": "urn:uuid:1f503a0a-b45d-406e-9bfa-43e78a25fe97",
+        "timestamp": "2020-06-23T12:08:51.687Z",
+        "contains": [
+            { "system": "http://loinc.org", "code": "11524-6", "display": "EKG study" },
+            { "system": "http://loinc.org", "code": "11502-2", "display": "Laboratory report" },
+            { "system": "http://loinc.org", "code": "25056-3", "display": "Unspecified body region MRI" },
+            { "system": "http://loinc.org", "code": "25071-2", "display": "Unspecified body region X-ray tomograph" },
+            { "system": "http://loinc.org", "code": "25045-6", "display": "Unspecified body region CT" },
+            { "system": "http://loinc.org", "code": "43468-8", "display": "Unspecified body region X-ray" },
+            { "system": "http://loinc.org", "code": "34848-2", "display": "Surgery Note" },
+            { "system": "http://loinc.org", "code": "68629-5", "display": "Allergy and immunology Note" }
+        ]
+    }
+}

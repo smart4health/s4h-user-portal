@@ -1,0 +1,88 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "1C5DAB96-19A0-4591-A37F-645FCBD9058E",
+  "language": "de",
+  "questionnaire": "http://fhir.smart4health.eu/Questionnaire/pre-session-questionnaire|0.0.1",
+  "status": "completed",
+  "authored": "2020-02-04T14:15:00-05:00",
+  "encounter": {
+    "identifier": {
+      "system": "http://fhir.smart4health.eu/CodeSystem/ittm-training-id",
+      "value": "test-initial-1"
+    }
+  },
+  "item": [
+    {
+      "linkId": "current_back_pain_level",
+      "text": "Schmerzen aktuell",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA6114-8"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "average_back_pain_level",
+      "text": "Durchschnittliche Schmerzen in den letzten 4 Wochen",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA10137-0"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "max_back_pain_level_4w",
+      "text": "Maximale Schmerzen in den letzten 4 Wochen",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA10140-4"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "taking_painkillers",
+      "text": "Schmerzmedikation?",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://loinc.org",
+            "code": "LA33-6"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "painkiller_dose_change",
+      "text": "Dosierungsänderung?",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://snomed.info/sct",
+            "code": "55011004"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "current_painkiller",
+      "text": "Aktuelles Schmerzmedikament",
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "http://code.system",
+            "code": "2"
+          }
+        }
+      ]
+    }
+  ]
+}

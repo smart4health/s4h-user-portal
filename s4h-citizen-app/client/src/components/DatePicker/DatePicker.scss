@@ -1,0 +1,30 @@
+.DayPicker {
+  display: flex;
+  width: 100%;
+
+  &__overlay {
+    @include zindex('notification');
+  }
+
+  &-Day {
+    padding: 6px 8px;
+
+    &:hover,
+    :focus {
+      background-color: var(--color-neutral-extra-lightest);
+    }
+    &#{&} {
+      &--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+        background-color: var(--color-secondary);
+      }
+    }
+
+    &--today {
+      color: var(--color-feedback-alarm);
+    }
+  }
+}
+
+.DatePickerInput {
+  width: 100%;
+}

@@ -1,0 +1,21 @@
+.GroupItemFileView {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+
+  button {
+    overflow: auto;
+  }
+
+  &__loading-spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__loading-spinner {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,129 @@
+.Footer {
+  display: flex;
+  flex-flow: column;
+  font-size: var(--font-size-mobile-xs);
+  margin: 0 auto;
+  width: calc(100% - var(--space-xl));
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    justify-content: space-between;
+    padding: var(--space-s) 0;
+  }
+
+  &__links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    color: var(--color-primary);
+    font-weight: var(--link-font-weight);
+    text-align: center;
+    text-decoration: none;
+    margin-left: 0;
+    margin-top: var(--space-xxs);
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:hover {
+      color: var(--color-primary-light);
+      transition: $trans-all-fast;
+    }
+  }
+
+  &__credits {
+    color: var(--color-neutral);
+    text-align: center;
+    margin: auto;
+    padding-top: var(--space-m);
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.Footer--landing {
+  background-color: var(--color-white);
+  font-weight: var(--link-font-weight);
+  font-size: var(--font-size-mobile-s);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  .Footer {
+    &__link {
+      color: var(--color-neutral);
+    }
+
+    &__credits {
+      margin: 0 auto;
+      padding: var(--space-xs);
+    }
+
+    &__container {
+      padding: 0;
+      width: calc(100% - var(--space-xl));
+      margin: 0 auto;
+    }
+  }
+}
+
+@include tablet-up {
+  .Footer {
+    max-width: $fullhd;
+
+    &__container {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__links {
+      flex-direction: row;
+      width: auto;
+      justify-content: space-between;
+      align-items: initial;
+    }
+
+    &__link {
+      margin-top: 0;
+      margin-left: var(--space-m);
+    }
+
+    &__credits {
+      text-align: right;
+      padding-top: 0;
+      margin: 0;
+    }
+  }
+
+  .Footer--landing {
+    background-color: var(--color-neutral-lightest);
+    max-width: $fullhd;
+    left: 0;
+    right: 0;
+    height: 72px;
+    margin: auto;
+
+    .Footer {
+      &__container {
+        padding: 0 var(--space-m);
+      }
+
+      &__credits {
+        padding-top: 0;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmptyState component renders without crashing 1`] = `
+<div
+  class="EmptyState"
+  data-test="emptyStateContainer"
+>
+  <div
+    class="EmptyState__header header-class"
+  >
+    <div
+      class="TitleCaption__title"
+    >
+      Title
+    </div>
+    <div
+      class="TitleCaption__subtitle"
+    >
+      Subtitle
+    </div>
+  </div>
+  <div
+    class="EmptyState__content content-class"
+  >
+    <div>
+      Content
+    </div>
+  </div>
+  <div
+    class="EmptyState__footer footer-class"
+  >
+    <div>
+      Footer
+    </div>
+  </div>
+</div>
+`;

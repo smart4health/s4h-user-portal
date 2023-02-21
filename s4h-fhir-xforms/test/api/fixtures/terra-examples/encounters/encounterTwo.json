@@ -1,0 +1,46 @@
+{
+  "resourceType": "Encounter",
+  "id": "s4h-treatment-series-encounter-example-two",
+  "meta": {
+      "profile": [
+          "http://fhir.smart4health.eu/StructureDefinition/s4h-encounter"
+      ]
+  },
+  "identifier": [{
+      "system": "http://fhir.smart4health.eu/CodeSystem/ittm-visit-id",
+      "value": "encounter-2"
+  }],
+  "status": "finished",
+  "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+  },
+  "subject": {
+      "reference": "Patient/CD9B26EA-234E-46BB-91A1-D67B23064396",
+      "display": "John Doe"
+  },
+  "period": {
+      "start": "2020-03-10",
+      "end": "2020-03-10"
+  },
+  "serviceProvider": {
+      "identifier": {
+          "system": "http://fhir.smart4health.eu/CodeSystem/ittm-location-id",
+          "value": "clinic-zs-ug-1"
+      }
+  },
+  "partOf": {
+      "identifier": {
+          "system": "http://fhir.smart4health.eu/CodeSystem/ittm-case-id",
+          "value": "test-encounter-2"
+      }
+  },
+  "type": [{
+
+  "coding": [{
+    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-encounter-type",
+    "code": "back-pain-treatment"
+  }]
+  }]
+}

@@ -1,0 +1,87 @@
+$thumbheight: map.get($documents-viewer, 'thumbheight');
+$thumbspacing: map.get($documents-viewer, 'thumbspacing');
+$thumbwidth: map.get($documents-viewer, 'thumbwidth');
+
+.GroupItemThumbnail {
+  position: relative;
+  min-width: 44px;
+  max-width: 44px;
+  height: $thumbheight;
+  padding: 1px;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  background-color: var(--color-white);
+  text-align: center;
+  border: 1px solid var(--color-primary-lightest);
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+
+  &__loader {
+    width: 30px;
+    height: 30px;
+  }
+
+  + #{&} {
+    margin-left: $thumbspacing;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--color-primary);
+  }
+
+  &#{&}--active {
+    border: 2px solid var(--color-secondary);
+  }
+
+  &#{&}--square {
+    height: 44px;
+  }
+
+  &#{&}--larger {
+    min-width: 64px;
+    max-width: 64px;
+
+    &.GroupItemThumbnail--square {
+      height: 64px;
+    }
+  }
+
+  &--loading {
+    pointer-events: none;
+  }
+
+  &--has-label {
+    &:not([data-type-short='null'])::before {
+      content: attr(data-type-short);
+    }
+
+    &::before {
+      text-transform: uppercase;
+      position: absolute;
+      font-size: 7px;
+      color: var(--color-white);
+      padding: 2px 3px;
+      top: 3px;
+      right: 3px;
+      background-color: var(--color-secondary-light);
+      letter-spacing: -0.03px;
+      border-radius: 2px;
+    }
+
+    svg {
+      width: 20px;
+      height: 16px;
+      color: var(--color-primary);
+    }
+  }
+
+  &--questionnaire {
+    color: var(--color-secondary);
+    font-size: var(--font-size-desktop-xs);
+  }
+}

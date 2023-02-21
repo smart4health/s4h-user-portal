@@ -1,0 +1,20 @@
+{
+	"resourceType": "Observation",
+	"id": "23d3cc1c-8300-4693-86a5-e2d03cb87546",
+	"status": "amended",
+	"subject": {
+		"reference": "Patient/9bceca17-a258-47fd-a031-0dc55f681bb1"
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "8302-2"
+			}
+		]
+	},
+	"valueQuantity": {
+		"value": 186,
+		"unit": "cm"
+	}
+}

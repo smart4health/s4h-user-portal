@@ -1,0 +1,276 @@
+// Two cases of wrapper are available
+// 1. Simple ones which doesnt fill the screen but takes a fixed width
+// 2. Which fills the screen and has background white. It is used in Add documents
+
+.ModalWrapper {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: 94vh;
+  overflow-y: auto;
+  position: relative;
+  width: 94%;
+  margin: auto;
+  max-width: 500px;
+  border-radius: var(--border-radius-s);
+
+  @include tablet-up {
+    & {
+      min-height: auto;
+    }
+  }
+
+  header {
+    color: var(--color-primary);
+    padding: var(--space-s);
+    padding-bottom: 0;
+    border-radius: var(--border-radius-s) var(--border-radius-s) 0 0;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    .Modal__title-wrapper {
+      display: flex;
+      align-items: center;
+
+      button {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        padding: 2px;
+        background: transparent;
+        border: none;
+        margin: 0;
+        position: absolute;
+        right: 14px;
+        top: 14px;
+
+        svg {
+          fill: var(--color-primary);
+        }
+      }
+
+      h3 {
+        margin: 0;
+        max-width: calc(100% - var(--space-m));
+        font: var(--typography-mobile-headline-2);
+      }
+    }
+
+    .Modal__header-inline-bar {
+      display: flex;
+    }
+
+    .Modal__header-title {
+      flex: 1;
+    }
+    @include tablet-up {
+      & {
+        padding: var(--space-l);
+        padding-bottom: 0;
+        padding-top: var(--space-l);
+
+        .Modal__title-wrapper {
+          h3 {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    &.ModalHeader--is-small-heading {
+      padding: var(--space-s);
+
+      h3 {
+        font-size: var(--font-size-mobile-m);
+      }
+
+      .Modal__title-wrapper button {
+        top: initial;
+        margin: auto 0;
+      }
+    }
+  }
+
+  section {
+    padding: var(--space-m);
+    overflow: auto;
+    background-color: var(--color-white);
+
+    a {
+      color: var(--color-primary);
+      cursor: pointer;
+      text-decoration: none;
+      word-break: break-all;
+
+      &:hover {
+        color: var(--color-primary-light);
+        text-decoration: underline;
+      }
+    }
+    @include tablet-up {
+      & {
+        max-width: initial;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding: var(--space-l);
+        overflow: initial;
+      }
+    }
+  }
+
+  footer {
+    background-color: var(--color-white);
+    display: flex;
+    padding: var(--space-m);
+    position: relative;
+    flex-direction: column-reverse;
+    @include zindex('modal');
+    @include tablet-up {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    d4l-button {
+      flex: 1;
+
+      &:first-of-type {
+        @include mobile {
+          margin-top: var(--space-xs);
+        }
+      }
+    }
+
+    d4l-button + d4l-button {
+      @include tablet-up {
+        margin-top: 0;
+        max-width: 210px;
+        margin-left: var(--space-s);
+      }
+    }
+
+    &.ModalFooter--is-full-width {
+      justify-content: initial;
+      flex-direction: column;
+
+      d4l-button {
+        width: 100%;
+      }
+
+      d4l-button + d4l-button {
+        max-width: initial;
+        margin-left: 0;
+        margin-top: var(--space-xs);
+      }
+    }
+
+    &::before {
+      content: '';
+      height: 1px;
+      position: absolute;
+      left: var(--space-m);
+      right: var(--space-m);
+      top: 0;
+      background-color: var(--color-neutral-extra-lightest);
+    }
+    @include tablet-up {
+      & {
+        background-color: var(--color-white);
+        border-radius: 0 0 var(--border-radius-s) var(--border-radius-s);
+        padding: var(--space-l);
+        position: sticky;
+
+        &::before {
+          left: var(--space-l);
+          right: var(--space-l);
+        }
+      }
+    }
+  }
+
+  &--full-height {
+    height: 100vh;
+    border-radius: 0;
+    justify-content: flex-start;
+    width: 100%;
+    max-height: 100vh;
+    @include tablet-up {
+      border-radius: var(--border-radius-s);
+      height: auto;
+      justify-content: center;
+    }
+
+    header {
+      border-bottom: var(--border-width-s) solid var(--color-neutral-extra-lightest);
+      padding: var(--space-s);
+      @include tablet-up {
+        border-bottom: none;
+        padding: var(--space-l) var(--space-l) 0 var(--space-l);
+      }
+
+      .Modal__title-wrapper {
+        display: flex;
+
+        @include tablet-up {
+          button {
+            top: 22px;
+            right: 22px;
+          }
+        }
+
+        @include mobile {
+          flex-direction: row;
+
+          button {
+            position: relative;
+            margin-right: var(--space-s);
+            top: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+
+    section {
+      max-height: calc(100vh - 130px);
+      overflow-y: auto;
+      padding-bottom: 100px;
+      @include tablet-up {
+        padding-bottom: var(--space-m);
+      }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      @include tablet-up {
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+      }
+    }
+  }
+
+  // This is a very specific selector to overwrite the style from components library
+  d4l-checkbox {
+    input[type='checkbox'].sc-d4l-checkbox + label.sc-d4l-checkbox::before {
+      border: 2px solid var(--color-secondary);
+    }
+
+    input[type='checkbox'].sc-d4l-checkbox + label.sc-d4l-checkbox {
+      color: var(--color-primary);
+    }
+
+    input[type='checkbox'].sc-d4l-checkbox:checked + label.sc-d4l-checkbox::after {
+      border-left: 2px solid var(--color-secondary);
+      border-bottom: 2px solid var(--color-secondary);
+    }
+  }
+}

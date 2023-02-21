@@ -1,0 +1,150 @@
+.NavHeader {
+  $this: &;
+  @include zindex('header');
+
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  padding: var(--space-s) var(--space-m);
+  height: $header-height;
+  border-bottom: 1px solid var(--color-neutral-lightest);
+
+  &--is-unauthorized {
+    padding: var(--space-xs) var(--space-s);
+    #{$this} {
+      &__bar {
+        width: 100%;
+      }
+
+      &__burger {
+        display: none;
+      }
+    }
+  }
+
+  &--is-open {
+    @include until($desktop) {
+      height: calc(100vh - #{$header-height});
+      border-bottom: none;
+      position: absolute;
+      #{$this} {
+        &__bar {
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+
+  &__container {
+    max-width: $fullhd;
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  &__bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    margin-right: var(--space-l);
+  }
+
+  &__burger {
+    width: 32px;
+    height: var(--space-m);
+    position: relative;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    background: transparent;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__burger-slice {
+    display: flex;
+    width: 18px;
+    height: 3px;
+    position: absolute;
+    background: var(--color-secondary);
+    transform-origin: center;
+    transition-duration: 300ms;
+    transition-property: background, opacity, transform;
+    transition-timing-function: linear;
+
+    &:nth-child(1) {
+      top: calc(50% - 7px);
+    }
+
+    &:nth-child(2) {
+      top: calc(50% - 2px);
+    }
+
+    &:nth-child(3) {
+      top: calc(50% - -3px);
+    }
+  }
+
+  &__burger--is-open {
+    // To facilitate scoping code when a state is met in scss
+    #{$this} {
+      &__burger-slice {
+        width: 22px;
+
+        &:nth-child(1) {
+          transform: translateX(0) translateY(6px) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: translateX(0) translateY(-4px) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+body.isMobileNavOpen {
+  .AppWrapper {
+    &__content {
+      overflow: hidden;
+    }
+  }
+}
+
+@include tablet-up {
+  .NavHeader {
+    &--background-neutral {
+      background-color: var(--color-neutral-lightest);
+    }
+  }
+}
+
+@include desktop {
+  .NavHeader {
+    height: $header-height-desktop;
+    padding: 0 var(--space-m);
+
+    &--is-unauthorized {
+      padding: var(--space-s) var(--space-m);
+    }
+
+    &__bar {
+      width: auto;
+    }
+
+    &__burger {
+      display: none;
+    }
+  }
+}

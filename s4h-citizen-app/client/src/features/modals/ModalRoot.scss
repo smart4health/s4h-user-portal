@@ -1,0 +1,28 @@
+.ModalRoot {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include tablet-up {
+    align-items: center;
+  }
+
+  article {
+    width: 100%;
+  }
+}
+
+.ModalOverlay {
+  display: flex;
+  overflow: auto;
+  position: fixed;
+  @include zindex('modal');
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $color-overlay;
+}

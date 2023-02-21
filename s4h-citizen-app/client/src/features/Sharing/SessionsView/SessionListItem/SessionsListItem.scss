@@ -1,0 +1,12 @@
+.SessionsListItem {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding-left: var(--space-m);
+  align-items: center;
+
+  &__title {
+    font: var(--typography-desktop-headline-4);
+    color: var(--color-secondary);
+  }
+}

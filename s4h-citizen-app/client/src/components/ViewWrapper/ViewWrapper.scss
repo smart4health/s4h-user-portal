@@ -1,0 +1,127 @@
+.ViewWrapper {
+  $this: &;
+
+  background-color: var(--color-white);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  &--overview-page {
+    // scrolls everything including header in desktop and is a special case
+    #{$this} {
+      @include tablet-up {
+        &__header {
+          position: relative;
+        }
+
+        &__body {
+          background-color: var(--color-neutral-lightest);
+        }
+      }
+
+      &__body {
+        overflow-y: initial;
+      }
+    }
+  }
+
+  &--background-gray {
+    // covers cases where the background of view wrapper is always gray
+    // eg: overview
+    #{$this} {
+      &__body {
+        background-color: var(--color-neutral-lightest);
+      }
+    }
+  }
+
+  &--footer-gray {
+    .ViewWrapper__footer {
+      background-color: var(--color-neutral-lightest);
+    }
+  }
+
+  &__header {
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    @include zindex('header');
+
+    flex: 0 0 $header-height;
+    height: $header-height;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1 0 auto;
+    position: relative;
+  }
+
+  &__large-screen-holder {
+    height: 100%;
+    max-width: $fullhd;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &--aligned-top {
+    align-items: flex-start;
+  }
+
+  &__footer {
+    display: flex;
+    background-color: var(--color-white);
+    flex: 0 0 $footer-height;
+  }
+}
+
+@include tablet-up {
+  .ViewWrapper {
+    $this: &;
+
+    flex: 1 0 100%;
+    background-color: var(--color-neutral-lightest);
+
+    &--body-and-footer-scroll {
+      #{$this}__body {
+        flex: 1 0 auto;
+        overflow-y: initial;
+      }
+    }
+
+    &__top-aligned-header {
+      background: var(--color-white);
+      margin-left: calc(var(--space-m) * -1);
+      margin-top: calc(var(--space-m) * -1);
+      margin-bottom: var(--space-m);
+      width: 100vw;
+    }
+
+    &__body {
+      flex: 1 1 100%;
+      overflow-y: auto;
+      padding: var(--space-m);
+    }
+
+    &__footer {
+      flex: 0 0 $footer-height-tablet-up;
+      background-color: var(--color-neutral-lightest);
+    }
+  }
+}
+
+@include desktop {
+  .ViewWrapper {
+    &__header {
+      flex: 0 0 $header-height-desktop;
+      height: $header-height-desktop;
+    }
+  }
+}

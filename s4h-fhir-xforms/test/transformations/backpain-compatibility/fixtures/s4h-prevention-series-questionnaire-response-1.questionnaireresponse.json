@@ -1,0 +1,222 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "s4h-prevention-series-questionnaire-response-1",
+    "identifier": {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:d4879af2-9925-4224-b972-3cbf3fff2124"
+    },
+    "language": "en",
+    "questionnaire": "http://fhir.smart4health.eu/Questionnaire/back-pain-prevention|1.0.0",
+    "status": "completed",
+    "authored": "2020-02-06T14:15:00-05:00",
+    "subject": {
+        "display": "Marie Lux-Brennard"
+    },
+    "encounter": {
+        "identifier": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/ittm-visit-id",
+            "value": "prev-test-visit-1"
+        }
+    },
+    "item": [{
+            "linkId": "questionnaire_timing",
+            "text": "When is this questionnaire being administered?",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-questionnaire-timing",
+                    "code": "during",
+                    "display": "During XX"
+                }
+            }]
+        },
+        {
+            "linkId": "back_pain_frequency",
+            "text": "How often do you suffer from back pain?",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+                    "code": "freq1wk",
+                    "display": "Frequently (at least once a week)"
+                }
+            }]
+        },
+        {
+            "linkId": "back_pain_duration",
+            "text": "How long has this pain been occurring?",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-duration",
+                    "code": "ov3mon",
+                    "display": "More than 3 months"
+                }
+            }]
+        },
+        {
+            "linkId": "back_pain_location",
+            "text": "In which body part does the pain appear?",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "122495006",
+                    "display": "Thoracic spine (TS)"
+                }
+            }, {
+                "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "122496007",
+                    "display": "Lumbar spine (LS)"
+                }
+            }]
+        },
+        {
+            "linkId": "back_pain_impact",
+            "text": "What are the consequences of your back pain and how does it impact your life situation?",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-pain-impact",
+                    "code": "leisure",
+                    "display": "Limitations during leisure time"
+                }
+            }, {
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-pain-impact",
+                    "code": "absence",
+                    "display": "Periods of absence at work"
+                }
+            }]
+        },
+        {
+            "linkId": "influence_on_health",
+            "text": "To what extent do you think you can influence your state of health?",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-influence-degree",
+                    "code": "str",
+                    "display": "Strongly"
+                }
+            }]
+        },
+        {
+            "linkId": "state_of_health",
+            "text": "How do you assess your state of health?",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-health-state",
+                    "code": "goo",
+                    "display": "Good"
+                }
+            }]
+        },
+        {
+            "linkId": "physical_activity_freq",
+            "text": "How often are you physically active in your free time?",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+                    "code": "1xwk",
+                    "display": "1x per week"
+                }
+            }]
+        },
+        {
+            "linkId": "workout_reason",
+            "text": "What are the reasons you work out?",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-reason",
+                    "code": "fun",
+                    "display": "Fun"
+                }
+            }, {
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-reason",
+                    "code": "hea",
+                    "display": "Health promotion"
+                }
+            }]
+        },
+        {
+            "linkId": "physical_burden_tense_posture",
+            "text": "Physical burden at your workplace: Unilateral/tense posture",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+                    "code": "freq",
+                    "display": "Frequently"
+                }
+            }]
+        },
+        {
+            "linkId": "physical_burden_standing",
+            "text": "Physical burden at your workplace: Primarily in standing position",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+                    "code": "occ",
+                    "display": "Occasionally"
+                }
+            }]
+        },
+        {
+            "linkId": "physical_burden_sitting",
+            "text": "Physical burden at your workplace: Primarily in sitting position",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+                    "code": "vfreq",
+                    "display": "Very frequently"
+                }
+            }]
+        },
+        {
+            "linkId": "physical_burden_leaning",
+            "text": "Physical burden at your workplace: Upper body leans forward",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+                    "code": "occ",
+                    "display": "Occasionally"
+                }
+            }]
+        },
+        {
+            "linkId": "physical_burden_lifting",
+            "text": "Physical burden at your workplace: Heavy lifting",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+                    "code": "nev",
+                    "display": "Never"
+                }
+            }]
+        },
+        {
+            "linkId": "ergonomic_advice_impact",
+            "text": "Do you think ergonomic advice can reduce your physical stress at your workplace?",
+            "answer": [{
+                "valueCoding": {
+                  "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+                  "code": "pmd",
+                  "display": "Prevention of muscular and skeletal disorders"
+              }
+            }]
+        },
+        {
+            "linkId": "training_goals",
+            "text": "What are your goals in participating in the training?",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+                    "code": "pmd",
+                    "display": "Prevention of muscular and skeletal disorders"
+                }
+            }, {
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+                    "code": "sth",
+                    "display": "Stabilize health"
+                }
+            }]
+        }
+    ]
+}

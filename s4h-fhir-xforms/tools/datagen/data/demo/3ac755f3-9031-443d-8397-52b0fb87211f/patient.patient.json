@@ -1,0 +1,19 @@
+{
+	"resourceType": "Patient",
+	"id": "3ac755f3-9031-443d-8397-52b0fb87211f",
+	"name": [
+		{
+			"family": "Dickinson",
+			"given": [
+				"Everett"
+			]
+		}
+	],
+	"address": [
+		{
+			"country": "Germany"
+		}
+	],
+	"gender": "male",
+	"birthDate": "1963-09-13"
+}

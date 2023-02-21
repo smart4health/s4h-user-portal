@@ -1,0 +1,19 @@
+{
+	"resourceType": "Patient",
+	"id": "c3276f75-d9c0-4df3-b047-643a9a39b727",
+	"name": [
+		{
+			"family": "Muller",
+			"given": [
+				"April"
+			]
+		}
+	],
+	"address": [
+		{
+			"country": "Spain"
+		}
+	],
+	"gender": "female",
+	"birthDate": "1937-11-13"
+}

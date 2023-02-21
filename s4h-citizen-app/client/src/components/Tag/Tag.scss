@@ -1,0 +1,36 @@
+.Tag {
+  &#{&} {
+    pointer-events: none;
+    cursor: unset;
+    color: var(--color-primary);
+
+    &--is-clickable {
+      pointer-events: initial;
+      cursor: pointer;
+    }
+
+    &--secondary-lightest {
+      background-color: var(--color-secondary-lightest);
+    }
+
+    &--neutral-extra-lighest {
+      background-color: var(--color-neutral-extra-lightest);
+    }
+
+    &--primary-lightest {
+      background-color: var(--color-primary-lightest);
+    }
+
+    &--red-light {
+      background-color: var(--color-red-light);
+    }
+
+    &--red-lightest {
+      background-color: var(--color-red-lightest);
+    }
+
+    &--gray-lightest {
+      background-color: var(--color-neutral-lightest);
+    }
+  }
+}

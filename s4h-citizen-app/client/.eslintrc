@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "react-app",
+    "plugin:jsx-a11y/recommended",
+    // The following are recommended rules to be disabled
+    // for for eslint according to the documentation of
+    // eslint-config-prettier
+    "prettier",
+    "prettier/flowtype",
+    "prettier/react",
+    "prettier/standard",
+    "prettier/@typescript-eslint"
+  ],
+  "plugins": ["jsx-a11y", "jest"]
+}

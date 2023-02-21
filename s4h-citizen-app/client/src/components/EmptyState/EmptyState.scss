@@ -1,0 +1,48 @@
+.EmptyState {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 304px;
+
+  &__header {
+    padding: var(--space-l) 0 calc(var(--space-xxl) + var(--space-xs)) 0;
+  }
+
+  &__content {
+    padding-bottom: var(--space-l);
+  }
+
+  &__header + &__content,
+  &__content + &__footer,
+  &__header + &__footer {
+    padding-top: 0;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    margin-top: 0;
+
+    button {
+      flex: 1 0 auto;
+      margin: 0 4px 16px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include tablet-up {
+        &:only-child {
+          flex: none;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}

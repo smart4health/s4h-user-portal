@@ -1,0 +1,218 @@
+{
+  "resourceType": "Questionnaire",
+  "language": "en",
+  "id": "s4h-treatment-series-pre-session-questionnaire-example-en",
+  "url": "http://fhir.smart4health.eu/Questionnaire/pre-session-questionnaire",
+  "version": "1.0.0",
+  "name": "Smart4Health_pre-session_pain_questionnaire",
+  "title": "Pre-session treatment questionnaire",
+  "status": "draft",
+  "subjectType": ["Patient"],
+  "date": "2021-01-28",
+  "publisher": "D4L data4life gGmbH",
+  "contact": [
+    {
+      "name": "ITTM Solutions",
+      "telecom": [
+        { "system": "url", "value": "https://www.ittm-solutions.com/" }
+      ]
+    },
+    {
+      "name": "D4L data4life gGmbH",
+      "telecom": [{ "system": "url", "value": "https://www.data4life.care" }]
+    }
+  ],
+  "description": "Pre-session treatment questionnaire",
+  "item": [
+    {
+      "linkId": "current_back_pain_level",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity 0-10 Score Reported"
+        }
+      ],
+      "text": "Please indicate your current pain level",
+      "type": "choice",
+      "enableBehavior": "any",
+      "required": true,
+      "answerValueSet": "#LL2335-9",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://fhir.smart4health.eu/CodeSystem/questionnaire-ui-codes",
+                "code": "painscalewithlabels"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "average_back_pain_level",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity 0-10 Score Reported"
+        }
+      ],
+      "text": "Please indicate your average pain level during the past four weeks",
+      "type": "choice",
+      "enableBehavior": "any",
+      "required": true,
+      "answerValueSet": "#LL2335-9",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://fhir.smart4health.eu/CodeSystem/questionnaire-ui-codes",
+                "code": "painscalewithlabels"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "max_back_pain_level_4w",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "72514-3",
+          "display": "Pain severity 0-10 Score Reported"
+        }
+      ],
+      "text": "Please indicate your maximum pain level during the past four weeks",
+      "type": "choice",
+      "enableBehavior": "any",
+      "required": true,
+      "answerValueSet": "#LL2335-9",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://fhir.smart4health.eu/CodeSystem/questionnaire-ui-codes",
+                "code": "painscalewithlabels"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "taking_painkillers",
+      "text": "Are you taking painkillers at the moment?",
+      "type": "choice",
+      "enableBehavior": "any",
+      "required": true,
+      "answerValueSet": "#yesno"
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "LL2335-9",
+      "url": "http://loinc.org/vs/LL2335-9",
+      "language": "en",
+      "identifier": [
+        {
+          "system": "urn:ietf:rfc:3986",
+          "value": "urn:oid:1.3.6.1.4.1.12009.10.1.1494"
+        }
+      ],
+      "version": "Loinc_2.67",
+      "name": "Numeric rating scale from 0-10",
+      "status": "active",
+      "publisher": "Regenstrief Institute, Inc.",
+      "contact": [
+        {
+          "name": "Regenstrief Institute, Inc.",
+          "telecom": [{ "system": "url", "value": "https://loinc.org" }]
+        }
+      ],
+      "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at https://loinc.org/license/",
+      "compose": {
+        "include": [
+          {
+            "system": "http://loinc.org",
+            "concept": [
+              { "code": "LA6111-4", "display": "0" },
+              { "code": "LA6112-2", "display": "1" },
+              { "code": "LA6113-0", "display": "2" },
+              { "code": "LA6114-8", "display": "3" },
+              { "code": "LA6115-5", "display": "4" },
+              { "code": "LA10137-0", "display": "5" },
+              { "code": "LA10138-8", "display": "6" },
+              { "code": "LA10139-6", "display": "7" },
+              { "code": "LA10140-4", "display": "8" },
+              { "code": "LA10141-2", "display": "9" },
+              { "code": "LA13942-0", "display": "10" }
+            ]
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:1186d39f-ca7b-4cc5-8949-29e5d87c402b",
+        "timestamp": "2020-10-09T12:08:51.687Z",
+        "contains": [
+          { "system": "http://loinc.org", "code": "LA6111-4", "display": "0" },
+          { "system": "http://loinc.org", "code": "LA6112-2", "display": "1" },
+          { "system": "http://loinc.org", "code": "LA6113-0", "display": "2" },
+          { "system": "http://loinc.org", "code": "LA6114-8", "display": "3" },
+          { "system": "http://loinc.org", "code": "LA6115-5", "display": "4" },
+          { "system": "http://loinc.org", "code": "LA10137-0", "display": "5" },
+          { "system": "http://loinc.org", "code": "LA10138-8", "display": "6" },
+          { "system": "http://loinc.org", "code": "LA10139-6", "display": "7" },
+          { "system": "http://loinc.org", "code": "LA10140-4", "display": "8" },
+          { "system": "http://loinc.org", "code": "LA10141-2", "display": "9" },
+          { "system": "http://loinc.org", "code": "LA13942-0", "display": "10" }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "version": "0.1.0",
+      "url": "http://fhir.smart4health.eu/ValueSet/yesno",
+      "id": "yesno",
+      "name": "Yesno",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "description": "Yes/No",
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://loinc.org",
+            "concept": [{ "code": "LA33-6" }, { "code": "LA32-8" }]
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:59d58958-9786-45e5-8903-cbbc54ecaa4f",
+        "timestamp": "2020-06-09T11:14:54.272Z",
+        "contains": [
+          { "system": "http://loinc.org", "code": "LA33-6", "display": "Yes" },
+          { "system": "http://loinc.org", "code": "LA32-8", "display": "No" }
+        ]
+      }
+    }
+  ]
+}

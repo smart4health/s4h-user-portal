@@ -1,0 +1,30 @@
+.MedicationDetails {
+  overflow-y: auto;
+  transition: 0.4s;
+
+  &__card {
+    &#{&} {
+      width: 100%;
+      max-width: 400px;
+      border-radius: var(--border-radius-s);
+      margin: auto;
+      padding: var(--space-l);
+      background-color: var(--color-white);
+    }
+  }
+
+  &__headline {
+    padding-bottom: var(--space-xs);
+    margin-top: 0;
+  }
+
+  &__notification-bar {
+    &#{&} {
+      font-size: var(--font-size-desktop-s);
+
+      .notification-bar__content {
+        font-size: var(--font-size-desktop-s);
+      }
+    }
+  }
+}

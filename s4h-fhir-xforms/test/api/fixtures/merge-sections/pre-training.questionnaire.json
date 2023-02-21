@@ -1,0 +1,326 @@
+{
+  "resourceType": "Questionnaire",
+  "url": "http://fhir.smart4health.eu/Questionnaire/pre-training-questionnaire",
+  "title": "Smart4Health pre-training questionnaire",
+  "id": "1449F6CA-33E5-47E9-BDC0-ED12140722F7",
+  "status": "draft",
+  "version": "0.0.1",
+  "date": "2020-02",
+  "subjectType": ["Patient"],
+  "item": [
+    {
+      "linkId": "training_no",
+      "text": "Training Number",
+      "type": "integer",
+      "required": true
+    },
+    {
+      "linkId": "back_pain_level_before",
+      "text": "Lower back pain level before training",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "72514-3"
+        }
+      ],
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#LL2335-9",
+      "item": [
+        {
+          "linkId": "back_pain_level_before.explanation",
+          "text": "In the following, please provide your pain level (Visual Analog Scale for Pain - VAS Pain). Please select how you experience your pain (under your usual medication dose) from the given scale (0-10). The VAS pain level describes the scale between '0' ('no pain') and '10' ('worst imaginable pain').",
+          "type": "display"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://fhir.smart4health.eu/CodeSystem/questionnaire-ui-codes",
+                "code": "painscalewithlabels"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "well_being",
+      "text": "Well being",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#LL2335-9",
+      "item": [
+        {
+          "linkId": "well_being.explanation",
+          "text": "0: All well, 10: All bad",
+          "type": "display"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://fhir.smart4health.eu/CodeSystem/questionnaire-ui-codes",
+                "code": "wellbeingscalewithlabels"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "pre_training_condition",
+      "text": "Pre-training condition",
+      "type": "choice",
+      "answerValueSet": "#s4h-backpain-pre-training-condition",
+      "required": true
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "LL2335-9",
+      "url": "http://loinc.org/vs/LL2335-9",
+      "identifier": [
+        {
+          "system": "urn:ietf:rfc:3986",
+          "value": "urn:oid:1.3.6.1.4.1.12009.10.1.1494"
+        }
+      ],
+      "version": "Loinc_2.67",
+      "name": "Numeric rating scale from 0-10",
+      "status": "active",
+      "publisher": "Regenstrief Institute, Inc.",
+      "contact": [
+        {
+          "name": "Regenstrief Institute, Inc.",
+          "telecom": [
+            {
+              "system": "url",
+              "value": "https://loinc.org"
+            }
+          ]
+        }
+      ],
+      "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at https://loinc.org/license/",
+      "compose": {
+        "include": [
+          {
+            "system": "http://loinc.org",
+            "concept": [
+              {
+                "code": "LA6111-4",
+                "display": "0"
+              },
+              {
+                "code": "LA6112-2",
+                "display": "1"
+              },
+              {
+                "code": "LA6113-0",
+                "display": "2"
+              },
+              {
+                "code": "LA6114-8",
+                "display": "3"
+              },
+              {
+                "code": "LA6115-5",
+                "display": "4"
+              },
+              {
+                "code": "LA10137-0",
+                "display": "5"
+              },
+              {
+                "code": "LA10138-8",
+                "display": "6"
+              },
+              {
+                "code": "LA10139-6",
+                "display": "7"
+              },
+              {
+                "code": "LA10140-4",
+                "display": "8"
+              },
+              {
+                "code": "LA10141-2",
+                "display": "9"
+              },
+              {
+                "code": "LA13942-0",
+                "display": "10"
+              }
+            ]
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:91a846a6-9d03-4ee0-a809-13fa2f7ef57e",
+        "timestamp": "2020-09-24T12:00:00.000Z",
+        "contains": [
+          {
+            "system": "http://loinc.org",
+            "code": "LA6111-4",
+            "display": "0"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA6112-2",
+            "display": "1"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA6113-0",
+            "display": "2"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA6114-8",
+            "display": "3"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA6115-5",
+            "display": "4"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA10137-0",
+            "display": "5"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA10138-8",
+            "display": "6"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA10139-6",
+            "display": "7"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA10140-4",
+            "display": "8"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA10141-2",
+            "display": "9"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA13942-0",
+            "display": "10"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "version": "0.0.1",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-backpain-pre-training-condition",
+      "id": "s4h-backpain-pre-training-condition",
+      "name": "s4h-backpain-pre-training-condition",
+      "title": "Smart4Health Pre Training Condition",
+      "status": "draft",
+      "experimental": false,
+      "date": "2020-07-01",
+      "publisher": "D4L/ITTM",
+      "contact": [
+        {
+          "name": "tbd",
+          "telecom": [{ "system": "url", "value": "tbd" }]
+        }
+      ],
+      "description": "tbd",
+      "immutable": false,
+      "purpose": "The purpose of this valueset is to document the observed condition in which a training will be started.",
+      "copyright": "tbd",
+      "compose": {
+        "include": [
+          {
+            "system": "http://code.system",
+            "concept": [
+              { "code": "01" },
+              { "code": "02" },
+              { "code": "03" },
+              { "code": "04" },
+              { "code": "05" },
+              { "code": "06" },
+              { "code": "07" },
+              { "code": "08" },
+              { "code": "09" },
+              { "code": "10" }
+            ]
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:1f503a0a-as5d-406e-9bfa-43e78a25fe97",
+        "timestamp": "2020-06-23T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://code.system",
+            "code": "01",
+            "display": "Normal"
+          },
+          {
+            "system": "http://code.system",
+            "code": "02",
+            "display": "Stress at workplace"
+          },
+          {
+            "system": "http://code.system",
+            "code": "03",
+            "display": "Aching muscles"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "04",
+            "display": "Gardening"
+          },
+          {
+            "system": "http://code.system",
+            "code": "05",
+            "display": "Headaches"
+          },
+          {
+            "system": "http://code.system",
+            "code": "06",
+            "display": "Busy day"
+          },
+          {
+            "system": "http://code.system",
+            "code": "07",
+            "display": "Too hot outside"
+          },
+          {
+            "system": "http://code.system",
+            "code": "08",
+            "display": "Circulatory problems"
+          },
+          {
+            "system": "http://code.system",
+            "code": "09",
+            "display": "Knee pain"
+          },
+          {
+            "system": "http://code.system",
+            "code": "10",
+            "display": "Cervical pain"
+          }
+        ]
+      }
+    }
+  ]
+}

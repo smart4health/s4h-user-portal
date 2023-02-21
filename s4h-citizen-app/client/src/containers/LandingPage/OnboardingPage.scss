@@ -1,0 +1,14 @@
+.OnboardingPage {
+  width: 100%;
+  margin: 0 auto;
+
+  &__card {
+    width: 100%;
+    &#{&} {
+      padding: var(--space-l) var(--space-m);
+    }
+  }
+  @include tablet-up {
+    width: $card-width;
+  }
+}

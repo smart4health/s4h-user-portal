@@ -1,0 +1,12 @@
+.IncompletenessDisclaimer {
+  width: 100%;
+
+  &__snack-bar {
+    background-color: var(--color-neutral-lighter);
+    font-size: var(--font-size-desktop-s);
+  }
+
+  &__icon {
+    margin-right: var(--space-s);
+  }
+}

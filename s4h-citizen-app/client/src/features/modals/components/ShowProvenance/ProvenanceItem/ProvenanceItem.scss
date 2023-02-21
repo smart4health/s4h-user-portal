@@ -1,0 +1,19 @@
+.ProvenanceItem {
+  padding-top: var(--space-m);
+
+  &__item {
+    border-bottom: var(--border-width-s) solid var(--color-neutral-lightest);
+    padding: var(--space-m) 0;
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  h6 {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

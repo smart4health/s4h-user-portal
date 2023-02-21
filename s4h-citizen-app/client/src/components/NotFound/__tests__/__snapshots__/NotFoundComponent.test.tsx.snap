@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFoundComponent renders without crashing 1`] = `
+<div
+  class="ViewWrapper "
+  id="view-wrapper"
+>
+  <nav
+    class="ViewWrapper__header"
+  >
+    <div
+      class="NavHeader NavHeader--is-unauthorized NavHeader--background-neutral"
+    >
+      <div
+        class="NavHeader__container"
+      >
+        <div
+          class="NavHeader__bar"
+        >
+          <a
+            class="NavHeader__brand"
+            data-test="logo"
+            href="/"
+          >
+            <img
+              alt="smart4health"
+              src="logo-s4h.svg"
+            />
+          </a>
+          <d4l-multi-language-switcher
+            data-test="languageSwitcher"
+            style="float: right;"
+          />
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main
+    class="ViewWrapper__body "
+    id="view-body"
+  >
+    <div
+      class="ViewWrapper__large-screen-holder "
+    >
+      <div
+        class="EmptyState"
+        data-test="emptyStateContainer"
+      >
+        <div
+          class="EmptyState__header"
+        >
+          <div
+            class="TitleCaption__title"
+          >
+            page_not_found.title
+          </div>
+          <div
+            class="TitleCaption__subtitle"
+          >
+            page_not_found.subtitle
+          </div>
+        </div>
+        <div
+          class="EmptyState__content"
+        >
+          <svg>
+            404.svg
+          </svg>
+        </div>
+        <div
+          class="EmptyState__footer"
+        >
+          <d4l-button
+            classes="button--block button--uppercase"
+            data-test="RedirectBtn"
+            text="page_not_found.button"
+          />
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer
+    class="ViewWrapper__footer"
+  >
+    <div
+      class="Footer Footer--landing"
+    >
+      <div
+        class="Footer__container"
+      >
+        <div
+          class="Footer__links"
+        >
+          <a
+            class="Footer__link"
+            href="/legal/imprint"
+          >
+            imprint
+          </a>
+          <a
+            class="Footer__link"
+            href="/legal/terms"
+          >
+            legal
+          </a>
+          <a
+            class="Footer__link"
+            href="/support"
+          >
+            support
+          </a>
+        </div>
+        <div
+          class="Footer__credits"
+        >
+          <p>
+            all_rights_reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

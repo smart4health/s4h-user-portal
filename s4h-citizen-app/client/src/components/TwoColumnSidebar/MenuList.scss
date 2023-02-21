@@ -1,0 +1,52 @@
+.TwoColumnSidebarMenuList {
+  height: 100%;
+  overflow-y: auto;
+  margin: 0;
+
+  a {
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-bottom: var(--border-width-s) solid var(--color-neutral-extra-lightest);
+    font-weight: var(--link-font-weight);
+  }
+
+  .TwoColumnSidebarMenuListItem {
+    display: block;
+    padding: var(--space-s) var(--space-m);
+    text-decoration: none;
+    color: var(--color-primary);
+    width: 100%;
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-neutral-lightest);
+    }
+
+    &:active,
+    &--is-active,
+    &--is-active:hover &--is-active:focus {
+      background-color: var(--color-neutral-lightest);
+    }
+
+    &--is-active {
+      background-color: var(--color-neutral-extra-lightest);
+    }
+
+    &--is-active::before {
+      width: 4px;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: var(--color-secondary);
+      content: '';
+      position: absolute;
+    }
+
+    &--is-disabled {
+      pointer-events: none;
+    }
+  }
+}

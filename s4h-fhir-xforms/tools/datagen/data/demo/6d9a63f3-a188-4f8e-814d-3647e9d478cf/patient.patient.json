@@ -1,0 +1,19 @@
+{
+	"resourceType": "Patient",
+	"id": "6d9a63f3-a188-4f8e-814d-3647e9d478cf",
+	"name": [
+		{
+			"family": "Kirlin",
+			"given": [
+				"Lauren"
+			]
+		}
+	],
+	"address": [
+		{
+			"country": "Austria"
+		}
+	],
+	"gender": "female",
+	"birthDate": "1961-10-18"
+}

@@ -1,0 +1,15 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "E6001FA7-8C34-4BB9-8805-D62132C3DF9B",
+  "language": "en",
+  "questionnaire": "http://fhir.smart4health.eu/Questionnaire/pre-session-questionnaire|0.0.1",
+  "status": "completed",
+  "authored": "2020-05-04T14:15:00-05:00",
+  "encounter": {
+    "identifier": {
+        "system": "http://fhir.smart4health.eu/CodeSystem/ittm-training-id",
+        "value": "day-1"
+    }
+  },
+  "item": []
+}

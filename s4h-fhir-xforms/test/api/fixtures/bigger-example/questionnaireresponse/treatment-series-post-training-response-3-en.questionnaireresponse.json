@@ -1,0 +1,42 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "s4h-treatment-series-post-training-response-example-3",
+    "language": "en",
+    "questionnaire": "http://fhir.smart4health.eu/Questionnaire/post-training-questionnaire|0.0.1",
+    "status": "completed",
+    "encounter": {
+        "identifier": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/ittm-visit-id",
+            "value": "test-visit-3"
+        }
+    },
+    "authored": "2020-02-20",
+    "item": [{
+            "linkId": "training_no",
+            "text": "Training Number",
+            "answer": [{
+                "valueInteger": 3
+            }]
+        },
+        {
+            "linkId": "post_training_condition",
+            "text": "Post-training condition",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://code.system",
+                    "code": "06"
+                }
+            }]
+        },
+        {
+            "linkId": "training_weight_recommendation",
+            "text": "Training weight recommendation for the next training.",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "1250004"
+                }
+            }]
+        }
+    ]
+}

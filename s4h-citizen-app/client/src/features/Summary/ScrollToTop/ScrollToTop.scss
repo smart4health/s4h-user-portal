@@ -1,0 +1,21 @@
+.ScrollToTop {
+  border-radius: 50%;
+  background: var(--color-primary);
+  padding: var(--space-xs);
+  position: fixed;
+  right: var(--space-s);
+  bottom: 16px;
+  cursor: pointer;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    color: var(--color-white);
+  }
+}
+
+@include tablet-up {
+  .ScrollToTop {
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+{
+	"resourceType": "Patient",
+	"id": "5255ad2e-3bdd-4c83-b19d-645ce1318d6d",
+	"name": [
+		{
+			"family": "Kiehn",
+			"given": [
+				"Tina"
+			]
+		}
+	],
+	"address": [
+		{
+			"country": "Spain"
+		}
+	],
+	"gender": "female",
+	"birthDate": "1955-03-28"
+}

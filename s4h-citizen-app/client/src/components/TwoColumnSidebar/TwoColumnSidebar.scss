@@ -1,0 +1,11 @@
+.TwoColumnSidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@include tablet-up {
+  .TwoColumnSidebar {
+    border-right: var(--border-width-s) solid var(--color-neutral-extra-lightest);
+  }
+}

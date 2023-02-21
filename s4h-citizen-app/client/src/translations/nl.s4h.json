@@ -1,0 +1,1144 @@
+{
+  "anamnesis": {
+    "allergies_intolerances": "Allergieën en intoleranties",
+    "answers": {
+      "0": "",
+      "A": "A",
+      "AB": "AB",
+      "B": "B",
+      "Negative": "Negatief",
+      "Positive": "Positief",
+      "female": "Vrouw",
+      "male": "Man",
+      "no": "Nee",
+      "not_set": "Niet geantwoord",
+      "other": "Ander",
+      "please_choose": "Gelieve te kiezen",
+      "yes": "Ja",
+      "unknown": "Onbekend"
+    },
+    "medical_history": "Aandoeningen",
+    "personal_data": "Persoonlijke informatie",
+    "private_beta_anamnesis_hint": "Anamnese is alleen te bekijken in de privé-bèta. U kunt de anamnese maken en bewerken in de Android-app of iOS-app.",
+    "private_beta_feedback_email": "helpdesk@smart4health.eu",
+    "private_beta_hint": "Vragen en feedback aan:",
+    "questions": {
+      "alcohol": "Drinkt u regelmatig alcohol?",
+      "allergies_intolerances": "Heeft u allergieën of intoleranties?",
+      "birthDate": "Geboortedatum",
+      "blood_pressure": "Heeft u ooit een hoge bloeddruk gehad?",
+      "blood_rh_factor": "Bloed-Rh-factor",
+      "blood_sugar": "Heeft u ooit hoge bloedglucosewaarden gehad?",
+      "blood_type": "Bloedgroep",
+      "bmi": "BMI",
+      "family": "Achternaam",
+      "gender": "Geslacht",
+      "given": "Voornaam",
+      "height": "Lengte (cm)",
+      "job_position": "Beroep",
+      "middle_name": "Middelste naam",
+      "nested": {
+        "past_diseases": {
+          "date": "Datum eerste diagnose",
+          "question": "Heeft u een chronische ziekte?",
+          "text": "Aandoening of behandeling"
+        },
+        "past_surgery": {
+          "date": "Datum van operatie",
+          "question": "Heeft u ooit een operatie ondergaan?",
+          "text": "Operatie"
+        }
+      },
+      "overweight": "Heeft u overgewicht?",
+      "past_diseases": "Bent u ooit gediagnosticeerd met of behandeld voor een specifieke aandoening?",
+      "past_surgery": "Bent u ooit geopereerd voor een specifieke aandoening?",
+      "prefix": "Titel",
+      "smoking": "Bent u, of bent u ooit een roker geweest?",
+      "suffix": "Aanspreektitel",
+      "weight": "Gewicht (kg)"
+    },
+    "risk_factors": "Risicofactoren",
+    "submit_response": "Antwoord indienen",
+    "emergency_contact": "Contactpersoon voor noodgevallen",
+    "personal-data-name_validation-message": "Voer een geldige naam in",
+    "personal-data-surname_validation-message": "Voer een naam in",
+    "personal-data-gender_validation-message": "Selecteer een optie",
+    "personal-data-birth_validation-message": "Vul de volledige datum in",
+    "personal-data-weight_validation-message": "Voer een waarde in",
+    "personal-data-height_validation-message": "Voer een waarde in",
+    "personal-data-bloodtype_validation-message": "Selecteer een optie",
+    "data-prefilled_snackbar": "<strong>Sommige secties zijn vooraf ingevuld.</strong> Bewerk ze om uw informatie te bevestigen of bij te werken.",
+    "medical_history_condition_section": {
+      "adding_message": "Geef een of meer aandoeningen op waarmee u bent gediagnosticeerd:",
+      "adding_button": "Aandoening toevoegen",
+      "dropdown_headline": "Selecteer aandoening",
+      "date_message": "Een volledige datum (jaar, maand, dag) is belangrijk. Als u de volledige datum niet meer weet, probeer dan minimaal het jaartal toe te voegen en de overige velden leeg te laten.",
+      "diagnosis_date_label": "Datum diagnose",
+      "year_label": "Jaar",
+      "month_label": "Maand",
+      "day_label": "Dag",
+      "cancel_button": "Annuleren",
+      "save_button": "Opslaan"
+    },
+    "medical-history-condition-adding_validation-message": "Voer de details over uw aandoening in",
+    "medical-history-condition-skip_button": "Overslaan",
+    "medical-history-condition-save_button": "Opslaan",
+    "medical-history-condition-view-entry_label": "Datum eerste diagnose",
+    "allergies-adding_validation-message": "Specificeer één of meerdere allergieën of intoleranties:",
+    "allergies-adding_button": "Allergie toevoegen",
+    "allergies-dropdown_headline": "Allergie selecteren",
+    "emergency_contact_adding": {
+      "label": "Is er iemand te bereiken in geval van nood?",
+      "message": "Voeg toe met wie we contact moeten opnemen in een noodgeval",
+      "button": "Contactpersoon toevoegen",
+      "name_placeholder": "Voornaam",
+      "surname_placeholder": "Achternaam",
+      "code_label": "Code",
+      "phone_placeholder": "Mobiele telefoonnummer"
+    },
+    "allergies_intolerances_section": {
+      "allergies_list_label": "Allergielijst"
+    },
+    "medical_history_surgery_section": {
+      "adding_message": "Geef een of meer operaties op:",
+      "adding_button": "Operatie toevoegen",
+      "date_message": "Een volledige datum (jaar, maand, dag) is belangrijk. Als u de volledige datum niet meer weet, probeer dan minimaal het jaartal toe te voegen en de overige velden leeg te laten.",
+      "dropdown_headline": "Procedure selecteren",
+      "diagnosis_date_label": "Datum procedure:"
+    },
+    "save_button": "Opslaan",
+    "edit_button": "Bewerken",
+    "delete_button": "Verwijderen",
+    "errors": {
+      "required_field": "Vul dit veld in.",
+      "number_range": "Voer een waarde in tussen {{min}} en {{max}}"
+    },
+    "empty_state": {
+      "title": "Uw medische geschiedenis in één oogopslag",
+      "subtitle": "Vul uw persoonsgegevens, risicofactoren en voorwaarden in.",
+      "button": "Gegevens invoeren",
+      "subtitle_card": "Vul uw persoonsgegevens in"
+    },
+    "sidebar": {
+      "title": "Medische geschiedenis"
+    },
+    "last_updated": {
+      "title": "Laatst bijgewerkt"
+    }
+  },
+  "legal": {
+    "dataPrivacy": {
+      "content": "<p><em>Let op: Het volgende privacybeleid is gericht op gebruikers van ons Smart4Health-platform. In het kader van het gebruik van de Smart4Health-webapp kunnen onze gebruikers optioneel versleutelde informatie opslaan die informatie over derden kan bevatten. We informeren het publiek hierover in een afzonderlijk privacybeleid in overeenstemming met art. 14 par. 5 punt (b) subparagraaf. 2 van de AVG (Algemene verordening gegevensbescherming).</em></p>\n\n<p>Met ons Smart4Health-platform, dat u kunt gebruiken met behulp van onze webapp, kunt u uw medische gegevens veilig opslaan en digitaal beheren. Deze informatie beschrijft hoe het Smart4Health-platform omgaat met uw persoonsgegevens. Secties1 t/m 3 informeren u over uw wettelijke rechten en secties 4 t/m 10 leggen uit hoe uw persoonsgegevens worden verwerkt wanneer u zich aanmeldt voor en gebruik maakt van het Smart4Health-platform.</p>\n\n<strong>1. Verwerkingsverantwoordelijke en functionaris voor gegevensbescherming</strong>\n\n<p>De verwerkingsverantwoordelijke op grond van art. 4 par. 7 van de AVG voor de webapp is</p>\n\n\n<div>D4L data4life gGmbH</div>\n<div>Charlottenstraße 109</div>\n<div>14467 Potsdam, Duitsland</div>\n<p>E-mail: we@data4life.help</p>\n\n\n<p>U kunt onze functionaris voor gegevensbescherming bereiken via dataprotection@data4life.help of door een brief te sturen ter attentie van 'De functionaris voor gegevensbescherming' naar ons postadres.</p>\n\n<strong>2. Uw rechten</strong>\n\n<div>U heeft de volgende rechten met betrekking tot uw persoonsgegevens:</div>\n<ul><li> Recht op toegang (art. 15 van de AVG)</li>\n<li> Recht op rectificatie (art. 16 van de AVG)</li>\n<li> Recht op verwijdering van uw gegevens (art. 17 van de AVG)</li>\n<li> Recht op beperking van de verwerking (art. 18 van de AVG)</li>\n<li> Recht om bezwaar te maken tegen de verwerking (art. 21 van de AVG)</li>\n<li> Recht op gegevensoverdraagbaarheid (art. 20 van de AVG)</li></ul>\n\n<p>U heeft ook het recht om een ​​klacht in te dienen over onze verwerking van uw persoonsgegevens bij een toezichthoudende autoriteit voor gegevensbescherming in de lidstaat waar u zich bevindt, in de lidstaat van uw werkplek of in de lidstaat waar de vermeende inbreuk heeft plaatsgevonden als u van mening bent dat de verwerking van uw persoonsgegevens onrechtmatig is. De voor ons verantwoordelijke toezichthoudende autoriteit is:</p> \n\n\n<div>Die Landesbeauftragte für den Datenschutz und für das Recht auf Akteneinsicht</div>\n<div>Stahnsdorfer Damm 77</div>\n<div>14532 Kleinmachnow </div>\n<p>Duitsland</p>\n\n\n<p>\n<div>Telefoon: 0049 (0)33203/356-0</div>\n<div>Fax: 0049 (0)33203/356-49</div>\n<div>E-mail: poststelle@lda.brandenburg.de</div>\n</p>\n\n\n<div>Als u ons toestemming heeft gegeven voor de verwerking van uw gegevens, kunt u deze te allen tijde intrekken voor de toekomst. De rechtmatigheid van het verwerken van uw gegevens tot intrekking blijft hierdoor onaangetast.</div>\n<p>U kunt te allen tijde contact met ons opnemen via de contactkanalen vermeld in sectie 1 hierboven en/of de contactgegevens vermeld in ons impressum voor het doen gelden van uw rechten of voor andere gegevensbeschermingskwesties.</p>\n\n\n<strong>3. Aanvullende opmerking over uw recht van bezwaar</strong>\n\n<p>Houd er rekening mee dat als uw persoonsgegevens worden verwerkt op basis van een legitiem belang in het kader van de belangenafweging volgens art. 6 paragraaf 1 subparagraaf 1 lid f van de AVG, u het recht heeft om te allen tijde bezwaar te maken tegen de verwerking van uw persoonsgegevens. U kunt uw bezwaar kenbaar maken door op elk gewenst moment contact met ons op te nemen via de contactkanalen vermeld in sectie 1 en/of de contactgegevens in ons impressum.</p>\n\n<strong>4. Doeleinden en rechtsgrondslagen van de verwerking van uw persoonsgegevens</strong>\n<br/>\n<strong>a. Gebruik van de webapp </strong>\n<div>Bij gebruik van het Smart4Health-platform worden de volgende gegevens automatisch doorgestuurd naar de webserver van Data4Life:</div>\n\n<ul><li> IP-adres van het apparaat dat is gebruikt voor het ophalen</li>\n<li> Webadres (URL) van de pagina waarvan het bestand is opgevraagd (verwijzende pagina)</li>\n<li> Datum en tijd van het verzoek</li>\n<li> Hoeveelheid verzonden gegevens</li>\n<li> Beschrijving van het type webbrowser dat wordt gebruikt</li></ul>\n\n<p>De verwerking van deze gegevens, die een (gepseudonimiseerde) persoonlijke referentie via het IP-adres bevatten, is technisch noodzakelijk en wordt uitgevoerd om u het Data4Life-aanbod te kunnen verstrekken. De rechtsgrond voor de bovengenoemde verwerking is art. 6 par. 1 zin 1 punt (b) van de AVG (verwerking is noodzakelijk voor de uitvoering van een contract met de betrokkene). Om bedreigingen voor de beveiliging van de infrastructuur van Data4Life af te wenden en wetshandhavingsinstanties te voorzien van de informatie die nodig is voor vervolging in geval van een cyberaanval, bv. bij een DDoS-aanval worden bovengenoemde gegevens doorgaans zeven dagen bewaard in logbestanden. In geval van een aanval worden loggegevens bewaard als bewijs tot het betreffende incident is opgelost. De rechtsgrondslag van deze verwerking is art. 6 par. 1 zin 1 lid f van de AVG (verwerking is noodzakelijk om de legitieme belangen van de verwerkingsverantwoordelijke te waarborgen). Het legitieme belang van Data4Life bestaat in het verschaffen van adequate beveiliging en stabiliteit van onze webservers.</p>\n\n\n<strong>b. Registratie voor het Smart4Health-platform via de webapp</strong>\n<p>U kunt zich aanmelden voor de Smart4Health-platform met behulp van onze webapp. Het enige dat u nodig heeft om u te registreren voor het Smart4Health-platform is uw e-mailadres, een wachtwoord naar keuze, een mobiel telefoonnummer voor tweefactorauthenticatie en uw zogenaamde Smart4Health 'citizen use case'. Vervolgens ontvangt u een datasleutel die wordt gebruikt voor uw aanvullende authenticatie tijdens het inlogproces. U moet de datasleutel invoeren in het inlogproces wanneer u inlogt op het Smart4Health-platform vanaf een nieuw apparaat of browser.</p>\n\n<p>Als u uw Smart4Health-account vóór 26.07.2021 heeft aangemaakt, heeft u een persoonlijke herstelsleutel ontvangen als onderdeel van uw registratie bij het Smart4Health-aanbod. Met de herstelsleutel kunt u uw wachtwoord opnieuw instellen. Zodra u weer inlogt op uw Smart4Health-account, ontvangt u de nieuwe datasleutel. Vanaf dit punt heeft de herstelsleutel geen functie meer en kan deze worden verwijderd.</p>\n\n<p>Voor de registratie gebruiken we de dubbele opt-in procedure. Dit betekent dat wij u na uw registratie een e-mailbericht sturen naar het door u opgegeven e-mailadres, waarin wij u vragen uw registratie te bevestigen.</p>\n\n<p>Na succesvolle registratie kunt u met uw toegangsgegevens toegang krijgen tot het Smart4Health-platform en de functionaliteiten gebruiken.</p>\n\n<p>Als alternatief bieden wij u de mogelijkheid om in te loggen met elektronische identificatie (e-ID). Met de e-ID kunt u uw identiteit bewijzen, bijvoorbeeld door de e-ID in de Duitse federale identiteitskaart. Voordat inloggen met de e-ID mogelijk is, moet u uw gebruikersaccount koppelen aan uw e-ID in de accountinstellingen. De verbinding vereist het gebruik van een identiteitsservice, zoals de AusweisApp 2 van Governikus GmbH &amp; Co. KG in Duitsland. De service creëert een uniek pseudoniem op basis van de respectieve e-ID, die wordt opgeslagen in uw gebruikersaccount. Nadat de verbinding tot stand is gebracht, kunt u zich voortaan elektronisch identificeren met uw e-ID via een identiteitsservice. U kunt de verbinding tussen uw e-ID en uw Smart4Health-gebruikersaccount op elk moment in de accountinstellingen herroepen. De rechtsgrond voor de bovengenoemde verwerking is art. 6 par. 1 zin 1 lit. (b) van de AVG (verwerking is noodzakelijk voor de uitvoering van een contract met de betrokkene)</p>\n\n\n<strong>c. Gebruik van de functionaliteiten en opslag van uw gezondheidsgegevens</strong>\n<p>Als geregistreerde gebruiker kunt u veilig en versleuteld gegevens en documenten (bijvoorbeeld medische brieven en diagnostische bevindingen) over uzelf uploaden en opslaan in het Smart4Health-platform. U kunt ook op elk moment geüploade gegevens/documenten van het Smart4Health-platform downloaden, bekijken, bewerken en verwijderen. Voor meer informatie over hoe we de veiligheid van uw geüploade gegevens en documenten in het Smart4Health-platform waarborgen, zie sectie 7 hieronder.</p>\n\n<p>Via de webapp kunt u documenten uploaden en opslaan in het Smart4Health-platform. In de webapp verwerken wij de geüploade gegevens om deze door te geven aan het Smart4Health-platform.</p>\n\n<p>Gegevens/documenten die zijn geüpload/opgeslagen op het Smart4Health-platform en door u zijn geselecteerd, kunt u desgewenst delen met een andere persoon. Voor dit doel wordt een pincode gegenereerd met behulp van een openbare URL die wordt gebruikt door de betreffende persoon waarover u deze persoon informeert voordat u gegevens/documenten deelt. Deze pincode wordt gebruikt om via de webapp verbinding te maken met de betreffende persoon, waarmee u de door u geselecteerde documenten met deze persoon kunt delen (digitale handdruk).</p>\n\n<p>De wettelijke basis voor de bovengenoemde verwerking van uw gegevens die zijn opgeslagen in het Smart4Health-platform, inclusief uw gezondheidsgegevens, is de toestemming die u heeft gegeven tijdens het registratieproces (art. 6 par. 1 subparagraaf 1 punt (a) in samenhang met art. 9 par. 2 punt (a) van de AVG). Houd er rekening mee dat u uw toestemming op elk moment kunt intrekken. De rechtmatigheid van de verwerking op basis van de toestemming tot het moment van uw intrekking blijft onaangetast door uw intrekking. U kunt uw intrekking bijvoorbeeld aangeven door uw profiel in de webapp te verwijderen. U kunt ook op elk moment individuele of alle opgeslagen gegevens/documenten van het Smart4Health-platform verwijderen met behulp van de aangeboden functies en uw gebruikersaccount behouden.</p>\n\n\n<strong>d. Een persoonlijk gezondheidsprofiel/medische geschiedenis maken</strong>\n<p>Bij gebruik van het Smart4Health-platform kunt u ook een persoonlijk gezondheidsprofiel aanmaken door een vragenlijst van Smart4Health in te vullen. In dit kader verwerken wij de door u verstrekte gegevens, waaronder gezondheidsgegevens in het Smart4Health-platform, voor het bewaren van uw persoonlijk gezondheidsprofiel. Het aanmaken van een gezondheidsprofiel of het beantwoorden van de vragenlijst is vrijwillig. Voor meer informatie over hoe wij de veiligheid van uw geüploade gegevens en documenten in het Smart4Health-platform waarborgen, zie sectie 7 hieronder.</p>\n\n<p>De wettelijke basis voor de bovengenoemde verwerking van uw gegevens die zijn opgeslagen in het Smart4Health-platform, inclusief uw gezondheidsgegevens, is de toestemming die u heeft gegeven tijdens het registratieproces (art. 6 par. 1 subparagraaf 1 punt (a) in samenhang met art. 9 par. 2 punt (a) van de AVG. Houd er rekening mee dat u uw toestemming op elk moment kunt intrekken. De rechtmatigheid van de verwerking op basis van de toestemming tot het moment van uw intrekking blijft onaangetast door uw intrekking. U kunt uw intrekking bijvoorbeeld aangeven door uw persoonlijke gezondheidsprofiel in de webapp te verwijderen.</p>\n\n\n<strong>e. Ondersteuning/contact</strong>\n<p>Wanneer u contact met ons opneemt via een van onze contactopties, bijvoorbeeld e-mail, post of telefoon, verwerken we de door u verstrekte gegevens (bijvoorbeeld uw e-mailadres en de inhoud van uw vraag) die nodig zijn om uw vraag te beantwoorden. Als uw vraag optionele persoonsgegevens bevat, bv. uw naam, zullen we die gegevens verwerken om betere ondersteuning te bieden. De rechtsgrondslag voor deze verzameling van gegevens is art. 6 par. 1 zin 1 lid b van de AVG (verwerking is noodzakelijk voor de uitvoering van een contract met de betrokkene) wanneer we een contractuele relatie aangaan of al hebben. De rechtsgrondslag is art. 6 par. 1 zin 1 lid f van de AVG (verwerking is noodzakelijk om de legitieme belangen van de verwerkingsverantwoordelijke te waarborgen) als we geen contractuele relatie hebben of beogen, bijvoorbeeld wanneer het gaat om een algemeen contact. In het laatste geval bestaat ons legitieme belang in het verschaffen van passende en nuttige informatie in antwoord op uw vraag.</p>\n\n<p>We anonimiseren de bekomen gegevens wanneer opslag niet langer nodig is (meestal vier weken nadat we uw verzoek volledig hebben beantwoord) of beperken de verwerking als er wettelijke opslagverplichtingen zijn. De rechtsgrondslag voor de hierboven beschreven verwerking is art. 6 par. 1 zin 1 lid f van de AVG (verwerking is noodzakelijk om de legitieme belangen van de verwerkingsverantwoordelijke te waarborgen). Data4Life heeft een legitiem belang bij het verzamelen van belangrijke prestatie-indicatoren als onderdeel van een kwaliteitsmanagementsysteem voor continue verbetering van de aangeboden diensten. Hiervoor evalueren we systematisch het aantal contacten en de redenen daarvoor, de verwerkingstijd van vragen en andere cruciale gegevens.</p>\n\n\n<strong>5. Ontvangers of categorieën van ontvangers</strong>\n\n<p>Om u de sms voor tweefactorauthenticatie te sturen als onderdeel van uw registratie voor het Smart4Health-aanbod (zie sectie 4 b. hierboven), wordt uw telefoonnummer bekendgemaakt aan Sinch Sweden AB, Lindhagensgatan 74, 112 18 Stockholm, Zweden, die ons ondersteunt als gegevensverwerker. We hebben een gegevensverwerkingsovereenkomst gesloten met Sinch op grond van art. 28 par. 3 van de AVG inclusief de EU-modelcontractbepalingen. </p>\n\n<p>Om u e-mails te sturen voor accountregistratie (zie sectie 4 b. hierboven), wordt uw e-mailadres bekendgemaakt aan Sendinblue – 7 rue de Madrid, 75008 Parijs, Frankrijk, die ons ondersteunt als gegevensverwerker. We hebben een gegevensverwerkingsovereenkomst gesloten met Sendinblue op grond van art. 28 par. 3 van de AVG. </p>\n\n<p>Voor de identificatie van gebruikers via e-ID (zie sectie 4 b. hierboven) werken we samen met Governikus GmbH & Co. KG, Hochschulring 28359 Bremen. We hebben een gegevensverwerkingsovereenkomst gesloten met Governikus op grond van art. 28 par. 3 van de AVG.</p>\n\n<p>Voor de bevordering van e-mailcommunicatie voor klantenondersteuning, worden e-mailcontacten, uw contact- en inhoudsgegevens, bijvoorbeeld e-mailinhoud bekendgemaakt aan onze e-mailserviceprovider Heinlein Hosting GmbH, Schwedter Straße 9a, 10119 Berlijn, Duitsland. We hebben een gegevensverwerkingsovereenkomst gesloten op grond van art. 28 par. 3 van de AVG met Heinlein Hosting.</p>\n\n<p>Voor authenticatie van uw telefoonnummer in gegevensgerelateerde verzoeken, bv. verzoek om handmatige verwijdering van uw account als u geen toegang hebt tot uw gebruikersaccount, delen we uw telefoonnummer met Commify Germany GmbH, Radeberger Str. 1, 01099 Dresden, Duitsland. We hebben een gegevensverwerkingsovereenkomst gesloten op grond van art. 28 par. 3 van de AVG met Commify Germany.</p>\n\n<p>Voor het beheer van contact- en ondersteuningsverzoeken en de feedback van gebruikers maken we de feedbackinhoud, contactgegevens en e-mailinhoud bekend aan onze gegevensverwerker Zammad GmbH, Marienstraße 18, 10117 Berlijn, Duitsland. We hebben een gegevensverwerkingsovereenkomst gesloten op grond van art. 28 par. 3 van de AVG met Zammad. </p>\n\n<p>We controleren regelmatig het geboden beschermingsniveau van onze gegevensverwerkers in overeenstemming met de standaardcontractbepalingen en nemen, indien nodig, aanvullende maatregelen om een passend beschermingsniveau te waarborgen.</p>\n\n<p>In alle bovengenoemde gevallen blijft D4L data4life gGmbH verantwoordelijk voor de verwerking van persoonsgegevens.</p>\n\n\n\n<strong>6. Versleutelde opslag van uw gegevens in het Smart4Health-platform, opslag in Duitsland</strong>\n<p>De gegevens/documenten die door u zijn geüpload naar het Smart4Health-platform en uw persoonlijke gezondheidsprofiel worden opgeslagen met behulp van end-to-end-versleuteling, zodat we op geen enkel moment kennis kunnen nemen van of toegang hebben tot de inhoud van de geüploade gegevens/documenten of uw persoonlijke gezondheidsprofiel . Alleen u heeft toegang tot uw gegevens/documenten en uw persoonlijk gezondheidsprofiel. U kunt alle of afzonderlijke documenten op elk moment verwijderen met behulp van de functionaliteiten die in het gebruikersaccount worden aangeboden. Ook worden uw gegevens en documenten niet door ons aan derden doorgegeven of ter beschikking gesteld; u mag echter wel gegevens/documenten delen met uw artsen als u dat wenst (zie 4c hierboven).</p>\n<p>De gegevens en documenten in het Smart4Health-platform worden uitsluitend binnen Duitsland opgeslagen op servers die eigendom zijn van en worden beheerd door Data4Life.</p>\n\n\n\n<strong>7. Opslagduur en verwijdering van gegevens</strong>\n\n<p>Ook zonder speciaal verzoek voldoen wij uiteraard aan onze verplichtingen om persoonsgegevens te wissen (bijvoorbeeld op grond van art. 17 van de AVG) en daarom bewaren we gegevens alleen zo lang als nodig is voor het leveren van de gewenste service of het betreffende doel.</p>\n\n<p>Gegevens met betrekking tot uw gebruikersaccount bewaren wij zolang u een gebruikersaccount voor het Smart4Health-platform heeft. Uw gebruikersaccount wordt door ons verwijderd zodra opslag niet meer nodig is, bijvoorbeeld nadat u de gebruikersrelatie met ons of heeft beëindigd of het Smart4Health-project is beëindigd.</p>\n\n<p>De gegevens van u die worden verwerkt, worden na afloop van het Smart4Health-project verwijderd als volgt, zolang er geen andere toestemming is voor verder gebruik van uw gegevens. Het project eindigt op 28 februari 2023. We zullen u daar uiterlijk op 30 november 2022 aan herinneren. Bovendien laten we u precies weten over welke opties u beschikt na de projectperiode. Als we uiterlijk op 30 juni 2023 niets van u horen na beëindiging van het project, verwijderen we uw account en alle persoonsgegevens die erin zijn opgeslagen.</p>\n\n<p>Bovendien kunt u uw geüploade gegevens/documenten en uw persoonlijke gezondheidsprofiel te allen tijde geheel of gedeeltelijk bewerken en verwijderen met behulp van de bijbehorende functionaliteit.</p>\n\n<p>Als u uw toestemming intrekt, zullen wij uw gegevens wissen, tenzij wij verplicht zijn deze verder op te slaan. Om onbedoeld verlies van uw gegevens te voorkomen, heeft u de mogelijkheid om de inhoud van uw elektronisch patiëntendossier binnen 14 dagen op te vragen in een gangbaar elektronisch formaat. Smart4Health beperkt de verwerking van uw gegevens vanaf het moment dat u de inhoud van uw elektronisch patiëntendossier heeft opgevraagd en tot de definitieve verwijdering van de gegevens (blokkering). </p>\n\n\n<strong>8. Gebruik van logboeken en back-ups</strong>\n<p>Data4Life gebruikt back-ups om gegevens te kunnen herstellen in geval van verlies, bv. de vernietiging van onze primaire gegevensopslaglocatie. Houd er rekening mee dat Data4Life regelmatig back-ups van gegevens bewaart, waaronder uw persoonsgegevens, zoals uw gebruikersaccount en onderzoeksrelevante gegevens. Deze gegevens worden maximaal 90 dagen bewaard in versleutelde back-ups. De gegevens worden na 90 dagen verwijderd. </p>\n\n<p>Houd er rekening mee dat wanneer u verzoekt om verwijdering van uw persoonsgegevens of uw account, Data4Life uw gegevens niet uit back-ups verwijdert omdat het verwijderen van specifieke gegevens uit een back-up disproportioneel veel tijd en middelen vergt in vergelijking met verwijdering in de actieve gegevensset.</p>\n\n<p>Voor de identificatie van cyberaanvallen en een gepaste reactie worden ook de gegevens van controlelogboeken door Data4Life opgeslagen. Een controlelogboek is een record van een beveiligingsrelevante gebeurtenis in een IT-systeem. Deze logboeken bevatten meestal informatie over wie welke gegevens op welke dag en welk tijdstip heeft geopend, bewerkt of verwijderd. We bewaren deze gegevens maximaal 1,5 jaar. </p>\n\n<p>De rechtsgrondslag voor de hierboven beschreven verwerking is art. 6 par. 1 zin 1 lid f van de AVG (verwerking is noodzakelijk om de legitieme belangen van de verwerkingsverantwoordelijke te waarborgen). </p>\n\n\n\n<strong>9. Gebruik van cookies</strong>\n\n<p>Cookies worden op het apparaat opgeslagen wanneer u het Smart4Health-platform gebruikt met behulp van onze webapp. Cookies zijn kleine tekstbestanden die op uw eindapparaat (laptop, tablet, smartphone of iets dergelijks) worden opgeslagen wanneer u onze webapp gebruikt.</p>\n\n<strong>a) Cookies die nodig zijn voor de functionaliteit van het webapp-platform</strong>\n\n<p>We gebruiken technisch noodzakelijke cookies om basisfunctionaliteit van het Smart4Health-platform te bieden. Omwille van de uniformiteit gebruiken we de term cookies wanneer andere cookie-achtige technologieën worden gebruikt, zoals het opslaan van gegevens als een 'lokaal opslagitem' in een browser. We gebruiken deze cookies die nodig zijn voor de werking van het Smart4Health-platform om het gebruik van de webapp voor gebruikers te vereenvoudigen. Zonder cookies kunnen bepaalde functies van onze webapp niet worden gebruikt. Technisch noodzakelijke cookies verzamelen geen informatie over u voor marketing- of analysedoeleinden. De rechtsgrondslag voor de verwerking van gegevens door technisch noodzakelijke cookies is § 25 par. 2 nr. 2 van de \"Wet op de bescherming van telecommunicatie- en telemediagegevens\" (TTDSG - Telecommunications and Telemedia Data Protection Act) in combinatie met art. 6 par. 1 zin 1 lid f van de AVG (verwerking is noodzakelijk om de legitieme belangen van de verwerkingsverantwoordelijke te waarborgen) op basis van ons legitiem belang in een gebruiksvriendelijk design van onze webapp.</p>\n\n<div>De vereiste cookies bieden de volgende functies:</div>\n<ul><li>Behoud van de aanmeldingsstatus</li>\n<li>Waarborgen van systeembeveiliging/bescherming tegen cyberaanvallen</li>\n<li>Implementatie van taalinstellingen</li>\n<li>Opslag van cookievoorkeuren</li></ul>\n\n<strong>b) Cookies die niet nodig zijn voor de functionaliteit van de webapp</strong>\n<p>Daarnaast gebruikt Data4Life cookies om het aanbod van het Smart4Health-platform op basis van statistische evaluaties te verbeteren en voorkomende fouten te kunnen identificeren. De rechtsgrondslag voor deze verwerking is in elk geval uw toestemming volgens § 25 par. 1 zin 1 TTDSG in combinatie met art. 6 par. 1 zin1 lid a van de AVG (verwerking op basis van toestemming van de betrokkene).</p>\n\n\n\n<strong>10. Analyse van gebruikersgedrag en probleemoplossing</strong>\n<strong>a) Gebruik van Matomo voor analytische doeleinden</strong>\n\n<div>Met uw toestemming gebruiken we de technologie van de provider Matomo in onze webapp voor analysedoeleinden. Matomo gebruikt cookies die de herkenning van uw browser en een analyse van uw gebruik van onze webapp en uw interactie met onze service mogelijk maken, bijvoorbeeld welke onderdelen/functies u bekijkt en gebruikt.</div>\n<p>Hiervoor worden geen persoonsgegevens van u verwerkt; het IP-adres van elke gebruiker wordt onmiddellijk na verwerking en vóór opslag geanonimiseerd. De gegevens die met de Matomo-technologie worden verzameld, worden uitsluitend op Data4Life-servers in Duitsland verwerkt. De bovengenoemde analyse van uw gebruik van onze producten helpt ons om onze producten continu te optimaliseren en uw ervaring bij het gebruik van onze webapp te verbeteren.</p>\n\n<div>De volgende gegevens worden verzameld door Matomo als u toestemt met de analyse:</div>\n<ul><li>Paginaweergaven</li>\n<li>Muisklikken</li>\n<li>Muisbewegingen</li>\n<li>Huidige positie van de cursor</li>\n<li>Scrollen</li>\n<li>Wijzigingen van de venstergrootte</li>\n<li>Zoomen op mobiele apparaten (smartphone, tablet)</li>\n<li>Wijziging van website binnen ons domein, bijvoorbeeld pop-upvensters</li>\n<li>IP-adres</li></ul>\n\n<p>Uw IP-adres wordt direct na verwerking en vóór opslag geanonimiseerd. De gegevens die met behulp van de Matomo-technologie worden verzameld, worden door Data4Life uitsluitend verwerkt op servers in Duitsland. De vermelde gebruiksanalyse van onze producten helpt ons om onze producten continu te optimaliseren en uw ervaring bij het gebruik van onze webapp te verbeteren. De genoemde persoonsgegevens worden twee jaar na het verzamelen verwijderd.</p>\n<p>Als u de instelling 'Do Not Track' (Niet volgen) in uw browser hebt ingesteld, wordt onze webapp erop gewezen dat ze geen gebruiksprofiel over de activiteiten van de bezoeker mag maken. In dit geval worden er ook geen tracking cookies aangemaakt.</p>\n\n<p>De wettelijke basis voor het gebruik van Matomo is uw toestemming (art. 6 par. 1 subparagraaf 1 punt lid. a van de AVG). U kunt uw toestemming te allen tijde definitief intrekken in overeenstemming met sectie 10 c.</p>\n\n<strong>b) Gebruik van Sentry voor het oplossen van problemen</strong>\n\n<p>Om de bron en oorzaken van mogelijke fouten en crashes in onze services te begrijpen, om de kennis te verwerven die nodig is om dergelijke crashes te reproduceren en op te lossen, en om onze gebruikers de best mogelijke ervaring te bieden bij het gebruik van onze services, gebruiken we, met uw toestemming, Sentry, waarmee we fouten in real-time kunnen volgen. In deze context, en als u een bug of crash ontdekt in onze webapp, worden gebruikersgegevens, zoals informatie over het apparaat dat u gebruikt en het tijdstip waarop de bug of crash optrad, verzameld en geanalyseerd, uitsluitend om de bug of crash te identificeren en deze op te lossen, en niet voor enig ander doel. Vervolgens worden dergelijke gegevens verwijderd zodra de bug of crash is opgelost. De gegevens die met de Sentry-technologie worden verzameld, worden uitsluitend op Data4Life-servers in Duitsland verwerkt.</p>\n\n<p>De wettelijke basis voor het gebruik van Sentry is uw toestemming (art. 6 par. 1 subparagraaf 1 punt (a) van de AVG). U kunt uw toestemming te allen tijde definitief intrekken in overeenstemming met sectie 10 c.</p>\n<p>U kunt de mogelijkheid om deze cookies op te slaan ook op elk moment deactiveren in de instellingen van uw browser en u kunt ook op elk moment bestaande cookies verwijderen.</p>\n\n\n<strong>c) Intrekken en verlenen van toestemming voor cookies, gebruiksanalyse en foutrapportage</strong>\n\n<p>U kunt het gebruik van optionele cookies, het gebruik van Matomo en het gebruik van Sentry op elk moment definitief weigeren of toestaan. Klik op de onderstaande knop om uw toestemmingsinstellingen te wijzigen.</p>\n\n<0>Toestemming intrekken en cookies blokkeren</0>\n<br /><br/>\n<p>Opmerking: Door uw toestemming in te trekken worden eerder opgeslagen cookies niet verwijderd. U kunt op elk moment bestaande cookies verwijderen in uw browserinstellingen.</p>\n\n\n\n<strong>Privacybeleid voor gegevens die niet van de betrokkene zijn verzameld (van informatie die aan het publiek is gericht in overeenstemming met Art. 14 par. 5 punt (b) zin 2 AVG)</strong>\n\n<p>We vestigen de aandacht van het publiek op het feit dat geregistreerde gebruikers van de Smart4Health-webapp gegevens van derden (gegevens met betrekking tot een contactpersoon voor noodgevallen, naam/specialiteit van zorgprofessionals) in versleutelde vorm kunnen opslaan bij het gebruik van de functionaliteiten van de webapp. Door de versleuteling van de gegevens binnen ons platform kunnen wij deze derden op geen enkel moment identificeren of de gegevens toewijzen aan een natuurlijke persoon. Daarom blijkt het verstrekken van informatie voor gegevens die niet rechtstreeks bij de betrokkene zijn verzameld op grond van art. 14 par. 1 - 4 van de AVG voor ons onmogelijk volgens art. 14 par. 5 punt (b) zin van de 1 AVG. Om aan onze verplichtingen te voldoen, stellen we daarom de volgende informatie ter beschikking van het publiek.</p>\n\n\n<strong>1. Verwerkingsverantwoordelijke en functionaris voor gegevensbescherming</strong>\n\n<p>De verwerkingsverantwoordelijke op grond van art. 4 par. 7 AVG voor de webapp is: </p>\n\n<div>D4L data4life gGmbH</div>\n<div>Charlottenstraße 109</div>\n<div>14467 Potsdam</div>\n<p>Duitsland</p>\n\n<p>E-mail: we@data4life.help</p>\n\n<p>U kunt onze functionaris voor gegevensbescherming bereiken via dataprotection@data4life.help of door een brief te sturen ter attentie van 'De functionaris voor gegevensbescherming' naar ons postadres.</p>\n\n<strong>2. Doel van de verwerking, bron van de gegevens, bescherming van uw legitieme belangen</strong>\n\n<p>Gebruikers van de Smart4Health-webapp kunnen optioneel gegevens van derden invoeren en opslaan via onze webapp bij gebruik van de aan de gebruikers ter beschikking gestelde functionaliteiten. Het gaat daarbij specifiek om de volgende gegevens van derden:</p>\n\n<ul><li> Informatie over contactpersonen: Gebruikers van de Smart4Health-webapp kunnen een end-to-end versleuteld persoonlijk gezondheidsprofiel aanmaken, dat de gebruiker bijvoorbeeld kan delen met zijn/haar artsen of ziekenhuizen. In het kader van het persoonlijk gezondheidsprofiel kan de gebruiker optioneel gegevens (bijvoorbeeld naam, telefoonnummer) invoeren van een contactpersoon, die bijvoorbeeld gecontacteerd moet worden in geval van een medisch noodgeval van de gebruiker.</li>\n\n<li> Informatie over derden in medische documenten: Gebruikers van de Smart4Health-webapp kunnen hun medische documenten (bijvoorbeeld bevindingen, medische rapporten) veilig opslaan en beheren met behulp van end-to-end-versleuteling in de webapp en deze bijvoorbeeld delen met andere behandelende artsen/ziekenhuizen, die de gebruiker vervolgens efficiëntere behandelingen en zorgdiensten kunnen aanbieden. De medische documenten die de gebruiker zelf heeft geüpload, kunnen persoonlijke informatie over derden bevatten, bijvoorbeeld namen, adressen, specialisaties van behandelende artsen. </li></ul>\n\n<p>De wettelijke basis voor de verwerking van de bovengenoemde gegevens is het legitieme belang van onze webapp-gebruiker in overeenstemming met art. 6 paragraaf 1 subparagraaf 1 punt (f) van de AVG om op hem betrekking hebbende medische documenten zo eenvoudig, efficiënt en veilig mogelijk te archiveren, op te slaan en te delen.</p>\n\n<p>We zorgen voor de bescherming van de rechten en vrijheden en de legitieme belangen van de betrokken derden door middel van onze end-to-end-versleuteling, wat betekent dat we op geen enkel moment kennis kunnen krijgen van uw persoonsgegevens of toegang krijgen tot gegevens die u als gebruiker opslaat op onze systemen. </p>\n\n\n<strong>3. Ontvangers, categorieën van ontvangers</strong>\n\n<p>Wij geven uw gegevens niet door aan/verzenden ze niet naar derden. Alleen de Smart4Health-gebruiker zelf kan geüploade/opgeslagen en geselecteerde gegevens/documenten en zijn gezondheidsprofiel op het Smart4Health-platform delen met anderen, bijvoorbeeld zijn/haar arts(en), als hij/zij dat wenst. </p>\n\n\n<strong>4. Opslagduur en verwijdering van gegevens</strong>\n\n<p>Wij hebben zelf geen invloed op hoelang onze gebruikers gegevens en documenten bewaren in de Smart4Health-webapp, aangezien dit uitsluitend afhangt van de gebruiker en zijn gebruik van de Smart4Health-functionaliteiten in de webapp. In principe blijven de gegevens echter bewaard zolang de Smart4Health-gebruiker een gebruikersaccount heeft of zolang een geregistreerde gebruiker zijn/haar geüploade documenten of zijn/haar gezondheidsprofiel bij Smart4Health niet zelf verwijdert of bewerkt, of het Smart4Health-project wordt beëindigd en de Smart4Health-gebruiker geen toestemming verleent voor verder gebruik van de gegevens.      Het project eindigt op 28 februari 2023 en Smart4Health-gebruikers zullen uiterlijk op 30 november 2022 eraan worden herinnerd dat het project bijna voltooid is en dat ze na de projectperiode worden geïnformeerd over de beschikbare opties. Als we na afloop van het project en voor 30 juni 2023 niets van de gebruiker vernemen, zullen we de gebruikersaccount en alle persoonlijke gegevens die erin zijn opgeslagen verwijderen.</p>\n\n\n<strong>5. Uw rechten</strong>\n\n<div>Als betrokkene heeft u in het algemeen de volgende rechten met betrekking tot uw persoonsgegevens: </div>\n<ul><li> Recht op toegang (art. 15 van de AVG) </li>\n<li> Recht op rectificatie (art. 16 van de AVG)</li>\n<li> Recht op verwijdering van uw gegevens (art. 17 van de AVG)</li>\n<li> Recht op beperking van de verwerking (art. 18 van de AVG)</li>\n<li> Recht om bezwaar te maken tegen de verwerking (art. 21 van de AVG) </li>\n<li> Recht op gegevensoverdraagbaarheid (art. 20 van de AVG)</li></ul>\n<p>U heeft ook het recht om een klacht in te dienen over onze verwerking van uw persoonsgegevens bij een toezichthoudende autoriteit voor gegevensbescherming in de lidstaat waar u zich bevindt, in de lidstaat van uw werkplek of in de lidstaat waar de vermeende inbreuk heeft plaatsgevonden. De voor ons verantwoordelijke toezichthoudende autoriteit is: </p>\n\n<div>Die Landesbeauftragte für den Datenschutz und für das Recht auf Akteneinsicht</div>\n<div>Stahnsdorfer Damm 77</div>\n<div>14532 Kleinmachnow </div>\n<p>Duitsland</p>\n\n<div>Telefoon: 0049 (0)33203/356-0</div>\n<div>Fax: 0049 (0)33203/356-49</div>\n<p>E-mail: poststelle@lda.brandenburg.de</p>\n\n<p>Gelieve er nota van te nemen dat wij, wegens de in sectie 2 beschreven versleutelingsmaatregelen, niet in staat zijn u te identificeren en dat wij, wegens gebrek aan toegang tot de door onze gebruiker opgeslagen documenten, geen kennis hebben en dus ook niet kunnen krijgen van het feit of informatie over uw persoon daadwerkelijk door ons is opgeslagen. In overeenstemming met art. 11 par. 1 van de AVG zijn wij niet verplicht om aanvullende informatie bij te houden, te verkrijgen of te verwerken om de betrokkene te identificeren met als enig doel om te voldoen aan de AVG, voor zover de identificatie van de betrokkene, zoals het geval is bij de Smart4Health-webapp, niet nodig is voor de doeleinden waarvoor een verwerkingsverantwoordelijke persoonsgegevens verwerkt.</p>\n\nLaatst bijgewerkt: augustus 2022",
+      "headline": "Privacybeleid"
+    },
+    "imprint": {
+      "content": "<p><strong>Hasso Plattner Institute for Digital Engineering gGmbH</strong>\n<div>Prof.-Dr.-Helmert-Str. 2-3</div>\n<div>14482 Potsdam</div>\n<div>Telefoon: +49 (0) 331 5509-4844</div>\n<div>Fax: +49 (0) 331 5509-129</div>\n<div>E-mail: info@smart4health.eu</div>\n<div>Website: <a href=\"www.hpi.de\">www.hpi.de</a></div></p>\n\n<p><div>Algemeen directeur van de geautoriseerde vertegenwoordiger: Prof. Dr. Christoph Meinel</div>\n<div>Kantoor van registratie: Rechtbank van Potsdam</div>\n<div>Registratienummer: HRB 12184</div></p>\n\n<p><b>Teksten:</b> Smart4Health-consortium</p>\n\n<strong>Aansprakelijkheid voor de opvraagbare inhoud</strong>\n<p>De hier opvraagbare inhoud maakt geen aanspraak op juistheid, bruikbaarheid en/of volledigheid. De juridische informatie is niet-bindend en dus ook niet juridisch bindend. De informatie heeft veeleer een informatief karakter zonder dat er enige garantie wordt gegeven voor hun correctheid.</p>",
+      "headline": "Impressum"
+    },
+    "terms": {
+      "content": "<p>Het Smart4Health-platform maakt het gebruiksvriendelijk en veilig digitaal opslaan en beheren van gezondheidsgegevens mogelijk (hierna ook: 'platform'). Dit platform wordt aangeboden door de non-profitorganisatie D4L data4life gGmbH, Charlottenstraße 109, 14467 Potsdam, Duitsland (hierna: 'wij', 'we' of 'aanbieder'), een van de partners in het door de EU gefinancierde project Smart4Health. Voor uw (hierna: 'u' of 'gebruiker') gebruik van het platform via onze webapp zijn de contractuele bepalingen van de volgende Gebruiksvoorwaarden van toepassing:</p>\n\n\n<strong>1. Registratie en login, contractuele relatie en gebruikersaccount </strong>\n\n<p>\n1.1 Het contract komt tot stand door onze bevestiging van uw registratie (registratie).\n<br>\n1.2 U moet minimaal 18 jaar oud zijn en volledig handelingsbekwaam zijn om u te registreren voor onze services.\n<br>\n1.3 Bij de registratie dient u waarheidsgetrouwe, actuele en volledige informatie te verstrekken en deze bij te werken in geval van wijzigingen.\n<br>\n1.4 Per persoon mag slechts één gebruikersaccount worden aangehouden.\n<br>\n1.5 De ​​contractuele relatie is persoonlijk en het gebruikersaccount is daarom niet overdraagbaar en niet erfelijk.\n<br>\n1.6 Als wij het contract met u beëindigen en een registratie door dezelfde persoon hebben verboden, is een nieuwe registratie verboden.\n</p>\n\n<strong>2. Duur en beëindiging</strong>\n\n<p>Het contract wordt aangegaan voor onbepaalde tijd. Het contract kan door de gebruiker en de aanbieder op elk moment met onmiddellijke ingang worden opgezegd.</p>\n\n\n<strong>3. Gebruik van de services, gebruikersverplichtingen, verboden gedrag</strong>\n<p>\n3.1 Het Smart4Health-platform is voor u gratis. Wij aanvaarden geen enkele garantie of waarborg voor bepaalde functionaliteiten of een bepaalde beschikbaarheid en behouden ons het recht voor om functionaliteiten van onze services te wijzigen, tenzij anders overeengekomen, onredelijk voor de gebruiker of wettelijk voorgeschreven.\n<br>\n3.2 U dient uw toegangsgegevens geheim te houden en mag deze niet aan derden doorgeven of uw gebruikersaccount door derden laten gebruiken. Stel ons onmiddellijk op de hoogte als u misbruik opmerkt.\n<br>\n3.3 U mag de Smart4Health-webapp alleen gebruiken voor het opslaan van medische of gezondheidsgerelateerde gegevens en documenten, en mag deze alleen vrijgeven of kopiëren voor derden (bijvoorbeeld in apps of diensten van derden) als u daartoe bevoegd bent en geen inbreuk maken op rechten van derden. Bij het gebruik van de service bent u verplicht de wettelijke voorschriften in acht te nemen. Verder en in het bijzonder mag u geen gebruik maken van de services:\n<ul>\n<li>om gegevens, teksten, afbeeldingen, bestanden of andere inhoud/materialen op te slaan en/of door te sturen die illegaal, schadelijk, bedreigend, beledigend, intimiderend, lasterlijk of beledigend, vulgair, obsceen, hatelijk, racistisch of op enige andere manier verwerpelijk zijn volgens de relevante wettelijke bepalingen of naar het oordeel van Smart4Health en Data4Life of het opslaan en/of verzenden van inhoud/materiaal dat op enigerlei wijze schade kan berokkenen aan minderjarigen, in het bijzonder als deze inhoud pornografisch van aard is, geweld verheerlijkt of anderszins schadelijk kan zijn voor minderjarigen;</li>\n\n<li> om inhoud op te slaan en/of door te geven die inbreuk maakt op de rechten van derden, in het bijzonder octrooien, handelsmerken, auteursrechten of aanvullende auteursrechten, handelsgeheimen, persoonlijke rechten of eigendomsrechten;</li>\n\n<li>om inhoud op te slaan en/of door te geven die u niet mag doorgeven/openbaar maken;</li>\n\n<li>om materiaal op te slaan en/of te verzenden dat softwarevirussen of andere informatie, bestanden of programma's bevat die zijn ontworpen of bedoeld om de functionaliteit van computersoftware of -hardware of telecommunicatieapparatuur te onderbreken, te vernietigen of te beperken;</li>\n\n<li>voor commerciële of andere zakelijke doeleinden, in het bijzonder is het verboden de services aan te bieden voor wederverkoop;</li>\n\n<li>om ongevraagde advertenties, promotiemateriaal, ongewenste of bulk-e-mail of sms (spam), kettingbrieven, piramideverkoopschema's of andere advertenties op te slaan en/of te verzenden;</li>\n\n<li>om persoonsgegevens over andere personen te verzamelen, op te slaan of door te geven.</li>\n    </ul>\n\n3.4 U mag het Smart4Health-platform niet voor zakelijke doeleinden gebruiken zonder onze voorafgaande toestemming.\n<br>\n3.5 U bent verplicht zelf een reservekopie van uw gegevens te maken.\n<br>\n3.6 Wij controleren de door u opgeslagen inhoud niet vooraf. We behouden ons echter het recht voor om deze op elk moment te blokkeren of te verwijderen, in het bijzonder als we ons bewust worden van een wettelijke overtreding van een specifieke inhoud of specifieke inhoud. Aangezien de gegevens en documenten op het Smart4Health-platform worden opgeslagen met end-to-end-versleuteling, vereist een dergelijke blokkering of verwijdering de ontvangst van een overeenkomstige melding van misbruik, bijvoorbeeld van een wetshandhavingsinstantie.\n</p>\n\n<strong>4. Beperking van aansprakelijkheid</strong>\n<p>\n4.1 De aanbieder is voor contractuele en andere vorderingen van de gebruiker alleen aansprakelijk voor schade van de gebruiker (1) die de aanbieder, zijn wettelijke vertegenwoordigers of plaatsvervangende agenten opzettelijk of door grove nalatigheid hebben veroorzaakt, (2) door letsel aan leven, lichaam of gezondheid, dat is gebaseerd op plichtsverzuim van de aanbieder of een van zijn wettelijke vertegenwoordigers of plaatsvervangende agenten, (3) in gevallen van aansprakelijkheid volgens de Duitse productaansprakelijkheidswet, de overname van een garantie of schade die te wijten is aan frauduleuze verkeerde voorstelling van zaken en (4) die is ontstaan als gevolg van een schending van een verplichting, waarvan de vervulling essentieel is voor een goede uitvoering van de overeenkomst en met een nakoming waarop de gebruiker regelmatig vertrouwt en kan vertrouwen (zogenaamde wezenlijke contractuele verplichting of Duitse 'Kardinalpflicht').\n<br>\n4.2 In de gevallen (1), (2) en (3) van de vorige paragraaf is de aansprakelijkheid van de aanbieder onbeperkt. In andere gevallen is de aansprakelijkheid beperkt tot de voorzienbare, contracttypische schade.\n<br>\n4.3 In andere gevallen dan genoemd in paragraaf 1 en 2 en in afwijking van het volgende lid, is de aansprakelijkheid van de aanbieder uitgesloten, uitdrukkelijk in strijd met paragraaf 3.3., ongeacht de rechtsgrond.\n<br>\n4.4 De bepalingen van deze aansprakelijkheidsbeperking veranderen niets aan de wettelijke bewijslast.\n<br>\n4.5 De ​​bovenstaande aansprakelijkheidsbeperkingen zijn dienovereenkomstig van toepassing op de persoonlijke aansprakelijkheid van wettelijke vertegenwoordigers, werknemers en plaatsvervangende agenten van de aanbieder.\n</p>\n\n<strong>5. Wijziging van de Gebruiksvoorwaarden </strong>\n<p>\n5.1 Met uw toestemming of als uw toestemming wordt geacht te zijn gegeven op grond van de volgende paragraaf, kunnen wij de Gebruiksvoorwaarden wijzigen (bijvoorbeeld wanneer wij nieuwe functionaliteiten introduceren).\n<br>\n5.2 Indien wij de Gebruiksvoorwaarden willen wijzigen, zullen wij u hiervan uiterlijk 6 weken voor de voorgestelde ingangsdatum in zogenaamde tekstvorm (bijvoorbeeld per e-mail) op de hoogte stellen. Als u niet binnen 6 weken na ontvangst van deze kennisgeving in tekstvorm bezwaar maakt, wordt uw toestemming voor de wijziging geacht te zijn gegeven en worden de wijzigingen van kracht op het aangekondigde tijdstip. Wanneer we u op de hoogte brengen, zullen we apart naar dit gevolg verwijzen.\n<br>5.3 Ongeacht de bovenstaande bepalingen behouden wij ons het recht voor om de Gebruiksvoorwaarden met ingang in de toekomst te wijzigen, voor zover dit geen invloed heeft op essentiële bepalingen van de contractuele relatie met de gebruiker en deze wijzigingen noodzakelijk zijn om rekening te houden met ontwikkelingen (bijvoorbeeld veranderingen in de juridische situatie of uitspraken van de hoogste rechterlijke instanties, fundamentele veranderingen in marktomstandigheden die leiden tot een verstoring van de bedrijfsbasis) die door ons niet waren voorzien en waarvan het niet in overweging nemen zou leiden tot een fundamentele verstoring van de contractuele relatie.\n</p>\n\n<strong>6. Slotbepalingen, diversen</strong>\n<p>\n6.1 Er zijn geen nevenovereenkomsten.\n<br>\n6.2 Indien afzonderlijke bepalingen van deze Gebruiksvoorwaarden geheel of gedeeltelijk ongeldig zijn of worden, blijft de rest van het contract geldig. In dat geval wordt de ongeldige bepaling vervangen door de wettelijke bepaling.\n<br>\n6.3 Het Duitse recht is van toepassing met uitsluiting van het VN-verdrag inzake contracten voor de internationale verkoop van goederen.\n<br>\n6.4 Indien de gebruiker geen bevoegde rechtbank in Duitsland heeft of een handelaar is, is de bevoegde rechtbank Potsdam. Een verplichte bevoegde rechtbank voor consumenten volgens het EU-recht blijft onaangetast.\n<br>\n6.5 De ​​EU-website voor online geschillenbeslechting is hier te vinden: <a href=\"https://ec.europa.eu/consumers/odr/\"> http://ec.europa.eu/consumers/odr/</a>.\n</p>",
+      "headline": "Gebruiksvoorwaarden"
+    },
+    "data_privacy_cds": {
+      "headline": "",
+      "content": ""
+    },
+    "consent": {
+      "headline": "Toestemming voor deelname",
+      "content": "<h3>Informatie over projectdeelname</h3>\n<p>U wordt uitgenodigd om deel te nemen aan een Europees onderzoeks- en innovatieproject genaamd Smart4Health. Het doel van het Smart4Health-project is om het prototype van het Smart4Health-platform voor het uploaden en opslaan van al uw gezondheidsgerelateerde gegevens te ontwikkelen, te evalueren en als service aan te bieden. De Smart4Health-service die <a href=\"/legal/features\"> verschillende functies </a> biedt, stelt u in staat uw gegevens te beheren en selectief te delen met behulp van een webbrowser op mobiele apparaten of computers. Zowel de ontwikkeling als de evaluatie van het Smart4Health-platform en de service zijn bedoeld om de burger centraal te stellen, waarbij gebruikers worden betrokken om zo goed mogelijk aan hun behoeften te voldoen en om de functies van de service in een aantal situaties van het dagelijks leven te testen.</p>\n\n<p>In een tijd waarin mobiliteit deel uitmaakt van het leven van de meeste Europese burgers, is een gemakkelijke en veilige toegang tot gezondheidsgegevens vanaf elke locatie steeds belangrijker geworden. Het Smart4Health-project wil Europese burgers ondersteunen bij het verwerken (verzamelen, opslaan, openen en delen) van een diverse reeks gezondheidsgerelateerde en gezondheidsgegevens, die doorgaans op verschillende plaatsen zijn opgeslagen, zoals ziekenhuizen, nationale elektronische medische dossiers, dossiers van uw artsen of gezondheidsgerelateerde gegevens die zijn verzameld via uw mobiele apparaten, zoals fitness-apps, die een aanvulling vormen op uw medische gegevens. De service zal toekomstige gebruikers ook in staat stellen gezondheidsgegevens te verstrekken voor onderzoek om medische kennis en behandelingen te bevorderen. </p>\n\n<p>Om u te helpen beslissen of u wilt deelnemen aan het Smart4Health-project, vindt u hier informatie over de doelstellingen van het project en wat uw deelname inhoudt.</p>\n\n<p>In het volgende zullen we daarom uitleggen voor welke doeleinden u het platform en de service die in het Smart4Health-project zijn ontwikkeld, kunt gebruiken, de voordelen bespreken die u van het gebruik van de service kunt hebben, evenals de risico's die u kunt lopen, en beschrijven wat er gebeurt nadat het project voor de bouw van dit prototype is afgelopen. We zullen ook de maatregelen schetsen die worden genomen om uw gezondheidsgegevens te beveiligen en uw privacy te beschermen terwijl u deelneemt aan het project. </p>\n\n<p>Lees de onderstaande informatie, de lijst met <a href=\"/legal/features\">functies van de Smart4Health-service</a>, het <a href=\"/legal/data\"> Privacybeleid </a> en de <a href=\"/legal/terms\"> Gebruiksvoorwaarden </a> aandachtig en neem de tijd die u nodig hebt een weloverwogen beslissing nemen. </p>\n\n<h3>Contactgegevens</h3>\n<p>Als u vragen of opmerkingen heeft, neem dan gerust contact met ons op voordat u instemt met deelname aan het project en de gegevensverwerking via: </p>\n<strong>Verantwoordelijke:</strong>\n<p><div>Prof. Dr. Erwin Böttinger</div>\n<div>Hasso-Plattner-Institut für Digital Engineering gGmbH</div>\n<div>Prof.-Dr.-Helmert-Straße 2–3, 14482 Potsdam, Duitsland</div></p>\n<strong>Contactpersoon:</strong>\n<div>helpdesk@smart4health.eu</div></p>\n\n<p><strong>Contactgegevens van relevante gegevensbeschermingsautoriteiten:</strong></p>\n<strong>Voor het Smart4Health-project:</strong>     \n<p><div>Rodrigo Adao da Fonseca </div>\n<div>(+351) 919 187 448 </div>\n<div>dpo@unl.pt</div></p>\n<strong>Voor het Smart4Health-platform:</strong>  \n<p><div>“De functionaris voor gegevensbescherming” </div>\n<div>D4L data4life gGmbH </div>\n<div>Charlottenstraße 109, 14467 Potsdam, Duitsland</div>\n<div>dataprotection@data4life.help </div></p>\n\n<h3 id=\"projectinfo\">Wat is het Smart4Health-project?</h3>\n<p>Smart4Health is een project dat wordt gefinancierd in het kader van het Horizon 2020-financieringsprogramma van de Europese Unie (EU). Het begon in januari 2019, loopt tot februari 2023 en wordt uitgevoerd door een interdisciplinair consortium van verschillende openbare en particuliere organisaties (niet-farmaceutisch) in verschillende EU-lidstaten en een partner uit de VS (enkel om de gegevensoverdracht te testen van de VS naar de EU). Een meer gedetailleerde beschrijving van het consortium vindt u op <a href=\"https://www.smart4health.eu/#consortium\"> Partner op de Smart4Health-projectpagina</a>.</p>\n\n<h3 id=\"purpose\">Wat is het doel van het Smart4Health-project?</h3>\n<p><div>Het doel van het Smart4Health-project is het ontwikkelen en testen van het prototype van het Smart4Health-platform en zijn service. Met de Smart4Health-service kunnen gebruikers, zoals uzelf, uw persoonlijke medische, gezondheids- en fitnessgegevens verzamelen en verwerken. Dit omvat het verzamelen van gegevens uit uw elektronische gezondheidsdossier (maar is er niet tot beperkt).</div>\n<div>Gegevens over elektronische medische dossiers kunnen bestaan ​​uit, maar zijn niet beperkt tot, diagnoses en procedures, diagnostische testresultaten, afbeeldingen, medicijnen en samenvattende rapporten van uw elektronische medische dossiers die afkomstig zijn van eerder bezochte gezondheidswerkers of ziekenhuizen. </div>\n<div>Door gebruikers gegenereerde fitness- en gezondheidsgegevens omvatten gegevens van sensoren, wearables en/of fitness-apps (bijvoorbeeld de hartslaggegevens die worden bijgehouden door een smartwatch). </div>\n<div>Het platform en de service stellen u ook in staat om uw gegevens optioneel te verstrekken voor onderzoek. Dit betekent dat u uw geanonimiseerde gegevens (of een selectie daarvan) beschikbaar kunt stellen voor onderzoeksdoeleinden, als u dat wilt. Meer details vindt u onder <a href=\"/legal/features\">Functies van de Smart4Health-service</a>.</div></p>\n\n<h3 id=\"participation\">Wat houdt uw deelname aan het Smart4Health-project in?</h3>\n<p><div>Deelnemen aan het Smart4Health-project omvat het testen van het Smart4Health-platform en de bijbehorende service. Dit betekent dat als u akkoord gaat met deelname, u wordt gevraagd om:</div>\n<ul><li>de Smart4Health-webinterface te openen vanaf uw computer, smartphone of mobiel apparaat</li>\n<li>zich te registreren voor de Smart4Health-service, een Smart4Health-account aan te maken (nog zonder gezondheidsgerelateerde gegevens te uploaden)</li>\n<li>de Smart4Health-service te gebruiken om uw gegevens te uploaden en te verwerken, en (optioneel) uw gegevens aan te bieden voor onderzoek.</li></ul> \n<div>De hoeveelheid tijd die u besteedt aan het gebruik van de service is aan u.</div></p>\n\n<h3>Wat wordt er nog meer van u gevraagd? </h3>\n<p>Af en toe kunnen we u vragen om feedback te geven over bepaalde functies of om deel te nemen aan oefeningen voor gebruikersbetrokkenheid om de Smart4Health-service verder te ontwikkelen en te verbeteren, in overeenstemming met de behoeften van gebruikers, zoals u. Hoewel uw feedback en deelname zeer waardevol zouden zijn voor de ontwikkeling van de service, bent u in geen geval verplicht om deze feedback te geven. Het is uw beslissing om mee te doen of niet; dit heeft geen invloed op andere aspecten van uw deelname aan het Smart4Health-project. </p>\n\n<h3>Moet u deelnemen aan het Smart4Health-project?</h3>\n<p>Deelname aan het Smart4Health-project is geheel vrijwillig. U kunt ervoor kiezen om mee te doen of niet. Wat u ook besluit, nu of in de toekomst, het heeft geen gevolgen voor de zorg die u krijgt. </p>\n\n<p>U kunt van gedachten veranderen over uw deelname. Als u besluit om u aan te melden voor de Smart4Health-service, maar later van gedachten verandert, kunt u op elk moment vertrekken. U kunt uw intrekking van de toestemming voor deelname en verwerking van gezondheidsgegevens aangeven door uw Smart4Health-account te verwijderen.</p>\n\n<p>Houd er rekening mee dat deze intrekking geen invloed heeft op eventuele aanvullende papieren toestemming die u mogelijk hebt gegeven om deel te nemen aan het Smart4Health-project in de context van een citizen use case.</p>\n\n<p>Als u uw toestemming voor deelname en verwerking van gezondheidsgegevens intrekt door uw Smart4Health-account te verwijderen, worden al uw opgeslagen persoonsgegevens verwijderd in overeenstemming met AVG, art. 17. </p>\n\n<h3>Voor welke doeleinden kunt u de Smart4Health-service gebruiken?</h3>\n<p>U kunt de service van het platform gebruiken om uw gezondheidsgegevens uit verschillende bronnen te verzamelen en deze naar uw account te uploaden (bijvoorbeeld gegevens uit uw elektronische gezondheidsdossier zoals diagnostische testresultaten, afbeeldingen of medicijnen, gegevens over uw houding verzameld uit wearables of hartslaggegevens verzameld door uw smartwatch). Dit geldt ook voor genetische gegevens die u mogelijk heeft en wilt uploaden naar uw account. U kunt dan al uw gezondheidsgegevens ordenen met behulp van verschillende functies zoals zoeken, filteren of taggen. U kunt het ook delen met instellingen zoals ziekenhuizen en gemeenschapscentra, of met personen die u kiest. Personen met wie u uw gegevens misschien wilt delen, zijn onder meer uw gezondheidswerkers (zoals artsen, verpleegkundigen, zorgverleners en fysiotherapeuten), evenals familieleden of vrienden. De keuze welke gegevens u wilt verzamelen en uploaden en met wie u deze wilt delen, is geheel aan u.</p> \n\n<p>Meer details vindt u onder <a href=\"/legal/features\">Functies van de Smart4Health-service</a>.</p> \n\n<h3 id=\"benefits\">Welke voordelen kunt u ervaren bij het gebruik van de Smart4Health-service?</h3>\n<p>De Smart4Health-service biedt geen medische behandeling. Daarom ontvangt u geen directe medische voordelen van het gebruik van de service die door het platform wordt aangeboden. Er zijn echter verschillende voordelen die u kunt ondervinden bij het gebruik van de service:\n<ul>\n<li>Het kan het voor u gemakkelijker maken om uw medische gegevens op één plek up-to-date, gestructureerd en digitaal toegankelijk te houden. </li>\n<li>Het kan u helpen om uw gezondheidsgegevens indien nodig met uw gezondheidswerkers te delen, en hen daardoor te helpen beter geïnformeerd te zijn bij het nemen van beslissingen over uw gezondheid en behandelingen. </li>\n<li>Het kan u helpen uw gezondheidsgegevens te delen met vertrouwde personen, zoals familieleden.</li>\n<li>Hiermee kunt u uw gezondheidsgegevens verstrekken en deelnemen aan gezondheidsonderzoek. Hiervoor is een aparte toestemming nodig. </li></ul></p>\n\n<h3>Zijn er kosten verbonden aan het gebruik van de Smart4Health-service? </h3>\n<p>Er zijn momenteel en in de toekomst geen kosten verbonden aan het gebruik van de Smart4Health-service.</p> \n\n<h3 id=\"protection\">Wat zijn de risico's van deelname aan het Smart4Health-project?</h3>\n<p>Als u besluit het Smart4Health-platform en de bijbehorende service te gebruiken, blijft het risico bestaan ​​dat een onbevoegd persoon toegang heeft tot uw informatie en deze kan worden misbruikt. Dit kan gebeuren door een zogenaamd 'datalek', waarvoor waarborgen en veiligheidsvoorzieningen zijn getroffen (zie hieronder). </p>\n\n<p>Houd er rekening mee dat deze waarborgen en voorzieningen geen bescherming kunnen bieden tegen gegevensmisbruik door een vertrouwde persoon met wie u de gegevens hebt gedeeld. </p>\n\n<h3>Hoe beschermt Smart4Health uw privacy?</h3>\n<p><b>Uw privacy is erg belangrijk voor ons en we zullen er alles aan doen om deze te beschermen </b> door gebruik te maken van de modernste waarborgen en veiligheidsvoorzieningen. Wij zorgen voor passende maatregelen (bijvoorbeeld end-to-end versleuteling) om de gegevens in uw account privé en veilig te houden. In het geval van een datalek nemen wij binnen 72 uur nadat de inbreuk is geconstateerd contact met u op volgens artikel 33 en 34 van de Algemene Verordening Gegevensbescherming van de Europese Unie (AVG). We zullen uw persoonsgegevens in geen geval verkopen, verhuren of leasen. Uw persoonsgegevens worden alleen verwerkt met behulp van beveiligde systemen.</p>\n\n<h3>Hoe bewaart en beschermt het Smart4Health-platform uw gegevens?</h3>\n<p>Als u besluit om gebruik te gaan maken van de service die is ontwikkeld in het Smart4Health-project, zullen we u een persoonlijk account verstrekken dat voldoet aan de toepasselijke EU-regelgeving op het gebied van privacy, veiligheid en gezondheid (meer informatie vindt u in het <a href=\"/legal/data\">Privacybeleid</a>). Met dit account heeft u toegang tot een beveiligde en beschermde softwareomgeving, het Smart4Health-platform. </p>\n\n<p>Gegevens worden opgeslagen in datacenters binnen de Europese Unie. Opgeslagen gegevens zullen de Europese Unie nooit verlaten (hoewel een lid van het consortium uit de VS komt, worden de gegevens niet naar de VS overgedragen). De opgeslagen gegevens zijn voor geen enkele partij buiten het consortium toegankelijk. Binnen het Smart4Health-platform blijven uw gezondheidsgegevens volledig onder uw controle.</p>\n\n<p>Uw gegevens zijn versleuteld, wat betekent dat al uw informatie alleen voor u zichtbaar is. De serviceprovider (data4life) heeft geen toegang tot de informatie in uw account (bijvoorbeeld tot uw medische dossiers, uw laboratoriumresultaten of uw hartslaggegevens), omdat deze versleuteld zijn. Alleen u hebt de sleutel om de informatie te extraheren. </p>\n\n<h3 id=\"research\">Kunt u uw gezondheidsgegevens verstrekken voor onderzoeksdoeleinden?</h3>\n<p>Binnen het Smart4Health-project gaan we ook de mogelijkheid ontwikkelen om gegevens aan te leveren voor onderzoeksdoeleinden. Als u (een deel van) uw gezondheidsgegevens beschikbaar wilt stellen voor onderzoek, hebben we een aanvullende, specifieke geïnformeerde toestemming van u nodig. U kunt hierover op elk moment beslissen zodra we u hebben geïnformeerd dat deze functie beschikbaar is.</p>\n\n<h3 id=\"project\">Wat gebeurt er met uw gegevens als het project is afgelopen?</h3>\n<p>Deze toestemming is van toepassing op het gebruik van het platform en de service die zijn ontwikkeld tijdens het Smart4Health-project, dat op 28 februari 2023 afloopt. We zullen u er uiterlijk op 30 november 2022 aan herinneren dat het project zal worden voltooid. U kunt na afloop van het project gebruik maken van de service door een hertoestemmingsformulier te ondertekenen. Als we na afloop van het project niets van u horen tot 30 juni 2023, zullen we uw account en alle daarin opgeslagen persoonsgegevens verwijderen.</p>"
+    },
+    "features": {
+      "headline": "Functies",
+      "content": "<strong>Functies van de Smart4Health-service</strong> De Smart4Health-service biedt u verschillende functies waarmee u uw persoonlijke gezondheidsgegevens kunt beheren en selectief kunt delen. Een functie is een functionaliteit van de Smart4Health-service. Na het registratieproces wordt u doorverwezen naar een dashboard met een overzicht van de verschillende functies. Aangezien deze functies deel uitmaken van het ontwikkelingsproces, zijn ze niet allemaal klaar. Ze zullen in de loop van de tijd worden toegevoegd, gewijzigd en verfijnd door feedback van gebruikers en interacties met hen.\n<ul>\n<li>U kunt al uw persoonlijke medische dossiers, zoals medicatieplannen, patiëntoverzichten, diagnostische rapporten en afbeeldingen, bekijken en beheren. Met deze functie kunt u eenvoudig alle informatie vinden die u nodig hebt, door informatie te filteren, te taggen en selectief weer te geven.</li>\n<li>U kunt vooraf een reeks belangrijke informatie definiëren (zoals medicatie, allergieën, enz.), die in verschillende talen wordt vertaald om deze in ongeplande situaties te delen met iedereen die snel inzicht nodig heeft in uw gezondheidstoestand. U kunt de inhoud en toegangsrechten tot deze belangrijke informatie op elk moment wijzigen.</li>\n<li>U kunt al uw gezondheidsgegevens delen met mensen die u vertrouwt. U bepaalt zelf welke gegevens en informatie u met wie wilt delen, bijvoorbeeld zorgverleners of familieleden. De functie geeft ook transparantie over de activiteitenstroom, door te laten zien wie toegang heeft gehad tot welke gegevens.</li>\n<li>U zult de mogelijkheid hebben om uw zelfgegenereerde gezondheidsgerelateerde gegevens via apps en wearables (bv. gezondheidsapps, fitnesstracker, enz.) te verzamelen, op te slaan en te tracken, alsook gegevens die u mogelijk verzamelt in de context van uw werkplek (bv. polsbandje, stappenteller, enz.).</li>\n<li>U kunt uw gegevens verstrekken voor onderzoeks- en wetenschappelijke doeleinden nadat u een afzonderlijke toestemming heeft gegeven. Daarin kunt u het doel van uw gegevensverstrekking selecteren, beslissen of u uw volledige gegevens of slechts geselecteerde delen wilt verstrekken en of u opnieuw benaderd wilt worden voor onderzoeksresultaten op algemeen niveau. Bij toestemming voor gegevensverstrekking hoort ook de mogelijkheid om de toestemming in te trekken. </li>\n</ul>\n\nDe wettelijke basis voor de verwerking van de gegevens is uw toestemming in overeenstemming met art. 6 par. 1 s. 1 lit. a) in samenhang met art. 9 par. 2 lit. a) AVG."
+    },
+    "settings": {
+      "saved": "Uw wijzigingen zijn toegepast."
+    },
+    "licensing_and_copyright": {
+      "content": "<strong>Licenties en copyrightkennisgevingen</strong>\n<br />\n<strong>SNOMED</strong>\n\n<p>'SNOMED' en 'SNOMED CT' zijn gedeponeerde handelsmerken van de International Health Terminology Standards Development Organization (IHTSDO). Het gebruik van SNOMED CT-inhoud is onderworpen aan de voorwaarden die zijn uiteengezet in de SNOMED CT-licentieovereenkomst voor partners. Het is de verantwoordelijkheid van degenen die dit product implementeren om ervoor te zorgen dat ze de juiste licentie hebben en voor meer informatie over de licentie, inclusief hoe u zich kunt registreren als een aangesloten licentiehouder, raadpleegt u <a href=\"https://www.snomed.org/snomed-ct/get-snomed-ct\">http://www.snomed.org/snomed -ct/get-snomed-ct</a> of <a href=\"mailto:info@snomed.org\">info@snomed.org</a>. Volgens de voorwaarden van de partnerlicentie is het gebruik van SNOMED CT in landen die geen IHTSDO-lid zijn onderworpen aan rapportage- en betalingsverplichtingen.</p>\n\n\n<strong>ATC-classificatiesysteem (Anatomical Therapeutic Chemical)</strong>\n\n<p>Voor Duitse classificaties geldt het volgende: De voorbereiding werd uitgevoerd met behulp van de officiële versie van de ATC-classificatie met DDD van het BfArM (Bundesinstitut für Arzneimittel und Medizinprodukte - Federaal Instituut voor Drugs en Medische Hulpmiddelen). De hier gebruikte classificaties zijn afkomstig uit de officiële versie 2021. Voor Engelse classificaties geldt het volgende: Het WHO Collaborating Centre for Drug Statistics Methodology publiceert jaarlijks een bijgewerkte versie van de volledige ATC-index met DDD's. Toegang tot een doorzoekbare versie van de ATC Index met DDD's 2020 (inclusief tekst uit de Richtlijnen) is gratis beschikbaar op deze website (<a href=\"https://www.whocc.no/atc_ddd_index\">ATC/DDD Index 2020</a>). De classificaties die in de Smart4Health-webapp worden gebruikt, zijn gebaseerd op de ATC-classificatie-index met DDD's, 2021, WHO Collaborating Centre for Drug Statistics Methodology, Oslo, Noorwegen 2020.</p>\n\n\n<strong>ICD-classificatiesysteem (International Classification of Diseases)</strong>\n\n<p>Voor Duitse classificaties geldt het volgende: De classificaties die gebruikt worden binnen de Smart4Health-webapp zijn afkomstig van de ICD-10-GM officiële versie 2020. Ze zijn gemaakt met behulp van de machineleesbare versie van het BfArM (Bundesinstitut für Arzneimittel und Medizinprodukte - Federaal Instituut voor Drugs en Medische Hulpmiddelen). Voor Engelse ICD-classificaties geldt het volgende: De classificaties die binnen de Smart4Health-webapp worden gebruikt, zijn ontleend aan de International Statistical Classification of Diseases and Related Health Problems (ICD-10), 10th Revision © World Health Organization. WHO-classificaties zijn toegankelijk via het <a href=\"https://apps.who.int/classifications/apps/icd/ClassificationDownloadNR/login.aspx\">downloadgebied</a> voor WHO-classificaties.</p>\n\n\n<strong>Logical Observation Identifiers Names &amp; Codes (LOINC®)</strong>\n\n<p>Dit materiaal bevat inhoud van <a href=\"http://loinc.org/\">LOINC</a>. LOINC is copyright © 1995-2021, Regenstrief Institute, Inc. en de Logical Observation Identifiers Names and Codes (LOINC) Committee en is gratis beschikbaar onder de licentie op <a href=\"http://loinc.org/license\">http://loinc.org/license</a> . LOINC® is een gedeponeerd handelsmerk in de Verenigde Staten van Regenstrief Institute, Inc..</p>\n\n\n<strong>EDQM-standaardvoorwaarden</strong>\n\n<p>Standaardvoorwaarden gepubliceerd door het Europees Directoraat voor de kwaliteit van geneesmiddelen en gezondheidszorg (EDQM) zijn gratis toegankelijk voor alle klanten die toegang vragen via hun Register-account. De inhoud van de database wordt continu bijgewerkt. De database met standaardvoorwaarden is alleen online beschikbaar via de <a href=\"https://standardterms.edqm.eu/\">EDQM-website</a>.</p>\n\n\n<strong>HL7 FHIR</strong>\n\n<p>De HL7® FHIR®-standaard is Copyright © 2011+ HL7 en wordt gebruikt onder de <a href=\"http://hl7.org/fhir/license.html\">FHIR-licentievoorwaarden</a>.</p>",
+      "headline": "Licentie- en copyrightkennisgevingen"
+    },
+    "end_of_life": {
+      "content": "<h3>Informatie over de beëindiging van het project</h3>\n\n<div>Sinds januari 2019 hebben negentien partners aan verschillende aspecten van het Smart4Health-project gewerkt, zodat u hun persoonlijke gezondheidsdossiers kunt ophalen, opslaan, inzien en delen. Deze gegevens omvatten medicatieplannen, patiëntoverzichten, diagnostische rapporten en medische beelden. Dit werd mogelijk gemaakt door de steun en financiering van het onderzoeks- en innovatieprogramma Horizon 2020 van de Europese Unie onder de subsidieovereenkomst met nr. 826117.</div>\n<div>In het Smart4Health-project is dit platform voor u toegankelijk gemaakt, zodat u gezondheidsdossiers en gezondheidsgerelateerde dossiers in een webapplicatie kunt verkennen. Tot op heden zijn er meer dan 3000 platformaccounts aangemaakt door deelnemers uit 25 Europese lidstaten.</div>\n\n<div>We zijn dankbaar voor uw deelname en feedback. Zoals uiteengezet in de <a href=\"/legal/consent\">toestemming voor deelname</a> van het project wordt het project op 28 februari 2023 beëindigd. Op deze pagina vindt u meer informatie over hoe het project zal worden beëindigd.</div>\n\n<div>Momenteel worden de plannen voor de toekomst van het platform besproken, waaronder ook de toekomst van uw gegevens. Vóór 28 februari 2023 zullen we hierover contact met u opnemen, evenals over de verlengingsmogelijkheid van uw toestemming.</div>\n\n<h3>Hoe kunt u de gegevens in uw account ophalen?</h3>\nOm uw Smart4Health-gegevens vóór 28 februari te downloaden, gaat u naar <b>Profiel > Mijn gegevens > Downloaden</b> of <a href=\"/d4l/profile/your-data\">volgt u deze link</a>.\n\n<h3>Hoe kunt u de projectpartner verder ondersteunen?</h3>\n<div>De Smart4Health-projectpartner Data4Life, een non-profitorganisatie die volksgezondheid en medisch onderzoek ondersteunt, zal de technologie die voor Smart4Health wordt gebruikt, verder ontwikkelen. Als u op de hoogte wilt blijven van de wetenschappelijke onderzoeken van Data4Life, <a href=\"https://app.data4life.care/program/registry/tasks?lng=en&mtm_medium=email&mtm_source=s4h&mtm_campaign=221130_s4h_eol&mtm_keyword=eol_s4h_v1&mtm_content=de+pt+en\">kunt u zich aanmelden voor de Data4Life-wachtlijst.</a></div>\n\n<h3>Waar kunt u hulp krijgen?</h3>\n<div>Wij danken u voor uw steun. Aarzel niet om bij vragen een e-mail te sturen naar <a href=\"mailto:helpdesk@smart4health.eu\">helpdesk@smart4health.eu</a>.</div>",
+      "headline": "Beëindiging van het project"
+    }
+  },
+  "master": {
+    "Back_to_homepage": "Terug naar de startpagina",
+    "acc_created": "Uw Smart4Health-account is succesvol aangemaakt.",
+    "access_given_on": "Toegang verleend op",
+    "access_given_to": "Toegang verleend aan",
+    "account_details": "Accountgegevens",
+    "account_settings": "Accountinstellingen",
+    "active_session_with_count": "{{count}} actieve sessie",
+    "active_session_with_count_plural": "{{count}} actieve sessies",
+    "add_document": "Toevoegen",
+    "add_files": "Bestanden toevoegen",
+    "add_new": "Nieuwe toevoegen",
+    "add_new_document": "Nieuw document toevoegen",
+    "agree_to": "Ja, ik geef toestemming voor het verwerken van mijn gezondheidsgegevens door D4L data4life gGmbH voor het opslaan van de door mij aangeleverde gegevens/documenten in het Data4Life-platform. Ik kan mijn toestemming op elk moment intrekken.",
+    "agree_to_additional": "Ook ga ik ermee akkoord om de synchronisatie van mijn gegevens tussen ______ en mijn Smart4Health account te activeren.",
+    "all_rights_reserved": "© {{year}} Smart4Health. Alle rechten voorbehouden.",
+    "summary": "Overzicht",
+    "app_revoke": "Weet u zeker dat u de toegang wilt intrekken?",
+    "app_revoke_warning": "De toegang tot de gegevens wordt gestopt en de sessie wordt niet meer weergegeven.",
+    "applications": "Apps",
+    "apps_that_you_can_connect": "Apps die u kunt gebruiken met uw Smart4Health-account.",
+    "apps_you_have_connected": "Apps die momenteel aan uw account zijn gekoppeld.",
+    "are_you_sure": "Account verwijderen?",
+    "attach_files": "Documentbestanden bijvoegen",
+    "author": "Gemaakt door",
+    "back": "Terug",
+    "back_to_homepage": "Terug naar de startpagina",
+    "back_to_login": "Terug naar inloggen",
+    "birthdate": "Geboortedatum",
+    "button_change_password": "Wachtwoord wijzigen",
+    "calculating": "Berekenen",
+    "cancel": "Annuleren",
+    "category": "Categorie",
+    "caution": "Opgelet!",
+    "change_password": "Wachtwoord wijzigen",
+    "check_spam": "Mocht u geen e-mail hebben ontvangen, controleer dan ook uw spam.",
+    "choose_file": "Klik hier om een ​​bestand te kiezen",
+    "choose_your_new_password": "Kies uw nieuwe wachtwoord",
+    "city": "Stad",
+    "click_i_understand_to_continue": "Kies 'Ik begrijp het' om Smart4Health te blijven gebruiken",
+    "confirm_password": "Nieuw wachtwoord bevestigen",
+    "confirm_password_placeholder": "Bevestig uw nieuwe wachtwoord",
+    "confirm_your_password": "Bevestig uw wachtwoord",
+    "connected": "Verbonden",
+    "connected_app": "verbonden app",
+    "connected_apps": "verbonden apps",
+    "continue": "Doorgaan",
+    "cookie_bar_accept": "Accepteren",
+    "cookie_bar_data_privacy": "Ons privacybeleid",
+    "cookie_bar_reject": "Afwijzen",
+    "cookie_bar_text": "Met uw toestemming zullen we cookies gebruiken om uw gebruikerservaring te optimaliseren en uw gebruik te analyseren om het aanbod voor alle gebruikers te verbeteren. Als u akkoord gaat met het opslaan van cookies en het verzenden van analysegegevens, klikt u op 'Accepteren'. U kunt het aanbod onbeperkt gebruiken zonder toestemming te geven. Verdere informatie:",
+    "cookie_bar_text_dnt": "Met uw toestemming zullen we cookies gebruiken om uw gebruikerservaring te optimaliseren en uw gebruik te analyseren om het aanbod voor alle gebruikers te verbeteren. Als u akkoord gaat met het opslaan van cookies en het verzenden van analysegegevens, klikt u op 'Accepteren'. U kunt het aanbod onbeperkt gebruiken zonder toestemming te geven. Verdere informatie:",
+    "create": "Aanmaken",
+    "create_a_new_account": "Account aanmaken",
+    "create_account": "Account aanmaken",
+    "create_account_and_grant_access": "Account aanmaken en toegang verlenen",
+    "created": "Aangemaakt",
+    "currently_the_functionality_to_recover_your_password": "Momenteel is de functionaliteit om uw wachtwoord te herstellen in ontwikkeling. Zolang deze niet beschikbaar is, moet u er op letten dat u uw wachtwoord niet verliest.",
+    "dashboard": "Overzicht",
+    "data_download": "Exportgegevens",
+    "data_privacy": "Privacybeleid",
+    "date": "Datum",
+    "delete": "Verwijderen",
+    "delete_account": "Account verwijderen",
+    "delete_document": "Document verwijderen",
+    "delete_files": "Bestanden verwijderen",
+    "delete_user": "Account verwijderen",
+    "description": "U heeft geprobeerd een eenmalige bevestigingslink te gebruiken die is verlopen. Vraag een nieuwe aan.",
+    "disabled_edit_tooltip": "Houd er rekening mee dat u alleen documenten kunt bewerken die in onze webapp zijn gemaakt.",
+    "disabled_upload_tooltip": "Houd er rekening mee dat u alleen bestanden kunt toevoegen aan documenten die zijn gemaakt in de Smart4Health-webapp.",
+    "document_category": "Categorie",
+    "document_info": "Details",
+    "document_title": "Titel",
+    "documents": "Documenten",
+    "done": "Voltooid",
+    "dont_forget_your_password": "Bewaar uw wachtwoord veilig.",
+    "download": "Downloaden",
+    "download_all_Data": "Archiefbestand maken en downloaden",
+    "download_document": "Document downloaden",
+    "downloading": "Aan het downloaden",
+    "drag_file": "of plaats hier een bestand. Ondersteunde bestandstypen: JPG, PNG, PDF, TIFF en DCM. Groottelimiet: 20 MB.",
+    "edit_document": "Document bewerken",
+    "email": "E-mailadres",
+    "enter_your_email": "Vul uw e-mailadres in",
+    "enter_your_password": "Voer uw wachtwoord in",
+    "enter_your_pin": "Voer uw pincode in",
+    "enter_your_recovery_key": "Voer uw herstelsleutel in",
+    "export_all_documents": "Exporteer en download al uw gegevens in één ZIP-bestand.",
+    "external_link_go": "Site bezoeken",
+    "external_link_headline": "Deze link leidt naar een andere site",
+    "external_link_paragraph": "D4L data4life gGmbH is niet verantwoordelijk voor de inhoud van andere websites.",
+    "faq": "",
+    "files": "Bestanden",
+    "files_selected": "Bestanden geselecteerd",
+    "files_size": "Totale grootte",
+    "forgot_password": "Wachtwoord vergeten",
+    "sharing": {
+      "get_access_to_patient_data": {
+        "title": "Iemand wil gegevens met u delen",
+        "infotext": "Geef de volgende pincode door om toegang te krijgen tot de gezondheidsgegevens van de persoon:"
+      },
+      "get_access_to_patient_data_qr": {
+        "infotext": "Of laat ze de QR-code scannen:"
+      },
+      "sessions_view": {
+        "title": "Deelsessies"
+      },
+      "pin_view": {
+        "title": "Gegevens delen"
+      },
+      "group_list": {
+        "title": "Deel uw gezondheidsgegevens met iemand die u vertrouwt"
+      },
+      "revoke_access_modal": {
+        "button": "Ja, intrekken"
+      },
+      "unselect_all": {
+        "button": "Alles deselecteren"
+      },
+      "select_all": {
+        "button": "Alles selecteren"
+      },
+      "summary": {
+        "title": "Overzicht"
+      },
+      "pin_view_data_confirm": {
+        "infotext": "Bevestig de gegevens om te delen"
+      },
+      "pin_view_data_review": {
+        "button": "Gegevens bekijken"
+      },
+      "review_modal": {
+        "title": "Wat u deelt"
+      },
+      "review_modal_close": {
+        "button": "Afsluiten"
+      },
+      "review_modal_edit": {
+        "button": "Bewerken"
+      },
+      "review_modal_documents": {
+        "title": "Documenten"
+      },
+      "review_modal_summary": {
+        "title": "Overzicht"
+      },
+      "review_modal_medications": {
+        "title": "Medicijnen"
+      },
+      "disclaimer_notification_bar": {
+        "infotext": "Om de privacy van gebruikers te beschermen, registreren we de toegang tot gezondheidsgegevens."
+      },
+      "incompleteness_disclaimer": {
+        "message": "De weergegeven informatie is geen vervanging voor medisch advies en kan onvolledig zijn.",
+        "button": "Afsluiten"
+      },
+      "review_modal_allergies_and_intolerances": {
+        "title": "Allergieën en intoleranties"
+      },
+      "review_modal_conditions": {
+        "title": "Aandoeningen"
+      },
+      "select": {
+        "button": "Selecteren"
+      },
+      "all": {
+        "button": "Alles"
+      },
+      "active": {
+        "button": "Actief"
+      },
+      "current": {
+        "button": "Huidige"
+      },
+      "none": {
+        "button": "Geen"
+      },
+      "medications": {
+        "title": "Medicijnen"
+      },
+      "allergies_intolerances": {
+        "title": "Allergieën en intoleranties"
+      },
+      "conditions": {
+        "title": "Aandoeningen"
+      },
+      "selected": {
+        "count": "{{count}} geselecteerd",
+        "count_plural": "{{count}} geselecteerd"
+      },
+      "download_patient_data_modal": {
+        "title": "Gedeelde gezondheidsgegevens downloaden"
+      }
+    },
+    "grant_access": "Toegang verlenen",
+    "has_access_apps": "Heeft toegang tot andere apps:",
+    "has_access_rights": "Heeft de volgende machtigingen:",
+    "hero_dashboard_text": "Bewaar uw gezondheidsgegevens op één beschermde en persoonlijke plek.",
+    "hero_dashboard_title": "Welkom bij Smart4Health",
+    "hide": "Verbergen",
+    "how_it_works": "Hoe het werkt",
+    "how_sharing_works": "Hoe gegevens delen werkt:",
+    "how_sharing_works_li1": "Vraag uw arts om naar <strong>https://app.smart4health.eu/share</strong> te gaan.",
+    "how_sharing_works_li2": "Selecteer <strong>Nieuwe deelsessie starten</strong>",
+    "how_sharing_works_li3": "Kies welke gegevens u wilt delen.",
+    "how_sharing_works_li4": "Voer de pincode in die wordt weergegeven op de computer van uw arts.",
+    "how_sharing_works_li5": "Dat is alles! Uw sessie wordt weergegeven in het menu 'Delen' en u kunt deze op elk moment beëindigen.",
+    "i_understand": "Ik begrijp het",
+    "if_you_delete": "Door uw gebruikersaccount te verwijderen, wordt ook uw toestemming voor het verwerken van persoonsgegevens ingetrokken. U raakt de toegang tot uw account kwijt en al uw gegevens worden permanent verwijderd.",
+    "imprint": "Impressum",
+    "lab_results": "Labresultaten",
+    "landing_details_h2": "Beheer uw gezondheidsgegevens",
+    "landing_details_h4": "Bewaar uw gegevens veilig",
+    "landing_details_li1": "Uw gezondheidsgegevens zijn end-to-end versleuteld.",
+    "landing_details_li2": "We nemen privacy serieus, wat betekent dat zelfs wij uw gegevens niet kunnen lezen.",
+    "landing_details_li3": "U bepaalt wie toegang heeft tot uw gegevens.",
+    "landing_details_p1": "Wist u dat u recht heeft op toegang tot uw gezondheidsgegevens? Vraag uw arts naar uw patiëntgegevens.",
+    "landing_details_p2": "Hier zijn een paar geweldige dingen die u kunt doen met een Smart4Health-account:",
+    "landing_details_p3": "Het zijn uw belangrijkste gegevens, dus we zorgen ervoor dat deze absoluut veilig worden opgeslagen.",
+    "landing_h1": "Welkom bij <br /> onze privé-bèta.",
+    "landing_p": "Uw gezondheid, uw gegevens, volledige controle. Bewaar, gebruik en deel uw gezondheidsgegevens centraal op een veilige locatie.",
+    "last_uploaded": "Laatste upload",
+    "learn_more_about_gesundheitscloud": "Meer informatie over Smart4Health",
+    "legal": "Juridisch en toestemming",
+    "link_expired": "Link verlopen",
+    "logout": "Uitloggen",
+    "manage_applications": "Beheer apps die u heeft gekoppeld aan uw Smart4Health-account.",
+    "manage_apps": "Apps beheren",
+    "manage_data": "Beheer uw gezondheid in vier stappen met het non-profit Data4Life-platform:",
+    "manage_documents": "Beheer uw gezondheidsdocumenten",
+    "message": "Bericht",
+    "message_placeholder": "Beschrijf uw probleem of deel uw ideeën",
+    "middle_name": "Middelste naam",
+    "minimum_pwd_lenght": "Minimaal 8 tekens",
+    "minimum_special_char": "Eén cijfer of één speciaal teken",
+    "my_account": "Mijn account",
+    "my_documents": "Mijn gezondheidsdocumenten",
+    "my_medical_documents": "Mijn documenten",
+    "my_profile": "Mijn profiel",
+    "name": "Naam",
+    "new": "Nieuw",
+    "new_password": "Nieuw wachtwoord",
+    "new_password_placeholder": "Voer uw nieuwe wachtwoord in",
+    "new_sharing_session": "Nieuwe deelsessie",
+    "new_sharing_session_description": "Wat wilt u delen?",
+    "no": "Annuleren",
+    "no_attachments": "Er is geen bestand geüpload naar het document",
+    "no_documents": "Voeg een document toe om aan de slag te gaan.",
+    "no_preview": "Geen voorbeeldweergave",
+    "not_found_heading": "",
+    "not_found_paragraph": "Laten we teruggaan naar waar u vandaan kwam, of direct naar de startpagina gaan.",
+    "not_verified": "U moet uw e-mailadres valideren:",
+    "number_of_files": "Aantal bestanden",
+    "old_password": "Huidig ​​wachtwoord",
+    "old_password_placeholder": "Voer uw huidige wachtwoord in",
+    "or": "of",
+    "or_scan_it_with_qr_reader": "Voer de pincode in of scan de QR-code die wordt weergegeven op het apparaat van de persoon.",
+    "own_document": "Privé document",
+    "page_not_found": "Pagina niet gevonden",
+    "partner": "Partner",
+    "password": "Wachtwoord",
+    "password_no_match": "De wachtwoorden komen niet overeen, probeer het opnieuw",
+    "personal_info": "Persoonlijke informatie",
+    "pin": "PIN",
+    "pin_enter": "Voer de pincode in om te delen",
+    "pin_not_valid": "Voer een geldige pincode in",
+    "pin_number": "PINCODE invoeren",
+    "pin_share": "Dit is uw pincode om te delen:",
+    "pin_valid": "Geldige pincode",
+    "postal_code": "Postcode",
+    "prefix": "Titel",
+    "preview_error": "Er is een documentfout opgetreden. Verwijder het en probeer het opnieuw.",
+    "privacy_policy": "Privacybeleid",
+    "private_beta": "Privé-bèta",
+    "private_beta_feedback_email": "helpdesk@smart4health.eu",
+    "private_beta_hint": "Als u vragen of feedback heeft, neem dan contact op met",
+    "procced_to_my_acc": "Ga naar mijn account",
+    "proceed_to_my_acc": "Ga naar mijn account",
+    "proceed_to_recovery_login": "Toegang verlenen",
+    "profile": "Profiel",
+    "profile_hero_text": "Beheer uw gegevens",
+    "profile_hero_title": "Mijn profiel",
+    "prompt_password": "Actie bevestigen",
+    "prompt_password_hint": "Bevestig deze actie door uw huidige wachtwoord in te voeren.",
+    "prompt_password_label": "Wachtwoord",
+    "prompt_password_placeholder": "Voer uw huidige wachtwoord in",
+    "prompt_password_submit": "Bevestigen",
+    "provide_access": "Nu delen",
+    "records": "Documenten",
+    "records_stored": "documenten opgeslagen",
+    "recovery_key": "Herstelsleutel",
+    "recovery_key_stored": "Ik heb mijn herstelsleutel veilig opgeslagen",
+    "recovery_key_yours": "Uw herstelsleutel",
+    "recovery_print_subtitle": "Als u uw wachtwoord bent vergeten, kunt u het opnieuw instellen. Om veiligheidsredenen moet u uw herstelsleutel opgeven. Zorg ervoor dat u uw herstelsleutel op een veilige plaats bewaart.",
+    "recovery_print_subtitle2": "Houd er rekening mee dat het erg belangrijk is om de sleutel op een veilige plaats te bewaren - zonder de sleutel kan uw account niet meer worden hersteld.",
+    "recovery_print_take_screenshot": "<strong>Opmerking</strong>: Om de herstelsleutel op te slaan, maakt u een screenshot, drukt u de pagina af of kopieert u de tekst. Bewaar de sleutel op een veilige plek.",
+    "recovery_print_title": "Uw account is succesvol aangemaakt",
+    "request_new_link": "Nieuwe link aanvragen",
+    "resend_email": "E-mail opnieuw verzenden",
+    "reset_password": "Wachtwoord opnieuw instellen",
+    "reset_your_password": "Stel uw wachtwoord opnieuw in",
+    "reset_your_password_p1": "Om uw wachtwoord opnieuw in te stellen en toegang te krijgen tot uw account, moet u uw herstelsleutel opgeven.",
+    "reset_your_password_p2": "Voer het e-mailadres van uw Smart4Health-account en uw herstelsleutel in. Voer voor de herstelsleutel alle woorden in, gescheiden door spatie.",
+    "revoke": "Herroepen",
+    "revoke_access": "Gegevenstoegang intrekken?",
+    "revoke_all": "Alles beëindigen",
+    "save_changes": "Wijzigingen opslaan",
+    "saved_records": "opgeslagen document",
+    "saved_records_plural": "opgeslagen documenten",
+    "scan": "Scan QR-code",
+    "scan_qr_code_modal": "Scan de QR-code om een ​​pincode te krijgen:",
+    "select_all": "Alles selecteren",
+    "send_message": "Bericht versturen",
+    "sent_email": "We hebben een e-mail naar uw adres gestuurd:",
+    "sharable_records": "deelbaar document",
+    "sharable_records_plural": "deelbare documenten",
+    "share": "Delen",
+    "share_accesing": "Wachten op toestemming",
+    "share_accessing": "Wachten op toestemming",
+    "share_data": "Documentbestand delen",
+    "share_data_description": "Vraag uw arts om de volgende URL te openen en u de pincode te geven, typ deze vervolgens hieronder.",
+    "share_intro_description": "Vraag de persoon met wie u wilt delen om het volgende webadres te bezoeken:",
+    "share_intro_title": "Deel uw gegevens met uw arts",
+    "share_records": "Delen",
+    "share_records_intro": "Deel uw gezondheidsgegevens met iemand die u vertrouwt.",
+    "overview": {
+      "card_sharing_medication_enabled": {
+        "infotext": "U kunt uw documenten, medicatiegegevens of persoonsgegevens delen."
+      },
+      "card_health_data": {
+        "title": "Gezondheidsgegevens"
+      },
+      "card_health_data_add_document_action": {
+        "button": "Toevoegen"
+      },
+      "health_data_card_no_data_text": {
+        "footer": "U heeft nog niets toegevoegd om te delen."
+      },
+      "card_medication": {
+        "title": "Medicijnen",
+        "subtitle": "Uw medicatiegegevens bekijken en beheren",
+        "message": "Laatste medicatie"
+      },
+      "card_medication_no_medication": {
+        "infotext": "Medicatie-informatie kan worden toegevoegd door een zorgverlener",
+        "footer": "Medicatie-informatie is nog niet toegevoegd"
+      },
+      "card_data_donation": {
+        "title": "Onderzoek",
+        "subtitle": "Draag bij aan het Smart4Health-onderzoeksplatform",
+        "infotext": "Ondersteun gezondheidsonderzoek met gepseudonimiseerde gezondheidsgegevens",
+        "button": "Meer over onderzoek"
+      },
+      "card_sharing_medication_disabled": {
+        "infotext": "U kunt uw documenten of persoonlijke informatie delen."
+      },
+      "card_patient_summary": {
+        "title": "Patiëntenoverzicht",
+        "subtitle": "Houd uw essentiële gezondheidsgegevens digitaal bij voor in binnen- en buitenland",
+        "infotext": "Uw patiëntenoverzicht kan uw aandoeningen, allergieën en persoonlijke informatie bevatten.",
+        "button": "Samenvatting bekijken"
+      },
+      "card_patient_summary_empty": {
+        "button": "Voer informatie in",
+        "infotext": "Voer wat persoonlijke informatie in om te beginnen."
+      },
+      "card_data_ingestion": {
+        "title": "Gezondheidsgegevens ontvangen",
+        "subtitle": "Krijg uw gezondheidsgegevens van partners waarmee u verbinding maakt",
+        "button": "Over het ontvangen van gegevens",
+        "infotext": "Als u contact hebt met een van onze partners in verband met uw gezondheid kunt u uw gezondheidsgegevens later in uw account ontvangen."
+      }
+    },
+    "share_your_data": "Deel uw gegevens",
+    "app_share": "Delen",
+    "sharing_empty_state_subtitle": "Voeg documenten toe of voer persoonlijke gezondheidsinformatie in om te delen met iemand die u vertrouwt.",
+    "sharing_empty_state_title": "Veilig delen",
+    "sharing_sessions": "Deelsessies",
+    "sharing_sessions_description": "Alle deelsessies die momenteel actief zijn, staan ​​hieronder vermeld. U kunt ze op elk moment beëindigen.",
+    "show": "Weergeven",
+    "sign_in": "Login",
+    "sign_in_to_your_account": "Aanmelden",
+    "sign_up": "Account aanmaken",
+    "specialty": "Specialiteit",
+    "start_new_sharing_session": "Nieuwe sessie",
+    "start_sharing": "Nu delen",
+    "status": "Status",
+    "street": "Adres",
+    "subject": "Onderwerp",
+    "subject_placeholder": "Voer het onderwerp in",
+    "submit": "Indienen",
+    "suffix": "Aanspreektitel",
+    "suggested_applications": "Beschikbare apps",
+    "support": "Ondersteuning",
+    "take_a_while": "Het proces kan enkele minuten duren.",
+    "telephone": "Telefoon",
+    "terms_hint_1": "Voor de registratie en het gebruik van het Smart4Health-platform onze",
+    "terms_hint_2": "van toepassing.",
+    "terms_hint_3": "* Meer informatie over gegevensbescherming vindt u in onze",
+    "terms_hint_4": "",
+    "terms_of_service": "Gebruiksvoorwaarden",
+    "there_are_no_documents": "U heeft nog geen documenten",
+    "title": "Titel",
+    "updated": "Bijgewerkt",
+    "view_all": "Alles bekijken",
+    "view_and_manage_your_health_data": "Uw gezondheidsgegevens bekijken en beheren",
+    "view_data": "Gegevens bekijken",
+    "website": "Website",
+    "what_is_gesundheitscloud": "Wat is Smart4Health?",
+    "you_will_lose_all_data": "Uw account en gegevens worden permanent verwijderd. Uw toestemming voor het verwerken van gezondheidsgegevens wordt ingetrokken.",
+    "your_applications": "Verbonden apps",
+    "your_data": "Mijn gegevens",
+    "zipping": "ZIP-bestand maken",
+    "no_preview_heading": "Geen voorbeeldweergave beschikbaar",
+    "no_preview_paragraph": "We kunnen u geen voorbeeldweergave tonen voor bestanden met de extensie .tiff of .dcm. Maar u kunt ze <1>downloaden</1> en op uw computer bekijken.",
+    "of": "",
+    "page": "Bladzijde",
+    "last_updated": "Laatst bijgewerkt",
+    "more_document_actions": "Meer",
+    "menu_add_files": "Toevoegen",
+    "menu_document_edit": "Bewerken",
+    "fullscreen_preview": "Voorbeeldweergave op volledig scherm",
+    "zoom_in": "Inzoomen",
+    "zoom_out": "Uitzoomen",
+    "exit_fullscreen": "Volledig scherm afsluiten",
+    "fullscreen_dialog": "Dialoogvenster op volledig scherm",
+    "print": "Afdrukken",
+    "fullscreen": "Volledig scherm",
+    "cancel_without_saving_modal": {
+      "headline": "Waarschuwing",
+      "message": "Alle ingevoerde informatie gaat verloren als u vertrekt voordat u opslaat."
+    },
+    "welcome_store-data_infotext": "Bewaar uw gezondheidsgegevens op één beschermde en persoonlijke plek",
+    "welcome_scan-printed_infotext": "Scan of importeer uw gezondheidsdocumenten",
+    "welcome_manage-docs_infotext": "Altijd en overal online toegang tot uw gezondheidsgegevens",
+    "welcome_view-edit-files_infotext": "Bepaal welke gegevens u met wie wilt delen",
+    "welcome_share-health-info_infotext": "Handel zelfstandig om uw gezondheid te verbeteren",
+    "welcome_data4life_title": "Welkom!",
+    "welcome_start_button": "Begin nu",
+    "welcome_store-data_infotext-label": "Bewaar uw gezondheidsgegevens op één beschermde en persoonlijke plek",
+    "welcome_scan-printed_infotext-label": "Scan of importeer uw gezondheidsdocumenten",
+    "welcome_manage-docs_infotext-label": "Altijd en overal online toegang tot uw gezondheidsgegevens",
+    "welcome_view-edit-files_infotext-label": "Bepaal welke gegevens u met wie wilt delen",
+    "welcome_share-health-info_infotext-label": "Handel zelfstandig en verbeter uw gezondheid",
+    "document": {
+      "shareable_record": {
+        "count": "{{count}} Bijlage",
+        "count_plural": ""
+      },
+      "modal_close_button": {
+        "fieldlabel": "Dialoogvenster sluiten"
+      },
+      "item": {
+        "count": "{{count}} Item",
+        "count_plural": "{{count}} Items"
+      }
+    },
+    "medical_history": {
+      "change_language_disabled_modal": {
+        "title": "Taal wijzigen",
+        "message": "Sla uw wijzigingen op voordat u van taal verandert."
+      }
+    },
+    "delete_files_description": "Selecteer het/de item(s) die u wilt verwijderen.",
+    "delete_button_label": "Verwijderen",
+    "file": "Bestand",
+    "feedback": "Feedback",
+    "profile_userid_fieldlabel": "",
+    "data_privacy_cds": "",
+    "features": "Functies",
+    "consent": "Toestemming voor deelname",
+    "profile_copy_userid_button": "Kopiëren",
+    "landing": {
+      "eu_logo": {
+        "infotext": "Dit project heeft financiering ontvangen van het Horizon 2020-onderzoeks- en innovatieprogramma van de Europese Unie onder subsidieovereenkomst nr. 826117.",
+        "alttext": "Vlag van de Europese Unie"
+      }
+    },
+    "questionnaire": {
+      "backpain_treatment": {
+        "title": "Behandeling van rugpijn"
+      },
+      "backpain_prevention": {
+        "title": "Medisch trainingsprogramma voor rugpijn"
+      }
+    },
+    "delete_document_confirmation": "Wilt u dit document definitief verwijderen?",
+    "delete_document_error": "Document kan niet worden verwijderd. Probeer het later opnieuw.",
+    "number_of_items": "Aantal items",
+    "type": "Type",
+    "download_document_group": "Documentgroep downloaden",
+    "download_document_group_error": "Documentgroep kan niet worden gedownload. Probeer het later opnieuw.",
+    "qr_code_paragraph": "Om deze antwoorden met Charité te delen, toont u de volgende QR-code.",
+    "edit_my_document": "Document bewerken",
+    "delete_entire_treatment": {
+      "button": "Groep verwijderen"
+    },
+    "delete_treatment": "Items verwijderen?",
+    "licensing_and_copyright": "Licentie- en copyrightkennisgevingen",
+    "medication": {
+      "headline": {
+        "title": "Medicijnen"
+      },
+      "emptyState": {
+        "infoText": "Medicatie-informatie die is toegevoegd door een zorgverlener wordt hier weergegeven."
+      },
+      "sidebarItem": {
+        "infotext": "Huidige"
+      },
+      "content_section": {
+        "headline": "Medicatie-info"
+      },
+      "description": {
+        "title": "Beschrijving",
+        "infotext": "Niet-geïdentificeerde medicatie"
+      },
+      "ingredients": {
+        "title": "Ingrediënten"
+      },
+      "strength": {
+        "title": "Sterkte"
+      },
+      "form": {
+        "title": "Vorm"
+      },
+      "date_of_intake": {
+        "headline": "Periode waarin het moet worden ingenomen"
+      },
+      "from_date": {
+        "title": "Van"
+      },
+      "until_date": {
+        "title": "Tot"
+      },
+      "on_date": {
+        "title": "Op"
+      },
+      "dosage_section": {
+        "subtitle": "Schema",
+        "infoText": "Hoe het schema te lezen?",
+        "headline": "Doseringsinfo"
+      },
+      "dosage_section_comment": {
+        "title": "Opmerkingen"
+      },
+      "medication_unit": {
+        "title": "Medicatie-eenheid"
+      },
+      "number_of_doses": {
+        "title": "Aantal medicatie-eenheden"
+      },
+      "number_of_times": {
+        "title": "Aantal keren"
+      },
+      "interval": {
+        "title": "Voorval"
+      },
+      "time_unit": {
+        "title": "Eenheid van tijd"
+      },
+      "when": {
+        "title": "Wanneer"
+      },
+      "medication_info": {
+        "text": "De weergegeven informatie is mogelijk onvolledig. De info vervangt geen medisch advies. Raadpleeg bij twijfel een arts."
+      },
+      "dosage_section_route": {
+        "title": "Toedieningsmethode"
+      },
+      "download": {
+        "error_message": "De medicatie-info kan niet worden gedownload. Probeer het later opnieuw."
+      },
+      "sidebar": {
+        "subtitle": "Nieuwste bovenaan"
+      }
+    },
+    "patient_summary": {
+      "conditions_description_code": {
+        "title": "Aandoeningscode"
+      },
+      "conditions_description_system": {
+        "title": "Codesysteem"
+      },
+      "conditions_card": {
+        "title": "Aandoeningen"
+      },
+      "allergies_and_intolerances_card": {
+        "title": "Allergieën en intoleranties"
+      },
+      "notification_bar": {
+        "infotext": "De weergegeven informatie is mogelijk onvolledig. De info vervangt geen medisch advies. Raadpleeg bij twijfel een arts."
+      },
+      "medications_card": {
+        "title": "Medicatieoverzicht",
+        "link": "Meer informatie"
+      },
+      "share_bar": {
+        "title": "Uw gezondheidsoverzicht",
+        "button": "Overzicht delen"
+      },
+      "card_more_options_share": {
+        "menu_item": "Delen"
+      },
+      "card_more_options_info": {
+        "menu_item": "Wat is dit?"
+      },
+      "card_more_options": {
+        "button": "Meer opties"
+      },
+      "delete_medications_selection_modal": {
+        "title": "Medicijnen verwijderen",
+        "subtitle": "Selecteer medicijnen om te verwijderen. Deze actie kan niet ongedaan worden gemaakt.",
+        "checkbox": "Alles selecteren"
+      },
+      "delete_allergies_intolerances_selection_modal": {
+        "title": "Allergieën en intoleranties verwijderen",
+        "subtitle": "Selecteer allergieën of intoleranties om te verwijderen. U kunt deze actie niet ongedaan maken.",
+        "checkbox": "Alles selecteren"
+      },
+      "delete_conditions_selection_modal": {
+        "title": "Aandoeningen verwijderen",
+        "subtitle": "Selecteer aandoeningen om te verwijderen. U kunt deze actie niet ongedaan maken.",
+        "checkbox": "Alles selecteren"
+      }
+    },
+    "delete_medication_confirm": {
+      "headline": "Medicatie verwijderen?",
+      "content": "De medicatie wordt definitief verwijderd.",
+      "button": "Ja, verwijderen"
+    },
+    "provenance": {
+      "description": {
+        "infotext": "Dit is wat we weten over de geschiedenis van deze gegevens"
+      },
+      "date_recorded": {
+        "title": "Datum registratie"
+      },
+      "activity": {
+        "title": "Activiteit"
+      },
+      "who": {
+        "title": "Wie of wat was erbij betrokken?"
+      },
+      "signature": {
+        "title": "Digitale handtekening"
+      },
+      "modal": {
+        "title": "Gegevensgeschiedenis"
+      },
+      "no_signature": {
+        "infotext": "Deze gegevens hebben geen digitale handtekeningen"
+      },
+      "single_signature_record": {
+        "infotext": "Deze gegevens hebben 1 digitale handtekening"
+      },
+      "multiple_signature_record": {
+        "infotext": "Deze gegevens hebben {{amount}} digitale handtekeningen"
+      },
+      "button": {
+        "arialabel": "Gegevensgeschiedenis"
+      },
+      "signature_notification": {
+        "message": "Opmerking: Smart4Health controleert geen digitale handtekeningen."
+      }
+    },
+    "end_of_life": "Beëindiging van het project",
+    "endoflife": {
+      "banner": {
+        "message": "Het Smart4Health-project wordt op 28 februari 2023 beëindigd.",
+        "link": "Meer informatie"
+      },
+      "banner_close": {
+        "button": "Afwijzen"
+      }
+    }
+  },
+  "support": {
+    "contact_sidebar": {
+      "title": "Contact"
+    },
+    "faq_content": "",
+    "hero_subtitle": "",
+    "what_is_content": "",
+    "contact_us_content": "",
+    "contact_us": {
+      "content": "Heeft u ondersteuning nodig of wilt u ons feedback sturen? Stuur een e-mail naar <a href=\"mailto:helpdesk@smart4health.eu\">helpdesk@smart4health.eu</a>.",
+      "headline": "Neem contact met ons op"
+    },
+    "faq": {
+      "content": "<h4>Ik ben mijn wachtwoord vergeten. Wat moet ik doen?</h4>\n<p>Als u uw wachtwoord bent vergeten, kunt u dit opnieuw instellen door een nieuw aan te maken. Omdat we end-to-end-versleuteling gebruiken en uw wachtwoord niet kennen, kunnen we u niet helpen door u een reset-link te sturen. U moet zelf uw wachtwoord opnieuw instellen met uw persoonlijke herstelsleutel.</p>\n<p>Om uw wachtwoord opnieuw in te stellen en een nieuw wachtwoord aan te maken: </p>\n<p><ul>\n<li>Kies in het aanmeldvenster <b>Wachtwoord vergeten?</b></li>\n<li>Voer het e-mailadres in dat u gebruikt voor uw gebruikersaccount.</li>\n<li>Voer uw persoonlijke herstelsleutel in.</li>\n<li>Kies <b>Enter</b>.</li>\n<li>Maak en bevestig uw nieuwe wachtwoord.</li>\n<li>Kies <b>Wachtwoord opnieuw instellen</b>.</li>\n</ul></p>\n\n<h4>Hoe wijzig ik mijn e-mailadres?</h4>\n<p>Om uw e-mailadres te wijzigen:</p> \n<p><ul>\n<li>Selecteer uw e-mailadres terwijl u bent aangemeld.</li>\n<li>Voer in <b>Accountinstellingen</b> uw nieuwe e-mailadres in het e-mailadresveld in.</li>\n<li>Kies <b>Wijzigingen opslaan</b>.</li>\n</p></ul>\n<p>We sturen een bevestigingsbericht naar uw nieuwe e-mailadres. Als u het bevestigingsbericht niet ontvangt, controleer dan uw map met spam of ongewenste e-mail.</p>\n\n<h4>Hoe wijzig ik mijn telefoonnummer?</h4>\n<p> Het wijzigen van het telefoonnummer dat aan uw gebruikersaccount is gekoppeld, omvat verschillende stappen om uw identiteit te verifiëren. Deze stappen zijn nodig om uw gegevens te beschermen en kunnen enige tijd duren. Neem contact op met ons ondersteuningsteam om uw telefoonnummer te wijzigen. Stuur het ondersteuningsteam uw oude telefoonnummer en laat hen weten dat u dit wilt wijzigen. Het ondersteuningsteam zal contact met u opnemen voor de volgende stappen.</p>\n\n<h4>Wat is de herstelsleutel?</h4>\n<p>Wanneer u uw gebruikersaccount instelt, ontvangt u uw persoonlijke herstelsleutel. Deze sleutel wordt speciaal voor u gegenereerd. Als u uw wachtwoord bent vergeten, moet u deze herstelsleutel invoeren om een ​​nieuw wachtwoord aan te vragen. De sleutel bevat 12 woorden. Zorg ervoor dat u uw sleutel ergens veilig opbergt waar u ook zonder uw computer bij kunt.</p>\n\n<h4>Hoe bewaar ik mijn herstelsleutel?</h4>\n<p>Download uw herstelsleutel als pdf-bestand.</p>\n\n<h4>Wie heeft toegang tot mijn gegevens?</h4>\n<p>We versleutelen uw gegevens end-to-end, zodat niemand anders dan u er toegang toe heeft. Als u besluit uw gegevens te delen met iemand in uw zorgteam, kunt u deze persoon tijdelijk toegang verlenen.</p>\n\n<h4>Hoe deel ik mijn documenten?</h4>\n<p>Kies op de welkomstpagina van de app 'Delen'. Schakel onder 'Nieuwe deelsessie' het selectievakje in voor de documenten die u wilt delen. Kies de knop 'Doorgaan'. Op de pagina 'Documentbestand delen' moet u een 'Pincode' invoeren. U krijgt deze pincode van uw arts die tegelijkertijd https://app.smart4health.eu/share opent en een pincode krijgt om met u te delen. Voer deze pincode in en kies 'Toegang verlenen'. </p>\n\n<h4>Hoe stop ik het delen van documenten?</h4>\n<p>Wanneer u een document hebt gedeeld, wordt een overzicht van uw actieve deelsessies weergegeven. Kies 'Intrekken' om een ​​deelsessie te stoppen.</p>\n\n<h4>Welke soorten documenten kan ik uploaden?</h4>\n<p>U kunt de volgende bestandsindelingen uploaden: PDF, JPG, PNG, DCM en TIFF.</p>",
+      "headline": ""
+    },
+    "user_account": {
+      "content": "<h3>Ik ben mijn wachtwoord vergeten. Wat moet ik doen?</h3>\n<div>Als u uw wachtwoord bent vergeten, kunt u dit opnieuw instellen door een nieuw aan te maken. Omdat we end-to-end-versleuteling gebruiken en uw wachtwoord niet kennen, kunnen we u niet helpen door u een reset-link te sturen. U moet zelf uw wachtwoord opnieuw instellen met uw persoonlijke herstelsleutel.</div>\n<div>Om uw wachtwoord opnieuw in te stellen en een nieuw wachtwoord aan te maken:</div>\n<ol>\n  <li>Kies in het aanmeldvenster <b>Wachtwoord vergeten?</b></li>\n  <li>Voer het e-mailadres in dat u gebruikt voor uw gebruikersaccount.</li>\n  <li>Voer uw persoonlijke herstelsleutel in.</li>\n  <li>Kies <b>Enter</b>.</li>\n  <li>Maak en bevestig uw nieuwe wachtwoord.</li>\n  <li>Kies <b>Wachtwoord opnieuw instellen</b>.</li>\n</ol>\n\n<h3>Hoe wijzig ik mijn e-mailadres?</h3>\n<div>Om uw e-mailadres te wijzigen:</div> \n<ol>\n  <li>Selecteer uw e-mailadres terwijl u bent aangemeld.</li>\n  <li>Voer in <b>Accountinstellingen</b> uw nieuwe e-mailadres in het e-mailadresveld in.</li>\n  <li>Kies <b>Wijzigingen opslaan</b>.</li>\n</ol>\n<div>We sturen een bevestigingsbericht naar uw nieuwe e-mailadres. Als u het bevestigingsbericht niet ontvangt, controleer dan uw map met spam of ongewenste e-mail.</div>\n\n<h3>Hoe wijzig ik mijn telefoonnummer?</h3>\n<div> Het wijzigen van het telefoonnummer dat aan uw gebruikersaccount is gekoppeld, omvat verschillende stappen om uw identiteit te verifiëren. Deze stappen zijn nodig om uw gegevens te beschermen en kunnen enige tijd duren. Neem contact op met ons ondersteuningsteam om uw telefoonnummer te wijzigen. Stuur het ondersteuningsteam uw oude telefoonnummer en laat hen weten dat u dit wilt wijzigen. Het ondersteuningsteam zal contact met u opnemen voor de volgende stappen.</div>\n\n<h3>Wat is de datasleutel?</h3>\n<div>De datasleutel is een persoonlijke code van 64 tekens die helpt bij het beschermen van uw gegevens. U moet uw datasleutel invoeren om toegang te krijgen tot uw account wanneer u een nieuw apparaat of een nieuwe browser gebruikt.</div> \n<div>Wanneer u uw account aanmaakt, kopieert u de datasleutel of downloadt u deze in een pdf-bestand met de naam smart4health-dataKey.pdf. Hier is een voorbeeld van een datasleutel:</div></div> \n<code><b>158f 92cf 1638 86fa 88da 6e6a 663d eada 7036 44f4 2beb ff3d 41e7 0e8d 57c2 d9cb</b></code>\n<div>Uw account wordt beschermd door zowel uw wachtwoord als uw datasleutel, omdat gegevensbeveiliging onze hoogste prioriteit heeft.</div> \n<div><b>Belangrijk:</b> Om veiligheidsredenen kunnen we uw datasleutel niet opnieuw verzenden of vervangen, dus bewaar deze op een veilige plaats.</div> \n\n<h3>Ik kan mijn datasleutel niet vinden</h3>\n<div>Wanneer u uw account aanmaakt, kopieert u de datasleutel of downloadt u deze in een pdf-bestand met de naam smart4health-dataKey.pdf.</div>  \n<div>Als u uw datasleutel niet kunt vinden, kunt u ernaar zoeken waar u deze opslaat:</div>\n<ul class=\"ContentText__list--small-margin-bottom\">\n  <li>Downloads</li>\n  <li>Schermafbeeldingen</li>\n  <li>Belangrijke digitale documenten of notities</li>\n  <li>Belangrijke documenten in huis</li>\n</ul>\n<div>Om uw gegevens veilig te houden, kunnen we u geen nieuwe datasleutel geven of uw oorspronkelijke datasleutel opnieuw verzenden als u uw datasleutel verliest.</div> \n<div>Als u hetzelfde apparaat en dezelfde browser gebruikt waarmee u uw account heeft gemaakt, hoeft u uw datasleutel niet in te voeren.</div>  \n<div>Als u een nieuw account aanmaakt, ontvangt u een nieuwe datasleutel, maar verliest u uw eerder opgeslagen gegevens en instellingen.</div>  \n\n<h3>Hoe bewaar ik de datasleutel?</h3>\n<div>Om uw datasleutel veilig op te slaan, drukt u deze af of schrijft u deze op en bewaart u deze ergens privé waartoe u toegang heeft zonder computer of mobiel apparaat.</div>  \n\n<h3>Waarom heb ik een herstelsleutel?</h3>\n<p>Tijdens het aanmaken van een account geven we u een persoonlijke code, ook wel sleutel genoemd, om uw gegevens te beschermen. Als u een herstelsleutel heeft ontvangen toen u uw account aanmaakte, downloadt u de volgende keer dat u zich aanmeldt een datasleutel.</p> \n<p>Nadat u uw datasleutel heeft gedownload en op een veilige plaats hebt bewaard, heeft u uw herstelsleutel niet meer nodig. We hebben herstelsleutels vervangen door datasleutels omdat datasleutels een betere manier zijn om uw gegevens te beschermen.</p>",
+      "headline": "Gebruikersaccount"
+    },
+    "trust_privacy": {
+      "content": "<h3>Wie heeft toegang tot mijn gezondheidsinformatie?</h3>\n<div>We versleutelen uw gezondheidsinformatie end-to-end, zodat alleen u er toegang toe heeft.</div>\n<div>U kunt ervoor kiezen om delen van uw gezondheidsinformatie tijdelijk te delen met iemand die u vertrouwt, zoals een arts of familielid. </div>\n<div>Als u ervoor kiest uw gezondheidsinformatie met iemand te delen, heeft die persoon toegang tot de gezondheidsinformatie in een browser op zijn of haar apparaat. Nadat u gezondheidsinformatie met een persoon heeft gedeeld en totdat de persoon zijn browservenster sluit, kan de persoon het volgende doen met uw gezondheidsinformatie:</div>\n<div>\n<ul class=\"ContentText__list--small-margin-bottom\">\n<li>Weergave</li>\n<li>Afdrukken</li>\n<li>Downloaden</li>\n</ul>",
+      "headline": "Vertrouwen en privacy"
+    },
+    "eid": {
+      "content": "<h3>Wat is e-ID?</h3>\n<div>Elektronische identificatie (e-ID) is een digitale manier om uw identiteit te bewijzen. Als u een e-ID heeft, kunt u deze gebruiken om in te loggen op uw account in plaats van uw e-mailadres en wachtwoord te gebruiken.</div>\n<div>Koppel uw e-ID aan uw gebruikersaccount in uw accountinstellingen.</div>\n\n<h3>Wat heb ik nodig om mijn e-ID aan mijn account te koppelen?</h3>\n<div>Wat u nodig heeft om uw e-ID aan uw account te koppelen, hangt af van het land dat uw e-ID heeft afgegeven.</div> \n<div>Als uw e-ID bijvoorbeeld in Duitsland is uitgegeven, heeft u uw e-ID-kaart met geactiveerde pincode nodig en een van de volgende:</div>\n<ul class=\"ContentText__list--small-margin-bottom\">\n <li> Smartphone met NFC en <a href=\"https://www.ausweisapp.bund.de/ausweisapp2/\">AusweisApp2</a> geïnstalleerd, of</li>\n <li> Computer met AusweisApp2 en een van de volgende:\n  <ul class=\"ContentText__list--small-margin-bottom\">\n <div>- e-ID-kaartlezer, of</div> \n <div>- Smartphone met NFC en AusweisApp2</div> \n</ul></li></ul>\n\n<div>Als uw e-ID is uitgegeven door Portugal, hebt u een van de volgende zaken nodig:</div>\n<ul class=\"ContentText__list--small-margin-bottom\">\n <li>e-ID-kaart met e-ID-kaartlezer en de <a href=\"https://autenticacao.gov.pt/fa/ajuda/autenticacaogovpt.aspx#installAgent\">Autenticação.Gov browser plug-in</a>of</li>\n <li> digitale mobiele sleutel (Chave Móvel Digital) en de <a href=\"https://www.autenticacao.gov.pt/web/guest/aplicacao/autenticacao-gov-movel\">Autenticação.Gov mobile app</a> \n</li></ul>\n\n<h3>Hoe koppel ik mijn e-ID aan mijn account?</h3> \n<div>Om uw e-ID aan uw account te koppelen:</div> \n<ol>\n  <li>Ga naar uw profiel.</li>\n  <li>Kies Accountinstellingen.</li>\n  <li>Kies <b>e-ID koppelen</b>.</li>\n<span>U wordt doorgestuurd naar een nationale e-ID-serviceprovider.</span>\n</ol>\n<p>Volg de instructies van de e-ID-serviceprovider om het koppelen van de e-ID aan uw account te voltooien.</p>\n<p><b>Tip:</b> Gebruik de standaardbrowser van uw apparaat om fouten te voorkomen bij het koppelen van een Duitse e-ID op Android of iOS.</p>\n<p><b>Tip:</b> Om fouten te voorkomen bij het koppelen van een Duitse e-ID op een computer, opent u AusweisApp2 voordat u op <b>e-ID koppelen</b> klikt. </p>\n\n<h3>Waarom kan ik mijn Duitse e-ID niet koppelen?</h3>\n<div>Als u problemen heeft met het koppelen van uw Duitse e-ID, controleer dan het volgende:</div> \n<ul class=\"ContentText__list--small-margin-bottom\">\n<li>Uw e-ID pincode is geactiveerd</li>\n<li>AusweisApp2 is geïnstalleerd op uw apparaat of apparaten</li>\n<li>AusweisApp2 is actief (alleen computer)</li>\n<li>U gebruikt uw standaardbrowser (alleen Android- en iOS-apparaten)</li>\n<li>U gebruikt een USB-kaartlezer of een smartphone met NFC</li></ul>\n\n<h3>Hoe verwijder ik mijn e-ID?</h3>\n<div>Om uw e-ID uit uw account te verwijderen:</div>\n<ol>\n  <li>Ga naar uw profiel.</li>\n  <li>Kies Accountinstellingen.</li>\n  <li>Kies <b>e-ID verwijderen</b>.</li>\n</ol>\n\n<h3>Wat moet ik doen als ik mijn e-ID kwijt ben?</h3>\n<div>Om uw account te beschermen als u uw e-ID verliest, verwijdert u uw e-ID uit uw account.</div>",
+      "headline": "e-ID"
+    },
+    "sharing": {
+      "content": "<h3>Hoe deel ik gezondheidsinformatie?</h3>\n<div><b>Vereiste:</b> U hebt minimaal 1 bestand geüpload of persoonsgegevens ingevoerd.</div>\n\n<div>Gezondheidsgegevens delen:</div>\n<ol>\n  <li>Selecteer op het tabblad delen de gezondheidsgegevens die u wilt delen.</li>\n  <li>Kies <b>Nu delen</b>.</li>\n  <li>Vraag de persoon met wie u wilt delen om naar het volgende webadres te gaan: https://app.smart4health.eu/share.</li>\n  <li>Voer de pincode in of scan de QR-code die wordt weergegeven op het apparaat van de persoon.</li>\n  <li>Kies <b>Toegang verlenen</b>.</li>\n</ol>\n\n<h3>Hoe stop ik het delen van gezondheidsinformatie?</h3>\n<div>Als u gezondheidsgegevens met iemand deelt, worden de gezondheidsgegevens weergegeven in een browsertabblad op het apparaat van de ontvanger. De gezondheidsgegevens worden weergegeven tot de ontvanger de pagina verlaat of vernieuwt. </div>\n<div>Om de toegang tot de gegevens niet langer toe te staan:</div>\n<ol><li>Ga naar<b>Delen</b>.</li>\n<li>Zoek de datum waarop u de gegevens hebt gedeeld.</li>\n<li>Kies <b>Intrekken</b>.</li>\n<li>Kies in het bevestigingsvenster <b>Ja, intrekken</b>.</li></ol>",
+      "headline": "Bestanden en delen"
+    },
+    "medications": {
+      "content": "<h3>Wat is het schema?</h3>\n<div>Als u medicijnen gebruikt, kan er een schema aan uw account worden toegevoegd met instructies voor het innemen van de medicijnen. </div>\n<div>Het schema geeft aan hoeveel eenheden, of doses, van de medicatie moeten worden ingenomen en een tijdsperiode waarin de eenheden moeten worden ingenomen.</div>\n<div><b>Belangrijk:</b> Uw medicatiegegevens zijn mogelijk onvolledig of niet beschikbaar. Het schema vervangt uw medicatie-instructies niet. Raadpleeg bij twijfel uw arts. </div> \n\n<h3>Wat betekenen de schemavelden?</h3> \n<div><b>Medicatie-eenheid</b></div>\n<p>De eenheid van medicatie. Bijvoorbeeld een maateenheid zoals milligram (mg), milliliter (ml) of een doseringsvorm zoals tablet, crème, olie.</p>\n<div><b>Aantal medicatie-eenheden</b></div>\n<p>Hoeveel van de medicatie-eenheden te nemen of toe te passen.</p>\n<div><b>Aantal keren</b></div> \n<p>Hoe vaak u de medicatie binnen een bepaalde periode inneemt of toedient.</p>\n<div><b>Voorval en tijdseenheid</b></div>\n<p>De periode waarin u de medicatie neemt. Bijvoorbeeld elke 8 uur.</p>\n\n<div><b>Wanneer</b></div>\n<div>Een specifieke tijd of omstandigheid wanneer u de medicatie inneemt. Bijvoorbeeld 's avonds,' s nachts, bij het ontbijt.</div>\n<p><b>Opmerking:</b> Het veld Wanneer mag leeg zijn.</p>\n\n<div><b>Opmerkingen</b></div>\n<div>Aanvullende opmerkingen over de medicatie.</div> \n<div><b>Opmerking:</b> Het veld Opmerkingen kan leeg zijn.</div>\n\n<h3>Hoe lees ik het schema?</h3>\n<div>Om het schema te lezen, rangschikt u het in de volgende volgorde:</div>\n<p>[Aantal medicatie-eenheden] [Medicatie-eenheid], [Aantal keren] tijd(en), elke [Voorval][Tijdseenheid], [Wanneer] - [Opmerkingen].</p>\n<div>Bijvoorbeeld:</div> \n<div>[1] [Pil], [1] keer, elke [2] [dagen], [Ochtend] - [Innemen met voedsel].</div>\n\n<h4>Schemavoorbeelden</h4>\n<div><b>Medicatie-eenheid:</b> Tablet</div>\n<div><b>Aantal medicatie-eenheden:</b> 2</div>\n<div><b>Aantal keren:</b> 1</div>\n<div><b>Voorval:</b> 2</div>\n<div><b>Tijdseenheid:</b> Dag</div>\n<div><b>Wanneer:</b> (leeg)</div>\n<div><b>Opmerkingen:</b> Innemen bij een maaltijd</div>\n\n<p>Bovenstaande tabel betekent: Neem 2 tabletten, 1 keer, om de 2 dagen, bij een maaltijd.</p> \n\n<div><b>Medicatie-eenheid:</b> ml</div>\n<div><b>Aantal medicatie-eenheden:</b> 15</div>\n<div><b>Aantal keren:</b> 3</div>\n<div><b>Voorval:</b> 1</div>\n<div><b>Tijdseenheid:</b> Week</div>\n<div><b>Wanneer:</b> Namiddag</div>\n<div><b>Opmerkingen:</b> (leeg)</div>\n\n<p>Bovenstaande tabel betekent: Breng 15 ml van het medicijn aan, 3 keer, elke 1 week, 's middags. </p> \n<b>Opmerking:</b> elke 1 week is hetzelfde als elke week.",
+      "headline": "Medicijnen"
+    },
+    "conditions": {
+      "content": "<h3>Wat zijn aandoeningen?</h3>\n<p>Aandoeningen zijn ziekten die een persoon kan hebben of heeft gehad. Elke aandoening kan één van volgende hebben:</p>\n<ul>\n  <li><strong>Datum</strong><div>Wanneer de aandoeningsinfo is ingevoerd.</div></li>\n  <li><strong>Klinische status</strong><div>De toestand van de aandoening in relatie tot de persoon.</div></li>\n  <li><strong>Klinische verificatie</strong><div>De zekerheid van de info over de aandoening.</div></li>\n</ul>\n<div>De klinische statussen en klinische verificaties worden hieronder toegelicht.</div>\n<h4>Klinische statussen</h4>\n<p><strong>Actief</strong>Er zijn symptomen van of er zijn aanwijzingen voor de aandoening.</p>\n<p><strong>Inactief</strong>Er zijn geen symptomen van of er zijn geen aanwijzingen voor de aandoening.</p>\n<p><strong>Opgelost</strong>Er zijn geen symptomen van of er zijn geen aanwijzingen voor de aandoening. Er is een verwaarloosbaar waargenomen risico dat de symptomen terugkeren.</p>\n<p><strong>Remissie</strong>Er zijn geen symptomen van of er zijn geen aanwijzingen voor de aandoening. Er is meer dan een verwaarloosbaar waargenomen risico dat de symptomen terugkeren.</p>\n<p><strong>Terugval</strong>Er zijn symptomen van of er zijn aanwijzingen voor de aandoening na een periode van verbetering of remissie.</p>\n<div><strong>Recidief</strong>Er zijn symptomen van of er zijn aanwijzingen voor een eerder opgeloste aandoening.</div>\n<h4>Klinische verificaties</h4>\n<p><strong>Bevestigd</strong>Er is voldoende klinisch of diagnostisch bewijs om de toestand van de aandoening te bevestigen.</p>\n<p><strong>Onbevestigd</strong> Er is onvoldoende klinisch of diagnostisch bewijs om de toestand van de aandoening te bevestigen.</p>\n<p><strong>Voorlopig</strong>De toestand van de aandoening is tijdelijk gesuggereerd op basis van klinisch of diagnostisch bewijs.</p>\n<p><strong>Differentieel</strong>De aandoening is een van meerdere mogelijke aandoeningen die worden aangegeven door klinisch of diagnostisch bewijs.</p>\n<p><strong>Verweerd</strong>Het klinische of diagnostische bewijs geeft aan dat de toestand van de aandoening onjuist is.</p>",
+      "headline": "Aandoeningen"
+    },
+    "allergies": {
+      "content": "<h3>Wat zijn allergieën en intoleranties?</h3>\n<p>De app geeft allergieën en intoleranties weer die een persoon kan hebben of heeft gehad. De app kan ook allergieën of intoleranties weergeven waarvan is bevestigd dat hij deze niet heeft.</p>\n\n<p>Elke allergie of intolerantie kan het volgende hebben:</p>\n<ul>\n  <li><strong>Titel</strong><div>De titel kan de naam van de allergie of intolerantie weergeven, de stof waarvoor de persoon allergisch of intolerant is, of beide. De titel kan ook een code uit een klinische catalogus weergeven. U kunt de code opzoeken om te zien op welke allergie of intolerantie de code betrekking heeft.</div></li>\n  <li><strong>Reactiegegevens</strong><div>Klinische symptomen of observaties die verband houden met blootstelling aan de stof waarvoor de persoon allergisch of intolerant is. Bijvoorbeeld 'netelroos' of 'anafylactische reactie'.</div></li>\n  <li><strong>Ernst</strong><div>Het gezondheidsrisico van blootstelling aan de stof waarvoor de persoon allergisch of intolerant is.</div></li>\n  <li><strong>Klinische status</strong><div>Of de allergie of intolerantie nu actief, inactief of verdwenen is. </div></li>\n  <li><strong>Zekerheidsniveau</strong><div>De mate van zekerheid over de neiging tot een reactie op de stof.</div></li>\n</ul>\n<p><strong>Opmerking:</strong> De informatie over allergieën en intoleranties in uw account kan onvolledig of verouderd zijn. Raadpleeg bij twijfel een arts.</p>\n\n<div>De ernststatussen, klinische statussen en zekerheidsniveaus worden hieronder toegelicht.</div>\n\n<h4>Ernst</h4>\n<strong>Laag risico</strong><p>Het slechtst mogelijke resultaat van een toekomstige blootstelling wordt niet beoordeeld als levensbedreigend of met een hoog potentieel voor orgaanfalen.</p>\n<strong>Hoog risico</strong><p>Het slechtst mogelijke resultaat van een toekomstige blootstelling wordt beoordeeld als levensbedreigend of met een grote kans op falen van het orgaansysteem.</p>\n<strong>Kan risico niet inschatten</strong><p>Het slechtst mogelijke resultaat van een toekomstige blootstelling kon niet worden beoordeeld.</p>\n<h4>Klinische statussen</h4>\n<strong>Actief</strong><p>De persoon ervaart of dreigt een reactie op de stof te krijgen.</p>\n<strong>Inactief</strong><p>De persoon loopt geen risico meer op een reactie op de stof.</p>\n<strong>Opgelost</strong><p>Een reactie op de stof is klinisch opnieuw beoordeeld en wordt geacht niet langer aanwezig te zijn.</p>\n<h4>Zekerheidsniveaus</h4>\n<strong>Onbevestigd</strong><p>Er is een lage mate van zekerheid over de neiging tot een reactie op de stof.</p>\n<strong>Bevestigd</strong><p>Er is een hoge mate van zekerheid over de neiging tot een reactie op de stof.</p>\n<strong>Weerlegd</strong><p>Een neiging tot een reactie op de geïdentificeerde stof is betwist of weerlegd met een voldoende mate van klinische zekerheid om het ongeldig maken van de bewering te rechtvaardigen.</p>",
+      "headline": "Allergieën en intoleranties"
+    },
+    "user_account_sidebar": {
+      "title": "Gebruikersaccount"
+    },
+    "allergies_sidebar": {
+      "title": "Allergieën en intoleranties"
+    },
+    "trust_privacy_sidebar": {
+      "title": "Vertrouwen en privacy"
+    },
+    "eid_sidebar": {
+      "title": "e-ID"
+    },
+    "sharing_sidebar": {
+      "title": "Bestanden en delen"
+    },
+    "medications_sidebar": {
+      "title": "Medicijnen"
+    },
+    "conditions_sidebar": {
+      "title": "Aandoeningen"
+    },
+    "sidebar_heading": {
+      "title": "Ondersteuning"
+    },
+    "data_ingestion_sidebar": {
+      "title": "Externe gegevensbronnen"
+    },
+    "data_ingestion": {
+      "headline": "Externe gegevensbronnen",
+      "content": "<h3>Hoe komen gezondheidsgegevens in mijn account?</h3>\n<div>Gezondheidsgegevens kunnen op de volgende manieren in uw account komen:</div>\n<ul>\n  <li>U voegt gezondheidsgegevens toe op het tabblad Documenten</li>\n  <li>Een app, zoals CitizenHub of PhysioSense, voegt gezondheidsgegevens toe</li>\n  <li>Een Smart4Health-partner voegt gezondheidsgegevens toe</li>\n</ul>\n<div>Zie: <a href=\"#data-ingestion-connect-to-partner\">Hoe koppel ik mijn account aan een partner?</a></div>\n\n<h3>Welke gezondheidsgegevens ontvang ik van partners?</h3>\n<div>De gezondheidsgegevens die u ontvangt zijn afhankelijk van:</div>\n<ul>\n  <li>De softwaresystemen van de partner</li>\n  <li>Wat de partner weet over uw gezondheid</li>\n  <li>Het behandel- of preventieplan dat u ontvangt</li>\n</ul>\n</div>U kunt informatie krijgen over uw:</div>\n<ul>\n  <li>Aandoeningen</li>\n  <li>Medicijnen</li>\n  <li>Allergieën en intoleranties</li>\n  <li>Behandelingen</li>\n  <li>Fysieke kenmerken (bijvoorbeeld bloedgroep)</li>\n</ul>\n<h3 id=\"data-ingestion-connect-to-partner\">How do I connect my account to a partner?</h3>\n<div><b>Prerequisite:</b> You’ve consented to connect your account with a Smart4Health partner. The partner has sent you an email message with instructions.</div>\n<ol>\n  <li>Follow the email instructions.</li>\n  <li>After you sign in to your account, an <b>Access request</b> notification is displayed. Choose <b>Allow.</b></li>\n</ol>\n<div>Your account is connected to the partner.</div>\n\n<h3>When do I receive data from partners?</h3>\n<div><b>Prerequisite:</b> You’ve connected your account to the partner.</div>\n\n<div>Health data is transferred to your account automatically whenever it’s available on the partner’s system.</div>\n<h3>How do I stop receiving data from a partner?</h3>\n<div>To stop receiving data from a partner in your account, get in touch with our <a href=\"mailto:helpdesk@smart4health.eu\">support team</a>. Please include the name of the partner and your user ID.</div>\n\n<div>Zie: <a href=\"#data-ingestion-find-user-id\">How do I find my user ID?</a></div>\n\n<h3 id=\"data-ingestion-find-user-id\">How do I find my user ID?</h3>\n<div>Your user ID is displayed in <b>Account settings</b>. To go to <b>Account settings</b>, click your email address while signed in."
+    }
+  },
+  "notifications": {
+    "CHANGE_PASSWORD_FAIL": "Kan het wachtwoord niet wijzigen.",
+    "COULD_NOT_CONNECT": "Sorry, de verbinding kan niet worden gemaakt. Neem contact op met helpdesk@smart4health.eu.",
+    "DUPLICATE_EMAIL": "Registratie mislukt. Gebruik een ander e-mailadres.",
+    "GENERIC_ERROR": "Neem contact op met helpdesk@smart4health.eu.",
+    "INVALID_VERIFICATION_LINK": "De verstrekte verificatielink is ongeldig of is al ingewisseld.",
+    "LOGIN_AUTHORIZATION_FAIL": "U kon niet geautoriseerd worden.",
+    "LOGIN_CONNECTION_ERROR": "Verbindingsfout.",
+    "LOGIN_INVALID_RESPONSE": "Ongeldig antwoord.",
+    "LOGIN_USER_NOT_LOGGEDIN": "De gebruiker is niet aangemeld.",
+    "PERMISSION_GRANTED": "Toestemming verleend.",
+    "PIN_ERROR_REFRESH": "Vernieuw de pagina om een ​​nieuwe pincode te krijgen.",
+    "PIN_INVALID": "Fout bij het verzenden van de pincode. Probeer opnieuw.",
+    "SESSION_EXPIRED": "Voor uw veiligheid bent u uitgelogd na een periode van inactiviteit. Log opnieuw in om door te gaan.",
+    "SHARE_SUCCESS": "Gezondheidsgegevens veilig gedeeld.",
+    "TOKEN_EXPIRED": "Als veiligheidsmaatregel kunt u binnen 10 minuten na inloggen gebruik maken van delen. Log opnieuw in om delen te gebruiken.",
+    "VERIFY_GRACE_TIME_EXCEEDED": "De respijtperiode voor dit account is verlopen. Controleer uw e-mailadres.",
+    "account_deleted": "Uw account en alle gerelateerde gegevens worden verwijderd. Dit kan enkele minuten duren.",
+    "broker_validate": "is succesvol verbonden met uw account",
+    "change_email_204": "We hebben zojuist een bericht naar uw nieuwe e-mailadres gestuurd. Klik op de link in het bericht om de wijziging te bevestigen.",
+    "change_email_401": "Autorisatiefout. Probeer het opnieuw.",
+    "change_email_409": "Dit e-mailadres is al geregistreerd.",
+    "change_email_500": "Er is een fout opgetreden. Probeer het later opnieuw.",
+    "change_email_network": "Er is een verbindingsfout opgetreden. Probeer het later opnieuw.",
+    "email_validated": "Uw e-mailadres is gevalideerd.",
+    "email_validated_error": "Er is een fout opgetreden bij het valideren van uw e-mailadres.",
+    "error": "Er is een fout opgetreden. Probeer het opnieuw.",
+    "error_change_password_validation_fail": "Uw invoer lijkt niet te kloppen. Zorg ervoor dat het oude wachtwoord correct is en dat het nieuwe wachtwoord in beide gevallen identiek is.",
+    "error_data_generic": "Er lijkt een probleem te zijn met het verwerken van uw gegevens, probeer het opnieuw.",
+    "error_in_changing_password": "Er is een probleem met het wijzigen van het wachtwoord, probeer het opnieuw.",
+    "error_in_getting_data": "Er is een fout opgetreden bij het lezen van uw gegevens.",
+    "error_in_updating_document": "Er is een fout opgetreden tijdens het bijwerken van uw document.",
+    "error_label": "Er is iets fout gegaan.",
+    "error_login": "Er is een probleem, u wordt uitgelogd.",
+    "error_pin_check": "Combinatie pincode en e-mail ongeldig.",
+    "error_upload_empty_file": "Lege bestanden kunnen niet worden geüpload. Selecteer een ander bestand.",
+    "error_upload_prohibited_file": "Bestanden van dit type kunnen niet worden geüpload. Toegestane bestandstypen zijn JPG, PNG, TIFF, PDF en DCM.",
+    "logged_out": "U bent succesvol uitgelogd.",
+    "success_change_password": "Uw wachtwoord is succesvol gewijzigd.",
+    "success_label": "Succes!",
+    "support_email_not_sent": "Er is een probleem opgetreden bij het verzenden van uw bericht.",
+    "support_email_sent": "Uw bericht aan ons is succesvol verzonden.",
+    "warning_label": "Belangrijk.",
+    "SHARE_ERROR": "Er is een fout opgetreden bij het delen van uw gegevens. Laad de pagina opnieuw en probeer het opnieuw.",
+    "error_upload_file_too_large": "Het bestand is te groot om te uploaden. U kunt alleen bestanden van maximaal 20 MB uploaden.",
+    "SHARE_ERROR_LOCKED": "Te veel mislukte pogingen. Als veiligheidsmaatregel is de deelfunctionaliteit 10 minuten gedeactiveerd.",
+    "error_auth_state": "Er is een probleem opgetreden met de verificatie van de autorisatiestatus. Probeer opnieuw in te loggen.",
+    "userdata": {
+      "load": {
+        "failure": ""
+      }
+    },
+    "REMOVE_EID_SUCCESS": "Uw e-ID is verwijderd.",
+    "ADD_EID_SUCCESS": "Uw e-ID is nu gekoppeld aan uw account.",
+    "ADD_EID_ERROR": "De e-ID kon niet worden gekoppeld aan uw account. Probeer het later opnieuw.",
+    "ADD_EID_DEVICE_ID_EXISTS_ERROR": "De e-ID is gekoppeld aan een ander account. Om de e-ID aan dit account te koppelen, verwijdert u eerst de e-ID van het andere account.",
+    "delete_medications_error": {
+      "message": "Een of meer medicijnen konden niet worden verwijderd. Probeer het opnieuw."
+    },
+    "delete_allergies_intolerances_error": {
+      "message": "Een of meerdere allergieën of intoleranties konden niet worden verwijderd. Probeer het opnieuw."
+    },
+    "delete_conditions_error": {
+      "message": "Een of meer aandoeningen konden niet worden verwijderd. Probeer het opnieuw."
+    }
+  },
+  "recoveryPasswordPdf": {
+    "bulletPoints": "Ga naar de website <strong>https://app.data4life.care</strong> en kies 'Wachtwoord vergeten' onder het veld 'Wachtwoord'. Voer het e-mailadres van uw Data4Life-account in. Voer uw persoonlijke herstelsleutel in. Voer uw nieuwe wachtwoord in en bevestig het.",
+    "firstParagraph": "Als u uw wachtwoord bent vergeten, heeft u uw herstelsleutel nodig om het opnieuw in te stellen. Het is dus belangrijk dat u uw herstelsleutel ergens bewaart waar u zonder computer toegang toe hebt. De volgende 12 woorden zijn uw persoonlijke herstelsleutel. Deze sleutel is speciaal voor u gegenereerd.",
+    "mainTitle": "Uw persoonlijke herstelsleutel",
+    "subtitle1": "Herstelsleutel",
+    "subtitle2": "Korte handleiding voor het opnieuw instellen van uw wachtwoord:"
+  },
+  "scopes": {
+    "attachment": {
+      "r": "Bestanden van uw documenten lezen",
+      "w": "Bestanden aan uw documenten toevoegen"
+    },
+    "cando": "Wanneer u toegang verleent, kan deze app",
+    "cannotdo": "Maar deze app kan niet",
+    "exc": "Token wisselen",
+    "pass": {
+      "r": "Uw wachtwoord lezen",
+      "w": "Uw wachtwoord wijzigen"
+    },
+    "perm": {
+      "r": "Rechten bekijken die u hebt verleend",
+      "w": "Machtigingen wijzigen"
+    },
+    "rec": {
+      "r": "Uw documenten bekijken",
+      "w": "Documenten toevoegen of wijzigen"
+    },
+    "user": {
+      "d": "Uw gebruikersprofiel verwijderen",
+      "q": "Namens u naar andere gebruikers zoeken",
+      "r": "Uw gebruikersprofiel bekijken",
+      "w": "Uw gebruikersprofiel wijzigen"
+    }
+  },
+  "sharing": {
+    "landing_page_enter_data": {
+      "button": "Voer persoonsgegevens in"
+    },
+    "landing_page_upload": {
+      "button": "Documenten toevoegen"
+    }
+  },
+  "documents": {
+    "landing_page_empty": {
+      "title": "Uw gezondheidsinformatie, onderweg",
+      "subtitle": "Bewaar uw gezondheidsdocumenten op één privéplaats en open ze vanaf elk apparaat."
+    },
+    "landing_page_upload": {
+      "button": "Document toevoegen"
+    },
+    "sidebar": {
+      "subtitle": "Nieuwste bovenaan"
+    },
+    "max_file_size_error": {
+      "infotext": "Het bestand is te groot. U kunt bestanden tot 20 MB toevoegen."
+    },
+    "add_modal_speciality_section": {
+      "infotext": "Als een specialist het document voor u heeft gemaakt, voert u hun gegevens in."
+    },
+    "add_modal_speciality": {
+      "title": "Specialiteit"
+    },
+    "add_modal_speciality_firstName": {
+      "title": "Voornaam"
+    },
+    "add_modal_speciality_lastName": {
+      "title": "Achternaam"
+    },
+    "add_modal_speciality_headline": {
+      "title": "Auteur document"
+    }
+  },
+  "general_reuse": {
+    "page_not_found": {
+      "title": "We konden deze pagina niet vinden",
+      "subtitle": "Deze link is verbroken of de pagina is verwijderd. Probeer een andere pagina uit het menu of ga naar de startpagina.",
+      "button": "Ga naar de startpagina"
+    },
+    "network_error": {
+      "message": "Geen verbinding"
+    }
+  },
+  "profile": {
+    "eid_settings": {
+      "headline": "e-ID",
+      "content": "Log in met uw e-ID in plaats van uw e-mailadres en wachtwoord."
+    },
+    "eid_remove": {
+      "button": "e-ID verwijderen"
+    },
+    "eid_add": {
+      "button": "e-ID koppelen"
+    },
+    "eid_remove_confirm": {
+      "headline": "e-ID verwijderen?",
+      "content": "U kunt nog steeds inloggen op uw account met uw e-mailadres en wachtwoord.",
+      "button": "Ja, e-ID verwijderen"
+    },
+    "eid_not_connected": {
+      "infotext": "Geen e-ID gekoppeld aan account."
+    },
+    "eid_connected": {
+      "infotext": "Uw e-ID is gekoppeld aan uw account.",
+      "content": "Bent u uw e-ID kwijt, of heeft u een nieuwe, dan kunt u de gekoppelde e-ID verwijderen en later een nieuwe toevoegen."
+    },
+    "authentication_details": {
+      "headline": "Authenticatiedetails"
+    },
+    "eid_data_fetch_failed": {
+      "message": "Er is een fout opgetreden. Probeer het later opnieuw."
+    },
+    "eid_country_selection": {
+      "headline": "Selecteer het land dat uw e-ID heeft afgegeven"
+    },
+    "eid_country_list_de": {
+      "radio_button": "Duitsland"
+    },
+    "eid_country_list_cz": {
+      "radio_button": "Tsjechië"
+    },
+    "eid_country_list_lu": {
+      "radio_button": "Luxemburg"
+    },
+    "eid_country_list_be": {
+      "radio_button": "België"
+    },
+    "eid_country_list_test": {
+      "radio_button": "Test"
+    },
+    "eid_country_selection_next": {
+      "button": "Volgende"
+    },
+    "eid_country_list_hr": {
+      "radio_button": "Kroatië"
+    },
+    "eid_country_list_ee": {
+      "radio_button": "Estland"
+    },
+    "eid_country_list_it": {
+      "radio_button": "Italië"
+    },
+    "eid_country_list_lv": {
+      "radio_button": "Letland"
+    },
+    "eid_country_list_nl": {
+      "radio_button": "Nederland"
+    },
+    "eid_country_list_sk": {
+      "radio_button": "Slowakije"
+    },
+    "eid_country_list_es": {
+      "radio_button": "Spanje"
+    },
+    "eid_country_list_pt": {
+      "radio_button": "Portugal (Opmerking: <a href=\"https://www.autenticacao.gov.pt/\" target=\"_blank\">Authenticação.gov</a>-plug-in of -app is vereist)"
+    },
+    "eid_ausweisapp_warning": {
+      "label": "(Opmerking: AusweisApp2 moet op uw apparaat worden uitgevoerd.)"
+    }
+  }
+}

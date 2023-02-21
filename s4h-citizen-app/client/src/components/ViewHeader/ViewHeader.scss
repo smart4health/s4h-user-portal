@@ -1,0 +1,10 @@
+.ViewHeader {
+  padding-bottom: var(--space-m);
+  color: var(--color-primary);
+
+  h1 {
+    margin: 0;
+    font: var(--typography-desktop-headline-2);
+    line-height: 1;
+  }
+}

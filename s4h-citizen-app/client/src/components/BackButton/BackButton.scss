@@ -1,0 +1,14 @@
+.BackButton {
+  &#{&} {
+    width: 4rem;
+    min-width: 4rem;
+    height: 4rem;
+    margin-right: 0.5em;
+    color: var(--color-primary);
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

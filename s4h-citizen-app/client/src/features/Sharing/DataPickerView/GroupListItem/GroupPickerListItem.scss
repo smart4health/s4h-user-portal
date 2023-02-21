@@ -1,0 +1,15 @@
+.GroupPickerListItem {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  border-bottom: 1px solid var(--color-neutral-lightest);
+  padding: var(--space-s) 0 var(--space-s) var(--space-xs);
+  font: var(--typography-desktop-body-level-1);
+  color: var(--color-secondary);
+
+  &__checkbox {
+    input[type='checkbox'].sc-d4l-checkbox + label.sc-d4l-checkbox {
+      color: var(--color-primary);
+    }
+  }
+}

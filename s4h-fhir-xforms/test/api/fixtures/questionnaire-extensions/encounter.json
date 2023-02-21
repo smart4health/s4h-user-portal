@@ -1,0 +1,35 @@
+{
+  "resourceType": "Encounter",
+  "id": "6F897FEF-B426-4C6C-855B-95534010B60B",
+  "identifier": [{
+      "system": "http://fhir.smart4health.eu/CodeSystem/ittm-training-id",
+      "value": "test-initial-1"
+  }],
+  "status": "finished",
+  "class": {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "AMB",
+      "display": "ambulatory"
+  },
+  "subject": {
+      "reference": "Patient/CD9B26EA-234E-46BB-91A1-D67B23064396",
+      "display": "John Doe"
+  },
+  "partOf": {
+      "identifier": {
+          "system": "http://fhir.smart4health.eu/CodeSystem/ittm-case-id",
+          "value": "test-session-1"
+      }
+  },
+  "period": {
+      "start": "2020-02-03",
+      "end": "2020-02-03"
+  },
+  "serviceProvider": {
+      "identifier": {
+          "system": "http://fhir.smart4health.eu/CodeSystem/ittm-location-id",
+          "value": "clinic-xyz"
+      },
+      "display": "ITTM clinic XYZ"
+  }
+}

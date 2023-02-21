@@ -1,0 +1,49 @@
+{
+  "resourceType": "DocumentReference",
+  "status": "current",
+  "id": "a564cec7-6ece-4ff9-bc74-afcb1040c46d",
+  "type": {
+      "coding": [{
+          "system": "http://loinc.org",
+          "code": "19002-5",
+          "display": "Physical therapy service attachment"
+      }]
+  },
+  "identifier": [{
+    "system": "s4h",
+    "value": "doc-1"
+  }],
+  "subject": {
+      "reference": "Patient/CD9B26EA-234E-46BB-91A1-D67B23064396",
+      "display": "John Doe"
+  },
+  "indexed": "2020-09-16T13:01:22.346Z",
+  "author": [{
+      "identifier": {
+          "system": "http://fhir.smart4health.eu/CodeSystem/ittm-location-id",
+          "value": "clinic-xyz"
+      },
+      "display": "ITTM clinic XYZ"
+  }],
+  "description": "Initial force test documentation",
+  "content": [
+    {
+      "attachment": {
+        "contentType": "application/pdf",
+        "creation": "2020-09-16T13:01:22.346Z",
+        "hash": "KL4erj7GosRhcC3gPz8ffT8IqPY=",
+        "id": "b30c9433-2536-4cea-bfbf-f548fd6cb591",
+        "size": 104259,
+        "title": "Invoice(1).pdf"
+      }
+    }
+  ],
+  "context": {
+      "encounter": {
+          "identifier": {
+              "system": "http://fhir.smart4health.eu/CodeSystem/ittm-training-id",
+              "value": "encounter-1"
+          }
+      }
+  }
+}

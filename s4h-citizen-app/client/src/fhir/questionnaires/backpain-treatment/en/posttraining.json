@@ -1,0 +1,87 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "s4h-treatment-series-post-training-questionnaire-example-en",
+  "url": "http://fhir.smart4health.eu/Questionnaire/post-training-questionnaire",
+  "version": "1.0.0",
+  "title": "Smart4Health post-training questionnaire",
+  "status": "draft",
+  "subjectType": ["Patient"],
+  "date": "2020-02",
+  "publisher": "D4L data4life gGmbH",
+  "contact": [
+    {
+      "name": "ITTM Solutions",
+      "telecom": [
+        { "system": "url", "value": "https://www.ittm-solutions.com/" }
+      ]
+    },
+    {
+      "name": "D4L data4life gGmbH",
+      "telecom": [{ "system": "url", "value": "https://www.data4life.care" }]
+    }
+  ],
+  "item": [
+    {
+      "linkId": "training_no",
+      "text": "Training Number",
+      "type": "integer",
+      "required": true
+    },
+    {
+      "linkId": "training_weight_recommendation",
+      "text": "Training weight recommendation for the next training.",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-training-weight-change"
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-training-weight-change",
+      "version": "0.1.0",
+      "id": "s4h-training-weight-change",
+      "name": "s4h-training-weight-change-vs",
+      "status": "draft",
+      "publisher": "D4L/ITTM",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-training-weight-change"
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:b3c04954-2d44-4cb2-8728-7a2cec4d7831",
+        "timestamp": "2021-04-13T12:00:00.000Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-training-weight-change",
+            "code": "increase",
+            "display": "Increase training weight"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-training-weight-change",
+            "code": "decrease",
+            "display": "Decrease training weight"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-training-weight-change",
+            "code": "retain",
+            "display": "Retain training weight"
+          }
+        ]
+      }
+    }
+  ]
+}

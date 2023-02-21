@@ -1,0 +1,60 @@
+// Specific s4h re-theming of buttons from the d4l component library
+d4l-button .button.sc-d4l-button {
+  letter-spacing: 0.5px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border: unset;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: unset;
+  }
+
+  &.button--secondary {
+    box-shadow: inset 0 0 0 1px var(--color-border-button-secondary-default);
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 0 0 2px var(--color-border-button-secondary-hover);
+    }
+
+    &:active {
+      box-shadow: inset 0 0 0 2px var(--color-border-button-secondary-active);
+    }
+
+    &.button--disabled {
+      box-shadow: inset 0 0 0 1px var(--color-border-button-secondary-disabled);
+    }
+  }
+
+  &.button--tertiary {
+    // Hover and focus states on a d4l-button are using the same visual styles.
+    // This CSS rule makes sure that focus looks different than hover. This is
+    // done so that clicking a button and then hovering out, changes the button's
+    // visual state to it's default.
+    &:focus {
+      background-color: transparent;
+      color: var(--color-secondary);
+    }
+
+    // This hover rule is overriding the focus rule above. This has to be done,
+    // so that after clicking a button and still hovering over the button keeps
+    // the visual hover state.
+    &:hover {
+      background-color: var(--color-neutral-lightest);
+      color: var(--color-primary);
+    }
+
+    // If the browser supports it we progressively enhance with focus-visible
+    // to provide a stronger visual focus indication that is akin to the
+    // hover state.
+    &:focus-visible {
+      background-color: var(--color-neutral-lightest);
+      color: var(--color-primary);
+      outline: 2px solid var(--color-primary);
+    }
+  }
+}

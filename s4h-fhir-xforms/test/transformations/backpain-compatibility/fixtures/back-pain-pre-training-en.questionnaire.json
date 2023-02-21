@@ -1,0 +1,124 @@
+{
+  "resourceType": "Questionnaire",
+  "url": "http://fhir.smart4health.eu/Questionnaire/pre-training-questionnaire",
+  "version": "1.0.0",
+  "title": "Smart4Health pre-training questionnaire",
+  "status": "draft",
+  "subjectType": ["Patient"],
+  "date": "2021-04-13",
+  "publisher": "D4L data4life gGmbH",
+  "contact": [
+    {
+      "name": "ITTM Solutions",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ittm-solutions.com/"
+        }
+      ]
+    },
+    {
+      "name": "D4L data4life gGmbH",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.data4life.care"
+        }
+      ]
+    }
+  ],
+  "item": [
+    {
+      "linkId": "training_no",
+      "text": "Training Number",
+      "type": "integer",
+      "required": true
+    },
+    {
+      "linkId": "back_pain_level_before",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "72514-3"
+        }
+      ],
+      "text": "Lower back pain level before training",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "http://loinc.org/vs/LL2335-9",
+      "item": [
+        {
+          "linkId": "back_pain_level_before.explanation",
+          "text": "In the following, please provide your pain level (Visual Analog Scale for Pain - VAS Pain). Please select how you experience your pain (under your usual medication dose) from the given scale (0-10). The VAS pain level describes the scale between '0' ('no pain') and '10' ('worst imaginable pain').",
+          "type": "display",
+          "enableBehavior": "any"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://fhir.smart4health.eu/CodeSystem/questionnaire-ui-codes",
+                "code": "painscalewithlabels"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "well_being",
+      "text": "Well being",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "http://loinc.org/vs/LL2335-9",
+      "item": [
+        {
+          "linkId": "well_being.explanation",
+          "text": "0: All well, 10: All bad",
+          "type": "display"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://fhir.smart4health.eu/CodeSystem/questionnaire-ui-codes",
+                "code": "wellbeingscalewithlabels"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "well-being_summary",
+      "text": "Summary of your health, general well-being and activities in the last days/weeks",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-pre-training-well-being-summary"
+    },
+    {
+      "linkId": "extraordinary_circumstances",
+      "text": "Extraordinary circumstances",
+      "type": "choice",
+      "enableWhen": [
+        {
+          "question": "well-being_summary",
+          "operator": "=",
+          "answerCoding": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-pre-training-well-being-summary",
+            "code": "extraordinary"
+          }
+        }
+      ],
+      "required": true,
+      "repeats": true,
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-backpain-extraordinary-circumstances"
+    }
+  ]
+}

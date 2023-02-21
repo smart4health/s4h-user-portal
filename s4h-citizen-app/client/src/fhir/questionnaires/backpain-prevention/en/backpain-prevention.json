@@ -1,0 +1,954 @@
+{
+  "resourceType": "Questionnaire",
+  "language": "en",
+  "url": "http://fhir.smart4health.eu/Questionnaire/back-pain-prevention",
+  "version": "1.0.0",
+  "name": "Smart4Health_back_pain_prevention_questionnaire",
+  "id": "s4h-treatment-series-backpain-prevention-questionnaire-en",
+  "title": "Back pain prevention questionnaire",
+  "status": "draft",
+  "subjectType": ["Patient"],
+  "date": "2022-03-10",
+  "publisher": "D4L data4life gGmbH",
+  "contact": [
+    {
+      "name": "ITTM Solutions",
+      "telecom": [
+        { "system": "url", "value": "https://www.ittm-solutions.com/" }
+      ]
+    },
+    {
+      "name": "D4L data4life gGmbH",
+      "telecom": [{ "system": "url", "value": "https://www.data4life.care" }]
+    }
+  ],
+  "description": "Back pain prevention questionnaire",
+  "item": [
+    {
+      "linkId": "questionnaire_timing",
+      "text": "When is this questionnaire being administered?",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-questionnaire-timing"
+    },
+    {
+      "linkId": "back_pain_frequency",
+      "text": "How often do you suffer from back pain?",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-back-pain-frequency"
+    },
+    {
+      "linkId": "back_pain_duration",
+      "text": "How long has this pain been occurring?",
+      "type": "choice",
+      "required": true,
+      "enableWhen": [
+        {
+          "question": "back_pain_frequency",
+          "operator": "!=",
+          "answerCoding": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "nev"
+          }
+        }
+      ],
+      "answerValueSet": "#s4h-back-pain-duration"
+    },
+    {
+      "linkId": "back_pain_location",
+      "text": "In which body part does the pain appear?",
+      "type": "choice",
+      "required": true,
+      "repeats": true,
+      "enableWhen": [
+        {
+          "question": "back_pain_frequency",
+          "operator": "!=",
+          "answerCoding": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "nev"
+          }
+        }
+      ],
+      "answerValueSet": "#s4h-back-pain-location"
+    },
+    {
+      "linkId": "back_pain_impact",
+      "text": "What are the consequences of your back pain and how does it impact your life situation?",
+      "type": "choice",
+      "required": true,
+      "repeats": true,
+      "enableWhen": [
+        {
+          "question": "back_pain_frequency",
+          "operator": "!=",
+          "answerCoding": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "nev"
+          }
+        }
+      ],
+      "answerValueSet": "#s4h-pain-impact"
+    },
+    {
+      "linkId": "influence_on_health",
+      "text": "To what extent do you think you can influence your state of health?",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-influence-degree"
+    },
+    {
+      "linkId": "state_of_health",
+      "text": "How do you assess your state of health?",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-health-state"
+    },
+    {
+      "linkId": "physical_activity_freq",
+      "text": "How often are you physically active in your free time?",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-physical-activity-frequency"
+    },
+    {
+      "linkId": "workout_reason",
+      "text": "What are the reasons you work out?",
+      "type": "choice",
+      "required": true,
+      "repeats": true,
+      "enableWhen": [
+        {
+          "question": "physical_activity_freq",
+          "operator": "!=",
+          "answerCoding": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "nev"
+          }
+        }
+      ],
+      "answerValueSet": "#s4h-activity-reason"
+    },
+    {
+      "linkId": "workout_hindrance",
+      "text": "What hinders you from taking part in sports activities?",
+      "type": "choice",
+      "required": true,
+      "repeats": true,
+      "enableWhen": [
+        {
+          "question": "physical_activity_freq",
+          "operator": "=",
+          "answerCoding": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "nev"
+          }
+        }
+      ],
+      "answerValueSet": "#s4h-activity-hindrance"
+    },
+    {
+      "linkId": "physical_burden_tense_posture",
+      "text": "Physical burden at your workplace: Unilateral/tense posture",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-physical-burden-frequency"
+    },
+    {
+      "linkId": "physical_burden_standing",
+      "text": "Physical burden at your workplace: Primarily in standing position",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-physical-burden-frequency"
+    },
+    {
+      "linkId": "physical_burden_sitting",
+      "text": "Physical burden at your workplace: Primarily in sitting position",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-physical-burden-frequency"
+    },
+    {
+      "linkId": "physical_burden_leaning",
+      "text": "Physical burden at your workplace: Upper body leans forward",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-physical-burden-frequency"
+    },
+    {
+      "linkId": "physical_burden_lifting",
+      "text": "Physical burden at your workplace: Heavy lifting",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-physical-burden-frequency"
+    },
+    {
+      "linkId": "ergonomic_advice_impact",
+      "text": "Do you think ergonomic advice can reduce your physical stress at your workplace?",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-perceived-likelihood"
+    },
+    {
+      "linkId": "training_goals",
+      "text": "What are your goals in participating in the training?",
+      "type": "choice",
+      "required": true,
+      "repeats": true,
+      "answerValueSet": "#s4h-back-pain-prevention-goal"
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-questionnaire-timing",
+      "version": "0.1.0",
+      "id": "s4h-questionnaire-timing",
+      "name": "S4hQuestionnaireTimingVs",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-questionnaire-timing"
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "23ae66b7-991f-4a2a-a6e1-8ae14a2c1b24",
+        "timestamp": "2022-04-27T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-questionnaire-timing",
+            "code": "pre",
+            "display": "Before start of session"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-questionnaire-timing",
+            "code": "during",
+            "display": "During ongoing session"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-questionnaire-timing",
+            "code": "post",
+            "display": "After completed session"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-questionnaire-timing",
+            "code": "other",
+            "display": "Other"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-back-pain-frequency",
+      "version": "0.1.0",
+      "id": "s4h-back-pain-frequency",
+      "name": "s4h-back-pain-frequency-vs",
+      "status": "draft",
+      "publisher": "D4L/ITTM",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "concept": [
+              { "code": "nev" },
+              { "code": "occ" },
+              { "code": "freq1wk" },
+              { "code": "freq3wk" },
+              { "code": "perm" }
+            ]
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:fdb00d46-a156-4e87-b87e-443bc2d096a0",
+        "timestamp": "2022-02-24T12:00:00.000Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "nev",
+            "display": "Never"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "occ",
+            "display": "Occasionally"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "freq1wk",
+            "display": "Frequently (at least once a week)"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "freq3wk",
+            "display": "Very frequently (more than 3 times a week)"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "perm",
+            "display": "Permanently"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-back-pain-duration",
+      "version": "0.1.0",
+      "id": "s4h-back-pain-duration",
+      "name": "S4hBackPainDuration",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-duration"
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "8b1e5db3-c59e-4c98-87e3-ca6aa8b5b5fe",
+        "timestamp": "2022-02-28T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-duration",
+            "code": "el1mon",
+            "display": "Since 2-3 weeks"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-duration",
+            "code": "ov1mon",
+            "display": "More than 1 month"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-duration",
+            "code": "ov3mon",
+            "display": "More than 3 months"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-duration",
+            "code": "ov1year",
+            "display": "More than 1 year"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-back-pain-location",
+      "version": "0.1.0",
+      "id": "s4h-back-pain-location",
+      "name": "S4hBackPainLocation",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://snomed.info/sct",
+            "concept": [
+              { "code": "122494005" },
+              { "code": "122495006" },
+              { "code": "122496007" }
+            ]
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:4c23db31-a167-4fb3-9ee6-685a93a352c0",
+        "timestamp": "2022-02-28T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "122494005",
+            "display": "Cervical spine (CS)"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "122495006",
+            "display": "Thoracic spine (TS)"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "122496007",
+            "display": "Lumbar spine (LS)"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-pain-impact",
+      "version": "0.1.0",
+      "id": "s4h-pain-impact",
+      "name": "S4hPainImpactVs",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          { "system": "http://fhir.smart4health.eu/CodeSystem/s4h-pain-impact" }
+        ]
+      },
+      "expansion": {
+        "identifier": "d286b8c1-db30-411f-bb23-f096702ee010",
+        "timestamp": "2022-03-08T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-pain-impact",
+            "code": "household",
+            "display": "Limitations during household work"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-pain-impact",
+            "code": "leisure",
+            "display": "Limitations during leisure time"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-pain-impact",
+            "code": "work",
+            "display": "Limitations at work"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-pain-impact",
+            "code": "absence",
+            "display": "Periods of absence at work"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-pain-impact",
+            "code": "none",
+            "display": "None of the above"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-influence-degree",
+      "version": "0.1.0",
+      "id": "s4h-influence-degree",
+      "name": "S4hInfluenceDegreeVs",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-influence-degree"
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "89a3db06-5ecb-40f9-aa83-188e389d016b",
+        "timestamp": "2022-03-08T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-influence-degree",
+            "code": "vst",
+            "display": "Very strongly"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-influence-degree",
+            "code": "str",
+            "display": "Strongly"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-influence-degree",
+            "code": "und",
+            "display": "Undecided"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-influence-degree",
+            "code": "mar",
+            "display": "Marginally"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-influence-degree",
+            "code": "non",
+            "display": "Not at all"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-health-state",
+      "version": "0.1.0",
+      "id": "s4h-health-state",
+      "name": "S4hHealthStateVs",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-health-state"
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "27bef005-1402-404d-a243-b859144f1a88",
+        "timestamp": "2022-03-08T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-health-state",
+            "code": "vgo",
+            "display": "Very good"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-health-state",
+            "code": "goo",
+            "display": "Good"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-health-state",
+            "code": "suf",
+            "display": "Sufficient"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-health-state",
+            "code": "bad",
+            "display": "Bad"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-health-state",
+            "code": "vba",
+            "display": "Very bad"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-physical-activity-frequency",
+      "version": "0.1.0",
+      "id": "s4h-physical-activity-frequency",
+      "name": "s4h-physical-activity-frequency-vs",
+      "status": "draft",
+      "publisher": "D4L/ITTM",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "concept": [
+              { "code": "nev" },
+              { "code": "1xwk" },
+              { "code": "2xwk" },
+              { "code": "3xwk" },
+              { "code": "freq3wk" }
+            ]
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:94175ee1-f63b-475b-b84f-c614c7bea6b5",
+        "timestamp": "2022-02-24T12:00:00.000Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "nev",
+            "display": "Never"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "1xwk",
+            "display": "1x per week"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "2xwk",
+            "display": "2x per week"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "3xwk",
+            "display": "3x per week"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "freq3wk",
+            "display": "Very frequently (more than 3 times a week)"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-activity-reason",
+      "version": "0.1.0",
+      "id": "s4h-activity-reason",
+      "name": "S4hActivityReasonVs",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-reason"
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "68310c57-6339-4745-b9a4-ef133d2e62ef",
+        "timestamp": "2022-03-09T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-reason",
+            "code": "bal",
+            "display": "Balance"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-reason",
+            "code": "con",
+            "display": "Conviviality"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-reason",
+            "code": "fun",
+            "display": "Fun"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-reason",
+            "code": "hea",
+            "display": "Health promotion"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-reason",
+            "code": "wei",
+            "display": "Calorie burning/weight reduction"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-activity-hindrance",
+      "version": "0.1.0",
+      "id": "s4h-activity-hindrance",
+      "name": "S4hActivityHindranceVs",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-hindrance"
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "bc54a616-bb5c-4590-a9f7-b4c306a15616",
+        "timestamp": "2022-03-09T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-hindrance",
+            "code": "dis",
+            "display": "Physical disabilities"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-hindrance",
+            "code": "tim",
+            "display": "No time"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-hindrance",
+            "code": "int",
+            "display": "No interest"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-hindrance",
+            "code": "off",
+            "display": "Unsuitable offers"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-hindrance",
+            "code": "inf",
+            "display": "Missing information"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-hindrance",
+            "code": "wil",
+            "display": "My lack of will power"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-activity-hindrance",
+            "code": "not",
+            "display": "Nothing"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-physical-burden-frequency",
+      "version": "0.1.0",
+      "id": "s4h-physical-burden-frequency",
+      "name": "s4h-physical-burden-frequency-vs",
+      "status": "draft",
+      "publisher": "D4L/ITTM",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "concept": [
+              { "code": "nev" },
+              { "code": "rar" },
+              { "code": "occ" },
+              { "code": "freq" },
+              { "code": "vfreq" }
+            ]
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:f6f56bab-5475-4e07-bd0d-f7982e706455",
+        "timestamp": "2022-02-24T12:00:00.000Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "nev",
+            "display": "Never"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "rar",
+            "display": "Rarely"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "occ",
+            "display": "Occasionally"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "freq",
+            "display": "Frequently"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "vfreq",
+            "display": "Very frequently"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-perceived-likelihood",
+      "version": "0.1.0",
+      "id": "s4h-perceived-likelihood",
+      "name": "S4hPerceivedLikelihoodVs",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-perceived-likelihood"
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "619d11ca-9653-405f-88d4-b8a0a0989992",
+        "timestamp": "2022-03-09T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-perceived-likelihood",
+            "code": "img",
+            "display": "Yes, I could imagine it"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-perceived-likelihood",
+            "code": "nim",
+            "display": "No, I can barely imagine it"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-perceived-likelihood",
+            "code": "dkn",
+            "display": "I don't know"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-back-pain-prevention-goal",
+      "version": "0.1.0",
+      "id": "s4h-back-pain-prevention-goal",
+      "name": "S4hBackPainPreventionGoal",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            { "system": "url", "value": "https://www.data4life.care" }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal"
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "18c1207a-8f22-47ac-b480-ddb250e2519d",
+        "timestamp": "2022-02-28T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+            "code": "rdb",
+            "display": "Reduce back pain"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+            "code": "mbp",
+            "display": "Minimize back and neck diseases"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+            "code": "pha",
+            "display": "Suggestion to be physically active regularly"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+            "code": "sth",
+            "display": "Stabilize health"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+            "code": "pmd",
+            "display": "Prevention of muscular and skeletal disorders"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+            "code": "bms",
+            "display": "Build muscle performance and stability"
+          }
+        ]
+      }
+    }
+  ]
+}

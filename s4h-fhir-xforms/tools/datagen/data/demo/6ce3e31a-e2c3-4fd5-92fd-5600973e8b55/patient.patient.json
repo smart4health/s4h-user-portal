@@ -1,0 +1,19 @@
+{
+	"resourceType": "Patient",
+	"id": "6ce3e31a-e2c3-4fd5-92fd-5600973e8b55",
+	"name": [
+		{
+			"family": "Will",
+			"given": [
+				"Bernadette"
+			]
+		}
+	],
+	"address": [
+		{
+			"country": "Spain"
+		}
+	],
+	"gender": "female",
+	"birthDate": "1971-05-30"
+}

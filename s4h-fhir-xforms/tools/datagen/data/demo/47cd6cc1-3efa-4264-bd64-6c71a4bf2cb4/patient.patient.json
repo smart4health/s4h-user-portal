@@ -1,0 +1,19 @@
+{
+	"resourceType": "Patient",
+	"id": "47cd6cc1-3efa-4264-bd64-6c71a4bf2cb4",
+	"name": [
+		{
+			"family": "Hahn",
+			"given": [
+				"Patrick"
+			]
+		}
+	],
+	"address": [
+		{
+			"country": "Spain"
+		}
+	],
+	"gender": "male",
+	"birthDate": "1931-07-28"
+}

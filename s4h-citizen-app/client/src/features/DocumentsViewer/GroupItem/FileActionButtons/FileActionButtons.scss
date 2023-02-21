@@ -1,0 +1,45 @@
+.GroupItemFileActionButtons {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+
+  &__button {
+    button {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: initial;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: $color-half-neutral;
+      color: var(--color-white);
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s,
+        box-shadow 0.3s;
+
+      &:active,
+      &:hover,
+      &:focus {
+        background-color: var(--color-white);
+        color: var(--color-primary);
+        box-shadow: var(--shadow-m);
+      }
+
+      &:disabled {
+        border: 1px solid $color-half-neutral;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: currentcolor;
+      }
+    }
+
+    + #{&}:not(:empty) {
+      margin-top: 10px;
+    }
+  }
+}

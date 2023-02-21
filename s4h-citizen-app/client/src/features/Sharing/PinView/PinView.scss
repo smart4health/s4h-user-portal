@@ -1,0 +1,46 @@
+.PinView {
+  &__card {
+    &#{&} {
+      padding: var(--space-xl) var(--space-l);
+      color: var(--color-neutral);
+    }
+  }
+
+  &__review {
+    padding: 0 0 var(--space-m) 0;
+    margin-bottom: var(--space-m);
+    border-bottom: var(--border-width-s) solid var(--color-neutral-lightest);
+
+    &-heading {
+      font: var(--typography-desktop-headline-4);
+      margin-bottom: var(--space-m);
+    }
+  }
+
+  &__description,
+  &__qr-description {
+    p {
+      margin: 0;
+      padding-bottom: var(--space-m);
+    }
+  }
+
+  &__share-url {
+    color: var(--color-secondary);
+    font: var(--typography-desktop-headline-4);
+  }
+
+  &__qr-button {
+    margin-bottom: var(--space-l);
+  }
+
+  &__pin-code-title {
+    text-align: center;
+    margin-top: var(--space-l);
+    margin-bottom: var(--space-xs);
+  }
+
+  &__card-footer {
+    margin-top: var(--space-m);
+  }
+}

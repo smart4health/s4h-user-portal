@@ -1,0 +1,26 @@
+.ResourceSharingReview {
+  &__content {
+    padding: var(--space-s) var(--space-m) var(--space-m) var(--space-m);
+    border-top: var(--border-width-s) solid var(--color-neutral-extra-lightest);
+  }
+
+  &__sharing-data {
+    padding-bottom: var(--space-s);
+
+    &-title {
+      font: var(--typography-mobile-headline-2);
+      font-size: var(--font-size-mobile-m);
+    }
+  }
+
+  &__sharing-data:last-child {
+    padding-bottom: 0;
+  }
+
+  footer {
+    &::before {
+      left: 0;
+      right: 0;
+    }
+  }
+}

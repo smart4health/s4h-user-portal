@@ -1,0 +1,32 @@
+.Sharing {
+  // fixes padding for making end of scroll have space
+  padding: 0 0 var(--space-m) 0;
+  max-width: var(--sharing-max-width);
+  margin: 0 auto;
+
+  &__card {
+    margin: var(--space-xs);
+    background-color: var(--card-default-background-color);
+    &#{&} {
+      padding: var(--space-s) var(--space-m);
+    }
+  }
+}
+
+@include tablet-up {
+  .Sharing {
+    --sharing-max-width: 400px;
+
+    &__card {
+      &#{&} {
+        padding: var(--space-l) var(--space-xl);
+      }
+    }
+  }
+}
+
+@include tablet-down {
+  .Sharing {
+    --sharing-max-width: 100%;
+  }
+}

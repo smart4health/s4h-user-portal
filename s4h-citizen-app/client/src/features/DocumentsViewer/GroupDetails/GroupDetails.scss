@@ -1,0 +1,173 @@
+.GroupDetails {
+  min-height: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background: var(--color-white);
+  transition: 0.4s;
+
+  &__header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.4em;
+    border-bottom: 1px solid var(--color-neutral-lightest);
+    white-space: nowrap;
+    height: 96px;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    display: flex;
+    position: relative;
+    margin-right: 3rem;
+    flex: 0 1 auto;
+    align-items: center;
+    overflow: hidden;
+
+    div {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    h3 {
+      display: block;
+      font-size: 18px;
+      margin: 0;
+      font-weight: 500;
+      color: var(--color-primary);
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    p {
+      margin-top: 0.25rem;
+      font-size: 1.4rem;
+      color: var(--color-neutral);
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: -1em 0 0 -1em;
+    flex: none;
+
+    .IconButton {
+      margin-left: 0;
+    }
+
+    .Button__with-label {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1em;
+      position: relative;
+      align-items: center;
+    }
+
+    .Button {
+      width: 4rem;
+      height: 4rem;
+      padding: 0;
+      color: var(--color-primary);
+      text-transform: none;
+
+      &__label {
+        text-align: center;
+        font-size: 10px;
+      }
+
+      svg {
+        width: 18px;
+        height: auto;
+        fill: currentcolor;
+      }
+    }
+  }
+}
+
+.Menu__PaperComponent {
+  &#{&} {
+    box-shadow: 0 3px 12px 0 var(--color-primary-extra-lightest);
+    min-width: 154px;
+    overflow: visible;
+  }
+}
+
+.Menu__ListItem {
+  &#{&} {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    padding-bottom: 6px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--color-neutral-lightest);
+    }
+
+    svg {
+      fill: var(--color-primary);
+    }
+
+    &.Menu__ListItem--deleteDocument {
+      color: var(--color-feedback-alarm);
+
+      svg {
+        fill: var(--color-feedback-alarm);
+      }
+    }
+  }
+}
+
+@include desktop-down {
+  .GroupDetails {
+    @include zindex('auto');
+
+    display: flex;
+    width: 100%;
+    flex: 100% 0;
+  }
+
+  .GroupDetails--hide-mobile {
+    display: none;
+  }
+
+  .GroupDetails__header {
+    height: 5.6rem;
+    padding: 0 0.8em;
+  }
+
+  .GroupDetails__title {
+    margin: 0;
+
+    h3 {
+      font-size: var(--font-size-mobile-m);
+    }
+
+    p {
+      display: none;
+    }
+  }
+
+  .GroupDetails__actions {
+    margin: 0 0 0 0.5em;
+
+    .Button__with-label {
+      margin: 0;
+    }
+
+    .Button__label {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.SummaryCard {
+  display: flex;
+  width: 100%;
+  background: var(--color-white);
+  flex-direction: column;
+  flex-basis: 100%;
+
+  &__anchor {
+    position: absolute;
+    margin-top: -80px;
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--space-s);
+    padding-bottom: var(--space-s);
+    padding-right: var(--space-xl);
+    border-bottom: 1px solid var(--color-neutral-lightest);
+  }
+
+  &__info-link {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+
+  &__info-icon-container {
+    margin-right: var(--space-s);
+  }
+
+  &__info-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--color-primary);
+  }
+
+  &__footer {
+    border-top: 1px solid var(--color-neutral-lightest);
+    padding-top: var(--space-s);
+    padding-bottom: var(--space-s);
+    display: none;
+
+    d4l-button {
+      flex: 1;
+      white-space: nowrap;
+
+      &:nth-of-type(2) {
+        margin-left: var(--space-xs);
+      }
+    }
+
+    &--is-visible {
+      display: flex;
+    }
+  }
+
+  &__header,
+  &__footer {
+    padding-left: var(--space-s);
+    padding-right: var(--space-s);
+  }
+
+  &__title {
+    font: var(--typography-desktop-headline-4);
+    margin-top: 0;
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+
+  &__menu-item--alarm.MuiMenuItem-root {
+    color: var(--color-feedback-alarm);
+
+    svg {
+      fill: var(--color-feedback-alarm);
+    }
+  }
+}
+
+@include tablet-up {
+  .SummaryCard {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+    }
+  }
+}

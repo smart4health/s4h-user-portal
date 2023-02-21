@@ -1,0 +1,172 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "s4h-treatment-series-post-training-questionnaire-example-en",
+    "contained": [{
+            "resourceType": "ValueSet",
+            "id": "increasedecreasesteady",
+            "language": "en",
+            "url": "http://fhir.smart4health.eu/ValueSet/increasedecreasesteady",
+            "name": "IncreaseDecreaseSteady",
+            "status": "draft",
+            "publisher": "D4L data4life gGmbH",
+            "contact": [{
+                "name": "D4L data4life gGmbH",
+                "telecom": [{
+                    "system": "url",
+                    "value": "https://www.data4life.care"
+                }]
+            }],
+            "immutable": false,
+            "compose": {
+                "include": [{
+                    "system": "http://snomed.info/sct",
+                    "concept": [{
+                            "code": "35105006"
+                        },
+                        {
+                            "code": "1250004"
+                        },
+                        {
+                            "code": "55011004"
+                        }
+                    ]
+                }]
+            },
+            "expansion": {
+                "identifier": "urn:uuid:1f503a0a-b45d-406e-9bfa-43e78a25fe97",
+                "timestamp": "2020-06-23T12:08:51.687Z",
+                "contains": [{
+                        "system": "http://snomed.info/sct",
+                        "code": "35105006",
+                        "display": "Increased"
+                    },
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "1250004",
+                        "display": "Decreased"
+                    },
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "55011004",
+                        "display": "Steady"
+                    }
+                ]
+            }
+        },
+        {
+            "resourceType": "ValueSet",
+            "id": "s4h-backpain-post-training-condition",
+            "language": "en",
+            "url": "http://fhir.smart4health.eu/ValueSet/s4h-backpain-post-training-condition",
+            "version": "0.0.1",
+            "name": "s4h-backpain-post-training-condition",
+            "title": "Smart4Health Post Training Condition",
+            "status": "draft",
+            "experimental": false,
+            "date": "2020-07-01",
+            "publisher": "D4L/ITTM",
+            "contact": [{
+                "name": "tbd",
+                "telecom": [{
+                    "system": "url",
+                    "value": "tbd"
+                }]
+            }],
+            "description": "tbd",
+            "immutable": true,
+            "purpose": "The purpose of this valueset is to document the observed condition in which a training will be started.",
+            "copyright": "tbd",
+            "compose": {
+                "include": [{
+                    "system": "http://code.system",
+                    "concept": [{
+                            "code": "01"
+                        },
+                        {
+                            "code": "02"
+                        },
+                        {
+                            "code": "03"
+                        },
+                        {
+                            "code": "04"
+                        },
+                        {
+                            "code": "05"
+                        },
+                        {
+                            "code": "06"
+                        }
+                    ]
+                }]
+            },
+            "expansion": {
+                "identifier": "urn:uuid:1f503a0a-as5d-406e-9bfa-43e78a25fe97",
+                "timestamp": "2020-06-23T12:08:51.687Z",
+                "contains": [{
+                        "system": "http://code.system",
+                        "code": "01",
+                        "display": "Normal"
+                    },
+                    {
+                        "system": "http://code.system",
+                        "code": "02",
+                        "display": "Training weight too high"
+                    },
+                    {
+                        "system": "http://code.system",
+                        "code": "03",
+                        "display": "Training weight too low"
+                    },
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "04",
+                        "display": "Training was exhausting"
+                    },
+                    {
+                        "system": "http://code.system",
+                        "code": "05",
+                        "display": "Pain (high muscle tone)"
+                    },
+                    {
+                        "system": "http://code.system",
+                        "code": "06",
+                        "display": "Today was not satisfying"
+                    }
+                ]
+            }
+        }
+    ],
+    "url": "http://fhir.smart4health.eu/Questionnaire/post-training-questionnaire",
+    "version": "0.0.1",
+    "title": "Smart4Health post-training questionnaire",
+    "status": "draft",
+    "subjectType": [
+        "Patient"
+    ],
+    "date": "2020-02",
+    "item": [{
+            "linkId": "training_no",
+            "text": "Training Number",
+            "type": "integer",
+            "enableBehavior": "any",
+            "required": true
+        },
+        {
+            "linkId": "post_training_condition",
+            "text": "Post-training condition",
+            "type": "choice",
+            "enableBehavior": "any",
+            "required": true,
+            "answerValueSet": "#s4h-backpain-post-training-condition"
+        },
+        {
+            "linkId": "training_weight_recommendation",
+            "text": "Training weight recommendation for the next training.",
+            "type": "choice",
+            "enableBehavior": "any",
+            "required": true,
+            "answerValueSet": "#increasedecreasesteady"
+        }
+    ]
+}

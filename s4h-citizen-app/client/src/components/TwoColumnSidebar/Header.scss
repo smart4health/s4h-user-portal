@@ -1,0 +1,28 @@
+.TwoColumnSidebarHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--space-s) 0 var(--space-m);
+  border-bottom: var(--border-width-s) solid var(--color-neutral-extra-lightest);
+
+  // kept so to center align the long translations
+  min-height: 96px;
+
+  &--has-action-button {
+    padding: 0 var(--space-s) 0 var(--space-m);
+  }
+
+  h1 {
+    margin: 0;
+    font: var(--typography-mobile-headline-2);
+    line-height: 1;
+  }
+
+  p {
+    font-size: var(--font-size-desktop-xs);
+    color: var(--color-neutral);
+    margin: 0;
+  }
+}

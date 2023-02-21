@@ -1,0 +1,49 @@
+.MedicationHeader {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: var(--border-width-s) solid var(--color-white);
+  background: var(--color-white);
+  box-sizing: border-box;
+  height: $header-height;
+  padding: 0 var(--space-s);
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  h3 {
+    font: var(--typography-desktop-headline-4);
+    margin: 0;
+    line-height: 1;
+    text-overflow: ellipsis;
+    display: block;
+  }
+
+  .Button__label {
+    display: none;
+  }
+}
+
+.MedicationHeader__actions {
+  margin: 0 0 0 0.5em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: none;
+}
+
+@include desktop {
+  .MedicationHeader {
+    height: $sidebar-header-height;
+    padding: 0 var(--space-m);
+
+    .Button__label {
+      display: inline-block;
+    }
+  }
+}

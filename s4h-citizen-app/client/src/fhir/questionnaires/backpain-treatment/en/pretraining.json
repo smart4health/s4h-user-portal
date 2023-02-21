@@ -1,0 +1,286 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "s4h-treatment-series-pre-training-questionnaire-example-en",
+  "url": "http://fhir.smart4health.eu/Questionnaire/pre-training-questionnaire",
+  "version": "1.0.0",
+  "title": "Smart4Health pre-training questionnaire",
+  "status": "draft",
+  "subjectType": ["Patient"],
+  "date": "2021-04-13",
+  "publisher": "D4L data4life gGmbH",
+  "contact": [
+    {
+      "name": "ITTM Solutions",
+      "telecom": [
+        { "system": "url", "value": "https://www.ittm-solutions.com/" }
+      ]
+    },
+    {
+      "name": "D4L data4life gGmbH",
+      "telecom": [{ "system": "url", "value": "https://www.data4life.care" }]
+    }
+  ],
+  "item": [
+    {
+      "linkId": "training_no",
+      "text": "Training Number",
+      "type": "integer",
+      "required": true
+    },
+    {
+      "linkId": "back_pain_level_before",
+      "code": [{ "system": "http://loinc.org", "code": "72514-3" }],
+      "text": "Lower back pain level before training",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#LL2335-9",
+      "item": [
+        {
+          "linkId": "back_pain_level_before.explanation",
+          "text": "In the following, please provide your pain level (Visual Analog Scale for Pain - VAS Pain). Please select how you experience your pain (under your usual medication dose) from the given scale (0-10). The VAS pain level describes the scale between '0' ('no pain') and '10' ('worst imaginable pain').",
+          "type": "display",
+          "enableBehavior": "any"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://fhir.smart4health.eu/CodeSystem/questionnaire-ui-codes",
+                "code": "painscalewithlabels"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "well_being",
+      "text": "Well being",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#LL2335-9",
+      "item": [
+        {
+          "linkId": "well_being.explanation",
+          "text": "0: All well, 10: All bad",
+          "type": "display"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://fhir.smart4health.eu/CodeSystem/questionnaire-ui-codes",
+                "code": "wellbeingscalewithlabels"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "well-being_summary",
+      "text": "Summary of your health, general well-being and activities in the last days/weeks",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-pre-training-well-being-summary"
+    },
+    {
+      "linkId": "extraordinary_circumstances",
+      "text": "Extraordinary circumstances",
+      "type": "choice",
+      "enableWhen": [
+        {
+          "question": "well-being_summary",
+          "operator": "=",
+          "answerCoding": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-pre-training-well-being-summary",
+            "code": "extraordinary"
+          }
+        }
+      ],
+      "required": true,
+      "repeats": true,
+      "answerValueSet": "#s4h-backpain-extraordinary-circumstances"
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "LL2335-9",
+      "url": "http://loinc.org/vs/LL2335-9",
+      "language": "en",
+      "identifier": [
+        {
+          "system": "urn:ietf:rfc:3986",
+          "value": "urn:oid:1.3.6.1.4.1.12009.10.1.1494"
+        }
+      ],
+      "version": "Loinc_2.67",
+      "name": "Numeric rating scale from 0-10",
+      "status": "active",
+      "publisher": "Regenstrief Institute, Inc.",
+      "contact": [
+        {
+          "name": "Regenstrief Institute, Inc.",
+          "telecom": [{ "system": "url", "value": "https://loinc.org" }]
+        }
+      ],
+      "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at https://loinc.org/license/",
+      "compose": {
+        "include": [
+          {
+            "system": "http://loinc.org",
+            "concept": [
+              { "code": "LA6111-4", "display": "0" },
+              { "code": "LA6112-2", "display": "1" },
+              { "code": "LA6113-0", "display": "2" },
+              { "code": "LA6114-8", "display": "3" },
+              { "code": "LA6115-5", "display": "4" },
+              { "code": "LA10137-0", "display": "5" },
+              { "code": "LA10138-8", "display": "6" },
+              { "code": "LA10139-6", "display": "7" },
+              { "code": "LA10140-4", "display": "8" },
+              { "code": "LA10141-2", "display": "9" },
+              { "code": "LA13942-0", "display": "10" }
+            ]
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:1186d39f-ca7b-4cc5-8949-29e5d87c402b",
+        "timestamp": "2020-10-09T12:08:51.687Z",
+        "contains": [
+          { "system": "http://loinc.org", "code": "LA6111-4", "display": "0" },
+          { "system": "http://loinc.org", "code": "LA6112-2", "display": "1" },
+          { "system": "http://loinc.org", "code": "LA6113-0", "display": "2" },
+          { "system": "http://loinc.org", "code": "LA6114-8", "display": "3" },
+          { "system": "http://loinc.org", "code": "LA6115-5", "display": "4" },
+          { "system": "http://loinc.org", "code": "LA10137-0", "display": "5" },
+          { "system": "http://loinc.org", "code": "LA10138-8", "display": "6" },
+          { "system": "http://loinc.org", "code": "LA10139-6", "display": "7" },
+          { "system": "http://loinc.org", "code": "LA10140-4", "display": "8" },
+          { "system": "http://loinc.org", "code": "LA10141-2", "display": "9" },
+          { "system": "http://loinc.org", "code": "LA13942-0", "display": "10" }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-pre-training-well-being-summary",
+      "version": "0.1.0",
+      "id": "s4h-pre-training-well-being-summary",
+      "name": "s4h-pre-training-well-being-summary-vs",
+      "title": "Smart4Health back pain pre-training well-being summary",
+      "status": "draft",
+      "date": "2021-04-13",
+      "publisher": "D4L/ITTM",
+      "purpose": "Overall summary of well-being before back pain training",
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-pre-training-well-being-summary"
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:2163519b-bd06-46b3-b802-cee47edc2669",
+        "timestamp": "2021-04-13T12:00:00.000Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-pre-training-well-being-summary",
+            "code": "normal",
+            "display": "Everything normal"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-pre-training-well-being-summary",
+            "code": "extraordinary",
+            "display": "Extraordinary circumstances"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-backpain-extraordinary-circumstances",
+      "version": "0.1.0",
+      "id": "s4h-backpain-extraordinary-circumstances",
+      "name": "s4h-backpain-extraordinary-circumstances-vs",
+      "title": "Smart4Health back pain pre-training extraordinary condition",
+      "status": "draft",
+      "date": "2021-04-13",
+      "publisher": "D4L/ITTM",
+      "purpose": "The purpose of this value set is to document extraordinary circumstances before the back pain training",
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-backpain-extraordinary-circumstances"
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:ee851788-ec20-4752-9a02-2290d7e680eb",
+        "timestamp": "2021-04-13T12:00:00.000Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-backpain-extraordinary-circumstances",
+            "code": "workplace-stress",
+            "display": "Stress at workplace"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-backpain-extraordinary-circumstances",
+            "code": "past-sickness",
+            "display": "Sickness within last week"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-backpain-extraordinary-circumstances",
+            "code": "muscle-ache",
+            "display": "Aching muscles"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-backpain-extraordinary-circumstances",
+            "code": "gardening",
+            "display": "Gardening"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-backpain-extraordinary-circumstances",
+            "code": "headaches",
+            "display": "Headaches"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-backpain-extraordinary-circumstances",
+            "code": "busy-day",
+            "display": "Busy day"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-backpain-extraordinary-circumstances",
+            "code": "too-hot",
+            "display": "Too hot outside"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-backpain-extraordinary-circumstances",
+            "code": "circulatory-problems",
+            "display": "Circulatory problems"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-backpain-extraordinary-circumstances",
+            "code": "knee-pain",
+            "display": "Knee pain"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-backpain-extraordinary-circumstances",
+            "code": "back-pain",
+            "display": "Back pain"
+          }
+        ]
+      }
+    }
+  ]
+}

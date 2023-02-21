@@ -1,0 +1,471 @@
+{
+  "resourceType": "Questionnaire",
+  "language": "en",
+  "id": "BA96B86A-023C-4E0C-9D85-69710A9A95D1",
+  "url": "http://fhir.smart4health.eu/Questionnaire/pre-session-questionnaire",
+  "title": "Smart4Health pre-session pain questionnaire",
+  "name": "Smart4Health_pre-session_pain_questionnaire",
+  "description": "Smart4Health pre session pain questionnaire.",
+  "status": "draft",
+  "copyright": "D4L data4life gGmbH, TODO",
+  "publisher": "D4L data4life gGmbH",
+  "contact": [
+    {
+      "name": "D4L data4life gGmbH",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.data4life.care"
+        }
+      ]
+    }
+  ],
+  "version": "0.0.1",
+  "date": "2020-07",
+  "subjectType": ["Patient"],
+  "item": [
+    {
+      "linkId": "current_back_pain_level",
+      "text": "Please indicate your current pain level in the lower back.",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "72514-3"
+        }
+      ],
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#LL2335-9",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://fhir.smart4health.eu/CodeSystem/questionnaire-ui-codes",
+                "code": "painscalewithlabels"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "average_back_pain_level",
+      "text": "Please indicate your average pain level in the lower back over the last 4 weeks.",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "72514-3"
+        }
+      ],
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#LL2335-9",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://fhir.smart4health.eu/CodeSystem/questionnaire-ui-codes",
+                "code": "painscalewithlabels"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "max_back_pain_level_4w",
+      "text": "Please indicate your maximum pain level in the lower back over the last 4 weeks.",
+      "code": [
+        {
+          "system": "http://loinc.org",
+          "code": "72514-3"
+        }
+      ],
+      "type": "choice",
+      "required": true,
+      "repeats": false,
+      "answerValueSet": "#LL2335-9",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://fhir.smart4health.eu/CodeSystem/questionnaire-ui-codes",
+                "code": "painscalewithlabels"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "taking_painkillers",
+      "text": "Are you currently taking painkillers for the lower back?",
+      "type": "choice",
+      "options": {
+        "reference": "#yesno"
+      },
+      "required": true,
+      "repeats": false
+    },
+    {
+      "linkId": "painkiller_dose_change",
+      "text": "How did the dose of your painkillers change since your last training?",
+      "type": "choice",
+      "answerValueSet": "#increasedecreasesteady",
+      "enableWhen": [
+        {
+          "question": "taking_painkillers",
+          "answerCoding": {
+            "system": "http://loinc.org",
+            "code": "LA33-6"
+          }
+        }
+      ],
+      "required": true,
+      "repeats": false
+    },
+    {
+      "linkId": "current_painkiller",
+      "text": "Which painkiller are you currently taking?",
+      "type": "choice",
+      "answerValueSet": "#painkilleractivesubstance",
+      "enableWhen": [
+        {
+          "question": "taking_painkillers",
+          "answerCoding": {
+            "system": "http://loinc.org",
+            "code": "LA33-6"
+          }
+        }
+      ],
+      "required": true,
+      "repeats": false
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "version": "0.0.1",
+      "url": "http://fhir.smart4health.eu/ValueSet/yesno",
+      "id": "yesno",
+      "name": "Yesno",
+      "status": "active",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            {
+              "system": "url",
+              "value": "https://www.data4life.care"
+            }
+          ]
+        }
+      ],
+      "description": "Yes/No",
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://loinc.org",
+            "concept": [
+              {
+                "code": "LA33-6"
+              },
+              {
+                "code": "LA32-8"
+              }
+            ]
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:59d58958-9786-45e5-8903-cbbc54ecaa4f",
+        "timestamp": "2020-06-09T11:14:54.272Z",
+        "contains": [
+          {
+            "system": "http://loinc.org",
+            "code": "LA33-6",
+            "display": "Yes"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA32-8",
+            "display": "No"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/increasedecreasesteady",
+      "id": "increasedecreasesteady",
+      "name": "IncreaseDecreaseSteady",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            {
+              "system": "url",
+              "value": "https://www.data4life.care"
+            }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://snomed.info/sct",
+            "concept": [
+              {
+                "code": "35105006"
+              },
+              {
+                "code": "1250004"
+              },
+              {
+                "code": "55011004"
+              }
+            ]
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:1f503a0a-b45d-406e-9bfa-43e78a25fe97",
+        "timestamp": "2020-06-23T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "35105006",
+            "display": "Increased"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1250004",
+            "display": "Decreased"
+          },
+          {
+            "system": "http://snomed.info/sct",
+            "code": "55011004",
+            "display": "Steady"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "version": "0.0.1",
+      "url": "http://fhir.smart4health.eu/ValueSet/painkilleractivesubstance",
+      "id": "painkilleractivesubstance",
+      "name": "PainkillerActiveSubstance",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            {
+              "system": "url",
+              "value": "https://www.data4life.care"
+            }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://code.system",
+            "concept": [
+              {
+                "code": "1"
+              },
+              {
+                "code": "2"
+              },
+              {
+                "code": "3"
+              }
+            ]
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:1f503a0a-as5d-406e-9bfa-43e78a25fe97",
+        "timestamp": "2020-06-23T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://code.system",
+            "code": "1",
+            "display": "Substance 1"
+          },
+          {
+            "system": "http://code.system",
+            "code": "2",
+            "display": "Substance 2"
+          },
+          {
+            "system": "http://code.system",
+            "code": "3",
+            "display": "Substance 3"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "LL2335-9",
+      "url": "http://loinc.org/vs/LL2335-9",
+      "identifier": [
+        {
+          "system": "urn:ietf:rfc:3986",
+          "value": "urn:oid:1.3.6.1.4.1.12009.10.1.1494"
+        }
+      ],
+      "version": "Loinc_2.67",
+      "name": "Numeric rating scale from 0-10",
+      "status": "active",
+      "publisher": "Regenstrief Institute, Inc.",
+      "contact": [
+        {
+          "name": "Regenstrief Institute, Inc.",
+          "telecom": [
+            {
+              "system": "url",
+              "value": "https://loinc.org"
+            }
+          ]
+        }
+      ],
+      "copyright": "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at https://loinc.org/license/",
+      "compose": {
+        "include": [
+          {
+            "system": "http://loinc.org",
+            "concept": [
+              {
+                "code": "LA6111-4",
+                "display": "0"
+              },
+              {
+                "code": "LA6112-2",
+                "display": "1"
+              },
+              {
+                "code": "LA6113-0",
+                "display": "2"
+              },
+              {
+                "code": "LA6114-8",
+                "display": "3"
+              },
+              {
+                "code": "LA6115-5",
+                "display": "4"
+              },
+              {
+                "code": "LA10137-0",
+                "display": "5"
+              },
+              {
+                "code": "LA10138-8",
+                "display": "6"
+              },
+              {
+                "code": "LA10139-6",
+                "display": "7"
+              },
+              {
+                "code": "LA10140-4",
+                "display": "8"
+              },
+              {
+                "code": "LA10141-2",
+                "display": "9"
+              },
+              {
+                "code": "LA13942-0",
+                "display": "10"
+              }
+            ]
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "urn:uuid:91a846a6-9d03-4ee0-a809-13fa2f7ef57e",
+        "timestamp": "2020-09-24T12:00:00.000Z",
+        "contains": [
+          {
+            "system": "http://loinc.org",
+            "code": "LA6111-4",
+            "display": "0"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA6112-2",
+            "display": "1"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA6113-0",
+            "display": "2"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA6114-8",
+            "display": "3"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA6115-5",
+            "display": "4"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA10137-0",
+            "display": "5"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA10138-8",
+            "display": "6"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA10139-6",
+            "display": "7"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA10140-4",
+            "display": "8"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA10141-2",
+            "display": "9"
+          },
+          {
+            "system": "http://loinc.org",
+            "code": "LA13942-0",
+            "display": "10"
+          }
+        ]
+      }
+    }
+  ]
+}

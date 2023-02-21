@@ -1,0 +1,58 @@
+@use 'sass:color';
+
+// Please use CSS variables in App.scss hereafter.
+$color-overlay: color.adjust(#000, $alpha: -0.5);
+$color-overlay-dark: color.adjust(#000, $alpha: -0.25);
+$color-half-neutral: color.adjust(#53646f, $alpha: -0.25);
+
+// Typography
+$font-sans: 'Lato', helvetica, arial, sans-serif;
+$font-serif: 'RobotoSlab', georgia, serif;
+$footer-height: 124px;
+$footer-height-tablet-up: 72px;
+$sidebar-header-height: 96px;
+
+// Responsiveness
+
+// Header switch to drawer below
+$header-height: 56px !default;
+$header-height-desktop: 72px !default;
+
+// landing page card width
+$card-width: 600px;
+
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 64px !default;
+$page-min-width: 320px !default;
+
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 768px !default;
+
+// 960px container
+$desktop: 960px !default;
+
+// 1152px container + 64px(~4rem)
+$widescreen: 1152px + $gap !default;
+$widescreen-enabled: true !default;
+
+// 1344px container + 64px(~4rem)
+$fullhd: 1344px + $gap !default;
+$fullhd-enabled: true !default;
+$z-indexes: (
+  auto: auto,
+  background: -1,
+  low: 0,
+  foreground: 10,
+  header: 100,
+  modal: 1000,
+  notification: 1500,
+);
+$documents-viewer: (
+  thumbheight: 64px,
+  thumbwidth: 44px,
+  thumbspacing: 8px,
+);
+
+// Transitions
+$trans-all-fast: 0.2s all;
+$trans-all-medium: 0.4s all;

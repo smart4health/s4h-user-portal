@@ -1,0 +1,46 @@
+.DashboardCardContent {
+  &__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  &__icon {
+    flex: none;
+    width: 64px;
+    margin: 0 var(--space-m) 0 0;
+    padding: 0;
+
+    svg {
+      display: block;
+      fill: var(--color-neutral-light);
+    }
+  }
+
+  &__caption {
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0;
+    color: var(--color-neutral);
+    font-size: var(--font-size-desktop-s);
+  }
+
+  &__item {
+    @include line-clamp(2);
+
+    word-break: break-all;
+  }
+
+  &--active {
+    display: flex;
+  }
+
+  &--active &__icon svg {
+    fill: var(--color-secondary);
+  }
+
+  &--active &__item {
+    color: var(--color-secondary);
+    font-weight: 600;
+  }
+}

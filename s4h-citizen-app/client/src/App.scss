@@ -1,0 +1,172 @@
+@import 'css/reset';
+@import 'css/fonts';
+@import 'css/base';
+@import 'css/typography';
+@import 'css/forms';
+@import 'css/buttons';
+
+:root {
+  /* Colors */
+  --color-primary: #06344f;
+  --color-primary-light: #355d72;
+  --color-primary-lighter: #9badb9;
+  --color-primary-lightest: #ced5dc;
+  --color-primary-extra-lightest: #e6eaed;
+  --color-secondary: #2a828b;
+  --color-secondary-light: #34a1ad;
+
+  // the following secondary colors are not defined in the designs anywhere; use with caution
+  --color-secondary-lighter: #8defff;
+  --color-secondary-lightest: #d4e6e8;
+  --color-tertiary: #2789c2;
+
+  // the following tertiary colors are not defined in the designs anywhere; use with caution
+  --color-tertiary-light: #67d4e0;
+  --color-tertiary-lighter: #9affff;
+  --color-tertiary-lightest: #cdffff;
+  --color-support-green: #d7eecb;
+  --color-support-yellow: #ffebaa;
+  --color-support-blue: #bdd4f0;
+  --color-neutral: #53646f;
+  --color-neutral-light: #cbd1d3;
+  --color-neutral-lighter: #dbdfe1;
+  --color-neutral-lightest: #eeeff0;
+  --color-neutral-extra-lightest: #f3f3f3;
+  --color-feedback-alarm: #ba0101;
+  --color-feedback-warning: #e5b302;
+  --color-feedback-success: #3c8405;
+
+  /* Font Family */
+  --font-family-primary: 'Lato', helvetica, arial, sans-serif;
+  --font-family-secondary: 'RobotoSlab', georgia, serif;
+
+  /* Font Sizes */
+  --font-size-desktop-xs: 12px;
+  --font-size-desktop-s: 14px;
+  --font-size-desktop-m: 16px;
+  --font-size-desktop-l: 20px;
+  --font-size-desktop-xl: 24px;
+  --font-size-desktop-xxl: 40px;
+  --font-size-mobile-xs: 12px;
+  --font-size-mobile-s: 14px;
+  --font-size-mobile-m: 16px;
+  --font-size-mobile-l: 18px;
+  --font-size-mobile-xl: 22px;
+  --font-size-mobile-xxl: 32px;
+  --typography-desktop-headline-1: 400 var(--font-size-desktop-xxl)
+    var(--font-family-secondary);
+  --typography-desktop-headline-2: 600 var(--font-size-desktop-xl)
+    var(--font-family-primary);
+  --typography-desktop-headline-3: 400 var(--font-size-desktop-l)
+    var(--font-family-primary);
+  --typography-desktop-body-level-1: 400 var(--font-size-desktop-m)
+    var(--font-family-primary);
+  --typography-desktop-body-level-2: 400 var(--font-size-desktop-s)
+    var(--font-family-primary);
+  --typography-desktop-button: 600 var(--font-size-desktop-s)
+    var(--font-family-primary);
+  --typography-desktop-caption: 400 var(--font-size-desktop-xs)
+    var(--font-family-primary);
+  --typography-mobile-headline-1: 400 var(--font-size-mobile-xxl)
+    var(--font-family-secondary);
+  --typography-mobile-headline-2: 600 var(--font-size-mobile-xl)
+    var(--font-family-primary);
+  --typography-mobile-headline-3: 400 var(--font-size-mobile-l)
+    var(--font-family-primary);
+  --typography-mobile-body-level-1: 400 var(--font-size-desktop-m)
+    var(--font-family-primary);
+  --typography-mobile-body-level-2: 400 var(--font-size-desktop-s)
+    var(--font-family-primary);
+  --typography-mobile-button: 600 var(--font-size-desktop-s)
+    var(--font-family-primary);
+  --typography-mobile-caption: 400 var(--font-size-desktop-xs)
+    var(--font-family-primary);
+
+  /* smart4health specific. Not a default in the component library theming */
+  --typography-desktop-headline-4: 600 var(--font-size-desktop-m)
+    var(--font-family-primary);
+
+  /* Shadows */
+  --shadow-s: 0 1px 4px 1px rgb(0 0 0 / 15%);
+  --shadow-m: 0 3px 12px 0 rgb(0 0 0 / 8%);
+  --shadow-l: 0 8px 8px 0 rgb(0 0 0 / 24%);
+
+  /* Borders */
+  --border-radius-xs: 4px;
+  --border-radius-s: 8px;
+  --border-radius-m: 20px;
+  --border-radius-l: 24px;
+  --border-radius-xl: 32px;
+  --border-width-s: 1px;
+  --border-width-m: 2px;
+
+  /* Spaces */
+  --space-xxs: 6px;
+  --space-xs: 8px;
+  --space-s: 16px;
+  --space-m: 24px;
+  --space-l: 32px;
+  --space-xl: 40px;
+  --space-xxl: 56px;
+
+  /* Component Specifics */
+  --border-radius-button: var(--border-radius-s);
+  --color-background-button-primary-default: var(--color-secondary);
+  --color-background-button-primary-hover: var(--color-primary-light);
+  --color-background-button-primary-active: var(--color-primary);
+  --color-background-button-primary-disabled: var(--color-neutral-lighter);
+  --color-text-button-primary-default: #fff;
+  --color-text-button-primary-hover: #fff;
+  --color-text-button-primary-active: #fff;
+  --color-text-button-primary-disabled: var(--color-neutral);
+  --color-border-button-primary-default: var(--color-secondary);
+  --color-border-button-primary-hover: var(--color-primary-light);
+  --color-border-button-primary-active: var(--color-primary-light);
+  --color-border-button-primary-disabled: var(--color-neutral-lighter);
+  --color-background-button-secondary-default: transparent;
+  --color-background-button-secondary-hover: transparent;
+  --color-background-button-secondary-active: transparent;
+  --color-background-button-secondary-disabled: transparent;
+  --color-text-button-secondary-default: var(--color-secondary);
+  --color-text-button-secondary-hover: var(--color-primary-light);
+  --color-text-button-secondary-active: var(--color-primary);
+  --color-text-button-secondary-disabled: var(--color-neutral);
+  --color-border-button-secondary-default: var(--color-secondary);
+  --color-border-button-secondary-hover: var(--color-primary-light);
+  --color-border-button-secondary-active: var(--color-primary);
+  --color-border-button-secondary-disabled: var(--color-neutral-lighter);
+  --color-background-button-tertiary-default: transparent;
+  --color-background-button-tertiary-hover: var(--color-neutral-lightest);
+  --color-background-button-tertiary-active: var(--color-neutral-lightest);
+  --color-background-button-tertiary-disabled: transparent;
+  --color-text-button-tertiary-default: var(--color-secondary);
+  --color-text-button-tertiary-hover: var(--color-primary);
+  --color-text-button-tertiary-active: var(--color-primary);
+  --color-text-button-tertiary-disabled: var(--color-neutral);
+  --color-border-button-tertiary-default: transparent;
+  --color-border-button-tertiary-hover: transparent;
+  --color-border-button-tertiary-active: transparent;
+  --color-border-button-tertiary-disabled: transparent;
+  --color-red-light: #f1cccc;
+  --color-red-lightest: #f8e5e5;
+  --padding-card-default: 1em;
+
+  /* Min width media queries breakpoints */
+  --breakpoint-tablet: 780px;
+  --breakpoint-desktop: 960px;
+  --breakpoint-widescreen: 1152px;
+  --link-font-weight: 500;
+
+  /* Z-indexes */
+  --z-index-navigation-menu: 10;
+
+  /* Non Component Library Theming */
+  --padding-main: 1.5em;
+  --header-height-desktop: 93px;
+  --footer-height-desktop: 82px;
+  --checkbox-size: var(--space-m);
+
+  /* S4H specific */
+  --color-white: #fff;
+  --color-black: #000;
+}

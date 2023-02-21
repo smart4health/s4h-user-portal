@@ -1,0 +1,20 @@
+.AddGroup__radio-group {
+  margin-top: var(--space-l);
+}
+
+.AddGroup__radio-item {
+  display: block;
+  margin-top: var(--space-m);
+}
+
+.AddGroup__radio-title,
+.AddGroup__radio-subtitle {
+  color: var(--color-primary);
+  cursor: pointer;
+  display: block;
+  margin-top: 0;
+}
+
+.AddGroup__radio-subtitle {
+  font-size: var(--font-size-desktop-s);
+}

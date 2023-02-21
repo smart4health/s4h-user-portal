@@ -1,0 +1,19 @@
+.ProfileHeader {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--space-xs);
+
+  h3 {
+    font: var(--typography-desktop-headline-4);
+    margin: 0;
+    line-height: 1;
+  }
+}
+
+@include desktop {
+  .ProfileHeader {
+    padding: var(--space-xl) var(--space-m);
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": false,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
+  },
+  "include": [ "src/**/*.ts", "src/**/*.json" ],
+  "typedocOptions": {
+    "exclude": [ "src/graph/viz/*.ts" ],
+    "out": "docs/typedoc",
+    "entryPoints": [ "src/lib.ts" ],
+    "includeVersion": true
+  }
+}

@@ -1,0 +1,27 @@
+.TwoColumnContent {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+
+  &--background-color-neutral {
+    background-color: var(--color-neutral-extra-lightest);
+  }
+
+  &__header {
+    background-color: var(--color-white);
+    display: flex;
+    border-bottom: var(--border-width-s) solid var(--color-neutral-extra-lightest);
+  }
+
+  &__body {
+    overflow-y: auto;
+    padding: var(--space-s) var(--space-s);
+  }
+}
+
+@include tablet-only {
+  .TwoColumnContent {
+    height: 100%;
+  }
+}

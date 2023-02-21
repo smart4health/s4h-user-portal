@@ -1,0 +1,45 @@
+{
+  "resourceType": "Questionnaire",
+  "url": "http://fhir.smart4health.eu/Questionnaire/post-training-questionnaire",
+  "version": "1.0.0",
+  "title": "Smart4Health post-training questionnaire",
+  "status": "draft",
+  "subjectType": ["Patient"],
+  "date": "2020-02",
+  "publisher": "D4L data4life gGmbH",
+  "contact": [
+    {
+      "name": "ITTM Solutions",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ittm-solutions.com/"
+        }
+      ]
+    },
+    {
+      "name": "D4L data4life gGmbH",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.data4life.care"
+        }
+      ]
+    }
+  ],
+  "item": [
+    {
+      "linkId": "training_no",
+      "text": "Training Number",
+      "type": "integer",
+      "required": true
+    },
+    {
+      "linkId": "training_weight_recommendation",
+      "text": "Training weight recommendation for the next training.",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-training-weight-change"
+    }
+  ]
+}

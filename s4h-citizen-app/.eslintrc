@@ -1,0 +1,70 @@
+{
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "rules": {
+        "import/no-unresolved": "off",
+        "no-unused-vars": "off", // tries to catch props otherwise, no good
+        "no-undef": "off" // https://github.com/eslint/typescript-eslint-parser/issues/437
+      }
+    }
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "jsx": true,
+    "useJSXTextNode": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "plugins": ["react", "jest", "prettier", "jsx-a11y"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest/globals": true,
+  },
+  "rules": {
+    "prefer-object-spread": "error",
+    "consistent-return": "warn",
+    "curly": "warn",
+    "arrow-body-style": ["error", "as-needed"],
+    "max-params": ["error", 3],
+    "prefer-const": "error",
+    "spaced-comment": "error",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+    "jsx-a11y/label-has-for": "warn",
+    "import/extensions": "off", // we get .ts files just fine, no warning needed
+    "import/no-cycle": "warn", // typescript parsing seems to mess this up even for JS files
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/valid-expect": "error",
+    "no-return-await": "warn",
+    "react/jsx-no-comment-textnodes": 0, // allow in-tsx ts-ignore
+    "react/prop-types": ["warn", { "ignore": ["className", "t"] }],
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unused-prop-types": 0,
+    "react/display-name": 0
+  },
+  "globals": {
+    "d4l_sdk": true,
+    "ArrayBuffer": true,
+    "Uint8Array": true,
+    "Promise": true,
+    "Generator": true
+  }
+}

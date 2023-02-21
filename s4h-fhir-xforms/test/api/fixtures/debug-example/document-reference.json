@@ -1,0 +1,13 @@
+{
+  "resourceType": "DocumentReference",
+  "status": "current",
+  "id": "E80F101C-B5B8-479B-A392-918F110FF7EB",
+  "type": {
+      "coding": [{
+          "system": "http://foo.bar",
+          "code": "12345"
+      }]
+  },
+  "date": "2020-02-03T09:57:34.2112Z",
+  "content": []
+}

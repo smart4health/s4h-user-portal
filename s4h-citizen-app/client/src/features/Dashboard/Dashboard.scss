@@ -1,0 +1,63 @@
+.Dashboard {
+  // The below two are required for correctly wrapping things
+  // in the view wrapper and is special for cases where the
+  // content will have a scroll. Other screen is sharing
+  width: 100%;
+
+  // fixes padding for making end of scroll have space
+  padding: 0 0 var(--space-m) 0;
+
+  &__title-container {
+    padding: var(--space-l) var(--space-m);
+  }
+
+  &__title {
+    font: var(--typography-mobile-headline-1);
+    padding-bottom: var(--space-s);
+  }
+
+  &__sub-title {
+    max-width: 320px;
+    font: var(--typography-mobile-headline-3);
+  }
+
+  &__cards {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, 100%);
+    grid-gap: var(--space-s);
+    margin-bottom: var(--space-s);
+    justify-content: center;
+  }
+
+  d4l-card {
+    width: 100%;
+    display: grid;
+  }
+}
+
+@include tablet-up {
+  .Dashboard {
+    &__title-container {
+      padding: calc(2 * var(--space-xl) - var(--space-m)) 0 calc(2 * var(--space-xl))
+        0;
+    }
+
+    &__cards {
+      grid-gap: var(--space-m);
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include desktop {
+  .Dashboard {
+    &__cards {
+      grid-template-columns: repeat(auto-fill, 368px);
+    }
+
+    d4l-card {
+      width: initial;
+    }
+  }
+}

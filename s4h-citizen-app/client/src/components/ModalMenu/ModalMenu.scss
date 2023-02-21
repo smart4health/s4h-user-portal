@@ -1,0 +1,73 @@
+.ModalMenu {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 0;
+  flex: none;
+
+  .IconButton {
+    margin-left: 0;
+  }
+
+  .Button__with-label {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    position: relative;
+    align-items: center;
+  }
+
+  .Button {
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+    color: var(--color-primary);
+    text-transform: none;
+
+    &__label {
+      text-align: center;
+      font-size: 10px;
+    }
+
+    svg {
+      width: 18px;
+      height: auto;
+      fill: currentcolor;
+    }
+  }
+}
+
+.Menu__PaperComponent {
+  &#{&} {
+    box-shadow: 0 3px 12px 0 var(--color-primary-extra-lightest);
+    min-width: 154px;
+    overflow: visible;
+  }
+}
+
+.Menu__ListItem {
+  &#{&} {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    padding-bottom: 6px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--color-neutral-lightest);
+    }
+
+    svg {
+      fill: var(--color-primary);
+    }
+
+    &.Menu__ListItem--deleteDocument {
+      color: var(--color-feedback-alarm);
+
+      svg {
+        fill: var(--color-feedback-alarm);
+      }
+    }
+  }
+}

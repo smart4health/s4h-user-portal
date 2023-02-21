@@ -1,0 +1,35 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "s4h-prevention-series-post-training-response-example-1",
+    "language": "en",
+    "questionnaire": "http://fhir.smart4health.eu/Questionnaire/post-training-questionnaire|1.0.0",
+    "status": "completed",
+    "encounter": {
+        "identifier": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/ittm-visit-id",
+            "value": "prev-test-visit-2"
+        }
+    },
+    "subject": {
+        "display": "Marie Lux-Brennard"
+    },
+    "authored": "2020-03-27",
+    "item": [{
+            "linkId": "training_no",
+            "text": "Training Number",
+            "answer": [{
+                "valueInteger": 1
+            }]
+        },
+        {
+            "linkId": "training_weight_recommendation",
+            "text": "Training weight recommendation for the next training.",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-training-weight-change",
+                    "code": "increase"
+                }
+            }]
+        }
+    ]
+}

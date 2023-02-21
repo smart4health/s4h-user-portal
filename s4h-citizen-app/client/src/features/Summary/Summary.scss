@@ -1,0 +1,155 @@
+.Summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--space-s);
+  margin: auto;
+  width: 100%;
+
+  &--is-centered {
+    width: 100%;
+    align-items: center;
+  }
+
+  &--is-loading {
+    height: 100%;
+    justify-content: center;
+  }
+
+  &__loader {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__columns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__left-column,
+  &__right-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__entry + &__entry {
+    margin-top: var(--space-s);
+  }
+
+  &__right-column {
+    margin-top: var(--space-s);
+  }
+
+  &__info {
+    margin-top: var(--space-s);
+    width: 100%;
+  }
+
+  &_info-notification-bar {
+    &#{&} {
+      background-color: var(--color-neutral-lighter);
+      font-size: var(--font-size-desktop-s);
+    }
+  }
+}
+@include tablet-only {
+  .Summary {
+    &__left-column,
+    &__right-column {
+      width: 336px;
+    }
+
+    &__info {
+      max-width: calc(336px * 2 + var(--space-s));
+    }
+
+    &--is-centered {
+      .Summary__info {
+        max-width: 336px;
+      }
+    }
+  }
+}
+@include tablet-up {
+  .Summary {
+    padding: 0;
+    width: unset;
+
+    &__columns {
+      flex-direction: row;
+      width: auto;
+    }
+
+    &__left-column,
+    &__right-column {
+      margin-top: 0;
+      margin-bottom: var(--space-s);
+      padding: 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &__right-column {
+      margin-left: var(--space-m);
+    }
+
+    &__info {
+      margin-top: 0;
+    }
+
+    &--is-centered {
+      align-items: center;
+    }
+
+    &__share-bar {
+      margin: 0 auto;
+      max-width: 696px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h1 {
+        font: var(--typography-desktop-headline-4);
+        margin: var(--space-m) 0;
+      }
+
+      button {
+        margin: var(--space-s) 0;
+      }
+    }
+  }
+
+  d4l-card {
+    width: 100%;
+  }
+}
+
+@include desktop {
+  .Summary {
+    &__left-column,
+    &__right-column {
+      width: 368px;
+    }
+
+    &__info {
+      max-width: calc(368px * 2 + var(--space-m));
+    }
+
+    &--is-centered {
+      .Summary__info {
+        margin-top: 0;
+        max-width: 368px;
+      }
+    }
+
+    &__share-bar {
+      max-width: calc(368px * 2 + var(--space-m));
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.Provenance {
+  &__infotext {
+    border-bottom: var(--border-width-s) solid var(--color-neutral-lightest);
+    padding: var(--space-m) 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  &__notification-bar {
+    &#{&} {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-top: var(--space-s);
+      font: var(--typography-desktop-body-level-2);
+    }
+  }
+}

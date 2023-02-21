@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "types": ["jest"],
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "declaration": false,
+    "experimentalDecorators": true,
+    "lib": [
+      "dom",
+      "es2020"
+    ],
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "es2017",
+    "noUnusedParameters": true,
+    "jsx": "react",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [
+    "src",
+    "node_modules/@d4l/web-components-library/dist/types/components.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "__tests__/**/*.ts",
+    "**/*.test.ts"
+  ]
+}

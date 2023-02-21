@@ -1,0 +1,107 @@
+.DataPickerView {
+  &__card {
+    &#{&} {
+      padding: var(--space-xl) var(--space-l);
+    }
+  }
+
+  &__card-description {
+    margin: 0;
+    color: var(--color-neutral);
+  }
+
+  &__feature-items {
+    padding: var(--space-xs) 0 var(--space-l);
+    margin: 0;
+  }
+
+  &__feature-item {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding-bottom: var(--space-s);
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__feature {
+    font: var(--typography-desktop-headline-4);
+  }
+
+  &__list-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-neutral-lightest);
+    padding: var(--space-s) 0;
+    flex-basis: 100%;
+
+    /* Edge case for "personal data" */
+    &.GroupPickerListItem__checkbox {
+      display: block;
+    }
+
+    h2 {
+      margin: 0;
+      font: var(--typography-desktop-headline-4);
+      flex-shrink: 1;
+    }
+
+    d4l-button button.sc-d4l-button.DataPickerView__selection-toggle-button {
+      white-space: nowrap;
+      font-size: var(--font-size-desktop-m);
+      padding: var(--space-xs);
+      margin-right: calc(var(--space-xs) * -1);
+      flex-shrink: 0;
+    }
+  }
+
+  &__select-all-button-container {
+    margin-top: var(--space-s);
+    margin-right: calc(-1 * var(--space-s));
+    display: flex;
+    justify-content: flex-end;
+
+    .button.sc-d4l-button.DataPickerView__select-all-button {
+      font-size: var(--font-size-desktop-m);
+    }
+  }
+
+  @at-root button#{&}__selector-menu-button {
+    font: var(--typography-desktop-body-level-1);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: -4px; // to compensate for the MUI buttons padding
+    flex-shrink: 0;
+
+    .MuiButton-endIcon {
+      margin-left: var(--space-s);
+      margin-right: 0;
+    }
+
+    svg.icon {
+      width: 16px;
+      height: 16px;
+      color: var(--color-secondary);
+    }
+
+    &:hover {
+      svg.icon {
+        color: var(--color-primary);
+      }
+    }
+
+    &.Mui-focusVisible {
+      svg.icon {
+        color: var(--color-primary);
+      }
+    }
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "resourceType": "Questionnaire",
+  "language": "en",
+  "url": "http://fhir.smart4health.eu/Questionnaire/back-pain-prevention",
+  "version": "1.0.0",
+  "name": "Smart4Health_back_pain_prevention_questionnaire",
+  "title": "Back pain prevention questionnaire",
+  "status": "draft",
+  "subjectType": ["Patient"],
+  "date": "2022-03-10",
+  "publisher": "D4L data4life gGmbH",
+  "contact": [
+    {
+      "name": "ITTM Solutions",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ittm-solutions.com/"
+        }
+      ]
+    },
+    {
+      "name": "D4L data4life gGmbH",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.data4life.care"
+        }
+      ]
+    }
+  ],
+  "description": "Back pain prevention questionnaire",
+  "item": [
+    {
+      "linkId": "questionnaire_timing",
+      "text": "When is this questionnaire being administered?",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-questionnaire-timing"
+    },
+    {
+      "linkId": "back_pain_frequency",
+      "text": "How often do you suffer from back pain?",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-back-pain-frequency"
+    },
+    {
+      "linkId": "back_pain_duration",
+      "text": "How long has this pain been occurring?",
+      "type": "choice",
+      "required": true,
+      "enableWhen": [
+        {
+          "question": "back_pain_frequency",
+          "operator": "!=",
+          "answerCoding": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "nev"
+          }
+        }
+      ],
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-back-pain-duration"
+    },
+    {
+      "linkId": "back_pain_location",
+      "text": "In which body part does the pain appear?",
+      "type": "choice",
+      "required": true,
+      "repeats": true,
+      "enableWhen": [
+        {
+          "question": "back_pain_frequency",
+          "operator": "!=",
+          "answerCoding": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "nev"
+          }
+        }
+      ],
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-back-pain-location"
+    },
+    {
+      "linkId": "back_pain_impact",
+      "text": "What are the consequences of your back pain and how does it impact your life situation?",
+      "type": "choice",
+      "required": true,
+      "repeats": true,
+      "enableWhen": [
+        {
+          "question": "back_pain_frequency",
+          "operator": "!=",
+          "answerCoding": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "nev"
+          }
+        }
+      ],
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-pain-impact"
+    },
+    {
+      "linkId": "influence_on_health",
+      "text": "To what extent do you think you can influence your state of health?",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-influence-degree"
+    },
+    {
+      "linkId": "state_of_health",
+      "text": "How do you assess your state of health?",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-health-state"
+    },
+    {
+      "linkId": "physical_activity_freq",
+      "text": "How often are you physically active in your free time?",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-physical-activity-frequency"
+    },
+    {
+      "linkId": "workout_reason",
+      "text": "What are the reasons you work out?",
+      "type": "choice",
+      "required": true,
+      "repeats": true,
+      "enableWhen": [
+        {
+          "question": "physical_activity_freq",
+          "operator": "!=",
+          "answerCoding": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "nev"
+          }
+        }
+      ],
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-activity-reason"
+    },
+    {
+      "linkId": "workout_hindrance",
+      "text": "What hinders you from taking part in sports activities?",
+      "type": "choice",
+      "required": true,
+      "repeats": true,
+      "enableWhen": [
+        {
+          "question": "physical_activity_freq",
+          "operator": "=",
+          "answerCoding": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-event-frequency",
+            "code": "nev"
+          }
+        }
+      ],
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-activity-hindrance"
+    },
+    {
+      "linkId": "physical_burden_tense_posture",
+      "text": "Physical burden at your workplace: Unilateral/tense posture",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-physical-burden-frequency"
+    },
+    {
+      "linkId": "physical_burden_standing",
+      "text": "Physical burden at your workplace: Primarily in standing position",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-physical-burden-frequency"
+    },
+    {
+      "linkId": "physical_burden_sitting",
+      "text": "Physical burden at your workplace: Primarily in sitting position",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-physical-burden-frequency"
+    },
+    {
+      "linkId": "physical_burden_leaning",
+      "text": "Physical burden at your workplace: Upper body leans forward",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-physical-burden-frequency"
+    },
+    {
+      "linkId": "physical_burden_lifting",
+      "text": "Physical burden at your workplace: Heavy lifting",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "http://fhir.smart4health.eu/ValueSet/s4h-physical-burden-frequency"
+    },
+    {
+      "linkId": "ergonomic_advice_impact",
+      "text": "Do you think ergonomic advice can reduce your physical stress at your workplace?",
+      "type": "choice",
+      "required": true,
+      "answerValueSet": "#s4h-back-pain-prevention-goal"
+    },
+    {
+      "linkId": "training_goals",
+      "text": "What are your goals in participating in the training?",
+      "type": "choice",
+      "required": true,
+      "repeats": true,
+      "answerValueSet": "#s4h-back-pain-prevention-goal"
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-back-pain-prevention-goal",
+      "version": "0.1.0",
+      "id": "s4h-back-pain-prevention-goal",
+      "name": "S4hBackPainPreventionGoal",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            {
+              "system": "url",
+              "value": "https://www.data4life.care"
+            }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal"
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "18c1207a-8f22-47ac-b480-ddb250e2519d",
+        "timestamp": "2022-02-28T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+            "code": "rdb",
+            "display": "Reduce back pain"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+            "code": "mbp",
+            "display": "Minimize back and neck diseases"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+            "code": "pha",
+            "display": "Suggestion to be physically active regularly"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+            "code": "sth",
+            "display": "Stabilize health"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+            "code": "pmd",
+            "display": "Prevention of muscular and skeletal disorders"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-back-pain-prevention-goal",
+            "code": "bms",
+            "display": "Build muscle performance and stability"
+          }
+        ]
+      }
+    },
+
+    {
+      "resourceType": "ValueSet",
+      "language": "en",
+      "url": "http://fhir.smart4health.eu/ValueSet/s4h-questionnaire-timing",
+      "version": "0.1.0",
+      "id": "s4h-questionnaire-timing",
+      "name": "s4h-questionnaire-timing",
+      "status": "draft",
+      "publisher": "D4L data4life gGmbH",
+      "contact": [
+        {
+          "name": "D4L data4life gGmbH",
+          "telecom": [
+            {
+              "system": "url",
+              "value": "https://www.data4life.care"
+            }
+          ]
+        }
+      ],
+      "immutable": false,
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-questionnaire-timing"
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "18a1207a-8f22-47ac-b480-ddb250e2519d",
+        "timestamp": "2022-02-28T12:08:51.687Z",
+        "contains": [
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-questionnaire-timing",
+            "code": "pre",
+            "display": "Before start of session"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-questionnaire-timing",
+            "code": "during",
+            "display": "During ongoing session"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-questionnaire-timing",
+            "code": "post",
+            "display": "After completed session"
+          },
+          {
+            "system": "http://fhir.smart4health.eu/CodeSystem/s4h-questionnaire-timing",
+            "code": "other",
+            "display": "Other"
+          }
+        ]
+      }
+    }
+
+
+  ]
+}

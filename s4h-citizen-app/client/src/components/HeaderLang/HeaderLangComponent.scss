@@ -1,0 +1,15 @@
+.HeaderLangComponent {
+  user-select: none;
+
+  li {
+    list-style: none;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+
+    button {
+      cursor: inherit;
+    }
+  }
+}

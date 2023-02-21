@@ -1,0 +1,20 @@
+{
+    "resourceType": "AllergyIntolerance",
+    "id": "s4h-minimal-allergies-example",
+    "meta": {
+        "profile": ["http://fhir.smart4health.eu/StructureDefinition/s4h-allergyintolerance"]
+    },
+    "clinicalStatus": {
+        "coding": [{
+            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+            "code": "inactive",
+            "display": "Inactive"
+        }]
+    },
+    "code": {
+        "text": "Allergy against structured information"
+    },
+    "patient": {
+        "display": "John Doe"
+    }
+}

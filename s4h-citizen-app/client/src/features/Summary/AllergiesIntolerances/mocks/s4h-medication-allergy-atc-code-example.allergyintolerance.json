@@ -1,0 +1,32 @@
+{
+    "resourceType": "AllergyIntolerance",
+    "id": "s4h-medication-allergy-atc-code-example",
+    "meta": {
+        "profile": ["http://fhir.smart4health.eu/StructureDefinition/s4h-allergyintolerance"]
+    },
+    "clinicalStatus": {
+        "coding": [{
+            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+            "code": "active",
+            "display": "Active"
+        }]
+    },
+    "verificationStatus": {
+        "coding": [{
+            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+            "code": "confirmed",
+            "display": "Confirmed"
+        }]
+    },
+    "code": {
+        "coding": [{
+            "system": "http://www.whocc.no/atc",
+            "code": "M01AE01",
+            "display": "ibuprofen"
+        }]
+    },
+    "criticality": "low",
+    "patient": {
+        "display": "John Doe"
+    }
+}

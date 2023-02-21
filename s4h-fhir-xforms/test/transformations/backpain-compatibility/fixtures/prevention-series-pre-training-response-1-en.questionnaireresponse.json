@@ -1,0 +1,65 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "s4h-prevention-series-pre-training-response-example-1",
+    "language": "en",
+    "questionnaire": "http://fhir.smart4health.eu/Questionnaire/pre-training-questionnaire|1.0.0",
+    "status": "completed",
+    "encounter": {
+        "identifier": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/ittm-visit-id",
+            "value": "prev-test-visit-2"
+        }
+    },
+    "subject": {
+        "display": "Marie Lux-Brennard"
+    },
+    "authored": "2020-03-27",
+    "item": [{
+            "linkId": "training_no",
+            "text": "Training Number",
+            "answer": [{
+                "valueInteger": 1
+            }]
+        },
+        {
+            "linkId": "back_pain_level_before",
+            "text": "Lower back pain level before training",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA6115-5"
+                }
+            }]
+        },
+        {
+            "linkId": "well_being",
+            "text": "Well being",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA10137-0"
+                }
+            }]
+        },
+        {
+            "linkId": "well-being_summary",
+            "text": "Summary of your health, general well-being and activities in the last days/weeks",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-pre-training-well-being-summary",
+                    "code": "extraordinary"
+                }
+            }]
+        },
+        {
+            "linkId": "extraordinary_circumstances",
+            "text": "Extraordinary circumstances",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://fhir.smart4health.eu/CodeSystem/s4h-backpain-extraordinary-circumstances",
+                    "code": "busy-day"
+                }
+            }]
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+.PersonalDataForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .MedicalHistoryQuestion {
+    flex: 0 0 50%;
+    min-width: 50%;
+    margin: var(--space-xs) 0;
+
+    &:nth-child(even) {
+      padding: var(--space-xs) 0;
+      padding-left: var(--space-xxs);
+    }
+
+    &:nth-child(odd) {
+      padding: var(--space-xs) 0;
+      padding-right: var(--space-xxs);
+    }
+
+    &__label {
+      color: var(--color-neutral);
+      font-size: var(--font-size-desktop-s);
+    }
+
+    .fieldset__item.sc-d4l-date-input {
+      margin-right: 4px;
+      width: calc(33% - 3px);
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .fieldset.sc-d4l-date-input > legend.sc-d4l-date-input {
+      color: var(--color-neutral);
+      font-size: var(--font-size-mobile-s);
+    }
+
+    .input--small.sc-d4l-input .input__element.sc-d4l-input {
+      width: 47px;
+      padding-top: 0;
+    }
+
+    .input.sc-d4l-input {
+      margin-top: 0;
+    }
+  }
+
+  .MedicalHistoryQuestion--readonly {
+    margin: 0;
+
+    &:nth-child(even) {
+      padding: var(--space-xs) 0;
+      padding-right: var(--space-xxs);
+    }
+
+    &:nth-child(odd) {
+      padding: var(--space-xs) 0;
+      padding-left: var(--space-xxs);
+    }
+  }
+
+  &__name {
+    width: 100%;
+    display: flex;
+
+    .MedicalHistoryQuestion:first-child {
+      min-width: 100%;
+      margin-top: 0;
+      padding-left: 0;
+    }
+
+    .MedicalHistoryQuestion__primaryText {
+      font: var(--typography-mobile-headline-2);
+    }
+  }
+}

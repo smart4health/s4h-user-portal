@@ -1,0 +1,27 @@
+.ListItem {
+  border-bottom: var(--border-width-s) solid var(--color-neutral-lightest);
+  padding: var(--space-s);
+
+  &:last-child {
+    border: none;
+  }
+
+  &__title {
+    font-size: var(--font-size-mobile-s);
+  }
+
+  &__description {
+    color: var(--color-neutral);
+    font-size: var(--font-size-mobile-xs);
+    margin-top: 2px;
+  }
+
+  &__tags {
+    padding-top: var(--space-xs);
+    display: flex;
+
+    d4l-tag + d4l-tag {
+      margin-left: calc(var(--space-xs) / 2);
+    }
+  }
+}

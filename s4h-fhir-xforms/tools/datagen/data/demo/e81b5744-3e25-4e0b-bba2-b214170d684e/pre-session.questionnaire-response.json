@@ -1,0 +1,61 @@
+{
+	"resourceType": "QuestionnaireResponse",
+	"id": "2eeb086d-0ef0-45ec-a6f7-0c7148ba9dfa",
+	"language": "en",
+	"questionnaire": "http://fhir.smart4health.eu/Questionnaire/pre-session-questionnaire|0.1.0",
+	"status": "completed",
+	"item": [
+		{
+			"linkId": "current_back_pain_level",
+			"text": "Please indicate your current pain level",
+			"answer": [
+				{
+					"valueCoding": {
+						"system": "http://loinc.org",
+						"code": "LA10137-0",
+						"display": "5"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "average_back_pain_level",
+			"text": "Please indicate your average pain level during the past four weeks",
+			"answer": [
+				{
+					"valueCoding": {
+						"system": "http://loinc.org",
+						"code": "LA10137-0",
+						"display": "5"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "max_back_pain_level_4w",
+			"text": "Please indicate your maximum pain level during the past four weeks",
+			"answer": [
+				{
+					"valueCoding": {
+						"system": "http://loinc.org",
+						"code": "LA10137-0",
+						"display": "5"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "taking_painkillers",
+			"text": "Are you taking painkillers at the moment?",
+			"answer": [
+				{
+					"valueCoding": {
+						"system": "http://loinc.org",
+						"code": "LA32-8",
+						"display": "No"
+					}
+				}
+			]
+		}
+	]
+}

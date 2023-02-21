@@ -1,0 +1,101 @@
+/* Setup */
+html {
+  font-family: $font-sans;
+  font-size: 0.625em;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* Copy & Lists */
+p {
+  margin-top: 1rem;
+}
+
+ul {
+  li {
+    list-style: disc inside;
+  }
+}
+
+ul,
+ol {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  li {
+    margin: 0.5rem 0;
+  }
+
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1rem;
+  font-style: normal;
+}
+
+h1 {
+  margin-top: 1rem;
+  font-size: 3.9rem;
+  font-weight: 300;
+  font-family: $font-serif;
+  line-height: 1.2;
+  letter-spacing: 0.15px;
+  word-spacing: 0.15px;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 2.9rem;
+  font-weight: 300;
+  font-family: $font-serif;
+  line-height: 1.2;
+  letter-spacing: 0.15px;
+  word-spacing: 0.15px;
+}
+
+h3 {
+  margin-top: 1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+h6 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Code blocks */
+code {
+  vertical-align: bottom;
+}

@@ -1,0 +1,39 @@
+.DownloadMedication {
+  &__list-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: var(--space-m);
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    & > div {
+      flex: 0 50%;
+    }
+  }
+
+  &__list-item-title {
+    color: var(--color-neutral);
+  }
+
+  &__list-item-value {
+    color: var(--color-primary);
+  }
+
+  &__error-message {
+    color: var(--color-feedback-alarm);
+    margin-top: var(--space-l);
+  }
+
+  &__loader {
+    display: flex;
+    justify-content: center;
+    padding: var(--space-l) 0;
+
+    .spinner {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

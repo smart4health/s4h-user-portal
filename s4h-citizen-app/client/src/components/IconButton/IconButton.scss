@@ -1,0 +1,32 @@
+.IconButton {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  position: relative;
+  align-items: center;
+
+  &__action-button {
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+    color: var(--color-primary);
+    text-transform: none;
+
+    &-label {
+      text-align: center;
+      font-size: 10px;
+    }
+
+    svg {
+      width: 18px;
+      height: auto;
+      fill: currentcolor;
+    }
+  }
+}
+
+@include desktop-down {
+  .IconButton__action-button-label {
+    display: none;
+  }
+}

@@ -1,0 +1,13 @@
+.AccountFormSection {
+  h3 {
+    margin: 0;
+    font: var(--typography-mobile-headline-2);
+    padding-bottom: var(--space-m);
+  }
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  margin-top: var(--space-m);
+}

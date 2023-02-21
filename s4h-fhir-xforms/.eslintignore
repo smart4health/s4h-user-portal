@@ -1,0 +1,8 @@
+node_modules/
+src/gen/
+src/scratch/
+src/graph/viz/
+src/ideation/
+dist/
+*.js
+tools/

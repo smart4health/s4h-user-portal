@@ -1,0 +1,14 @@
+.CookieBanner {
+  background-color: var(--color-neutral-lighter);
+
+  &__link {
+    font-weight: 600;
+    color: var(--color-secondary);
+    text-decoration: underline;
+  }
+  @include mobile {
+    .snack-bar__controls {
+      margin-top: 16px;
+    }
+  }
+}

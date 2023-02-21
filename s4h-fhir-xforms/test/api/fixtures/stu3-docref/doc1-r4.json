@@ -1,0 +1,37 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "10a1f2ec-8569-4f4b-b79e-82349557d837",
+  "status": "current",
+  "description": "test",
+  "content": [
+    {
+      "attachment": {
+        "id": "f99bed95-4a1e-417a-823f-820b45accf2b",
+        "title": "test",
+        "contentType": "image/png",
+        "size": 3583,
+        "hash": "xolmmYPFUKSKA8kGvbJ+d6hUND4="
+      }
+    }
+  ],
+  "date": "2021-06-03T10:00:00.000Z",
+  "type": {
+    "text": "dummy"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "68629-5",
+          "display": "Allergy and immunology Note"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "value": "d4l_f_p_t#f99bed95-4a1e-417a-823f-820b45accf2b#f99bed95-4a1e-417a-823f-820b45accf2b#f99bed95-4a1e-417a-823f-820b45accf2b"
+    }
+  ]
+}

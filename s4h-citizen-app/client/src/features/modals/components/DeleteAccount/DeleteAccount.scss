@@ -1,0 +1,10 @@
+.DeleteAccount {
+  &_content {
+    padding: var(--space-l);
+  }
+
+  &__info-text {
+    margin-bottom: var(--space-m);
+    font: var(--typography-mobile-body-level-1);
+  }
+}

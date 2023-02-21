@@ -1,0 +1,39 @@
+.EidCountrySelection {
+  &__loader {
+    display: flex;
+    justify-content: center;
+    padding: var(--space-l);
+  }
+
+  &__country-selection-item {
+    display: flex;
+  }
+
+  d4l-icon {
+    width: 28px;
+    height: 20px;
+  }
+
+  &__radio-button {
+    margin: var(--space-m) 0;
+  }
+
+  &__country-selection-item-flag {
+    margin-right: var(--space-s);
+    display: flex;
+    align-items: center;
+  }
+
+  &__country-selection-item-name {
+    color: var(--color-primary);
+  }
+
+  input[type='radio'].sc-d4l-radio + label.sc-d4l-radio {
+    align-items: center;
+    text-align: start;
+  }
+
+  input[type='radio'].sc-d4l-radio:checked + label.sc-d4l-radio::after {
+    top: auto;
+  }
+}

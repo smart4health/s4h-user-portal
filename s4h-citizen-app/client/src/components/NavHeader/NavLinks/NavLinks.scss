@@ -1,0 +1,141 @@
+.NavLinks {
+  $this: &;
+
+  display: none;
+  padding: var(--space-m) var(--space-s);
+
+  &--is-active {
+    @include until($desktop) {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      overflow-x: hidden;
+      overflow-y: auto;
+      left: 0;
+      top: $header-height;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-neutral-extra-lightest);
+    }
+  }
+
+  &__items,
+  &__item {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+  }
+
+  &__items {
+    flex-direction: column;
+  }
+
+  &__items--user {
+    align-items: center;
+    justify-content: space-between;
+    order: -1;
+    flex-direction: row;
+    #{$this}__item {
+      overflow: hidden;
+      padding-right: var(--space-s);
+    }
+  }
+
+  &__link {
+    width: 100%;
+    display: flex;
+    padding: var(--space-s) var(--space-xs);
+    font-weight: var(--link-font-weight);
+    text-decoration: none;
+    color: var(--color-neutral);
+    align-items: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--color-primary);
+    }
+  }
+
+  &__download-data-button {
+    margin-right: var(--space-s);
+  }
+
+  &__link--is-active {
+    color: var(--color-primary);
+  }
+
+  &__user-icon {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 16px 0 0;
+    padding: 8px;
+    box-shadow: 1px 1px 5px 0 rgb(0 0 0 / 10%);
+    border-radius: 50%;
+  }
+
+  &__user-name {
+    display: block;
+    align-items: center;
+    color: var(--color-primary);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@include desktop {
+  .NavLinks {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    &__items {
+      flex-direction: row;
+      height: 100%;
+      align-items: center;
+    }
+
+    &__item {
+      height: 100%;
+      align-items: center;
+    }
+
+    &__link {
+      height: 100%;
+      align-items: center;
+    }
+
+    &__items--user {
+      order: 0;
+    }
+
+    &__link--is-active {
+      position: relative;
+    }
+
+    &__link--is-active::after {
+      content: '';
+      position: absolute;
+      height: 3px;
+      background: var(--color-primary);
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      border-radius: 30px 30px 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet + 1px) and (max-width: 1080px) {
+  // special case for broken UI for longer portugese translation
+  .NavLinks {
+    &__user-name {
+      display: none;
+    }
+  }
+}

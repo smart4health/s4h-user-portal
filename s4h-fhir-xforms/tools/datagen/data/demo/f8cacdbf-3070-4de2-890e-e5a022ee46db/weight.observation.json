@@ -1,0 +1,20 @@
+{
+	"resourceType": "Observation",
+	"id": "8d15f816-1a78-4792-acb1-e6fc4d0ea99a",
+	"status": "amended",
+	"subject": {
+		"reference": "Patient/f8cacdbf-3070-4de2-890e-e5a022ee46db"
+	},
+	"code": {
+		"coding": [
+			{
+				"system": "http://loinc.org",
+				"code": "29463-7"
+			}
+		]
+	},
+	"valueQuantity": {
+		"value": 65,
+		"unit": "kg"
+	}
+}

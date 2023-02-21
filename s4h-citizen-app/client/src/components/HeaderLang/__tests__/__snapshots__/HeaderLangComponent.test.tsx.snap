@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderLangComponent renders correctly 1`] = `
+<d4l-multi-language-switcher
+  data-test="languageSwitcher"
+  style="float: right;"
+/>
+`;
+
+exports[`HeaderLangSwitch renders without crashing 1`] = `
+<d4l-multi-language-switcher
+  data-test="languageSwitcher"
+  style="float: right;"
+/>
+`;

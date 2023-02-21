@@ -1,0 +1,35 @@
+{
+    "resourceType": "AllergyIntolerance",
+    "id": "s4h-abated-allergy-ips-example",
+    "meta": {
+        "profile": ["http://fhir.smart4health.eu/StructureDefinition/s4h-allergyintolerance"]
+    },
+    "extension": [{
+        "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-dateTime-uv-ips",
+        "valueDateTime": "2020"
+    }],
+    "clinicalStatus": {
+        "coding": [{
+            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+            "code": "resolved",
+            "display": "Resolved"
+        }]
+    },
+    "verificationStatus": {
+        "coding": [{
+            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+            "code": "confirmed",
+            "display": "Confirmed"
+        }]
+    },
+    "code": {
+        "coding": [{
+            "system": "http://snomed.info/sct",
+            "code": "256303006",
+            "display": "Ragweed pollen"
+        }]
+    },
+    "patient": {
+        "display": "John Doe"
+    }
+}

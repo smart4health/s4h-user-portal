@@ -1,0 +1,1144 @@
+{
+  "anamnesis": {
+    "allergies_intolerances": "Alergias e intolerâncias",
+    "answers": {
+      "0": "0",
+      "A": "A",
+      "AB": "AB",
+      "B": "B",
+      "Negative": "Negativo",
+      "Positive": "Positivo",
+      "female": "Mulher",
+      "male": "Homem",
+      "no": "Não",
+      "not_set": "Não respondido",
+      "other": "Outro",
+      "please_choose": "Selecione",
+      "yes": "Sim",
+      "unknown": "Desconhecido"
+    },
+    "medical_history": "Doenças",
+    "personal_data": "Dados pessoais",
+    "private_beta_anamnesis_hint": "Na versão beta privada, a anamnese apenas pode ser visualizada. Pode criar e editar a anamnese na aplicação Android ou iOS.",
+    "private_beta_feedback_email": "helpdesk@smart4health.eu",
+    "private_beta_hint": "Perguntas e comentários para:",
+    "questions": {
+      "alcohol": "Consome álcool com regularidade?",
+      "allergies_intolerances": "Tem alguma alergia ou intolerância?",
+      "birthDate": "Data de nascimento",
+      "blood_pressure": "Alguma vez teve pressão arterial elevada?",
+      "blood_rh_factor": "Fator RH",
+      "blood_sugar": "Alguma vez teve níveis de glucose no sangue elevados?",
+      "blood_type": "Tipo sanguíneo",
+      "bmi": "IMC",
+      "family": "Apelido",
+      "gender": "Sexo",
+      "given": "Nome próprio",
+      "height": "Altura em cm",
+      "job_position": "Ocupação",
+      "middle_name": "Nome do meio",
+      "nested": {
+        "past_diseases": {
+          "date": "Data do primeiro diagnóstico",
+          "question": "Sofre de alguma doença crónica?",
+          "text": "Doença ou tratamento"
+        },
+        "past_surgery": {
+          "date": "Data da cirurgia",
+          "question": "Já foi submetido a alguma cirurgia?",
+          "text": "Cirurgia"
+        }
+      },
+      "overweight": "Tem excesso de peso?",
+      "past_diseases": "Alguma vez lhe foi diagnosticada ou recebeu tratamento para uma doença específica?",
+      "past_surgery": "Já foi submetido a alguma cirurgia para uma doença específica?",
+      "prefix": "Título",
+      "smoking": "É, ou já foi, fumador?",
+      "suffix": "Sufixo",
+      "weight": "Peso em kg"
+    },
+    "risk_factors": "Fatores de risco",
+    "submit_response": "Enviar a resposta",
+    "emergency_contact": "Contacto de emergência",
+    "personal-data-name_validation-message": "Insira um nome válido",
+    "personal-data-surname_validation-message": "Insira um nome",
+    "personal-data-gender_validation-message": "Selecione uma opção",
+    "personal-data-birth_validation-message": "Insira a data completa",
+    "personal-data-weight_validation-message": "Insira um valor",
+    "personal-data-height_validation-message": "Insira um valor",
+    "personal-data-bloodtype_validation-message": "Selecione uma opção",
+    "data-prefilled_snackbar": "<strong>Algumas secções foram pré-preenchidas.</strong> Edite-as para as confirmar ou atualizar a informação.",
+    "medical_history_condition_section": {
+      "adding_message": "Especifique uma ou mais doenças que lhe tenham diagnosticado:",
+      "adding_button": "Adicionar doença",
+      "dropdown_headline": "Selecionar doença",
+      "date_message": "É importante a data estar completa (ano, mês, dia). Se não se recorda da data completa, tente adicionar pelo menos o ano e deixe os outros campos em branco.",
+      "diagnosis_date_label": "Data do diagnóstico",
+      "year_label": "Ano",
+      "month_label": "Mês",
+      "day_label": "Dia",
+      "cancel_button": "Cancelar",
+      "save_button": "Guardar"
+    },
+    "medical-history-condition-adding_validation-message": "Insira detalhes sobre a sua doença",
+    "medical-history-condition-skip_button": "Saltar",
+    "medical-history-condition-save_button": "Guardar",
+    "medical-history-condition-view-entry_label": "Data do primeiro diagnóstico",
+    "allergies-adding_validation-message": "Especifique uma ou mais alergias ou intolerâncias:",
+    "allergies-adding_button": "Adicionar alergia",
+    "allergies-dropdown_headline": "Selecionar alergia",
+    "emergency_contact_adding": {
+      "label": "Existe alguém que possa ser contactado numa emergência?",
+      "message": "Adicione um contacto de emergência.",
+      "button": "Adicionar contacto",
+      "name_placeholder": "Nome próprio",
+      "surname_placeholder": "Apelido",
+      "code_label": "Código",
+      "phone_placeholder": "N.º de telemóvel"
+    },
+    "allergies_intolerances_section": {
+      "allergies_list_label": "Lista de alergias"
+    },
+    "medical_history_surgery_section": {
+      "adding_message": "Selecione uma ou mais cirurgias:",
+      "adding_button": "Adicionar cirurgia",
+      "date_message": "É importante a data estar completa (ano, mês, dia). Se não se recorda da data completa, tente adicionar pelo menos o ano e deixe os outros campos em branco.",
+      "dropdown_headline": "Selecionar procedimento",
+      "diagnosis_date_label": "Data do procedimento:"
+    },
+    "save_button": "Guardar",
+    "edit_button": "Editar",
+    "delete_button": "Apagar",
+    "errors": {
+      "required_field": "Preencha este campo.",
+      "number_range": "Insira um valor entre {{min}} e {{max}}"
+    },
+    "empty_state": {
+      "title": "O seu historial médico num olhar breve",
+      "subtitle": "Complete os seus dados pessoais, fatores de risco e doenças.",
+      "button": "Inserir dados",
+      "subtitle_card": "Preencha as suas informações pessoais"
+    },
+    "sidebar": {
+      "title": "Historial clínico"
+    },
+    "last_updated": {
+      "title": "Última atualização"
+    }
+  },
+  "legal": {
+    "dataPrivacy": {
+      "content": "<p><em>Note: a seguinte política de privacidade dirige-se aos utilizadores da nossa plataforma Smart4Health. No âmbito da utilização da aplicação web Smart4Health, os nossos utilizadores podem opcionalmente armazenar informações encriptadas que possam conter informações sobre terceiros. Informamos o público sobre este aspeto numa política de privacidade separada, de acordo com o Art.º 14.º, n.º 5, alínea b), segunda frase do Regulamento Geral de Proteção de Dados (RGPD).</em></p>\n\n<p>Com a nossa plataforma Smart4Health, que pode utilizar através da nossa aplicação web, permitimos-lhe armazenar e gerir digitalmente, de forma segura, os seus dados de saúde. Estas informações descrevem a forma como a plataforma Smart4Health trata os seus dados pessoais. As secções 1 a 3 informam-no sobre os seus direitos legais e as Secções 4 a 10 explicam a forma como os seus dados pessoais são tratados quando se regista e utiliza a plataforma Smart4Health.</p>\n\n<strong>1. Responsável pelo tratamento e encarregado da proteção de dados</strong>\n\n<p>O responsável pelo tratamento de dados, nos termos do Art.º 4, n.º 7 do RGPD, da aplicação web é </p>\n\n<div>D4L data4life gGmbH</div>\n<div>Charlottenstraße 109</div>\n<div>14467 Potsdam, Alemanha</div>\n<p>E-mail: we@data4life.help</p>\n\n<p>Pode contactar o nosso encarregado da proteção de dados através de dataprotection@data4life.help ou do nosso endereço postal, ao cuidado de \"The data protection officer\".</p>\n\n<strong>2. Os seus direitos</strong>\n\n<div>Tem os seguintes direitos relativamente aos dados pessoais que lhe dizem respeito:</div>\n<ul><li>\tDireito de acesso (Art.º 15.º do RGPD),</li>\n<li>\tDireito de retificação (Art.º 16.º do RGPD),</li>\n<li>\tDireito ao apagamento dos dados (Art.º 17.º do RGPD),</li>\n<li>\tDireito à limitação do tratamento (Art.º 18.º do RGPD),</li>\n<li>\tDireito de oposição ao tratamento (Art.º 21.º do RGPD),</li>\n<li>\tDireito de portabilidade dos dados (Art.º 20.º do RGPD).</li></ul>\n<p>Tem também o direito de apresentar queixa sobre o nosso tratamento dos seus dados pessoais a uma autoridade de controlo de proteção de dados no Estado-membro onde se encontra, no seu local de trabalho ou no local da alegada infração, se considerar que o tratamento dos seus dados pessoais é ilícito. A autoridade de controlo responsável por nós é:</p>\n\n<div>Die Landesbeauftragte für den Datenschutz und für das Recht auf Akteneinsicht</div>\n<div>Stahnsdorfer Damm 77</div>\n<div>14532 Kleinmachnow</div> \n<p>Alemanha</p>\n<p>\n<div>Telefone: 0049 (0)33203/356-0</div>\n<div>Fax: 0049 (0)33203/356-49</div>\n<div>E-mail: poststelle@lda.brandenburg.de</div>\n</p>\n<div>Se nos tiver dado o seu consentimento para o tratamento dos seus dados, pode revogá-lo a qualquer momento, produzindo efeitos após essa revogação. A licitude do tratamento dos seus dados até à data da revogação não é afetada.</div>\n<p>Pode contactar-nos em qualquer momento utilizando os canais de contacto referidos na Secção 1 acima e/ou as informações de contacto referidas no nosso impresso para a afirmação dos seus direitos ou para outras questões relativas à proteção de dados.</p>\n\n<strong>3. Nota suplementar sobre o seu direito de oposição</strong>\n\n<p>Note que se os seus dados pessoais forem tratados com base num interesse legítimo no âmbito do equilíbrio de interesses nos termos do Art.º 6.º, n.º 1, parágrafo 1 alínea f) do RGPD, tem o direito de se opor ao tratamento dos seus dados pessoais em qualquer altura. Pode indicar a sua oposição contactando-nos em qualquer momento, utilizando os canais de contacto referidos na Secção 1 e/ou as informações de contacto no nosso impresso.</p>\n\n<strong>4. Finalidades e fundamentos jurídicos do tratamento dos seus dados pessoais</strong>\n<br/>\n<strong>a. Utilização da aplicação web</strong>\n<div>Quando a plataforma Smart4Health é utilizada, os seguintes dados são automaticamente transferidos para o servidor web da Data4Life:</div>\n\n<ul><li>\tEndereço IP do dispositivo utilizado para a recuperação</li>\n<li>\tEndereço web (URL) da página a partir da qual o ficheiro foi solicitado (referenciador)</li>\n<li>\tData e hora do pedido </li>\n<li>\tQuantidade de dados transmitidos </li>\n<li>\tDescrição do tipo de navegador web utilizado</li></ul>\n\n<p>O tratamento destes dados, que contêm uma referência pessoal (pseudonimizada) através do endereço IP, é tecnicamente necessário e é efetuado a fim de lhe fornecer a oferta Data4Life. O fundamento jurídico para o tratamento acima mencionado é o Art.º 6.º, n.º 1, parágrafo 1, alínea b) do RGPD (o tratamento é necessário para o cumprimento de um contrato com o titular dos dados). Para evitar ameaças à segurança da infraestrutura da Data4Life e para fornecer às autoridades responsáveis pela aplicação da lei as informações necessárias para a acusação no caso de um ataque cibernético, por exemplo, num ataque DDoS, os dados acima mencionados são geralmente armazenados em ficheiros de registo durante um período de sete dias. No caso de um ataque, os dados de registo são retidos com o objetivo de preservar as provas até que o respetivo incidente seja resolvido. O fundamento jurídico deste tratamento é o Art.º 6.º, n.º 1, parágrafo 1, alínea f) do RGPD (o tratamento é necessário para salvaguardar os legítimos interesses do responsável pelo tratamento). O interesse legítimo da Data4Life é fornecer segurança e estabilidade suficientes aos nossos servidores web.</p>\n\n\n<strong>b. Registo na plataforma Smart4Health utilizando a aplicação web</strong>\n<p>Pode registar-se na plataforma Smart4Health utilizando a nossa aplicação web.</p>\n\n<p>Tudo o que precisa para se registar na plataforma Smart4Health é o seu endereço de e-mail, uma palavra-passe à sua escolha, um número de telemóvel para a autenticação de dois fatores e o seu \"caso de estudo\" Smart4Health. Posteriormente, receberá uma chave de dados que será utilizada para a sua autenticação adicional durante o processo de início de sessão. Terá de introduzir a chave de dados no processo de início de sessão quando iniciar a sessão na plataforma Smart4Health a partir de um novo dispositivo ou navegador. </p>\n\n<p>Se criou a sua conta Smart4Health antes de 26/07/2021, recebeu uma chave de recuperação pessoal no âmbito do seu registo com a oferta Smart4Health. A chave de recuperação permite-lhe repor a sua palavra-passe. Assim que voltar a entrar na sua conta Smart4Health, receberá a nova chave de dados. A partir deste momento, a chave de recuperação já não tem qualquer função e pode ser eliminada.</p>\n\n<p>Utilizamos o procedimento de dupla ativação para o registo. Isto significa que, após o seu registo, enviaremos uma mensagem de e-mail para o endereço que nos forneceu, na qual lhe pediremos que confirme o seu registo.</p>\n\n<p>Após o registo bem-sucedido, pode aceder à plataforma Smart4Health com os seus dados de acesso e utilizar as funcionalidades.</p>\n\n<p>Em alternativa, oferecemos-lhe a opção de iniciar sessão com identificação eletrónica (e-ID). Com a e-ID, pode provar a sua identidade, por exemplo, através da e-ID no bilhete de identidade federal alemão. Antes de ser possível iniciar sessão com a e-ID, tem de associar a sua conta de utilizador à sua e-ID nas definições da conta. </p>\n\n<p>A associação requer a utilização de um serviço de identidade, como a AusweisApp 2 da Governikus GmbH & Co. KG na Alemanha. O serviço cria um pseudónimo único baseado na respetiva e-ID, que é armazenado na sua conta de utilizador. Após a associação ter sido efetuada, pode a partir daí identificar-se eletronicamente com a sua e-ID através de um serviço de identidade. Pode revogar a associação entre a sua e-ID e a sua conta de utilizador Smart4Health em qualquer altura nas definições da conta. </p>\n\n<p>O fundamento jurídico para o tratamento acima mencionado é o Art.º 6.º, n.º 1, parágrafo 1, alínea b) do RGPD (o tratamento é necessário para o cumprimento de um contrato com o titular dos dados).\n</p>\n\n\n<strong>c. Utilização das funcionalidades e conservação dos seus dados de saúde</strong>\n<p>Como utilizador registado pode, de forma segura e encriptada, carregar e guardar na plataforma Smart4Health dados e documentos (por exemplo, cartas médicas e resultados de diagnóstico) que lhe dizem respeito. Também pode transferir, ver, editar e eliminar dados/documentos carregados para a plataforma Smart4Health em qualquer altura. Para mais informações sobre como garantir a segurança dos seus dados e documentos carregados na plataforma Smart4Health, consulte a secção 7 em baixo.</p>\n\n<p>Pode carregar documentos utilizando a aplicação web e guardá-los na plataforma Smart4Health. Na aplicação web, tratamos os dados carregados com o objetivo de os transmitirmos para a plataforma Smart4Health.</p>\n\n<p>Pode partilhar dados/documentos carregados/armazenados na plataforma Smart4Health e selecionados por si com outra pessoa, se assim o desejar. Para este fim, é gerado um código PIN utilizando um URL público, utilizado pela respetiva pessoa, que deverá transmitir a esta antes de partilhar dados/documentos. Este código PIN é utilizado para estabelecer uma ligação com a respetiva pessoa utilizando a aplicação web, através da qual pode partilhar com essa pessoa os documentos que selecionou (handshake digital).</p>\n\n<p>O fundamento jurídico para o referido tratamento dos seus dados armazenados na plataforma Smart4Health, incluindo os seus dados de saúde, é o consentimento dado por si durante o processo de registo (Art.º 6.º, n.º 1, parágrafo 1, alínea a), em conjugação com o Art.º 9.º, n.º 2, alínea a) do RGPD. Note que pode revogar o seu consentimento a qualquer momento. A licitude do tratamento efetuado com base no consentimento até à data da sua revogação não é afetada pela mesma. Pode declarar a sua revogação, por exemplo, apagando o seu perfil na aplicação web. Pode também remover dados/documentos individuais ou todos os dados/documentos armazenados da plataforma Smart4Health em qualquer momento, utilizando as funções fornecidas e mantendo a sua conta de utilizador.</p>\n\n\n<strong>d. Criação de um perfil pessoal de saúde/historial clínico</strong>\n<p>Ao utilizar a plataforma Smart4Health, pode também criar um perfil pessoal de saúde preenchendo um questionário fornecido pela Smart4Health. Neste contexto, tratamos os dados que nos fornece, incluindo dados de saúde na plataforma Smart4Health, com o objetivo de armazenar o seu perfil pessoal de saúde. A criação de um perfil de saúde ou a resposta ao questionário é voluntária. Para mais informações sobre como garantimos a segurança dos seus dados e documentos carregados na plataforma Smart4Health, consulte a secção 7 em baixo.</p>\n<p>O fundamento jurídico para o referido tratamento dos seus dados armazenados na plataforma Smart4Health, incluindo os seus dados de saúde, é o consentimento dado por si durante o processo de registo (Art.º 6.º, n.º 1, parágrafo 1, alínea a), em conjugação com o Art.º 9.º, n.º 2, alínea a) do RGPD. Note que pode revogar o seu consentimento a qualquer momento. A licitude do tratamento efetuado com base no consentimento até à data da sua revogação não é afetada pela mesma. Pode declarar a sua revogação, por exemplo, apagando o seu perfil de saúde pessoal na aplicação web.</p>\n\n\n<strong>e. Suporte/Contacto</strong>\n<p>Quando nos contacta através de uma das nossas opções de contacto, por exemplo, e-mail, correio, ou telefone, tratamos os dados que nos fornece (por exemplo, o seu endereço de e-mail e o conteúdo da sua consulta) necessários para que possamos responder à sua pergunta. Se a sua consulta contiver dados pessoais opcionais, por exemplo, o seu nome, trataremos esses dados a fim de lhe prestarmos um melhor apoio. O fundamento jurídico para esta recolha é o Art.º 6.º, n.º 1, parágrafo 1, alínea b) do RGPD (o tratamento é necessário para o cumprimento do contrato com o titular dos dados) quando estamos em vias de celebrar ou já temos uma relação contratual. O fundamento jurídico é o Art.º 6.º, n.º 1, parágrafo 1, alínea f) do RGPD (o tratamento é necessário para salvaguardar os interesses legítimos do responsável pelo tratamento) se não tivermos ou não planearmos uma relação contratual, por exemplo, quando o contacto é de natureza geral. O nosso interesse legítimo, neste último caso, é responder ao seu pedido, fornecendo informações apropriadas e úteis.</p>\n\n<p>Tornamos anónimos os dados que surjam neste contexto, depois de o armazenamento já não ser necessário (geralmente quatro semanas depois de termos respondido integralmente ao seu pedido), ou restringimos o tratamento de dados se existirem obrigações legais de conservação. O fundamento jurídico para o tratamento descrito acima é o Art.º 6.º, n.º 1, parágrafo 1, alínea f) do RGPD (o tratamento é necessário para salvaguardar os interesses legítimos do responsável pelo tratamento). A Data4Life tem um interesse legítimo na recolha de indicadores-chave de desempenho como parte de um sistema de gestão de qualidade para a melhoria contínua dos serviços oferecidos. Para este efeito, avaliamos sistematicamente o número de contactos e as razões para os mesmos, o tempo de processamento dos pedidos e outros dados-chave.</p>\n\n\n<strong>5. Destinatários ou categorias de destinatários</strong>\n\n<p>Para efeitos de envio do SMS para autenticação de dois fatores como parte do seu registo para a oferta Smart4Health (consultar secção 4 b. acima), o seu número de telefone será divulgado à Sinch Sweden AB, Lindhagensgatan 74, 112 18 Estocolmo, Suécia, que nos apoia como processador de dados. Celebrámos um acordo de tratamento de dados com a Sinch nos termos do  Art.º  28.º, n.º 3 do RGPD, incluindo as cláusulas contratuais-tipo da UE. </p>\n\n<p>Para efeitos de envio de e-mails para registo de conta (consultar secção 4 b. acima), o seu endereço de e-mail será divulgado à Sendinblue - 7 rue de Madrid, 75008 Paris, França, que nos apoia como processador de dados. Celebrámos um acordo de tratamento de dados com a Sendinblue nos termos do  Art.º  28.º, n.º 3 do RGPD. </p>\n\n<p>Para a identificação dos utilizadores via e-ID (ver secção 4 b. acima), trabalhamos em conjunto com a Governikus GmbH & Co. KG, Hochschulring 28359 Bremen. Celebrámos um acordo de tratamento de dados com a Governikus nos termos do n.º 3 do Art.º 28.º do RGPD.</p>\n\n<p>Com o objetivo de facilitar a comunicação por e-mail para apoio ao cliente, os e-mails de contacto, as suas informações de contacto e dados de conteúdo, por exemplo, conteúdos de e-mail, são divulgados ao nosso fornecedor de serviços de e-mail Heinlein Hosting GmbH, Schwedter Straße 9a, 10119 Berlim, Alemanha. Celebrámos um acordo de tratamento de dados com a Heinlein Hosting nos termos do Art.º  28.º, n.º 3 do  RGPD.</p>\n\n<p>Para efeitos de autenticação do seu número de telefone em pedidos do titular de dados, por exemplo, pedido de eliminação manual da sua conta se não puder aceder à sua conta de utilizador, partilhamos o seu número de telefone com a Commify Germany GmbH, Radeberger Str. 1, 01099 Dresden, Alemanha. Celebrámos um acordo de tratamento de dados, nos termos do Art.º  28.º, n.º 3 do  RGPD, com a Commify Alemanha.</p>\n\n<p>Para efeitos de gestão de contactos e pedidos de apoio e feedback de utilizadores, divulgamos o conteúdo do feedback, informações de contacto e conteúdo do e-mail ao nosso processador Zammad GmbH, Marienstraße 18, 10117 Berlim, Alemanha. Celebrámos um acordo de tratamento de dados, nos termos do Art.º  28.º, n.º  3 do RGPD, com a Zammad. </p>\n\n<p>Auditamos regularmente os nossos processadores quanto ao nível de proteção proporcionado pelas cláusulas contratuais-tipo e, se necessário, tomamos medidas adicionais para assegurar um nível de proteção adequado.</p>\n\n<p>Em todos os casos acima mencionados, a D4L data4life gGmbH continua a ser responsável pelo tratamento de dados pessoais.</p>\n\n\n\n<strong>6. Armazenamento encriptado dos seus dados na plataforma Smart4Health, armazenamento na Alemanha</strong>\n\n<p>Os dados/documentos carregados por si na plataforma Smart4Health e o seu perfil de saúde pessoal são armazenados utilizando encriptação de ponta a ponta, de modo que não possamos, em momento algum, tomar conhecimento ou aceder ao conteúdo dos dados/documentos carregados ou ao seu perfil de saúde pessoal. Só o utilizador terá acesso aos respetivos dados/documentos e ao perfil de saúde pessoal. Pode eliminar todos os documentos, ou documentos individuais, em qualquer momento, utilizando as funcionalidades fornecidas na conta do utilizador. Os seus dados e documentos também não serão transmitidos ou disponibilizados a terceiros por nós; contudo, poderá partilhar dados/documentos com os seus médicos, se assim o desejar (ver 4 c acima).</p>\n\n<p>Os dados e os documentos na plataforma Smart4Health são armazenados exclusivamente na Alemanha, em servidores que pertencem ou são operados pela Data4Life.</p>\n\n\n<strong>7. Prazo de conservação e eliminação de dados</strong>\n\n<p>Mesmo sem um pedido para esse efeito, naturalmente, cumprimos as nossas obrigações de eliminar os dados pessoais (por exemplo, ao abrigo do Art.º 17.º do RGPD) e, por conseguinte, só armazenamos dados durante o tempo necessário para a prestação do serviço desejado ou para a respetiva finalidade.</p>\n\n<p>Armazenamos dados relacionados com a sua conta de utilizador enquanto tiver uma conta de utilizador para a plataforma Smart4Health. A sua conta de utilizador será apagada por nós assim que o armazenamento deixar de ser necessário, por exemplo, depois de ter terminado a relação de utilizador connosco ou de o projeto Smart4Health terminar.</p>\n\n<p>Os dados processados serão apagados após o fim do projeto Smart4Health da seguinte forma, desde que não haja outro consentimento para a utilização posterior dos seus dados. O projeto terminará a 28 de fevereiro de 2023 e lembraremos o mais tardar até 30 de novembro de 2022 que o projeto está prestes a terminar. Além disso, informá-lo(a)-emos exatamente quais as opções disponíveis para além do período do projeto. Se não tivermos notícias suas até 30 de junho de 2023 após o fim do projeto, apagaremos a sua conta e todos os dados pessoais nela armazenados.</p>\n\n<p>Além disso, pode editar e apagar os dados/documentos carregados e o seu perfil de saúde pessoal em qualquer momento, no todo ou em parte, utilizando as funcionalidades correspondentes.</p>\n\n<p>Se revogar o seu consentimento, apagaremos os seus dados, a menos que sejamos obrigados a armazená-los durante mais tempo. A fim de evitar uma perda involuntária dos seus dados, tem a possibilidade de recuperar o conteúdo do seu registo de saúde eletrónico num formato eletrónico comum no prazo de 14 dias. A Smart4Health limita o tratamento dos seus dados, a partir do momento em que recupera o conteúdo do seu registo de saúde eletrónico e até ao apagamento final dos dados (bloqueio). </p>\n\n\n<strong>8. Utilização de registos e cópias de segurança</strong>\n<p>A Data4Life utiliza cópias de segurança para poder recuperar dados em caso de perda, por exemplo, a destruição do nosso local principal de armazenamento de dados. Note que a Data4Life armazena regularmente cópias de segurança de dados, que também incluem os seus dados pessoais, tais como dados de conta de utilizador e dados relevantes para o estudo. Estes dados são armazenados por até 90 dias em cópias de segurança encriptadas. Após 90 dias, os dados serão apagados. </p> <p>\nNote que quando solicita a eliminação dos seus dados pessoais ou da sua conta Data4Life não elimina os seus dados das cópias de segurança porque a eliminação de dados específicos de uma cópia de segurança requer uma quantidade inadequada de tempo e recursos em comparação com a eliminação no conjunto de dados ativos.</p>\n\n<p>Com o objetivo de identificar e reagir a ataques informáticos, a Data4Life também armazena dados de registo de auditoria. Um registo de auditoria é um registo de um evento relevante em termos de segurança num sistema informático. Esses registos contêm normalmente informações sobre quem acedeu, editou ou apagou que dados e a que horas. Armazenamos estes dados durante um período de até 1,5 anos. \nO fundamento jurídico para o tratamento descrito acima é o Art.º 6.º, n.º 1, parágrafo 1, alínea f) do RGPD (o tratamento é necessário para salvaguardar os interesses legítimos do responsável pelo tratamento). \n</p>\n\n\n<strong>9. Utilização de cookies</strong>\n\n<p>Os cookies são armazenados no dispositivo quando se utiliza a plataforma Smart4Health através da nossa aplicação web. Os cookies são pequenos ficheiros de texto que são armazenados no seu dispositivo final (portátil, tablet, smartphone ou semelhante) quando utiliza a nossa aplicação web.</p>\n\n<strong>a) Cookies necessários para a funcionalidade da plataforma da aplicação web</strong>\n\n<p>Utilizamos os cookies tecnicamente necessários para fornecer as funcionalidades básicas da plataforma Smart4Health. De seguida, por uma questão de uniformidade, referimo-nos a cookies quando outras tecnologias semelhantes a cookies são utilizadas, tais como o armazenamento de dados como um \"item de armazenamento local\" no browser. O objetivo da utilização destes cookies necessários para o funcionamento da plataforma Smart4Health é simplificar a utilização da aplicação web para os utilizadores. Algumas funções da nossa aplicação web não podem ser oferecidas sem o uso de cookies. Os cookies tecnicamente necessários não recolhem informações sobre o utilizador para fins de marketing ou de análise. O fundamento jurídico para o tratamento de dados de cookies tecnicamente necessários é o Art.º 25.º, n.º 2,  sub-n.º 2, da \"Lei Alemã de Proteção de Dados de Telecomunicações\" (TTDSG), em conjunto com o Art.º  6.º, nº.  1, parágrafo 1, alínea f) do RGPD (o tratamento é necessário para salvaguardar os interesses legítimos do responsável pelo tratamento) com base no nosso interesse legítimo numa conceção de fácil utilização da nossa aplicação web. </p>\n\n<div>Necessitamos dos cookies para fornecer as seguintes funções:</div>\n<ul><li> Manutenção do estado de início de sessão</li>\n<li> Garantia da segurança/proteção do sistema contra ataques informáticos</li>\n<li> Adoção de definições de idioma</li>\n<li> Armazenamento das preferências de cookies\n</li></ul>\n\n<strong>b) Cookies não necessários para a funcionalidade da aplicação web</strong>\n\n<p>Além disso, a Data4Life utiliza cookies para melhorar as ofertas da plataforma Smart4Health com base em avaliações estatísticas e para ser capaz de identificar erros ocorridos. O fundamento jurídico para este tratamento é, em todo o caso, o seu consentimento nos termos do Art.º 25.º, n.º  1, parte 1 da TTDSG em conjunto com o Art.º  6.º, n.º  1, parágrafo 1, alínea a) do RGPD (tratamento baseado no consentimento do titular dos dados).</p>\n\n\n\n<strong>10. Análise do comportamento do utilizador e resolução de problemas</strong>\n</br>\n<strong>a) Utilização de Matomo para fins analíticos</strong>\n\n<p>Com o seu consentimento, utilizamos a tecnologia do fornecedor Matomo na nossa aplicação web para fins de análise. A Matomo utiliza cookies que permitem o reconhecimento do seu browser e uma análise da sua utilização da nossa aplicação web, bem como da sua interação com o nosso serviço, por exemplo, quais as partes/funcionalidades que visualiza e utiliza.</p>\n<p>Para este fim, nenhuns dados pessoais do utilizador são tratados; o endereço IP de cada utilizador é tornado anónimo imediatamente após o tratamento e antes do seu armazenamento. Os dados recolhidos com a tecnologia Matomo são tratados exclusivamente em servidores da Data4Life na Alemanha. A análise acima referida da sua utilização dos nossos produtos ajuda-nos a otimizar continuamente os nossos produtos e a melhorar a sua experiência quando utiliza a nossa aplicação web.</p>\n\n<div>Os seguintes dados são recolhidos pela Matomo se consentir na análise:</div>\n<ul><li> Visualizações de páginas</li>\n<li> Cliques do rato</li>\n<li> Movimentos do rato</li>\n<li> Posição atual do cursor</li>\n<li> Deslocamento</li>\n<li> Alterações no tamanho da janela</li>\n<li> Zoom em dispositivos móveis (smartphone, tablet)</li>\n<li> Alteração do website dentro do nosso domínio, por exemplo, janelas de pop-up</li>\n<li> Endereço IP</li></ul>\n\n<p>O seu endereço IP é tornado anónimo imediatamente após o tratamento e antes do seu armazenamento. Os dados recolhidos utilizando a tecnologia da Matomo são processados exclusivamente em servidores na Alemanha pela Data4Life. A análise de utilização listada dos nossos produtos ajuda-nos a otimizar continuamente os nossos produtos e a melhorar a sua experiência na utilização da nossa aplicação web. Os dados pessoais mencionados são apagados dois anos após a sua recolha.</p>\n<p>Se selecionou a definição \"Não monitorizar\" no seu browser, a nossa aplicação web receberá um sinal de que não deve criar um perfil de utilização sobre as atividades do visitante. Neste caso, também não são criados cookies de monitorização.</p>\n\n<p>O fundamento jurídico para a utilização de Matomo é o seu consentimento (Art.º 6.º, n.º 1, parágrafo  1, alínea a) do RGPD). Pode revogar o seu consentimento em qualquer momento, produzindo efeitos após essa revogação na secção 10 c.</p>\n\n\n<strong>b) Utilização de Sentry para resolução de problemas</strong>\n\n<p>A fim de compreender a origem e as causas de potenciais erros e falhas nos nossos serviços, adquirir os conhecimentos necessários para reproduzir e resolver tais falhas, e proporcionar aos nossos utilizadores a melhor experiência possível na utilização dos nossos serviços, utilizamos, com o seu consentimento, o Sentry, que nos permite monitorizar os erros em tempo real. Neste contexto, e se descobrir um erro ou falha na nossa aplicação web, os dados do utilizador, tais como informações sobre o dispositivo que está a utilizar e o momento em que o erro ou falha ocorreu, serão recolhidos e analisados unicamente com o propósito de identificar o erro ou falha e resolvê-lo, e não com qualquer outro propósito, e depois eliminados uma vez resolvido o erro ou falha. Os dados recolhidos com a tecnologia Sentry são tratados exclusivamente em servidores da Data4Life na Alemanha.</p>\n\n<p>O fundamento jurídico para a utilização de Sentry é o seu consentimento (Art.º 6.º, n.º 1, parágrafo 1, alínea a) do RGPD). Pode revogar o seu consentimento em qualquer momento, produzindo efeitos após essa revogação na secção 10 c.</p>\n<p>Também pode desativar a opção de guardar estes cookies em qualquer momento nas definições do browser, bem como pode eliminar os cookies existentes em qualquer momento.</p>\n\n\n<strong>c) Revogação e concessão de consentimento para cookies, análise de utilização e relatórios de erros</strong>\n\n<p>Pode rejeitar ou conceder a utilização de cookies opcionais, a utilização de Matomo e a utilização de Sentry em qualquer altura, produzindo efeitos no futuro. Para alterar as suas definições de consentimento, clique no botão abaixo. </p>\n\n<0>Retirar consentimento e bloquear cookies</0>\n<br /><br/>\n<p>Nota: Revogar o consentimento não elimina os cookies que tenham sido previamente definidos. Pode eliminar cookies existentes em qualquer altura nas definições do seu navegador.</p>\n\n\n\n<strong>Política de privacidade para dados não recolhidos junto do titular dos dados (de informações dirigidas ao público, de acordo com o Art.º 14.º, n.º 5, alínea b), segunda frase do RGPD)</strong>\n\n<p>Chamamos a atenção do público para o facto de os utilizadores registados da aplicação web Smart4Health poderem armazenar dados relativos a terceiros (detalhes relativos a um contacto de emergência, nome/especialidade dos profissionais de saúde) sob a forma encriptada, durante a utilização das funcionalidades da aplicação web. Devido à encriptação dos dados dentro da nossa plataforma, não podemos, em momento algum, identificar estes terceiros ou atribuir os dados a uma pessoa natural. Portanto, a divulgação de informações relativamente a dados que não foram recolhidos diretamente por parte do titular dos dados, nos termos do Art.º 14.º, n.º 1 a n.º 4 do RGPD revela-se impossível para nós, em conformidade com o Art.º 14.º, n.º 5, alínea b), primeira frase do RGPD. A fim de cumprir as nossas obrigações, disponibilizamos ao público as seguintes informações.</p>\n\n\n<strong>1. Responsável pelo tratamento e encarregado da proteção de dados</strong>\n\n<p>O responsável pelo tratamento, nos termos do Art.º 4.º, n.º 7 do RGPD para a aplicação web é:</p> \n\n<div>D4L data4life gGmbH</div>\n<div>Charlottenstraße 109</div>\n<div>14467 Potsdam</div>\n<p>Alemanha</p>\n<p>E-mail: we@data4life.help</p>\n\n<p>Pode contactar o nosso encarregado proteção de dados através de dataprotection@data4life.help      ou do nosso endereço postal, ao cuidado de \"The data protection officer\".</p>\n\n\n<strong>2. Finalidade do tratamento, origem dos dados, proteção dos seus interesses legítimos</strong>\n\n<p>Os utilizadores da aplicação web Smart4Health podem opcionalmente introduzir e armazenar dados relativos a terceiros através da nossa aplicação web quando utilizam as funcionalidades à disposição dos utilizadores. Isto refere-se especificamente aos seguintes dados de terceiros:</p>\n\n<ul><li>\tInformações sobre pessoas de contacto: os utilizadores da aplicação web Smart4Health podem criar um perfil de saúde pessoal encriptado de ponta a ponta, que o utilizador pode partilhar, por exemplo, com os seus médicos ou hospitais. No âmbito do perfil de saúde pessoal, o utilizador pode opcionalmente introduzir detalhes (por exemplo, nome, número de telefone) de uma pessoa de contacto, que, por exemplo, deverá ser contactada em caso de emergência médica do utilizador.</li>\n\n<li>\tInformações sobre terceiros em documentos médicos: os utilizadores da aplicação Web Smart4Health podem armazenar e gerir os seus documentos médicos (por exemplo, resultados, relatórios clínicos) de forma segura, utilizando encriptação de ponta a ponta na aplicação web, e partilhá-los, por exemplo, com outros médicos/hospitais de tratamento, que podem então fornecer ao utilizador tratamentos e serviços de cuidados de saúde mais eficientes. Os documentos médicos que o próprio utilizador carregou podem conter informações pessoais sobre terceiros, por exemplo, nomes, moradas, especializações dos médicos que prescrevem os tratamentos. </li></ul>\n\n<p>O fundamento jurídico para o tratamento dos dados acima mencionados é o interesse legítimo do utilizador da nossa aplicação web, de acordo com o Art.º 6.º, n.º 1, parágrafo 1, alínea f) do RGPD no que se refere ao arquivamento, armazenamento e partilha de documentos médicos relacionados consigo da forma mais fácil, eficiente e segura possível.</p>\n\n<p>Asseguramos a proteção dos direitos e liberdades e dos interesses legítimos dos terceiros envolvidos através da encriptação de ponta a ponta, o que significa que, em momento algum, poderemos obter qualquer conhecimento da sua pessoa ou aceder aos dados que o nosso utilizador armazena connosco. </p>\n\n\n<strong>3. Destinatários, categorias de destinatários</strong>\n\n<p>Não divulgamos/transmitimos os seus dados a terceiros. Apenas o próprio utilizador da app Smart4Health pode partilhar dados/documentos selecionados carregados/armazenados e o seu perfil de saúde na plataforma Smart4Health com outros, por exemplo, o(s) seu(s) médico(s), se assim o desejar. </p>\n\n\n<strong>4. Prazo de conservação e eliminação de dados</strong>\n\n<p>Nós não temos qualquer influência sobre a duração do armazenamento de dados e documentos por parte dos nossos utilizadores na aplicação web Smart4Health, uma vez que isso depende exclusivamente do utilizador e da sua utilização das funcionalidades da Smart4Health na aplicação web. Contudo, em princípio, os dados permanecem armazenados enquanto o utilizador da Smart4Health tiver uma conta de utilizador ou enquanto um utilizador registado não apagar ou editar os seus documentos carregados ou o seu próprio perfil de saúde na Smart4Health ou o projeto Smart4Health terminar e o utilizador da Smart4Health não der mais consentimento para utilizar os dados. O projeto terminará a 28 de fevereiro de 2023, e os utilizadores da Smart4Health serão lembrados, o mais tardar a 30 de novembro de 2022, de que o projeto está quase concluído e informados das opções disponíveis para além do período do projeto. Se não tivermos notícias suas após o fim do projeto até 30 de junho de 2023, apagaremos a sua conta e todos os dados pessoais nela armazenados.</p>\n\n\n<strong>5. Os seus direitos</strong>\n\n<div>Como titular dos dados em geral, tem os seguintes direitos relativamente aos dados pessoais que lhe dizem respeito: </div>\n<ul><li>\tDireito de acesso (Art.º 15.º do RGPD)</li>\n<li>\tDireito de retificação (Art.º 16.º do RGPD)</li>\n<li>\tDireito ao apagamento dos dados  (Art.º 17.º do RGPD)</li>\n<li>\tDireito à limitação do tratamento (Art.º 18.º do RGPD)</li>\n<li>\tDireito de oposição ao tratamento (Art.º 21.º do RGPD)</li>\n<li>\tDireito de portabilidade dos dados (Art.º 20.º do RGPD)</li></ul>\n\n<p>Tem também o direito de apresentar queixa sobre o nosso tratamento dos seus dados pessoais a uma autoridade de controlo de proteção de dados no Estado-membro onde se encontra, no seu local de trabalho ou no local da alegada infração. A autoridade de controlo responsável por nós é: </p>\n\n<div>Die Landesbeauftragte für den Datenschutz und für das Recht auf Akteneinsicht</div>\n<div>Stahnsdorfer Damm 77</div>\n<div>14532 Kleinmachnow </div>\n<p>Alemanha</p>\n\n<div>Telefone: 0049 (0)33203/356-0</div>\n<div>Fax: 0049 (0)33203/356-49</div>\n<p>E-mail: poststelle@lda.brandenburg.de</p>\n\n<p>Note que, devido às medidas de encriptação descritas na secção 2 supra, não nos é possível identificar o utilizador e, devido à falta de acesso aos documentos armazenados pelo nosso utilizador, não temos e, portanto, não podemos obter conhecimento se as informações sobre a sua pessoa são efetivamente armazenadas por nós. De acordo com o Art.º 11.º, n.º 1 do RGPD, não somos obrigados a manter, adquirir ou tratar informações adicionais a fim de identificar o titular dos dados com a única finalidade de cumprir o RGPD, na medida em que a identificação do titular dos dados, como é o caso com a aplicação web Smart4Health, não é necessária para os fins para os quais um responsável pelo tratamento trata dados pessoais.</p>\n\nÚltima atualização: agosto de 2022<strong>",
+      "headline": "Política de privacidade"
+    },
+    "imprint": {
+      "content": "<p><strong>Hasso Plattner Institute for Digital Engineering gGmbH</strong>\n<div>Prof.-Dr.-Helmert-Str. 2-3</div>\n<div>14482 Potsdam, Alemanha</div>\n<div>Telefone: +49 (0) 331 5509-4844</div>\n<div>Fax: +49 (0) 331 5509-129</div>\n<div>E-Mail: info@smart4health.eu</div>\n<div>Website: <a href=\"www.hpi.de\">www.hpi.de</a></div></p>\n\n<p><div>Representante Autorizado do Director Executivo: Prof. Dr. Christoph Meinel</div>\n<div>Registo oficial: Tribunal Distrital de Potsdam</div>\n<div>Número de registo: HRB 12184</div></p>\n\n<p><b>Textos:</b> Consórcio Smart4Health</p>\n\n<strong>Responsabilidade pelo conteúdo recuperável</strong>\n<p>Não é assegurada a exatidão, usabilidade e/ou completude dos conteúdos aqui recuperáveis. As informações legais são não vinculativas e, portanto, não são juridicamente vinculativas. Pelo contrário, têm apenas um caráter informativo, sem qualquer garantia da sua exatidão.</p>",
+      "headline": "Ficha técnica"
+    },
+    "terms": {
+      "content": "<p>A plataforma Smart4Health é uma plataforma intuitiva, que permite o armazenamento e gestão digital de dados de saúde (doravante também denominada: a \"plataforma\"). Esta plataforma é fornecida pela organização sem fins lucrativos D4L data4life gGmbH, Charlottenstraße 109, 14467 Potsdam, Alemanha (doravante denominada: \"nós\" ou \"fornecedor\"), um dos parceiros no projeto Smart4Health, financiado pela UE. Para sua (doravante denominado: \"você\" ou \"utilizador\") utilização da plataforma através da nossa aplicação Web, aplicam-se as disposições contratuais dos seguintes termos de utilização:</p>\n\n\n<strong>1. Registo e início de sessão, relação contratual e conta de utilizador</strong>\n\n<p>\n1.1\tO contrato considera-se celebrado com a nossa confirmação do seu registo (registo).\n<br>\n1.2\tDeve ter, pelo menos, 18 anos e ter capacidade jurídica plena para se registar nos nossos serviços.\n<br>\n1.3\tQuando se registar, deverá fornecer informações verdadeiras, atualizadas e completas, e atualizá-las em caso de alterações.\n<br>\n1.4\tSó pode ser mantida uma conta de utilizador por pessoa.\n<br>\n1.5\tA relação contratual é pessoal e a conta de utilizador não é, portanto, transmissível em vida ou por via sucessória.\n<br>\n1.6\tSe rescindirmos o contrato consigo e proibirmos o registo pelda mesma pessoa, será igualmente vedado um novo registo.\n</p>\n\n\n<strong>2. Prazo e caducidade</strong>\n\n<p>O contrato é celebrado por tempo indeterminado. O contrato pode ser denunciado pelo utilizador ou pelo fornecedor a qualquer momento, produzindo os seus efeitos imediatamente.</p>\n\n\n<strong>3. Utilização dos serviços, obrigações do utilizador, conduta proibida</strong>\n<p>\n3.1 \tA plataforma Smart4Health é gratuita para o utilizador. Não assumimos qualquer garantia sobre determinadas funcionalidades ou determinada disponibilidade, e reservamo-nos ao direito de alterar as funcionalidades dos nossos serviços, salvo acordo em contrário ou caso tal seja injustificado para o utilizador ou proibido pela lei.\n<br>\n3.2 \tDeve manter os seus dados de acesso secretos e não pode transmiti-los a terceiros nem deixar que a sua conta de utilizador seja utilizada por terceiros. Informe-nos imediatamente se notar qualquer utilização incorreta.\n<br>\n3.3 \tSó pode utilizar a aplicação Web Smart4Health para armazenar documentos ou dados clínicos ou relacionados com a saúde, e só pode divulgar ou copiar esses documentos para terceiros (por exemplo, em aplicações ou serviços de terceiros) se tiver autorização para o efeito e se não violar quaisquer direitos de terceiros. É sua obrigação cumprir os regulamentos legais quando utiliza o serviço. Além disso, não pode utilizar os serviços, designadamente, para:\n<ul>\n<li>armazenar e/ou transmitir dados, textos, imagens, ficheiros ou outros conteúdos/materiais ilegais, prejudiciais, ameaçadores, abusivos, agressivos, difamatórios ou insultuosos, vulgares, obscenos, odiosos, racistas ou, de qualquer outra forma, censuráveis de acordo com as disposições legais relevantes ou com a opinião da Smart4Health e Data4Life, nem para armazenar e transmitir conteúdos/materiais que possam prejudicar menores de maneira alguma, em especial pornográficos, que levem à violência ou que, de outra forma, possam prejudicar os menores;</li>\n\n<li>armazenar e/ou transmitir conteúdos que violem os direitos de terceiros, em especial patentes, marcas comerciais, direitos de autor ou direitos de autor suplementares, segredos comerciais, direitos pessoais ou direitos de propriedade;</li>\n\n<li>armazenar e/ou transmitir conteúdos que não possam ser transmitidos/divulgados;</li>\n\n<li>armazenar e/ou transmitir quaisquer materiais que contenham vírus informáticos ou outras informações, ficheiros ou programas que sejam concebidos ou pretendam interromper, destruir ou limitar o funcionamento de qualquer software informático ou hardware ou dispositivos de telecomunicações;</li>\n\n<li>fins comerciais ou outros negócios, especialmente não oferecê-los para revenda;</li>\n\n<li>armazenar e/ou transmitir publicidade não solicitada, material promocional, correio eletrónico indesejado ou em massa ou SMS (spam), cadeias de cartas, esquemas de vendas em pirâmide ou qualquer outra publicidade;</li>\n\n<li>recolher, armazenar ou transmitir dados pessoais de outras pessoas.</li></ul>\n\n3.4 \tNão pode utilizar a plataforma Smart4Health para fins comerciais sem o nosso consentimento prévio.\n<br>\n3.5 \tDeverá fazer a sua própria cópia de segurança dos seus dados.\n<br>\n3.6 \tNão verificamos antecipadamente os conteúdos armazenados por si. No entanto, reservamo-nos ao direito de bloqueá-los ou eliminá-los em qualquer momento, designadamente se tomarmos consciência da existência da violação legal de um conteúdo específico ou de conteúdos específicos. Uma vez que os dados e documentos na plataforma Smart4Health são armazenados com encriptação de extremo a extremo, esse bloqueio ou eliminação exigirá a receção de uma notificação sobre o abuso, por parte de uma entidade policial ou judiciária.\n</p>\n\n\n<strong>4. Limitação de responsabilidade</strong>\n<p>\n4.1 \tO fornecedor é responsável pelas reclamações contratuais e outras reclamações do utilizador, apenas por danos do utilizador (1) que o fornecedor, os seus funcionários, agentes ou representantes tenham causado dolosamente ou por negligência grave, (2) pelo dano causado à vida, saúde física ou mental, que se baseie numa violação do dever do fornecedor ou de um dos seus funcionários, agentes ou representantes, (3) em casos de responsabilidade,  de acordo com a lei alemã de responsabilidade pelo produto, a assunção de uma garantia ou dano que se deva a circunstâncias falsas dolosamente representadas ou (4) que tenham surgido como resultado da violação de uma obrigação, cujo cumprimento é fundamental para a boa execução do contrato e em cujo cumprimento o utilizador confia e pode confiar (a chamada obrigação essencial ou a \"Kardinalpflicht\" alemã).\n<br>\n4.2 \tNos casos (1), (2), (3) do parágrafo anterior, a responsabilidade do fornecedor será ilimitada. Nos restantes casos, a responsabilidade é limitada aos danos previsíveis, típicos do contrato.\n<br>\n4.3 \tNos casos que não sejam abrangidos pelos parágrafos 1 e 2, e não obstante o disposto no parágrafo seguinte, a responsabilidade do fornecedor é expressamente excluída em caso de incumprimento do parágrafo 3.3., independentemente do motivo invocado.\n<br>\n4.4 \tAs disposições desta limitação de responsabilidade não alteram o regime legal do ónus da prova.\n<br>\n4.5 \tAs limitações da responsabilidade acima referidas aplicam-se em conformidade com a responsabilidade pessoal dos funcionários, agentes e representantes do fornecedor.\n</p>\n\n\n<strong>5. Alteração dos termos de utilização</strong>\n<p>\n5.1 \tCom o seu consentimento ou se o seu consentimento for considerado dado nos termos do parágrafo seguinte, podemos alterar os Termos de Utilização (por exemplo, quando introduzimos novas funcionalidades).\n<br>\n5.2 \tSe pretendermos alterar os Termos de Utilização, iremos notificá-lo pelo menos 6 semanas antes da data proposta para a respetiva entrada em vigor, por escrito (por exemplo, por e-mail). Se não apresentar oposição no prazo de 6 semanas após a receção desta notificação por escrito, o seu consentimento para a alteração será considerado tacitamente dado e as alterações entrarão em vigor no momento anunciado. Referir-nos-emos a esta consequência separadamente na notificação.\n<br>\n5.3 \tIndependentemente das disposições acima referidas, reservamo-nos ao direito de alterar os Termos de Utilização em momento futuro, desde que tal não afete as disposições essenciais da relação contratual com o utilizador e estas alterações sejam necessárias para abarcar desenvolvimentos (por exemplo, alterações na situação jurídica ou decisões do Supremo Tribunal, alterações fundamentais nas condições de mercado que conduzam a uma perturbação da base do negócio) que não eram previsíveis por nós e cuja não consideração conduziria a uma perturbação fundamental da relação contratual.</p>\n\n\n<strong>6. Disposições finais, diversos</strong>\n\n6.1 \tNão existem acordos subsidiários.\n<br>\n6.2 \tSe as disposições individuais destes Termos de Utilização forem ou se tornarem inválidas, no todo ou em parte, tal não afetará a validade das demais disposições do contrato. Neste caso, a disposição inválida será substituída pela disposição prevista na lei.\n<br>\n6.3 \tA lei alemã aplica-se com a exclusão da Convenção das Nações Unidas sobre Contratos de Venda Internacional de Mercadorias.\n<br>\n6.4 \tSe o domicílio do utilizador não se situar na Alemanha ou caso se trate de um comerciante, o foro competente será em Potsdam. O foro obrigatório para os consumidores ao abrigo da legislação da UE permanece inalterado.\n<br>\n6.5 \tPode visitar a página da Internet da UE para a resolução de litígios online: <a href=\"https://ec.europa.eu/consumers/odr/\">\nhttp://ec.europa.eu/consumers/odr/</a>.\n</p>\n",
+      "headline": "Termos de utilização"
+    },
+    "data_privacy_cds": {
+      "headline": "Declaração adicional de proteção de dados para utilização da biblioteca de conhecimentos sobre galactosemia da D4L",
+      "content": ""
+    },
+    "consent": {
+      "headline": "Consentimento de participação",
+      "content": "<h3>Informações sobre a Participação no Projeto</h3>\n<p>Está a ser convidado a participar num projeto de investigação e inovação europeu denominado Smart4Health. A finalidade do projeto Smart4Health é desenvolver e avaliar o protótipo da plataforma Smart4Health, que permitirá o envio e armazenamento de todos os dados de saúde dos utilizadores, e para o oferecer como serviço. O serviço Smart4Health oferece <a href=\"/legal/features\">várias funcionalidades</a> que lhe permitirão gerir e partilhar seletivamente os seus dados, utilizando, para tal, um navegador web em dispositivos móveis ou computadores. Tanto o desenvolvimento, como a avaliação da plataforma e serviço Smart4Health, procuram centrar-se no cidadão, envolvendo assim os utilizadores, para ir ao encontro das suas necessidades e para testar as funcionalidades do serviço em vários cenários da vida quotidiana.</p>\n\n<p>Numa altura em que a mobilidade faz parte das vidas da maioria dos cidadãos europeus, um acesso fácil e seguro aos seus dados de saúde, a partir de qualquer lugar, é cada vez mais importante. O projeto Smart4Health pretende ajudar os cidadãos europeus a tratar (recolher, armazenar, aceder e partilhar) um conjunto diversificado de dados relacionados com a saúde e os cuidados de saúde que, normalmente, estão armazenados em diversos locais como hospitais, registos eletrónicos dos sistemas nacionais de saúde, ficheiros dos médicos de família, ou ainda dados relacionados com a saúde recolhidos através dos seus dispositivos móveis, em aplicações de fitness, por exemplo, que complementam os seus dados clínicos. O serviço também permitirá que futuros utilizadores forneçam dados de saúde para investigação, para avanços no conhecimento e tratamento médicos. </p>\n\n<p>Para o ajudar a decidir se pretende participar no projeto Smart4Health, encontrará aqui informações sobre os objetivos do projeto e sobre o que implica a sua participação.</p>\n\n<p>De seguida, iremos explicar as finalidades para as quais poderá utilizar a plataforma e o seu serviço, desenvolvidos durante o projeto Smart4Health. Iremos também analisar os benefícios que poderá obter com a utilização do serviço, bem como os potenciais riscos que poderá correr, e descrever o que sucede após a conclusão do projeto de construção deste protótipo. Iremos igualmente descrever as medidas que foram tomadas para manter os seus dados de saúde seguros e para proteger a sua privacidade enquanto participa no projeto. </p>\n\n<p>Leia cuidadosamente as informações fornecidas em baixo, assim como a lista de <a href=\"/legal/features\">Funcionalidades do serviço Smart4Health</a>, a <a href=\"/legal/data\">Política de Privacidade</a> e os <a href=\"/legal/terms\">Termos de Utilização</a> e demore o tempo que for necessário para tomar uma decisão informada. </p>\n\n<h3>Informações de Contacto</h3>\n<p>Se tiver alguma dúvida ou preocupação, pode entrar em contacto connosco antes de prestar o seu consentimento para participação no projeto e para o tratamento dos seus dados, através dos seguintes contactos: </p>\n<strong>Responsável:</strong>\n<p><div>Prof. Dr. Erwin Böttinger</div>\n<div>Hasso-Plattner-Institut für Digital Engineering gGmbH</div>\n<div>Prof.-Dr.-Helmert-Straße 2–3, 14482 Potsdam, Alemanha</div></p>\n<strong>Contacto:</strong>\n<div>helpdesk@smart4health.eu</div></p>\n\n<p><strong>Detalhes de contacto dos Encarregados de Proteção de Dados:</strong></p>\n<strong>Para o projeto Smart4Health:</strong>\n<p><div>Rodrigo Adão da Fonseca</div>\n<div>(+351) 919 187 448</div>\n<div>dpo@unl.pt</div></p>\n<strong>Para a plataforma Smart4Health:</strong> \n<p><div>D4L data4life gGmbH</div>\n<div>\"The data protection officer\"</div>\n<div>Charlottenstraße 109, 14467 Potsdam, Alemanha</div>\n<div>dataprotection@data4life.help</div></p>\n\n<h3 id=\"projectinfo\">O que é o projeto Smart4Health?</h3>\n<p>O Smart4Health é um projeto financiado pela União Europeia (UE) ao abrigo do programa de financiamento Horizonte 2020. Iniciou-se em janeiro de 2019, decorrerá até fevereiro de 2023 e é orientado por um consórcio interdisciplinar de diferentes organizações públicas e privadas (não farmacêuticas) localizadas em diferentes Estados Membros da UE, e inclui também um parceiro dos Estados Unidos da América (para testar a transferência de dados apenas dos EUA para a UE). Poderá encontrar uma descrição mais detalhada do consórcio na página <a href=\"https://www.smart4health.eu/#consortium\">Parceiro no projeto Smart4Health</a>.</p>\n\n<h3 id=\"purpose\">Qual é o objetivo do projeto Smart4Health?</h3>\n<p><div>O objetivo do projeto Smart4Health é desenvolver e testar o protótipo da plataforma Smart4Health e o seu serviço. O serviço Smart4Health permite aos utilizadores, como você mesmo, recolherem e tratarem os seus dados pessoais clínicos, de saúde e de fitness. Tal inclui a recolha de dados do seu registo de saúde eletrónico (embora não esteja a tal limitado). </div>\n<div>Os dados de saúde eletrónicos podem incluir, mas não se limitam a, diagnósticos e procedimentos, resultados de testes de diagnóstico, imagens, medicamentos e resumos de relatórios provenientes de quaisquer dos seus registos de saúde eletrónicos, advindos das suas visitas prévias a profissionais de saúde ou hospitais. </div>\n<div>Os dados de fitness e de saúde gerados pelo cidadão incluem dados de sensores, objetos conectáveis e aplicações de fitness (por exemplo, os dados de batimento cardíaco rastreados por um smartwatch). </div>\n<div>A plataforma e o serviço também permitirão o fornecimento opcional dos seus dados para investigação. Isto significa que pode disponibilizar os seus dados anonimizados (ou uma parte dos mesmos) para fins de investigação, se assim o pretender. Pode encontrar mais detalhes em <a href=\"/legal/features\">Funcionalidades do serviço Smart4Health</a>.</div></p>\n\n<h3 id=\"participation\">O que envolve a sua participação no projeto Smart4Health?</h3>\n<p><div>A participação no projeto Smart4Health envolve o teste da plataforma e do respetivo serviço Smart4Health. Isto significa que, se concordar em participar, ser-lhe-á pedido que:</div>\n<ul><li>Aceda à plataforma Smart4Health a partir do seu computador, smartphone ou dispositivo móvel</li>\n<li>Proceda ao registo no serviço Smart4Health, criando uma conta Smart4Health (não havendo ainda o carregamento de quaisquer dados relacionados com a saúde)</li>\n<li>Utilize o serviço Smart4Health para carregar e tratar os seus dados e (opcionalmente) para fornecer os seus dados para investigação.</li></ul>\n<div>A quantidade de tempo que gasta a utilizar o serviço depende de si.</div></p>\n\n<h3>O que mais será pedido? </h3>\n<p>Ocasionalmente, podemos pedir a sua opinião sobre determinadas funcionalidades ou que participe em exercícios que implicam o envolvimento do utilizador para desenvolvermos e melhorarmos o serviço Smart4Health, acompanhando as necessidades dos utilizadores. Embora a sua opinião e participação tenham um valor inestimável para o desenvolvimento do serviço, não tem qualquer obrigação de o fazer. A decisão de participar ou não cabe-lhe inteiramente a si e não tem qualquer impacto nos outros aspetos da sua participação no projeto Smart4Health. </p>\n\n<h3>Tem de participar no projeto Smart4Health?</h3>\n<p>Participar no projeto Smart4Health é totalmente voluntário. Pode optar por participar ou não. Independentemente do que decidir, agora ou futuramente, tal não afetará os cuidados de saúde que recebe. </p>\n\n<p>Pode mudar de ideias sobre a sua participação. Se decidir registar-se no serviço Smart4Health, mas mudar de ideias mais tarde, pode abandonar o programa em qualquer altura. Pode revogar o seu consentimento para participação no projeto e para o tratamento de dados de saúde, eliminando, para tal, a sua conta Smart4Health.</p>\n\n<p>Tenha em consideração que esta revogação não afetará nenhum consentimento adicional em papel que possa ter dado para participar no projeto Smart4Health, no contexto dos Casos de Estudo.</p>\n\n<p>Se revogar o seu consentimento, eliminando a sua conta Smart4Health, todos os seus dados pessoais que estivessem armazenados serão eliminados, de acordo com o artigo 17.º do RGPD. </p>\n\n<h3>Para que fins pode utilizar o serviço Smart4Health?</h3>\n<p>Pode utilizar o serviço fornecido pela plataforma para recolher os seus dados de saúde provenientes de diferentes fontes e carregá-los para a sua conta (por exemplo, dados do seu registo de saúde eletrónico, como resultados de testes de diagnóstico, imagens, medicamentos, dados sobre a sua postura recolhidos em objetos conectáveis, ou dados sobre os batimentos cardíacos recolhidos pelo seu smartwatch). Isto também se aplica aos dados genéticos que pretenda carregar para a sua conta. Pode então organizar todos os seus dados de saúde utilizando funcionalidades diferentes, como pesquisar, filtrar e etiquetar. Também pode partilhá-los com instituições como hospitais e centros comunitários, ou com outras pessoas que pretenda. As pessoas singulares com quem pode querer partilhar os seus dados incluem os profissionais de saúde (como médicos, enfermeiros, cuidadores e fisioterapeutas), bem como familiares ou amigos. A escolha dos dados que pretende recolher e carregar e com quem os quer partilhar é totalmente sua. </p>\n\n<p>Pode encontrar mais detalhes em <a href=\"/legal/features\">Funcionalidades do serviço Smart4Health</a>.</p>\n\n<h3 id=\"benefits\">Que benefícios pode ter quando utiliza o serviço Smart4Health?</h3>\n<p>O serviço Smart4Health não presta tratamento médico. Portanto, ao utilizar o serviço fornecido pela plataforma, não irá obter benefícios médicos diretos. \nNo entanto, há diversos benefícios de que pode usufruir ao utilizar o serviço:\n<ul><li>Pode ajudá-lo a manter os seus registos de saúde atualizados, estruturados e acessíveis digitalmente num único local. </li>\n<li>Pode ajudá-lo a partilhar os seus dados de saúde com os seus profissionais de saúde, quando necessário e, por conseguinte, ajudá-los a estarem mais informados quando tomarem decisões referentes à sua saúde e tratamentos. </li>\n<li>Pode ajudá-lo a partilhar os seus dados de saúde com indivíduos em quem confia, como familiares.</li>\n<li>Permite-lhe fornecer os seus dados de saúde e participar em investigações clínicas. Tal requer, no entanto, um consentimento separado.</li></ul></p>\n\n<h3>Existem custos associados se utilizar o serviço Smart4Health?</h3>\n<p>Não existem nem existirão custos no futuro associados à utilização do serviço Smart4Health.</p>\n\n<h3 id=\"protection\">Quais são os riscos de participar no projeto Smart4Health?</h3>\n<p>Se decidir utilizar a plataforma Smart4Health e o seu serviço, existe um risco de acesso indevido e utilização incorreta, por uma pessoa não autorizada, das suas informações. Isto pode acontecer no decorrer das conhecidas “violações de dados”, para as quais estão implementadas medidas de segurança (ver em baixo). </p>\n\n<p>Tenha em consideração que estas medidas de segurança não o conseguem proteger da utilização incorreta dos seus dados por parte de uma pessoa de confiança com quem os tenha partilhado. </p>\n\n<h3>De que forma é que a Smart4Health protege a sua privacidade?</h3>\n<p><b>A sua privacidade é muito importante para nós, e tomaremos todas as medidas para a proteger</b>, utilizando as mais recentes medidas de segurança.\nGarantimos medidas apropriadas (por exemplo, encriptação de extremo a extremo) para manter os dados da sua conta privados e seguros. No caso de uma violação de dados, iremos contactá-lo até 72 horas após identificação da mesma, de acordo com os artigos 33.º e 34.º do Regulamento Geral de Proteção de Dados da União Europeia (RGPD). Em caso algum venderemos ou cederemos os seus dados pessoais. Os seus dados pessoais serão tratados apenas utilizando sistemas seguros.</p>\n\n<h3>De que forma é que a plataforma Smart4Health armazena e protege os seus dados?</h3>\n<p>Se decidir começar a utilizar o serviço desenvolvido pelo projeto Smart4Health, iremos facultar-lhe uma conta pessoal que cumpre com os regulamentos da UE relativos à privacidade, segurança e saúde (pode encontrar mais informações na <a href=\"/legal/data\">Política de Privacidade</a>). Através desta conta, pode aceder a um ambiente de software seguro e protegido denominado plataforma Smart4Health. </p>\n\n<p>Os dados são armazenados em servidores localizados dentro da União Europeia. Os dados armazenados nunca serão transferidos para fora da União Europeia (embora um dos membros do consórcio esteja sediado nos EUA, os dados não serão transferidos para os EUA). Os dados armazenados não são acessíveis por ninguém que não pertença ao consórcio. Dentro da plataforma Smart4Health, os seus dados de saúde permanecem sob o seu controlo total.</p>\n\n<p>Os seus dados são encriptados, o que significa que todas as suas informações só estão visíveis para si. O prestador de serviço da plataforma (data4life) não tem acesso às informações contidas na sua conta (por exemplo, os seus registos clínicos, os resultados de análises ou os dados referentes ao seu ritmo cardíaco), uma vez que estão encriptados. Apenas o utilizador tem a chave que permite extrair as informações. </p>\n\n<h3 id=\"research\">Pode fornecer os seus dados de saúde para fins de investigação?</h3>\n<p>No projeto Smart4Health, iremos igualmente desenvolver a possibilidade de fornecer os seus dados para fins de investigação. Se pretender disponibilizar partes dos seus dados, ou a totalidade dos mesmos, para fins de investigação, será necessário que nos dê um consentimento informado adicional e específico para tais efeitos. Pode tomar esta decisão assim que o informarmos que esta funcionalidade está disponível.</p>\n\n<h3 id=\"project\">O que acontece com os dados após o projeto ter terminado?</h3>\n<p>Este consentimento aplica-se à sua utilização da plataforma e do serviço desenvolvido durante o projeto Smart4Health, que termina em 28 de fevereiro de 2023. Iremos relembrar-lhe, o mais tardar, em 30 de novembro de 2022, que o projeto está prestes a terminar. Pode continuar a utilizar o serviço quando terminado o projeto, assinando um novo formulário de consentimento. Depois de o projeto estar terminado, e se não nos contactar até ao dia 30 de junho de 2023, eliminaremos a sua conta e todos os dados pessoais nela contidos.</p>"
+    },
+    "features": {
+      "headline": "Funcionalidades",
+      "content": "<strong>Funcionalidades do serviço Smart4Health</strong>\nO serviço Smart4Health oferece-lhe várias opções que lhe permitem gerir e partilhar seletivamente os seus dados pessoais de saúde. Uma opção é uma funcionalidade do serviço Smart4Health. Após o processo de registo, o utilizador é direcionado para um painel que lhe oferece uma visão geral das diferentes funcionalidades. Uma vez que estas funcionalidades fazem parte do processo de desenvolvimento, nem todas estão ainda disponíveis. Serão adicionadas, alteradas e melhoradas ao longo do tempo mediante a opinião e a participação de utilizadores.\n<ul>\n<li>Pode ver e gerir todos os seus registos de saúde pessoais, como planos de medicação, historial de paciente, relatórios de diagnóstico e imagens. A funcionalidade permite-lhe encontrar facilmente todas as informações de que necessita, podendo para tal filtrar, etiquetar e exibir seletivamente as informações.</li>\n<li>Pode predefinir um conjunto de informações chave (como a medicação, alergias, etc.) que serão traduzidas para diferentes idiomas, para as poder partilhar em situações imprevistas com alguém que necessite de uma visão geral rápida do seu estado de saúde. Pode alterar o conteúdo e os direitos de acesso a estas informações chave em qualquer momento.</li>\n<li>Pode partilhar quaisquer dos seus dados de saúde com pessoas em que confie. É o utilizador quem decide quais os dados e informações que pretende partilhar, e com quem, nomeadamente, com profissionais de cuidados de saúde ou familiares. A funcionalidade também proporciona transparência relativamente ao fluxo de atividade, mostrando quem teve acesso a que dados.</li>\n<li>Terá a possibilidade de recolher, armazenar e seguir os seus dados relacionados com a saúde, autogerados a partir de aplicações e objetos conectáveis (por exemplo, aplicações de saúde, rastreadores de fitness, etc.), bem como os dados que recolha no contexto do local de trabalho (por exemplo, braceletes, contadores de passos, etc.).</li>\n<li>Poderá fornecer os seus dados para fins científicos e de investigação depois de preencher uma declaração de consentimento específica. Neste consentimento, pode selecionar a finalidade para a qual fornece os seus dados, decidir se pretende fornecer todos os seus dados ou apenas partes selecionadas, e se pretende voltar a ser contactado para resultados de investigação a nível geral. Este consentimento inclui igualmente a possibilidade de o revogar. </li>\n</ul>\n\nO fundamento de licitude para o tratamento dos seus dados é o seu consentimento, nos termos do artigo 6.º, n.º  1, alínea a), em conjugação com o artigo 9.º, n.º 2, alínea a), do RGPD."
+    },
+    "settings": {
+      "saved": "As suas alterações foram aplicadas."
+    },
+    "licensing_and_copyright": {
+      "content": "<strong>Licenças e avisos de direitos de autor</strong>\n<br />\n<strong>SNOMED</strong>\n\n<p>\"SNOMED\" e \"SNOMED CT\" são marcas registadas da International Health Terminology Standards Development Organisation (IHTSDO). A utilização do conteúdo de SNOMED CT está sujeita aos termos e condições estabelecidos no Contrato de Licença de Afiliado da SNOMED CT. É da responsabilidade daqueles que implementam este produto assegurar que estão devidamente licenciados e, para mais informações sobre a licença, incluindo como se registar como Afiliado Licenciado, consulte <a href=\"https://www.snomed.org/snomed-ct/get-snomed-ct\">http://www.snomed.org/snomed-ct/get-snomed-ct</a> ou contacte <a href=\"mailto:info@snomed.org\">info@snomed.org</a>. Ao abrigo dos termos da Licença de Afiliado, a utilização da SNOMED CT em países que não são membros da IHTSDO está sujeita a obrigações declarativas e ao pagamento de taxas.</p>\n\n\n<strong>Sistema de classificação ATC (Anatómico, Terapêutico e Químico)</strong>\n\n<p>Para as classificações alemãs, aplica-se o seguinte: a preparação foi realizada utilizando a versão oficial da classificação ATC com DDD do Instituto Federal de Medicamentos e Dispositivos Médicos (BfArM). As classificações aqui utilizadas são extraídas da versão oficial de 2021. Para as classificações inglesas, aplica-se o seguinte: o Centro Colaborador da OMS para Metodologia de Estatísticas de Medicamentos publica anualmente uma versão atualizada do Índice ATC completo com DDDs. O acesso a uma versão pesquisável do Índice ATC com DDDs de 2020 (incluindo o texto das Diretrizes) está disponível gratuitamente neste website (<a href=\"https://www.whocc.no/atc_ddd_index\">Índice ATC/DDD de 2020</a>). As classificações utilizadas na aplicação Web Smart4Health baseiam-se no índice de classificação ATC com DDDs, 2021, Centro Colaborador da OMS para a Metodologia de Estatísticas de Medicamentos, Oslo, Noruega 2020.</p>\n\n\n<strong>Sistema de classificação ICD (Classificação Internacional de Doenças)</strong>\n\n<p>Para as classificações alemãs, aplica-se o seguinte: as classificações utilizadas na aplicação Web Smart4Health têm origem na versão oficial do ICD-10-GM de 2020. Foram criadas utilizando a versão legível por máquina do Instituto Federal de Medicamentos e Dispositivos Médicos (BfArM). Para as classificações ICD inglesas, aplica-se o seguinte: as classificações utilizadas na aplicação Web Smart4Health são retiradas da Classificação Estatística Internacional de Doenças e Problemas Relacionados com a Saúde (ICD-10), 10.ª revisão © Organização Mundial da Saúde. As classificações da OMS podem ser acedidas a partir da <a href=\"https://apps.who.int/classifications/apps/icd/ClassificationDownloadNR/login.aspx\">área de transferência</a> de classificações da OMS.</p>\n\n\n<strong>Nomes e Códigos de Identificadores de Observação Lógica (LOINC®)</strong>\n\n<p>Este material contém conteúdo da <a href=\"http://loinc.org/\">LOINC</a>. A LOINC está protegida por direitos de autor © 1995-2021, do Regenstrief Institute, Inc. e da Comissão de Nomes e Códigos de Identificadores de Observação Lógica (LOINC) e está disponível sem custos ao abrigo da licença em <a href=\"http://loinc.org/license\">http://loinc.org/license</a>. LOINC® é uma marca registada nos Estados Unidos pelo Regenstrief Institute, Inc.</p>\n\n\n<strong>Termos Padrão da EDQM</strong>\n\n<p>Os Termos Padrão publicados pela Direção Europeia da Qualidade dos Medicamentos e Cuidados de Saúde (EDQM) estão acessíveis gratuitamente a todos os clientes que solicitem acesso através da sua conta de registo. O conteúdo da base de dados é atualizado numa base contínua. A base de dados dos Termos Padrão só está disponível online através do <a href=\"https://standardterms.edqm.eu/\">website da EDQM</a>.</p>\n\n\n<strong>HL7 FHIR</strong>\n\n<p>A norma HL7® FHIR® está protegida por direitos de autor © 2011+ HL7 e é utilizada nos <a href=\"http://hl7.org/fhir/license.html\">termos da licença FHIR</a>.</p>",
+      "headline": "Licensas e avisos de direitos de autor"
+    },
+    "end_of_life": {
+      "content": "<h3>Informação sobre o final do projeto</h3>\n\n<div>Desde janeiro de 2019, dezanove parceiros trabalham no projeto Smart4Health em diferentes aspetos para permitir aos cidadãos Europeus obter, armazenar, aceder e partilhar os dados relacionados com a sua saúde, tais como, planos de medicação, resumo do paciente, relatórios de diagnóstico e imagens médicas. Isto foi possível graças ao apoio e financiamento do programa de investigação e inovação Horizonte 2020 da União Europeia com o Acordo de Concessão nº 826117.</div>\n\n<div>No projeto Smart4Health foi disponibilizada esta plataforma que lhe permitiu explorar o acesso a registos de saúde e relacionados com saúde numa aplicação web. Até ao momento, mais de três mil contas foram criadas na plataforma por participantes de 25 Estados Membros Europeus.</div>\n\n<div>Agradecemos a sua participação e feedback. Conforme descrito no <a href=\"/legal/consent\">consentimento de participação</a>, o projeto será concluído em 28 de fevereiro de 2023. Esta página fornece mais detalhes acerca do fim do projeto.</div>\n\n<div>Atualmente, está em discussão os planos para o futuro da plataforma, o que inclui também o futuro dos seus dados. Entraremos em contato consigo acerca deste assunto antes de 28 de fevereiro de 2023, incluindo a possibilidade de fornecer um novo consentimento.</div>\n\n<h3>Como pode recuperar e guardar os dados da sua conta?</h3>\n\n<div>Para descarregar os seus dados do Smart4Health antes de 28 de fevereiro aceda a <b>Perfil > Os meus dados > Descarregar</b>, ou <a href=\"/d4l/profile/your-data\">siga este endereço</a>.</div>\n\n<h3>Como pode continuar a apoiar um parceiro do projeto?</h3>\n\n<div>O parceiro do projeto Smart4Health, Data4Life, uma organização sem fins lucrativos que apoia a saúde pública e a investigação médica e irá continuar a desenvolver a tecnologia utilizada no Smart4Health. Para ser informado acerca dos estudos científicos da Data4Life junte-se à <a href=\"https://app.data4life.care/program/registry/tasks?lng=en&mtm_medium=email&mtm_source=s4h&mtm_campaign=221130_s4h_eol&mtm_keyword=eol_s4h_v1&mtm_content=de+pt+en\">lista de espera da Data4Life</a>.</div>\n\n<h3>Onde pode obter ajuda?</h3>\n\n<div>Agradecemos o seu apoio. Em caso de dúvida não hesite em enviar-nos um email para  <a href=\"mailto:helpdesk@smart4health.eu\">helpdesk@smart4health.eu</a>.</div>",
+      "headline": "Final do projeto"
+    }
+  },
+  "master": {
+    "Back_to_homepage": "Voltar à página inicial",
+    "acc_created": "A sua conta Smart4Health foi criada com sucesso.",
+    "access_given_on": "Acesso concedido em",
+    "access_given_to": "Acesso concedido a",
+    "account_details": "Detalhes da conta",
+    "account_settings": "Definições da conta",
+    "active_session_with_count": "{{count}} sessão ativa",
+    "active_session_with_count_plural": "{{count}} sessões ativas",
+    "add_document": "Adicionar",
+    "add_files": "Adicionar ficheiros",
+    "add_new": "Adicionar novo",
+    "add_new_document": "Adicionar novo documento",
+    "agree_to": "Sim, consinto no tratamento dos meus dados de saúde pela D4L data4life gGmbH para a finalidade de armazenar dados/documentos que me foram fornecidos na plataforma Data4Life. Posso revogar o meu consentimento a qualquer momento.",
+    "agree_to_additional": "Concordo igualmente em ativar a sincronização dos meus dados entre ___cliente___e a minha conta Smart4Health.",
+    "all_rights_reserved": "© {{year}} Smart4Health. Todos os direitos reservados.",
+    "summary": "Historial médico",
+    "app_revoke": "Tem a certeza de que pretende revogar o acesso?",
+    "app_revoke_warning": "Se deixar de permitir o acesso aos dados, a sessão deixa de ser apresentada.",
+    "applications": "Aplicações",
+    "apps_that_you_can_connect": "Aplicações que pode utilizar com a sua conta Smart4Health.",
+    "apps_you_have_connected": "Aplicações que estão atualmente ligadas à sua conta.",
+    "are_you_sure": "Apagar conta?",
+    "attach_files": "Anexar ficheiros de documentos",
+    "author": "Criado por",
+    "back": "Voltar",
+    "back_to_homepage": "Voltar à página inicial",
+    "back_to_login": "Voltar ao início de sessão",
+    "birthdate": "Data de nascimento",
+    "button_change_password": "Alterar palavra-passe",
+    "calculating": "A calcular",
+    "cancel": "Cancelar",
+    "category": "Categoria",
+    "caution": "Cuidado!",
+    "change_password": "Alterar palavra-passe",
+    "check_spam": "Caso não tenha recebido um e-mail, deve também verificar as suas pastas de spam.",
+    "choose_file": "Clique aqui para escolher um ficheiro",
+    "choose_your_new_password": "Escolha a sua nova palavra-passe",
+    "city": "Cidade",
+    "click_i_understand_to_continue": "Escolha “Compreendo” para continuar a utilizar o Smart4Health",
+    "confirm_password": "Confirmar a nova palavra-passe",
+    "confirm_password_placeholder": "Confirme a sua nova palavra-passe",
+    "confirm_your_password": "Confirme a sua palavra-passe",
+    "connected": "Ligado",
+    "connected_app": "aplicação ligada",
+    "connected_apps": "aplicações ligadas",
+    "continue": "Continuar",
+    "cookie_bar_accept": "Aceitar",
+    "cookie_bar_data_privacy": "A nossa política de privacidade",
+    "cookie_bar_reject": "Rejeitar",
+    "cookie_bar_text": "Com o seu consentimento, usaremos cookies para otimizar a sua experiência de utilizador e analisar a sua utilização com vista a melhorar a oferta para todos os utilizadores. Se consentir no armazenamento de cookies e na transmissão de dados para análise, clique em “Aceitar”. Pode utilizar a oferta sem limitações sem nos dar consentimento. Informações adicionais:",
+    "cookie_bar_text_dnt": "Com o seu consentimento, usaremos cookies para otimizar a sua experiência de utilizador e analisar a sua utilização com vista a melhorar a oferta para todos os utilizadores. Se consentir no armazenamento de cookies e na transmissão de dados para análise, clique em “Aceitar”. Pode utilizar a oferta sem limitações sem nos dar consentimento. Informações adicionais:",
+    "create": "Criar",
+    "create_a_new_account": "Criar conta",
+    "create_account": "Criar conta",
+    "create_account_and_grant_access": "Criar conta e conceder acesso",
+    "created": "Criado",
+    "currently_the_functionality_to_recover_your_password": "De momento, a funcionalidade para recuperar a sua palavra-passe está em desenvolvimento. Enquanto não estiver disponível, agradecemos que não perca a sua palavra-passe.",
+    "dashboard": "Visão geral",
+    "data_download": "Exportar dados",
+    "data_privacy": "Política de privacidade",
+    "date": "Data",
+    "delete": "Apagar",
+    "delete_account": "Apagar conta",
+    "delete_document": "Apagar documento",
+    "delete_files": "Apagar ficheiros",
+    "delete_user": "Apagar conta",
+    "description": "Tentou utilizar uma ligação de confirmação de uso único, a qual expirou. Solicite uma nova ligação.",
+    "disabled_edit_tooltip": "Note que apenas pode editar documentos criados na nossa aplicação Web.",
+    "disabled_upload_tooltip": "Note que pode adicionar ficheiros apenas a documentos criados dentro da aplicação Web Smart4Health.",
+    "document_category": "Categoria",
+    "document_info": "Detalhes",
+    "document_title": "Título",
+    "documents": "Documentos",
+    "done": "Concluído",
+    "dont_forget_your_password": "Mantenha a sua palavra-passe segura.",
+    "download": "Descarregar",
+    "download_all_Data": "Criar e descarregar ficheiro para arquivo",
+    "download_document": "Descarregar documento",
+    "downloading": "A descarregar",
+    "drag_file": "ou largue o ficheiro aqui. Tipos de ficheiros suportados: JPG, PNG, PDF, TIFF e DCM.",
+    "edit_document": "Editar documento",
+    "email": "Endereço de e-mail",
+    "enter_your_email": "Insira o seu e-mail",
+    "enter_your_password": "Insira a sua palavra-passe",
+    "enter_your_pin": "Insira o seu código PIN",
+    "enter_your_recovery_key": "Insira a sua chave de recuperação",
+    "export_all_documents": "Exporte e descarregue todos os seus dados num único ficheiro ZIP.",
+    "external_link_go": "Visitar o site",
+    "external_link_headline": "Esta ligação direciona para outro site",
+    "external_link_paragraph": "A D4L data4life gGmbH não é responsável pelo conteúdo de outros sites.",
+    "faq": "FAQ",
+    "files": "Ficheiros",
+    "files_selected": "Ficheiros selecionados",
+    "files_size": "Tamanho total",
+    "forgot_password": "Esqueci-me da palavra-passe",
+    "sharing": {
+      "get_access_to_patient_data": {
+        "title": "Alguém pretende partilhar dados consigo",
+        "infotext": "Para aceder aos dados de saúde da pessoa, diga-lhe o seguinte código PIN:"
+      },
+      "get_access_to_patient_data_qr": {
+        "infotext": "Ou deixe-a ler o código QR:"
+      },
+      "sessions_view": {
+        "title": "Sessões de partilha"
+      },
+      "pin_view": {
+        "title": "Partilhar dados"
+      },
+      "group_list": {
+        "title": "Partilhe os seus dados de saúde com alguém em quem confia"
+      },
+      "revoke_access_modal": {
+        "button": "Sim, revogar"
+      },
+      "unselect_all": {
+        "button": "Desselecionar tudo"
+      },
+      "select_all": {
+        "button": "Selecionar tudo"
+      },
+      "summary": {
+        "title": "Resumo"
+      },
+      "pin_view_data_confirm": {
+        "infotext": "Confirmar dados a partilhar"
+      },
+      "pin_view_data_review": {
+        "button": "Ver dados"
+      },
+      "review_modal": {
+        "title": "O que partilha"
+      },
+      "review_modal_close": {
+        "button": "Fechar"
+      },
+      "review_modal_edit": {
+        "button": "Editar"
+      },
+      "review_modal_documents": {
+        "title": "Documentos"
+      },
+      "review_modal_summary": {
+        "title": "Resumo"
+      },
+      "review_modal_medications": {
+        "title": "Medicamentos"
+      },
+      "disclaimer_notification_bar": {
+        "infotext": "Para proteger a privacidade dos utilizadores, registamos o acesso aos dados de saúde."
+      },
+      "incompleteness_disclaimer": {
+        "message": "A informação apresentada não substitui o aconselhamento médico e pode estar incompleta.",
+        "button": "Fechar"
+      },
+      "review_modal_allergies_and_intolerances": {
+        "title": "Alergias e intolerâncias"
+      },
+      "review_modal_conditions": {
+        "title": "Condições"
+      },
+      "select": {
+        "button": "Selecionar"
+      },
+      "all": {
+        "button": "Todos"
+      },
+      "active": {
+        "button": "Ativos"
+      },
+      "current": {
+        "button": "Atuais"
+      },
+      "none": {
+        "button": "Nenhuns"
+      },
+      "medications": {
+        "title": "Medicamentos"
+      },
+      "allergies_intolerances": {
+        "title": "Alergias e intolerâncias"
+      },
+      "conditions": {
+        "title": "Condições"
+      },
+      "selected": {
+        "count": "{{count}} selecionada(o)",
+        "count_plural": "{{count}} selecionadas(os)"
+      },
+      "download_patient_data_modal": {
+        "title": "Transferir dados de saúde partilhados"
+      }
+    },
+    "grant_access": "Conceder acesso",
+    "has_access_apps": "Tem acesso a outras aplicações:",
+    "has_access_rights": "Tem as seguintes permissões:",
+    "hero_dashboard_text": "Mantenha os seus dados de saúde num único lugar, protegido e privado.",
+    "hero_dashboard_title": "Bem-vindo(a) ao Smart4Health",
+    "hide": "Ocultar",
+    "how_it_works": "Como funciona",
+    "how_sharing_works": "Com funciona a partilha de dados:",
+    "how_sharing_works_li1": "Peça ao seu médico para aceder a <strong>https://app.smart4health.eu/share</strong>.",
+    "how_sharing_works_li2": "Selecione <strong>Iniciar nova sessão de partilha</strong>",
+    "how_sharing_works_li3": "Escolha os dados que pretende partilhar.",
+    "how_sharing_works_li4": "Insira o código PIN exibido no computador do seu médico.",
+    "how_sharing_works_li5": "Já está! A sua Sessão constará da lista no menu “Partilhar” e pode sair da sessão em qualquer momento.",
+    "i_understand": "Compreendo",
+    "if_you_delete": "Apagar a sua conta de utilizador também retira o seu consentimento para tratamento dos dados pessoais. Perderá o acesso à sua conta e todos os seus dados serão apagados de forma permanente.",
+    "imprint": "Ficha técnica",
+    "lab_results": "Resultados de laboratório",
+    "landing_details_h2": "Seja o dono dos seus dados de saúde",
+    "landing_details_h4": "Armazene os seus dados em segurança",
+    "landing_details_li1": "Os seus dados de saúde estão encriptados de ponta a ponta.",
+    "landing_details_li2": "Levamos a privacidade muito a sério, e isto significa que mesmo nós não podemos ler os seus dados.",
+    "landing_details_li3": "O controlo de quem acede aos seus dados é seu.",
+    "landing_details_p1": "Sabia que tem o direito de obter os seus dados de saúde? Peça os seus dados de doente ao seu médico.",
+    "landing_details_p2": "Estas são algumas das coisas fantásticas que pode fazer com a sua conta Smart4Health:",
+    "landing_details_p3": "São os seus dados mais importantes, e por isso asseguramos que são armazenados em total segurança.",
+    "landing_h1": "Bem-vindo(a) à <br /> nossa versão beta privada.",
+    "landing_p": "A sua saúde, os seus dados, controlo total. Armazene, utilize e partilhe os seus dados de saúde centralmente, numa localização segura.",
+    "last_uploaded": "Último carregamento",
+    "learn_more_about_gesundheitscloud": "Saiba mais sobre o Smart4Health",
+    "legal": "Legal e consentimento",
+    "link_expired": "Ligação expirada",
+    "logout": "Sair da sessão",
+    "manage_applications": "Administre as aplicações que ligou à sua conta Smart4Health.",
+    "manage_apps": "Gira aplicações",
+    "manage_data": "Gira a sua saúde em quatro passos com a plataforma sem fins lucrativos Data4Life:",
+    "manage_documents": "Gira os seus documentos de saúde",
+    "message": "Mensagem",
+    "message_placeholder": "Descreva o problema ou partilhe as suas ideias",
+    "middle_name": "Nome do meio",
+    "minimum_pwd_lenght": "Mínimo: 8 carateres",
+    "minimum_special_char": "Um número ou um carater especial",
+    "my_account": "A minha conta",
+    "my_documents": "Os meus documentos de saúde",
+    "my_medical_documents": "Os meus documentos",
+    "my_profile": "O meu perfil",
+    "name": "Nome",
+    "new": "Novo",
+    "new_password": "Nova palavra-passe",
+    "new_password_placeholder": "Insira a sua nova palavra-passe",
+    "new_sharing_session": "Nova sessão de partilha",
+    "new_sharing_session_description": "O que é que pretende partilhar?",
+    "no": "Cancelar",
+    "no_attachments": "Não há nenhum ficheiro carregado para o documento",
+    "no_documents": "Adicione um documento para começar.",
+    "no_preview": "Sem pré-visualização",
+    "not_found_heading": "Oooops! Parece que não há nada para si?",
+    "not_found_paragraph": "Volte para donde veio, ou siga diretamente para a página inicial",
+    "not_verified": "Deve validar o seu endereço de e-mail:",
+    "number_of_files": "Número de ficheiros",
+    "old_password": "Palavra-passe atual",
+    "old_password_placeholder": "Insira a sua palavra-passe atual",
+    "or": "ou",
+    "or_scan_it_with_qr_reader": "Introduza o PIN ou leia o código QR apresentado no dispositivo da pessoa.",
+    "own_document": "Documento privado",
+    "page_not_found": "Página não encontrada",
+    "partner": "Parceiro",
+    "password": "Palavra-passe",
+    "password_no_match": "As palavras-passe não correspondem, tente de novo",
+    "personal_info": "Informação pessoal",
+    "pin": "PIN",
+    "pin_enter": "Insira o código PIN para partilha",
+    "pin_not_valid": "Insira um código PIN válido",
+    "pin_number": "Introduzir PIN",
+    "pin_share": "Este é o seu código PIN para a partilha:",
+    "pin_valid": "Código PIN válido",
+    "postal_code": "Código postal",
+    "prefix": "Título",
+    "preview_error": "Ocorreu um erro de documento. Apague-o e tente de novo.",
+    "privacy_policy": "Política de privacidade",
+    "private_beta": "Versão beta privada",
+    "private_beta_feedback_email": "helpdesk@smart4health.eu",
+    "private_beta_hint": "Se tiver dúvidas ou comentários, contacte",
+    "procced_to_my_acc": "Prosseguir para a minha conta",
+    "proceed_to_my_acc": "Prosseguir para a minha conta",
+    "proceed_to_recovery_login": "Conceder acesso",
+    "profile": "Perfil",
+    "profile_hero_text": "Gira a sua informação",
+    "profile_hero_title": "O meu perfil",
+    "prompt_password": "Confirmar a ação",
+    "prompt_password_hint": "Confirme esta ação inserindo a sua palavra-passe atual.",
+    "prompt_password_label": "Palavra-passe",
+    "prompt_password_placeholder": "Insira a sua palavra-passe atual",
+    "prompt_password_submit": "Confirmar",
+    "provide_access": "Partilhar agora",
+    "records": "Documentos",
+    "records_stored": "documentos armazenados",
+    "recovery_key": "Chave de recuperação",
+    "recovery_key_stored": "Armazenei a minha chave de recuperação em segurança",
+    "recovery_key_yours": "A sua chave de recuperação",
+    "recovery_print_subtitle": "Se se esqueceu da sua palavra-passe, pode redefini-la. Por razões de segurança, deve indicar a sua chave de recuperação. Assegure-se de que guarda a sua chave de recuperação num local seguro.",
+    "recovery_print_subtitle2": "Note que é muito importante que a armazene num local seguro, sem a chave a sua conta não poderá ser restaurada.",
+    "recovery_print_take_screenshot": "<strong>Nota</strong>: Para guardar a chave de recuperação, faça uma captura do ecrã e imprima a página ou copie o texto. Guarde a chave num local seguro.",
+    "recovery_print_title": "A sua conta foi criada com sucesso",
+    "request_new_link": "Pedir nova ligação",
+    "resend_email": "Reenviar e-mail",
+    "reset_password": "Redefinir palavra-passe",
+    "reset_your_password": "Redefina a sua palavra-passe",
+    "reset_your_password_p1": "Para redefinir a sua palavra-passe e aceder à sua conta, deve indicar a sua chave de recuperação.",
+    "reset_your_password_p2": "Insira o endereço de e-mail para a sua conta Smart4Health e a sua chave de recuperação. Para a chave de recuperação, insira todas as palavras separadas por espaço.",
+    "revoke": "Revogar",
+    "revoke_access": "Revogar o acesso dos dados?",
+    "revoke_all": "Revogar tudo",
+    "save_changes": "Guardar as alterações",
+    "saved_records": "documento guardado",
+    "saved_records_plural": "documentos guardados",
+    "scan": "Ler o código QR",
+    "scan_qr_code_modal": "Leia o código QR para obter o PIN:",
+    "select_all": "Selecionar todos",
+    "send_message": "Enviar mensagem",
+    "sent_email": "Enviámos um e-mail para o seu endereço:",
+    "sharable_records": "registo partilhável",
+    "sharable_records_plural": "registos partilháveis",
+    "share": "Partilhar",
+    "share_accesing": "A aguardar a permissão",
+    "share_accessing": "A aguardar a permissão",
+    "share_data": "Partilhar ficheiro de documentos",
+    "share_data_description": "Peça ao seu médico que abra o URL seguinte e lhe diga qual o PIN, em seguida insira-o abaixo.",
+    "share_intro_description": "Peça à pessoa com quem pretende partilhar os seus dados que visite o seguinte endereço Web:",
+    "share_intro_title": "Partilhe os seus dados com o seu médico",
+    "share_records": "A partilhar",
+    "share_records_intro": "Partilhe os seus dados de saúde com alguém em quem confia.",
+    "overview": {
+      "card_sharing_medication_enabled": {
+        "infotext": "Pode partilhar documentos, informações sobre medicação ou o seu historial clínico."
+      },
+      "card_health_data": {
+        "title": "Dados de saúde"
+      },
+      "card_health_data_add_document_action": {
+        "button": "Adicionar"
+      },
+      "health_data_card_no_data_text": {
+        "footer": "Ainda não adicionou nada para partilhar."
+      },
+      "card_medication": {
+        "title": "Medicamentos",
+        "subtitle": "Ver e gerir as informações sobre a sua medicação",
+        "message": "Medicação mais recente"
+      },
+      "card_medication_no_medication": {
+        "infotext": "As informações de medicação podem ser adicionadas por um profissional de saúde",
+        "footer": "Ainda não foram adicionadas informações de medicação"
+      },
+      "card_data_donation": {
+        "title": "Investigação",
+        "subtitle": "Contribuir para a plataforma de investigação Smart4Health",
+        "infotext": "Apoiar a investigação em saúde com dados de saúde anónimos",
+        "button": "Mais sobre investigação"
+      },
+      "card_sharing_medication_disabled": {
+        "infotext": "Pode partilhar os seus documentos ou informações pessoais."
+      },
+      "card_patient_summary": {
+        "title": "Resumo do doente",
+        "subtitle": "Mantenha um registo digital das suas informações de saúde essenciais para utilização no seu país ou no estrangeiro",
+        "infotext": "O resumo do doente pode incluir as suas doenças, alergias e informações pessoais.",
+        "button": "Ver resumo"
+      },
+      "card_patient_summary_empty": {
+        "button": "Introduzir informações",
+        "infotext": "Introduzir algumas informações pessoais para começar."
+      },
+      "card_data_ingestion": {
+        "title": "Receber dados de saúde",
+        "subtitle": "Obtenha os seus dados de saúde dos parceiros a quem está associado",
+        "button": "Sobre a receção de dados",
+        "infotext": "Se tiver contacto com um dos nossos parceiros sobre a sua saúde, poderá obter mais tarde os seus dados de saúde na sua conta."
+      }
+    },
+    "share_your_data": "Partilhe os seus dados",
+    "app_share": "A partilhar",
+    "sharing_empty_state_subtitle": "Adicione documentos ou introduza informações pessoais de saúde para partilhar com alguém em quem confia.",
+    "sharing_empty_state_title": "Partilha segura",
+    "sharing_sessions": "Sessões de partilha",
+    "sharing_sessions_description": "Todas as sessões de partilha que estão ativas neste momento constam da lista abaixo. Pode terminá-las em qualquer momento.",
+    "show": "Mostrar",
+    "sign_in": "Iniciar a sessão",
+    "sign_in_to_your_account": "Iniciar a sessão",
+    "sign_up": "Criar conta",
+    "specialty": "Especialidade",
+    "start_new_sharing_session": "Iniciar nova sessão de partilha",
+    "start_sharing": "Iniciar a partilha",
+    "status": "Estado",
+    "street": "Endereço",
+    "subject": "Assunto",
+    "subject_placeholder": "Insira o assunto",
+    "submit": "Enviar",
+    "suffix": "Sufixo",
+    "suggested_applications": "Aplicações disponíveis",
+    "support": "Suporte",
+    "take_a_while": "O processo pode demorar alguns minutos.",
+    "telephone": "Telefone",
+    "terms_hint_1": "Para o registo na plataforma Smart4Health e sua utilização, a nossa",
+    "terms_hint_2": "é aplicável.",
+    "terms_hint_3": "* Mais informações sobre a proteção de dados podem ser consultadas em",
+    "terms_hint_4": "",
+    "terms_of_service": "Termos de utilização",
+    "there_are_no_documents": "Ainda não tem documentos",
+    "title": "Título",
+    "updated": "Atualizado",
+    "view_all": "Ver todos",
+    "view_and_manage_your_health_data": "Visualize e gira os seus dados de saúde",
+    "view_data": "Ver dados",
+    "website": "Website",
+    "what_is_gesundheitscloud": "O que é a Smart4Health",
+    "you_will_lose_all_data": "A sua conta e os seus dados serão removidos permanentemente. O seu consentimento para o tratamento de dados de saúde será retirado.",
+    "your_applications": "Aplicações ligadas",
+    "your_data": "Os meus dados",
+    "zipping": "A criar um ficheiro ZIP",
+    "no_preview_heading": "Não há pré-visualização disponível",
+    "no_preview_paragraph": "Não nos é possível apresentar uma pré-visualização dos ficheiros com extensões .tiff ou .dcm. Mas pode <1>descarregá-los</1> e visualizá-los no seu computador.",
+    "of": "",
+    "page": "Página",
+    "last_updated": "Última atualização",
+    "more_document_actions": "Mais",
+    "menu_add_files": "Adicionar",
+    "menu_document_edit": "Editar",
+    "fullscreen_preview": "Pré-visualização em ecrã completo",
+    "zoom_in": "Aproximar (zoom in)",
+    "zoom_out": "Afastar (zoom out)",
+    "exit_fullscreen": "Sair do modo ecrã completo",
+    "fullscreen_dialog": "Caixa de diálogo em ecrã completo",
+    "print": "Imprimir",
+    "fullscreen": "Ecrã completo",
+    "cancel_without_saving_modal": {
+      "headline": "Aviso",
+      "message": "Toda a informação inserida será perdida se sair antes de guardar."
+    },
+    "welcome_store-data_infotext": "Mantenha os seus dados de saúde num único lugar, protegido e privado",
+    "welcome_scan-printed_infotext": "Digitalize ou importe os seus documentos de saúde",
+    "welcome_manage-docs_infotext": "Aceda aos seus dados de saúde online, em qualquer momento e em qualquer lugar",
+    "welcome_view-edit-files_infotext": "Decida que dados pretende partilhar e com quem",
+    "welcome_share-health-info_infotext": "Aja de forma independente para melhorar a sua saúde",
+    "welcome_data4life_title": "Bem vindo(a)!",
+    "welcome_start_button": "Comece agora",
+    "welcome_store-data_infotext-label": "Mantenha os seus dados de saúde num único lugar, protegido e privado",
+    "welcome_scan-printed_infotext-label": "Digitalize ou importe os seus documentos de saúde",
+    "welcome_manage-docs_infotext-label": "Aceda aos seus dados de saúde online, em qualquer momento e em qualquer lugar",
+    "welcome_view-edit-files_infotext-label": "Decida que dados pretende partilhar e com quem",
+    "welcome_share-health-info_infotext-label": "Aja de forma independente e melhore a sua saúde",
+    "document": {
+      "shareable_record": {
+        "count": "{{count}} anexo",
+        "count_plural": "{{count}} Anexos"
+      },
+      "modal_close_button": {
+        "fieldlabel": "Feche a caixa de diálogo"
+      },
+      "item": {
+        "count": "{{count}} Item",
+        "count_plural": "{{count}} Itens"
+      }
+    },
+    "medical_history": {
+      "change_language_disabled_modal": {
+        "title": "Alterar idioma",
+        "message": "Guarde as suas alterações antes de mudar o idioma."
+      }
+    },
+    "delete_files_description": "Selecione o(s) item(ns) que pretende apagar.",
+    "delete_button_label": "Apagar",
+    "file": "Ficheiro",
+    "feedback": "Comentários",
+    "profile_userid_fieldlabel": "ID de utilizador",
+    "data_privacy_cds": "Política de privacidade: Biblioteca de conhecimentos",
+    "features": "Funcionalidades",
+    "consent": "Consentimento de participação",
+    "profile_copy_userid_button": "Copiar",
+    "landing": {
+      "eu_logo": {
+        "infotext": "Este projeto é financiado pelo programa de investigação e inovação da União Europeia, o Horizonte 2020, no âmbito do acordo de subvenção n.º 826117.",
+        "alttext": "Bandeira da União Europeia"
+      }
+    },
+    "questionnaire": {
+      "backpain_treatment": {
+        "title": "Tratamento para a dor nas costas"
+      },
+      "backpain_prevention": {
+        "title": "Programa de formação médica relativamente a dores nas costas"
+      }
+    },
+    "delete_document_confirmation": "Pretende apagar este documento permanentemente?",
+    "delete_document_error": "Não foi possível apagar o documento. Tente de novo mais tarde.",
+    "number_of_items": "Número de itens",
+    "type": "Tipo",
+    "download_document_group": "Descarregar grupo de documentos",
+    "download_document_group_error": "Não foi possível descarregar o grupo de documentos. Tente de novo mais tarde.",
+    "qr_code_paragraph": "Para partilhar estas respostas com a Charité, exiba o código QR seguinte.",
+    "edit_my_document": "Editar documento",
+    "delete_entire_treatment": {
+      "button": "Apagar grupo"
+    },
+    "delete_treatment": "Apagar itens?",
+    "licensing_and_copyright": "Licensas e avisos de direitos de autor",
+    "medication": {
+      "headline": {
+        "title": "Medicamentos"
+      },
+      "emptyState": {
+        "infoText": "As informações de medicação adicionadas por um profissional de saúde são apresentadas aqui."
+      },
+      "sidebarItem": {
+        "infotext": "Atual"
+      },
+      "content_section": {
+        "headline": "Informações de medicação"
+      },
+      "description": {
+        "title": "Descrição",
+        "infotext": "Medicamento não identificado"
+      },
+      "ingredients": {
+        "title": "Ingredientes"
+      },
+      "strength": {
+        "title": "Dosagem"
+      },
+      "form": {
+        "title": "Forma farmacêutica"
+      },
+      "date_of_intake": {
+        "headline": "Período de toma"
+      },
+      "from_date": {
+        "title": "De"
+      },
+      "until_date": {
+        "title": "Até"
+      },
+      "on_date": {
+        "title": "Em"
+      },
+      "dosage_section": {
+        "subtitle": "Agenda",
+        "infoText": "Como leio a agenda?",
+        "headline": "Informação de dosagem"
+      },
+      "dosage_section_comment": {
+        "title": "Comentários"
+      },
+      "medication_unit": {
+        "title": "Unidade do medicamento"
+      },
+      "number_of_doses": {
+        "title": "Número de unidades do medicamento"
+      },
+      "number_of_times": {
+        "title": "Número de vezes"
+      },
+      "interval": {
+        "title": "Frequência"
+      },
+      "time_unit": {
+        "title": "Unidade de tempo"
+      },
+      "when": {
+        "title": "Quando"
+      },
+      "medication_info": {
+        "text": "A informação apresentada poderá estar incompleta. A informação não substitui o aconselhamento médico. Em caso de dúvida, consulte um médico."
+      },
+      "dosage_section_route": {
+        "title": "Método de administração"
+      },
+      "download": {
+        "error_message": "Não foi possível transferir as informações sobre o medicamento. Tente novamente mais tarde."
+      },
+      "sidebar": {
+        "subtitle": "Mais recente no topo"
+      }
+    },
+    "patient_summary": {
+      "conditions_description_code": {
+        "title": "Código da condição"
+      },
+      "conditions_description_system": {
+        "title": "Sistema de códigos"
+      },
+      "conditions_card": {
+        "title": "Condições"
+      },
+      "allergies_and_intolerances_card": {
+        "title": "Alergias e intolerâncias"
+      },
+      "notification_bar": {
+        "infotext": "A informação apresentada poderá estar incompleta. A informação não substitui o aconselhamento médico. Em caso de dúvida, consulte um médico."
+      },
+      "medications_card": {
+        "title": "Resumo da medicação",
+        "link": "Mais informações"
+      },
+      "share_bar": {
+        "title": "O seu resumo de saúde",
+        "button": "Partilhar resumo"
+      },
+      "card_more_options_share": {
+        "menu_item": "Partilhar"
+      },
+      "card_more_options_info": {
+        "menu_item": "O que é isto?"
+      },
+      "card_more_options": {
+        "button": "Mais opções"
+      },
+      "delete_medications_selection_modal": {
+        "title": "Eliminar medicamentos",
+        "subtitle": "Selecione medicamentos a eliminar. Esta ação não pode ser anulada.",
+        "checkbox": "Selecionar tudo"
+      },
+      "delete_allergies_intolerances_selection_modal": {
+        "title": "Eliminar alergias e intolerâncias",
+        "subtitle": "Selecione as alergias e intolerâncias a eliminar. Não é possível anular esta ação.",
+        "checkbox": "Selecionar tudo"
+      },
+      "delete_conditions_selection_modal": {
+        "title": "Eliminar condições",
+        "subtitle": "Selecione as condições a eliminar. Não é possível anular esta ação.",
+        "checkbox": "Selecionar tudo"
+      }
+    },
+    "delete_medication_confirm": {
+      "headline": "Apagar medicamento?",
+      "content": "O medicamente ficará permanentemente apagado.",
+      "button": "Sim, apagar"
+    },
+    "provenance": {
+      "description": {
+        "infotext": "Sabemos o seguinte acerca do histórico destes dados"
+      },
+      "date_recorded": {
+        "title": "Data em que foram registados"
+      },
+      "activity": {
+        "title": "Atividade"
+      },
+      "who": {
+        "title": "Quem ou o que é que esteve envolvido"
+      },
+      "signature": {
+        "title": "Assinatura digital"
+      },
+      "modal": {
+        "title": "Histórico de dados"
+      },
+      "no_signature": {
+        "infotext": "Estes dados não têm assinatura digital"
+      },
+      "single_signature_record": {
+        "infotext": "Estes dados têm 1 assinatura digital"
+      },
+      "multiple_signature_record": {
+        "infotext": "Estes dados têm {{amount}} assinaturas digitais"
+      },
+      "button": {
+        "arialabel": "Histórico de dados"
+      },
+      "signature_notification": {
+        "message": "Nota: O Smart4Health não verifica as assinaturas digitais."
+      }
+    },
+    "end_of_life": "Final do projeto",
+    "endoflife": {
+      "banner": {
+        "message": "O projeto Smart4Health irá terminar a 28 de fevereiro de 2023.",
+        "link": "Mais informações"
+      },
+      "banner_close": {
+        "button": "Ignorar"
+      }
+    }
+  },
+  "support": {
+    "contact_sidebar": {
+      "title": "Contacto"
+    },
+    "faq_content": "",
+    "hero_subtitle": "",
+    "what_is_content": "",
+    "contact_us_content": "",
+    "contact_us": {
+      "content": "Precisa de ajuda ou pretende enviar-nos feedback? Envie um e-mail para <a href=\"mailto:helpdesk@smart4health.eu\">helpdesk@smart4health.eu</a>.",
+      "headline": "Contactar-nos"
+    },
+    "faq": {
+      "content": "<h4>O que é a chave de recuperação</h4>\n<p>Quando configura a sua conta, recebe a sua chave de recuperação pessoal. Esta chave é gerada especificamente para si. Caso se esqueça da palavra-passe, deve introduzir esta chave de recuperação para pedir uma nova palavra-passe. A chave contém 12 palavras. Certifique-se de que guarda a sua chave num lugar seguro a que possa aceder mesmo sem o seu computador.</p>\n\n<h4>Como posso guardar a minha chave de recuperação?</h4>\n<p>Guarde a chave de recuperação sob a forma de um ficheiro PDF.</p>\n\n<h4>Esqueci-me da minha palavra-passe. O que posso fazer?</h4>\n<p>Tem de pedir uma palavra-passe nova. Na tela de início de sessão, selecione «Esqueci-me da palavra-passe». Na tela «Repor a minha palavra-passe», introduza o seu endereço de e-mail e a sua chave de recuperação.</p>\n\n<h4>Como posso alterar o meu endereço de e-mail?</h4>\n<p>Na página de boas-vindas da aplicação Smart4Health, abra o menu no topo à direita e selecione o seu endereço de e-mail. A tela de perfil é apresentada. Nas definições da conta, selecione o seu endereço de e-mail e altere-o. Selecione «Guardar as alterações». A Smart4Health enviará então um e-mail de confirmação para o seu novo endereço de e-mail.</p>\n\n<h4>Quem pode aceder aos meus dados?</h4>\n<p>Encriptamos os seus dados de extremo a extremo, para que ninguém possa aceder aos mesmos. Se decidir partilhar os seus dados com alguém na sua equipa de cuidados de saúde, pode conceder acesso temporário a essa pessoa.</p>\n\n<h4>Como posso partilhar os meus documentos?</h4>\n<p>Na página de boas-vindas da aplicação, selecione «Partilhar». Em «Nova sessão de partilha», selecione o campo de seleção dos documentos que pretende partilhar. Selecione o botão «Continuar». Na página «Partilhar ficheiro de documento», tem de introduzir um «Código PIN». Obterá este código PIN junto do seu médico que, ao abrir o link https://app.smart4health.eu/share em paralelo, obtém um código PIN para partilhar consigo. Introduza este código PIN e selecione «Conceder acesso». </p>\n\n<h4>Como paro de partilhar documentos?</h4>\n<p>Quando partilha um documento, é apresentada uma visão geral das suas sessões de partilha ativas. Para parar uma sessão de partilha, selecione «Revogar».</p>\n\n<h4>Que tipos de documentos posso carregar?</h4>\n<p>Pode carregar os seguintes formatos de ficheiro: PDF, JPG, PNG, DCM e TIFF.</p>",
+      "headline": "FAQ"
+    },
+    "user_account": {
+      "content": "<h3>Esqueci-me da minha palavra-passe. O que posso fazer?</h3>\n<div>Se se esquecer da sua palavra-passe, pode repô-la criando uma nova. Como usamos encriptação de ponta a ponta e não sabemos a sua palavra-passe, não podemos ajudar enviando-lhe uma ligação de reposição. Deve ser o utilizador a redefinir a sua palavra-passe utilizando a sua chave de recuperação pessoal.</div>\n<div>Para repor a sua palavra-passe e criar uma nova:</div>\n<ol>\n  <li>No diálogo de início de sessão, selecione <b>Esqueceu-se da palavra-passe?</b></li>\n  <li>Introduza o endereço de e-mail que utiliza para a sua conta de utilizador.</li>\n  <li>Introduza a sua chave de recuperação pessoal.</li>\n  <li>Selecione<b> Enter</b>.</li>\n  <li>Crie e confirme a sua nova palavra-passe.</li>\n  <li>Selecione <b>Repor palavra-passe</b>.</li>\n</ol>\n\n<h3>Como posso alterar o meu endereço de e-mail?</h3>\n<div>Para alterar o seu endereço de e-mail:</div> \n<ol>\n  <li>Com a sessão iniciada, selecione o seu endereço de e-mail.</li>\n  <li>Em <b>Definições da conta</b>, introduza o seu novo endereço de e-mail no campo do endereço de e-mail.</li>\n  <li>Selecione <b>Guardar as alterações</b>.</li>\n</ol>\n<div>Enviaremos uma mensagem de confirmação para o seu novo endereço de e-mail. Se não receber a mensagem de confirmação, verifique a sua pasta de spam ou de lixo.</div>\n\n<h3>Como posso alterar o meu número de telefone?</h3>\n<div>A alteração do número de telefone associado à sua conta de utilizador envolve vários passos para verificar a sua identidade. Esses passos são necessários para proteger os seus dados e podem demorar algum tempo. Para alterar o seu número de telefone, entre em contacto com a nossa equipa de suporte. Envie o seu número de telefone antigo à equipa de suporte e diga-lhes que gostaria de o alterar. A equipa de suporte entrará em contacto consigo para os próximos passos.</div>\n\n<h3>O que é a chave de dados?</h3>\n<div>A chave de dados é um código pessoal com 64 caracteres que ajuda a proteger os seus dados. Tem de introduzir a sua chave de dados para aceder à sua conta quando utiliza um novo dispositivo ou um novo browser.</div> \n<div>Ao criar a sua conta, copie a chave de dados ou descarregue-a num ficheiro PDF chamado smart4health-dataKey.pdf. Eis um exemplo de uma chave de dados:</div></div> \n<code><b>158f 92cf 1638 86fa 88da 6e6a 663d eada 7036 44f4 2beb ff3d 41e7 0e8d 57c2 d9cb</b></code>\n<div>A sua conta é protegida tanto pela sua palavra-passe como pela sua chave de dados porque a segurança dos dados é a nossa maior prioridade.</div> \n<div><b>Importante:</b> Por razões de segurança, não podemos reenviar ou substituir a sua chave de dados, por isso mantenha-a num local seguro.</div> \n\n<h3>Não consigo encontrar a minha chave de dados</h3>\n<div>Ao criar a sua conta, copie a chave de dados ou descarregue-a num ficheiro PDF chamado smart4health-dataKey.pdf.</div>  \n<div>Se não conseguir encontrar a sua chave de dados, tente procurá-la no local onde armazena:</div>\n<ul class=\"ContentText__list--small-margin-bottom\">\n  <li>Transferências </li>\n  <li>Capturas de ecrã </li>\n  <li>Documentos ou notas digitais importantes</li>\n  <li>Documentos importantes na sua casa</li>\n</ul>\n<div>Por razões de segurança, não podemos reenviar ou substituir a sua chave de dados se a perder.</div> \n<div>Se utilizar o mesmo dispositivo e browser com que criou a sua conta, não precisa de introduzir a sua chave de dados.</div>  \n<div>Se criar uma nova conta, recebe uma nova chave de dados, mas perde os dados e definições guardados anteriormente.</div>  \n\n<h3>Como guardo a chave de dados?</h3>\n<div>Para guardar com segurança a sua chave de dados, imprima-a ou escreva-a e mantenha-a num local privado ao qual possa aceder sem um computador ou dispositivo móvel.</div>  \n\n<h3>Porque é que tenho uma chave de recuperação?</h3>\n<p> Durante a criação da conta, damos-lhe um código pessoal, também chamado chave, para ajudar a proteger os seus dados. Se recebeu uma chave de recuperação quando criou a sua conta, descarregue uma chave de dados na próxima vez que iniciar a sessão.</p> \n<p>Depois de descarregar a sua chave de dados e armazená-la num local seguro, já não precisa da sua chave de recuperação. Substituímos as chaves de recuperação por chaves de dados porque as chaves de dados são uma melhor forma de proteger os seus dados.</p>",
+      "headline": "Conta de utilizador"
+    },
+    "trust_privacy": {
+      "content": "<h3>Quem pode aceder às minhas informações de saúde?</h3>\n<div>Encriptamos as suas informações de saúde de ponta a ponta, para que apenas o próprio utilizador possa aceder às mesmas.</div>\n<div>Pode optar por partilhar temporariamente parte das suas informações de saúde com alguém da sua confiança, tal como um médico ou parente. </div>\n<div>Se optar por partilhar as suas informações de saúde com alguém, a pessoa poderá aceder às informações de saúde num browser no seu respetivo dispositivo. Depois de partilhar informações de saúde com uma pessoa e até essa pessoa fechar a janela do seu browser, essa pessoa poderá fazer o seguinte com as suas informações de saúde:</div>\n<div>\n<ul class=\"ContentText__list--small-margin-bottom\">\n<li>Visualizar</li>\n<li>Imprimir</li>\n<li>Descarregar</li>\n</ul>",
+      "headline": "Responsabilidade e privacidade"
+    },
+    "eid": {
+      "content": "<h3>O que é a e-ID?</h3>\n<div>A identificação eletrónica (e-ID) é uma forma digital de provar a sua identidade. Se tiver uma e-ID, pode utilizá-la para iniciar sessão na sua conta em vez de utilizar o seu endereço de e-mail e palavra-passe.</div>\n<div>Associe a sua e-ID à sua conta de utilizador nas definições da sua conta.</div>\n\n<h3>O que é necessário para associar a minha e-ID à minha conta?</h3>\n<div>Por exemplo, se a sua e-ID foi emitida pela Alemanha, precisa do seu cartão e-ID com PIN ativado e um dos seguintes:</div>\n<ul class=\"ContentText__list--small-margin-bottom\">\n<li> Smartphone com NFC e a <a href=\"https://www.ausweisapp.bund.de/ausweisapp2/\">AusweisApp2</a> instalada, ou</li>\n<li> Computador com AusweisApp2 e um dos seguintes:\n<ul class=\"ContentText__list--small-margin-bottom\">\n<div>- Leitor de cartões e-ID, ou</div> \n<div>- Smartphone com NFC e AusweisApp2</div> \n</ul></li></ul>\n\n<div>Se o seu e-ID foi emitido por Portugal, precisa de um dos seguintes:</div>\n<ul class=\"ContentText__list--small-margin-bottom\">\n <li>e-ID físico (cartão de cidadão), dispositivo leitor de cartões e instalação do plug-in do navegador <a href=\"https://autenticacao.gov.pt/fa/ajuda/autenticacaogovpt.aspx#installAgent\">Autenticação.Gov</a>, ou</li>\n <li> Chave Móvel Digital e <a href=\"https://www.autenticacao.gov.pt/web/guest/aplicacao/autenticacao-gov-movel\">Aplicação Autenticação.gov móvel</a>\n</li></ul>\n\n<h3>Como posso associar a minha e-ID à minha conta?</h3> \n<div>Para associar a sua e-ID à sua conta:</div> \n<ol>\n  <li>Aceda ao seu perfil.</li>\n  <li>Selecione Definições da conta.</li>\n  <li>Selecione <b>Associar e-ID</b>.</li>\n<span>Será redirecionado para um fornecedor nacional de serviços de e-ID.</span>\n</ol>\n<p>Siga as instruções do fornecedor do serviço de e-ID para terminar de associar a e-ID à sua conta.</p>\n<p><b>Sugestão:</b> para evitar erros ao associar uma e-ID alemã em Android ou iOS, utilize o navegador predefinido do seu dispositivo.</p>\n<p><b>Sugestão:</b> para evitar erros ao associar uma e-ID alemã num computador, abra a AusweisApp2 antes de clicar em <b>Associar e-ID</b>. </p>\n\n<h3>Porque não consigo associar a minha e-ID alemã?</h3>\n<div>Se tiver problemas ao associar a sua e-ID alemã, verifique o seguinte:</div> \n<ul class=\"ContentText__list--small-margin-bottom\">\n<li>O PIN da sua e-ID está ativado</li>\n<li>A AusweisApp2 está instalada no seu dispositivo ou dispositivos</li>\n<li>A AusweisApp2 está em execução (apenas no computador)</li>\n<li>Está a utilizar o seu navegador predefinido (apenas dispositivos Android e iOS)</li>\n<li>Está a utilizar um leitor de cartões USB ou um smartphone com NFC</li></ul>\n\n<h3>Como posso remover a minha e-ID?</h3>\n<div>Para remover a sua e-ID da sua conta:</div>\n<ol>\n  <li>Aceda ao seu perfil.</li>\n  <li>Selecione Definições da conta.</li>\n  <li>Selecione <b> Remover e-ID</b>.</li>\n</ol>\n\n<h3>O que devo fazer se perder a minha e-ID?</h3>\n<div>Para proteger a sua conta, se perder a sua e-ID, remova-a da sua conta.</div>",
+      "headline": "e-ID"
+    },
+    "sharing": {
+      "content": "<h3>Como posso partilhar informações de saúde?</h3>\n<div><b>Pré-requisito:</b> carregou pelo menos 1 ficheiro ou introduziu alguma informação pessoal.</div>\n\n<div>Para partilhar dados de saúde:</div>\n<ol>\n  <li>No separador de partilha, selecione os dados de saúde que deseja partilhar.</li>\n  <li>Escolha<b> Partilhar agora</b>.</li>\n  <li>Peça à pessoa com quem deseja partilhar as informações para aceder ao seguinte endereço Web: https://app.smart4health.eu/share.</li>\n  <li>Introduza o PIN ou digitalize o código QR apresentado no dispositivo da pessoa.</li>\n  <li>Escolha<b> Proporcionar acesso</b>.</li>\n</ol>\n\n<h3>Como paro de partilhar informações de saúde?</h3>\n<div>Se partilhar dados de saúde com alguém, os dados de saúde são apresentados num separador do navegador no dispositivo do destinatário. Os dados de saúde são apresentados até o destinatário sair da página ou atualizá-la. </div>\n<div>Para deixar de permitir o acesso aos dados: </div>\n<ol><li>Vá a <b>Partilha</b>.</li>\n<li>Encontre a data em que partilhou os dados. </li>\n<li>Escolha <b>Revogar</b>.</li>\n<li>No diálogo de confirmação, escolha <b>Sim, revogar</b>.</li></ol>",
+      "headline": "Ficheiros e partilha"
+    },
+    "medications": {
+      "content": "<h3>O que é a agenda?</h3>\n<div>Se tomar medicação, poderá ser adicionada à sua conta uma agenda que apresenta algumas instruções para a toma.</div>\n<div>A agenda indica quantas unidades ou doses do medicamento deve tomar e o período em que devem ser tomadas.</div>\n<div><b>Importante:</b> As informações sobre a sua medicação poderão estar incompletas ou indisponíveis. A agenda não substitui as instruções da sua medicação. Em caso de dúvida, consulte o seu médico.</div> \n\n<h3> A agenda tem os seguintes campos</h3> \n<div><b>Unidade do medicamento</b></div>\n<p>A unidade do medicamento. Por exemplo, uma unidade de medida, como miligramas (mg), mililitros (ml), ou uma forma farmacêutica de dosagem, como comprimidos, creme, óleo.</p>\n<div><b>Número de unidades do medicamento</b></div>\n<p>Quantas unidades do medicamento devem ser tomadas ou aplicadas.</p>\n<div><b>Número de vezes</b></div> \n<p>Quantas vezes se toma ou aplica o medicamento dentro de um período.</p>\n<div><b>Frequência e Unidade de tempo</b></div>\n<p>O período em que se toma o medicamento. Por exemplo, a cada 8 horas.</p>\n\n<div><b>Quando</b></div>\n<div>Uma altura ou circunstância específica em que se toma o medicamento. Por exemplo, ao fim da tarde, à noite, com o pequeno-almoço.</div>\n<p><b>Nota:</b> O campo Quando pode estar vazio.</p>\n\n<div><b>Comentários</b></div>\n<div>Comentários adicionais sobre o medicamento.</div> \n<div><b>Nota:</b> O campo Comentários pode estar vazio.</div>\n\n<h3>Como leio a agenda?</h3>\n<div>Para ler a agenda, organize-a pela seguinte ordem:</div>\n<p>[Número de unidades do medicamento] [Unidade do medicamento], [Número de vezes] vez(es), a cada [Frequência] [Unidade de tempo], [Quando] – [Comentários].</p>\n<div>Por exemplo:</div> \n<div>[1] [Comprimido], [1] vez(es), a cada [2] [dias], [De manhã] – [Tomar com comida].</div>\n\n<h4>Mais exemplos</h4>\n<div><b>Unidade do medicamento:</b>Comprimido</div>\n<div><b>Número de unidades do medicamento:</b> 2</div>\n<div><b>Número de vezes:</b> 1</div>\n<div><b>Frequência:</b> 2</div>\n<div><b>Unidade de tempo:</b> Dia</div>\n<div><b>Quando:</b> (vazio)</div>\n<div><b>Comentários:</b> Tomar à refeição</div>\n\n<p>Esta tabela significa: Tomar 2 comprimidos, 1 vez, a cada 2 dias, à refeição.</p> \n\n<div><b>Unidade do medicamento:</b> ml</div>\n<div><b>Número de unidades do medicamento:</b> 15</div>\n<div><b>Número de vezes:</b> 3</div>\n<div><b>Frequência:</b> 1</div>\n<div><b>Unidade de tempo:</b> Semana</div>\n<div><b>Quando:</b> Tarde</div>\n<div><b>Comentários:</b> (vazio)</div>\n\n<p>Esta tabela significa: Aplicar 15 ml do medicamento, 3 vezes, a cada 1 semana, durante a tarde.</p> \n<b>Nota:</b> a cada 1 semana é equivalente a todas as semanas.",
+      "headline": "Medicamentos"
+    },
+    "conditions": {
+      "content": "<h3>O que são condições?</h3>\n<p>Condições são doenças que uma pessoa pode ter ou ter tido. Cada condição pode ter um(a):</p>\n<ul>\n<li><strong>Data</strong><div>Quando a informação da condição foi introduzida.</div></li>\n  <li><strong>Estado clínico</strong><div>O estado da condição no que diz respeito à pessoa.</div></li>\n  <li><strong>Verificação clínica</strong><div>A certeza da informação sobre a condição.</div></li>\n</ul>\n<div>Os estados clínicos e as verificações clínicas são descritos abaixo.</div>\n<h4>Estados clínicos</h4>\n<p><strong>Ativo</strong>Há sintomas ou indícios da condição.</p>\n<p><strong>Inativo</strong>Não há sintomas ou indícios da condição.</p>\n<p><strong>Resolvido</strong>Não há sintomas ou indícios da condição. Existe um risco estimado negligenciável de regresso dos sintomas.</p>\n<p><strong>Remissão</strong>Não há sintomas ou indícios da condição. Existe mais do que um risco estimado negligenciável de regresso dos sintomas.</p>\n<p><strong>Recaída</strong>Existem sintomas ou indícios da condição após um período de melhoria ou remissão.</p>\n<div><strong>Recorrência</strong>Há sintomas ou indícios de uma condição previamente resolvida.</div>\n<h4>Verificações clínicas</h4>\n<p><strong>Confirmado</strong>Há suficientes indícios clínicos ou de diagnóstico para confirmar o estado da condição.</p>\n<p><strong>Não confirmado</strong>Não há suficientes indícios clínicos ou de diagnóstico para confirmar o estado da condição.</p>\n<p><strong>Provisório</strong>O estado de saúde foi sugerido temporariamente com base em indícios clínicos ou de diagnóstico.</p>\n<p><strong>Diferencial</strong>A condição é uma das várias condições potenciais indicadas pelos indícios clínicos ou de diagnóstico.</p>\n<p><strong>Refutado</strong>Os indícios clínicos ou de diagnóstico indicam que o estado da condição está incorreto.</p>",
+      "headline": "Condições"
+    },
+    "allergies": {
+      "content": "<h3>O que são alergias e intolerâncias?</h3>\n<p>A aplicação apresenta as alergias e intolerâncias que um indivíduo pode ter ou possa ter tido. A aplicação pode também apresentar as alergias e intolerâncias que um indivíduo confirmou não ter.</p>\n\n<p>Cada alergia ou intolerância pode ter o seguinte:</p>\n<ul>\n  <li><strong>Título</strong><div>O título pode apresentar o nome da alergia ou intolerância, a substância a que o indivíduo é alérgico ou intolerante, ou ambos. O título pode também apresentar um código de um catálogo clínico. Pode procurar o código para encontrar a que alergia ou intolerância é que o código se refere.</div></li>\n  <li><strong>Informações de reação</strong><div>Sintomas clínicos ou observações associados à exposição à substância a que o indivíduo é alérgico ou intolerante. Por exemplo, \"urticária\" ou “reação anafilática\".</div></li>\n  <li><strong>Gravidade</strong><div>O risco para a saúde por exposição à substância a que o indivíduo é alérgico ou intolerante.</div></li>\n  <li><strong>Estado clínico</strong><div>Se a alergia ou intolerância está ativa, inativa ou resolvida. </div></li>\n  <li><strong>Nível de certeza</strong><div>O nível de certeza sobre a propensão para uma reação à substância.</div></li>\n</ul>\n<p><strong>Nota:</strong> As informações sobre alergias e intolerâncias na sua conta podem estar incompletas ou desatualizadas. Em caso de dúvida, pergunte a um médico.</p>\n\n<div>Os estados de gravidade, estados clínicos e determinados níveis são explicados em baixo.</div>\n\n<h4>Gravidade</h4>\n<strong>Risco baixo</strong><p>O resultado do pior caso de uma exposição futura não é avaliado como sendo potencialmente fatal ou como tendo um potencial elevado para falência orgânica.</p>\n<strong>Risco elevado</strong><p>O resultado do pior caso de uma exposição futura é avaliado como sendo potencialmente fatal ou como tendo um potencial elevado para falência orgânica.</p>\n<strong>Impossibilidade de avaliação do risco</strong><p>O resultado do pior caso de uma futura exposição não pode ser avaliado.</p>\n<h4>Estados clínicos</h4>\n<strong>Ativo</strong><p>O indivíduo sente ou está em risco de sentir uma reação à substância.</p>\n<strong>Inativo</strong><p>O indivíduo já não está em risco de sentir uma reação à substância.</p>\n<strong>Resolvido</strong><p>Uma reação à substância foi clinicamente reavaliada e é considerada como já não estando presente.</p>\n<h4>Níveis de certeza</h4>\n<strong>Não confirmado</strong><p>Existe um baixo nível de certeza sobre a propensão para uma reação à substância.</p>\n<strong>Confirmado</strong><p>Existe um alto nível de certeza sobre a propensão para uma reação à substância.</p>\n<strong>Refutado</strong><p>Uma propensão para uma reação à substância identificada foi refutada ou contestada com um nível suficiente de certeza clínica para justificar a invalidação da afirmação.</p>",
+      "headline": "Alergias e intolerâncias"
+    },
+    "user_account_sidebar": {
+      "title": "Conta de utilizador"
+    },
+    "allergies_sidebar": {
+      "title": "Alergias e intolerâncias"
+    },
+    "trust_privacy_sidebar": {
+      "title": "Responsabilidade e privacidade"
+    },
+    "eid_sidebar": {
+      "title": "e-ID"
+    },
+    "sharing_sidebar": {
+      "title": "Ficheiros e partilha"
+    },
+    "medications_sidebar": {
+      "title": "Medicamentos"
+    },
+    "conditions_sidebar": {
+      "title": "Condições"
+    },
+    "sidebar_heading": {
+      "title": "Suporte"
+    },
+    "data_ingestion_sidebar": {
+      "title": "Fontes de dados externas"
+    },
+    "data_ingestion": {
+      "headline": "Fontes de dados externas",
+      "content": "<h3>Como é que os dados de saúde são inseridos na minha conta?</h3>\n<div>Os dados de saúde podem ser inseridos na sua conta das seguintes formas:</div>\n<ul>\n  <li>Adiciona dados de saúde no separador Documentos</li>\n  <li>Uma aplicação, tal como CitizenHub ou PhysioSense, adiciona dados de saúde</li>\n  <li>Um parceiro Smart4Health adiciona dados de saúde</li>\n</ul>\n<div>Ver: <a href=\"#data-ingestion-connect-to-partner\">Como posso associar a minha conta a um parceiro</a></div>\n\n<h3>Que dados de saúde recebo dos parceiros?</h3>\n<div>Os dados de saúde que recebe dependem: </div>\n<ul>\n  <li>Dos sistemas de software do parceiro</li>\n  <li>Do que o parceiro sabe sobre a sua saúde</li>\n  <li>Do plano de tratamento ou prevenção que recebe</li>\n</ul>\n</div>Pode receber informações sobre:</div>\n<ul>\n  <li>Condições</li>\n  <li>Medicamentos</li>\n  <li>Alergias e intolerâncias</li>\n  <li>Tratamentos</li>\n  <li>Características físicas (por exemplo, tipo sanguíneo)</li>\n</ul>\n<h3 id=\"data-ingestion-connect-to-partner\">Como posso associar a minha conta a um parceiro?</h3>\n<div><b>Pré-requisito:</b> Autorizou a associação da sua conta a um parceiro Smart4Health. O parceiro enviou-lhe uma mensagem de e-mail com instruções.</div>\n<ol>\n  <li>Siga as instruções no e-mail.</li>\n  <li>Depois de iniciar sessão na sua conta, é apresentada uma notificação de <b>pedido de acesso</b>. Escolha <b>Permitir.</b></li>\n</ol>\n<div>A sua conta está associada ao parceiro.</div>\n\n<h3>Quando recebo dados de parceiros?</h3>\n<div><b>Pré-requisito:</b> Associou a sua conta ao parceiro.</div>\n\n<div>Os dados de saúde são transferidos automaticamente para a sua conta sempre que estão disponíveis no sistema do parceiro.</div>\n<h3>Como deixo de receber dados de um parceiro?</h3>\n<div>Para deixar de receber dados de um parceiro na sua conta, entre em contacto com a nossa <a href=\"mailto:helpdesk@smart4health.eu\">equipa de apoio</a>. Inclua o nome do parceiro e o seu ID de utilizador.</div>\n\n<div>Ver: <a href=\"#data-ingestion-find-user-id\">Como posso encontrar a minha ID de utilizador?</a></div>\n\n<h3 id=\"data-ingestion-find-user-id\">Como posso encontrar a minha ID de utilizador?</h3>\n<div>A sua ID de utilizador é apresentada nas <b>Definições da conta</b>. Vá às <b>Definições da conta</b>, clique no seu endereço de e-mail enquanto estiver com sessão iniciada."
+    }
+  },
+  "notifications": {
+    "CHANGE_PASSWORD_FAIL": "Falhou a alteração da palavra-passe.",
+    "COULD_NOT_CONNECT": "Não é possível efetuar a ligação. Contacte helpdesk@smart4health.eu.",
+    "DUPLICATE_EMAIL": "Falhou o registo. Utilize outro endereço de e-mail.",
+    "GENERIC_ERROR": "Contacte helpdesk@smart4health.eu.",
+    "INVALID_VERIFICATION_LINK": "A ligação de verificação indicada é inválida ou já foi utilizada.",
+    "LOGIN_AUTHORIZATION_FAIL": "Não foi possível dar-lhe autorização.",
+    "LOGIN_CONNECTION_ERROR": "Erro de ligação.",
+    "LOGIN_INVALID_RESPONSE": "Resposta inválida.",
+    "LOGIN_USER_NOT_LOGGEDIN": "O utilizador não tem a sessão iniciada.",
+    "PERMISSION_GRANTED": "Permissão concedida.",
+    "PIN_ERROR_REFRESH": "Atualize a página para obter um novo código PIN.",
+    "PIN_INVALID": "Erro ao submeter o código PIN. Tente de novo.",
+    "SESSION_EXPIRED": "Para sua segurança, a sessão foi terminada após um período de inatividade. Para continuar, inicie de novo a sessão.",
+    "SHARE_SUCCESS": "Os documentos foram partilhados com sucesso.",
+    "TOKEN_EXPIRED": "Como medida de segurança, pode utilizar a partilha até 10 minutos após ter iniciado a sessão. Inicie de novo a sessão para utilizar a partilha.",
+    "VERIFY_GRACE_TIME_EXCEEDED": "O período de experiência desta conta terminou, verifique o seu endereço de e-mail.",
+    "account_deleted": "A sua conta e todos os dados relacionados serão apagados. Isto pode demorar alguns minutos.",
+    "broker_validate": "foi ligado com sucesso à sua conta",
+    "change_email_204": "Acabámos de enviar uma mensagem para o seu novo endereço de e-mail. Clique na ligação na mensagem para confirmar a alteração.",
+    "change_email_401": "Erro de autorização. Tente de novo.",
+    "change_email_409": "Este endereço de e-mail já está registado.",
+    "change_email_500": "Ocorreu um erro. Tente de novo mais tarde.",
+    "change_email_network": "Ocorreu um erro de ligação. Tente de novo mais tarde.",
+    "email_validated": "O seu endereço de e-mail foi validado.",
+    "email_validated_error": "Ocorreu um erro na validação do seu endereço de e-mail.",
+    "error": "Ocorreu um erro. Tente de novo.",
+    "error_change_password_validation_fail": "As suas entradas parecem estar incorretas. Assegure-se de que a palavra-passe antiga é a correta e que a nova palavra-passe é idêntica em ambos os casos.",
+    "error_data_generic": "Parece que há um problema com o tratamento dos seus dados, tente de novo.",
+    "error_in_changing_password": "Há um problema com a alteração da palavra-passe, tente de novo.",
+    "error_in_getting_data": "Ocorreu um erro na leitura dos seus registos.",
+    "error_in_updating_document": "Ocorreu um erro na atualização do seu documento.",
+    "error_label": "Algo correu mal.",
+    "error_login": "Ocorreu um problema ao terminar a sessão.",
+    "error_pin_check": "A combinação de PIN e de e-mail é inválida.",
+    "error_upload_empty_file": "Não podem ser carregados ficheiros vazios. Selecionar outro ficheiro.",
+    "error_upload_prohibited_file": "Não podem ser carregados ficheiros deste tipo. Os tipos de ficheiros permitidos são: JPG, PNG, TIFF, PDF e DCM.",
+    "logged_out": "Terminou a sessão com sucesso.",
+    "success_change_password": "A sua palavra-passe foi alterada com sucesso.",
+    "success_label": "Sucesso!",
+    "support_email_not_sent": "Houve um problema com o envio da sua mensagem.",
+    "support_email_sent": "A sua mensagem para nós foi enviada com sucesso.",
+    "warning_label": "Importante.",
+    "SHARE_ERROR": "Ocorreu um erro durante a partilha dos seus dados. Volte a carregar a página e tente de novo.",
+    "error_upload_file_too_large": "O ficheiro é demasiado grande para carregar. Apenas pode carregar ficheiros até 20 MB.",
+    "SHARE_ERROR_LOCKED": "Demasiadas tentativas falhadas. Como medida de segurança, a funcionalidade foi desativada durante 10 minutos.",
+    "error_auth_state": "Houve um problema com a verificação do estado da autorização. Tente iniciar a sessão de novo.",
+    "userdata": {
+      "load": {
+        "failure": "As suas definições personalizadas não podem ser carregadas neste momento."
+      }
+    },
+    "REMOVE_EID_SUCCESS": "A sua e-ID foi removida.",
+    "ADD_EID_SUCCESS": "A sua e-ID está agora associada à sua conta.",
+    "ADD_EID_ERROR": "Não foi possível associar a e-ID à sua conta. Tente novamente mais tarde.",
+    "ADD_EID_DEVICE_ID_EXISTS_ERROR": "A e-ID está associada a outra conta. \nPara associar a e-ID a esta conta, primeiro remova a e-ID da outra conta.",
+    "delete_medications_error": {
+      "message": "Não foi possível eliminar um ou mais medicamentos. Tente de novo."
+    },
+    "delete_allergies_intolerances_error": {
+      "message": "Não foi possível eliminar uma ou mais alergias ou intolerâncias. Tente de novo."
+    },
+    "delete_conditions_error": {
+      "message": "Não foi possível eliminar uma ou mais condições. Tente de novo."
+    }
+  },
+  "recoveryPasswordPdf": {
+    "bulletPoints": "Aceda ao website <strong>https://app.data4life.care</strong> e selecione “Esqueci-me da palavra-passe” por baixo do campo “Palavra-passe”. Insira o endereço de e-mail da sua conta Data4Life. Insira a sua chave de recuperação pessoal. Insira e confirme a sua nova palavra-passe.",
+    "firstParagraph": "Se se esqueceu da sua palavra-passe, necessita da sua chave de recuperação para a redefinir. Assim, é muito importante que guarde a sua chave de recuperação num local a que possa aceder sem um computador. As 12 palavras seguintes são a sua chave de recuperação pessoal. Esta chave foi gerada especificamente para si.",
+    "mainTitle": "A sua chave de recuperação pessoal",
+    "subtitle1": "Chave de recuperação",
+    "subtitle2": "Guia rápido para a redefinição da sua palavra-passe:"
+  },
+  "scopes": {
+    "attachment": {
+      "r": "Ler ficheiros dos seus documentos",
+      "w": "Adicionar ficheiros aos seus documentos"
+    },
+    "cando": "Quando concede acesso, com esta aplicação será possível",
+    "cannotdo": "Mas com esta aplicação não será possível",
+    "exc": "Token de troca",
+    "pass": {
+      "r": "Ler a sua palavra-passe",
+      "w": "Alterar a sua palavra-passe"
+    },
+    "perm": {
+      "r": "Visualizar as permissões que concedeu",
+      "w": "Alterar permissões"
+    },
+    "rec": {
+      "r": "Visualizar os seus documentos",
+      "w": "Adicionar ou alterar documentos"
+    },
+    "user": {
+      "d": "Apague o seu perfil de utilizador",
+      "q": "Procurar outros utilizadores em seu nome",
+      "r": "Visualizar o seu perfil de utilizador",
+      "w": "Alterar o seu perfil de utilizador"
+    }
+  },
+  "sharing": {
+    "landing_page_enter_data": {
+      "button": "Inserir dados"
+    },
+    "landing_page_upload": {
+      "button": "Carregar documentos"
+    }
+  },
+  "documents": {
+    "landing_page_empty": {
+      "title": "As suas informações de saúde - sempre consigo onde quer que esteja",
+      "subtitle": "Guarde os seus documentos de saúde num local privado e aceda aos mesmos a partir de qualquer dispositivo."
+    },
+    "landing_page_upload": {
+      "button": "Adicionar documento"
+    },
+    "sidebar": {
+      "subtitle": "Mais recente no topo"
+    },
+    "max_file_size_error": {
+      "infotext": "O ficheiro é demasiado grande. Pode adicionar ficheiros até 20 MB."
+    },
+    "add_modal_speciality_section": {
+      "infotext": "Se um especialista criou o documento para si, introduza a informação dele."
+    },
+    "add_modal_speciality": {
+      "title": "Especialidade"
+    },
+    "add_modal_speciality_firstName": {
+      "title": "Nome próprio"
+    },
+    "add_modal_speciality_lastName": {
+      "title": "Apelido"
+    },
+    "add_modal_speciality_headline": {
+      "title": "Autor do documento"
+    }
+  },
+  "general_reuse": {
+    "page_not_found": {
+      "title": "Não foi possível encontrar esta página",
+      "subtitle": "Esta ligação está quebrada ou a página foi removida. Tente outra página do menu ou vá para a página inicial.",
+      "button": "Ir para a página inicial"
+    },
+    "network_error": {
+      "message": "Sem ligação"
+    }
+  },
+  "profile": {
+    "eid_settings": {
+      "headline": "e-ID",
+      "content": "Inicie sessão com a sua e-ID em vez do seu endereço de e-mail e palavra-passe."
+    },
+    "eid_remove": {
+      "button": "Remover e-ID"
+    },
+    "eid_add": {
+      "button": "Associar e-ID"
+    },
+    "eid_remove_confirm": {
+      "headline": "Remover e-ID?",
+      "content": "Pode ainda entrar na sua conta com o seu endereço de e-mail e palavra-passe.",
+      "button": "Sim, remover a e-ID"
+    },
+    "eid_not_connected": {
+      "infotext": "Nenhuma e-ID associada à conta."
+    },
+    "eid_connected": {
+      "infotext": "A sua e-ID está associada à sua conta.",
+      "content": "Se perdeu a sua e-ID ou tem uma nova, pode remover a e-ID associada e adicionar uma nova posteriormente."
+    },
+    "authentication_details": {
+      "headline": "Dados de autenticação"
+    },
+    "eid_data_fetch_failed": {
+      "message": "Ocorreu um erro. Tente de novo mais tarde."
+    },
+    "eid_country_selection": {
+      "headline": "Selecione o país que emitiu a sua e-ID"
+    },
+    "eid_country_list_de": {
+      "radio_button": "Alemanha"
+    },
+    "eid_country_list_cz": {
+      "radio_button": "República Checa"
+    },
+    "eid_country_list_lu": {
+      "radio_button": "Luxemburgo"
+    },
+    "eid_country_list_be": {
+      "radio_button": "Bélgica"
+    },
+    "eid_country_list_test": {
+      "radio_button": "Teste"
+    },
+    "eid_country_selection_next": {
+      "button": "Seguinte"
+    },
+    "eid_country_list_hr": {
+      "radio_button": "Croácia"
+    },
+    "eid_country_list_ee": {
+      "radio_button": "Estónia"
+    },
+    "eid_country_list_it": {
+      "radio_button": "Itália"
+    },
+    "eid_country_list_lv": {
+      "radio_button": "Letónia"
+    },
+    "eid_country_list_nl": {
+      "radio_button": "Países Baixos"
+    },
+    "eid_country_list_sk": {
+      "radio_button": "Eslováquia"
+    },
+    "eid_country_list_es": {
+      "radio_button": "Espanha"
+    },
+    "eid_country_list_pt": {
+      "radio_button": "Portugal (Nota: é necessário o plugin ou app <a href=\"https://www.autenticacao.gov.pt/\" target=\"_blank\">Authenticação.gov</a>)"
+    },
+    "eid_ausweisapp_warning": {
+      "label": "(Nota: a AusweisApp2 tem de estar em execução no seu dispositivo)."
+    }
+  }
+}

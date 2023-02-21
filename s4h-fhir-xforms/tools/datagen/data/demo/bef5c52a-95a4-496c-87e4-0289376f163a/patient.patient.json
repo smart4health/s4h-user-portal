@@ -1,0 +1,19 @@
+{
+	"resourceType": "Patient",
+	"id": "bef5c52a-95a4-496c-87e4-0289376f163a",
+	"name": [
+		{
+			"family": "Walter",
+			"given": [
+				"Opal"
+			]
+		}
+	],
+	"address": [
+		{
+			"country": "Germany"
+		}
+	],
+	"gender": "female",
+	"birthDate": "1956-02-24"
+}

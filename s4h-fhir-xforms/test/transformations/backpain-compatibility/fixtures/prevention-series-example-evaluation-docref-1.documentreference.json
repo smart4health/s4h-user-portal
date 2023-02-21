@@ -1,0 +1,39 @@
+{
+    "resourceType": "DocumentReference",
+    "id": "s4h-prevention-series-evaluation-docref-example-1",
+    "meta": {
+        "profile": [
+            "http://fhir.smart4health.eu/StructureDefinition/s4h-documentreference"
+        ]
+    },
+    "status": "current",
+    "type": {
+        "coding": [{
+            "system": "http://loinc.org",
+            "code": "19002-5",
+            "display": "Physical therapy service attachment"
+        }]
+    },
+    "subject": {
+        "display": "Marie Lux-Brennard"
+    },
+    "description": "Training documentation",
+    "date": "2020-02-06T20:16:51.687Z",
+    "content": [{
+        "attachment": {
+            "contentType": "application/pdf",
+            "data": "xxx",
+            "size": 57207,
+            "hash": "xODPHk+CIJdZteDpLEdzTv+vk7s=",
+            "title": "Force test document"
+        }
+    }],
+    "context": {
+        "encounter": [{
+            "identifier": {
+                "system": "http://fhir.smart4health.eu/CodeSystem/ittm-visit-id",
+                "value": "prev-test-visit-1"
+            }
+        }]
+    }
+}

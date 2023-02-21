@@ -1,0 +1,91 @@
+$_lightboxHeaderHeight: 40px;
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.Lightbox {
+  position: fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: $color-overlay-dark;
+  @include zindex('modal');
+
+  user-select: none;
+  touch-action: none;
+
+  &__header {
+    display: flex;
+    flex: none;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    height: $_lightboxHeaderHeight;
+    line-height: $_lightboxHeaderHeight;
+    background: var(--color-black);
+  }
+
+  &__action {
+    display: block;
+    background: transparent;
+    border: 0 none;
+    padding: 0;
+    width: $_lightboxHeaderHeight;
+    color: var(--color-white);
+    opacity: 1;
+    transition: opacity 0.3s;
+    cursor: pointer;
+
+    svg {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin: 0 auto;
+      fill: var(--color-white);
+      transition: fill 0.3s;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+
+      svg {
+        fill: var(--color-secondary-light);
+      }
+    }
+
+    &[disabled] {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 auto;
+    overflow: hidden;
+  }
+
+  &__zoom {
+    transform: scale(1);
+    transition: transform 0.3s;
+    will-change: transform;
+  }
+
+  &__offset {
+    transform: translate(0);
+  }
+
+  &__image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+}

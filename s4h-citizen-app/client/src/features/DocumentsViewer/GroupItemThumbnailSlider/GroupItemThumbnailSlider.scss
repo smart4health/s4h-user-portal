@@ -1,0 +1,59 @@
+$thumbheight: map.get($documents-viewer, 'thumbheight');
+$thumbspacing: map.get($documents-viewer, 'thumbspacing');
+
+.GroupItemThumbnailSlider {
+  display: flex;
+  position: relative;
+  overflow: auto;
+  flex: none;
+  border-bottom: 1px solid var(--color-neutral-lightest);
+  background: var(--color-white);
+
+  &::before,
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: $thumbspacing;
+    height: $thumbheight + $thumbspacing;
+    z-index: 0;
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(to right, var(--color-white) 0%, transparent 100%);
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(to left, var(--color-white) 0%, transparent 100%);
+  }
+}
+
+.GroupItemThumbnailSlider__wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  padding: $thumbspacing 0 $thumbspacing $thumbspacing;
+  height: ($thumbheight + ($thumbspacing * 2));
+
+  &:hover,
+  &:active {
+    overflow-x: auto;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    flex: none;
+    width: $thumbspacing;
+  }
+}
+
+@include mobile {
+  .GroupItemThumbnailSlider {
+    order: 1;
+    border-top: 1px solid var(--color-neutral-lightest);
+  }
+}

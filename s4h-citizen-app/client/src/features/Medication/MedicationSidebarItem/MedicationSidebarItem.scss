@@ -1,0 +1,65 @@
+.MedicationSidebarItem {
+  position: relative;
+  display: flex;
+  flex: 1;
+  text-decoration: none;
+  flex-direction: column;
+  margin: 0;
+  padding: var(--space-s) var(--space-m);
+  border-bottom: var(--border-width-s) solid var(--color-neutral-extra-lightest);
+  cursor: pointer;
+  transition: 0.2s background;
+  color: var(--color-neutral);
+
+  &:hover,
+  &:focus {
+    background: var(--color-neutral-lightest);
+  }
+
+  &:active,
+  &--active,
+  &--active:hover &--active:focus {
+    background-color: var(--color-neutral-lightest);
+  }
+
+  &--active::before {
+    width: 4px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--color-secondary);
+    content: '';
+    position: absolute;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    align-items: center;
+    justify-content: stretch;
+  }
+
+  &__title {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--color-primary);
+    display: block;
+  }
+
+  &__current-label {
+    font-size: var(--font-size-mobile-xs);
+    font-weight: 100;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    margin-top: 4px;
+    font-size: var(--font-size-mobile-s);
+  }
+}

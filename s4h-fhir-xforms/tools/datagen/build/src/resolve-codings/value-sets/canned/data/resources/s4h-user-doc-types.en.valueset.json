@@ -1,0 +1,103 @@
+{
+    "resourceType": "ValueSet",
+    "language": "en",
+    "url": "http://fhir.smart4health.eu/ValueSet/s4h-user-doc-types",
+    "version": "0.1.0",
+    "id": "s4h-user-doc-types",
+    "name": "S4hUserDocTypes",
+    "status": "draft",
+    "publisher": "D4L data4life gGmbH",
+    "contact": [{
+            "name": "D4L data4life gGmbH",
+            "telecom": [{
+                    "system": "url",
+                    "value": "https://www.data4life.care"
+                }]
+        }],
+    "immutable": false,
+    "compose": {
+        "include": [{
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type"
+            }]
+    },
+    "expansion": {
+        "identifier": "urn:uuid:5264c12f-6c5f-475d-a806-87443261990d",
+        "timestamp": "2020-11-20T12:08:51.687Z",
+        "contains": [{
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "billing",
+                "display": "Billing"
+            },
+            {
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "referral",
+                "display": "Referral"
+            },
+            {
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "ct-diagnostics",
+                "display": "CT diagnostics"
+            },
+            {
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "x-ray",
+                "display": "X-ray image"
+            },
+            {
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "mri",
+                "display": "MRI"
+            },
+            {
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "lab-report",
+                "display": "Laboratory report"
+            },
+            {
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "blood-count",
+                "display": "Blood count"
+            },
+            {
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "ecg",
+                "display": "Electrocardiogram (ECG)"
+            },
+            {
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "operative-report",
+                "display": "Operative report"
+            },
+            {
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "allergy-test",
+                "display": "Allergy test"
+            },
+            {
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "pulmonary-function-report",
+                "display": "Pulmonary function report"
+            },
+            {
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "doctors-letter",
+                "display": "Doctor's letter"
+            },
+            {
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "general-report",
+                "display": "General report"
+            },
+            {
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "performance-diagnostics",
+                "display": "Performance diagnostics"
+            },
+            {
+                "system": "http://fhir.smart4health.eu/CodeSystem/s4h-user-doc-type",
+                "code": "other",
+                "display": "Other"
+            }
+        ]
+    }
+}

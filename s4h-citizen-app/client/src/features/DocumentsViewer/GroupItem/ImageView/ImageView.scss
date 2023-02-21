@@ -1,0 +1,17 @@
+.GroupItemImageView {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+
+  img {
+    cursor: pointer;
+    object-fit: contain;
+  }
+
+  button {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    width: 100%;
+  }
+}

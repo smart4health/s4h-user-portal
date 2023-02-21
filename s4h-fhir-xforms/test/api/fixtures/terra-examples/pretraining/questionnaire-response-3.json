@@ -1,0 +1,56 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "s4h-treatment-series-pre-training-response-example-3",
+    "language": "en",
+    "questionnaire": "http://fhir.smart4health.eu/Questionnaire/pre-training-questionnaire|0.0.1",
+    "status": "completed",
+    "encounter": {
+        "identifier": {
+            "system": "http://fhir.smart4health.eu/CodeSystem/ittm-visit-id",
+            "value": "encounter-2"
+        }
+    },
+    "identifier": {
+      "system": "s4h",
+      "value": "s4h-treatment-series-pre-training-response-example-3"
+    },
+    "authored": "2020-02-20",
+    "item": [{
+            "linkId": "training_no",
+            "text": "Training Number",
+            "answer": [{
+                "valueInteger": 3
+            }]
+        },
+        {
+            "linkId": "back_pain_level_before",
+            "text": "Lower back pain level before training",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA10139-6"
+                }
+            }]
+        },
+        {
+            "linkId": "well_being",
+            "text": "Well being",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://loinc.org",
+                    "code": "LA10141-2"
+                }
+            }]
+        },
+        {
+            "linkId": "pre_training_condition",
+            "text": "Pre-training condition",
+            "answer": [{
+                "valueCoding": {
+                    "system": "http://code.system",
+                    "code": "06"
+                }
+            }]
+        }
+    ]
+}

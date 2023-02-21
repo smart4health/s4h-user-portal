@@ -1,0 +1,19 @@
+{
+	"resourceType": "Patient",
+	"id": "cfc46571-6720-4544-b44f-40ff58ccf025",
+	"name": [
+		{
+			"family": "Torp",
+			"given": [
+				"Camille"
+			]
+		}
+	],
+	"address": [
+		{
+			"country": "Italy"
+		}
+	],
+	"gender": "female",
+	"birthDate": "1959-10-13"
+}

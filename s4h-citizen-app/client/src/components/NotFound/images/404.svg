@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="160">
+  <g fill="none" fill-rule="evenodd">
+    <g stroke-linecap="round" stroke-width="3" transform="translate(62 7)">
+      <path stroke="var(--color-primary)"
+        d="M9 92h62M0 146h146c0-12-10-22-22-22H22c-12 0-22 10-22 22zm72-78L59 55v-5l42-42h5l13 13v5L77 68h-5zm35-59l9-9 11 11-9 9" />
+      <circle cx="115.5" cy="95.5" r="12.5" stroke="var(--color-primary)" />
+      <path stroke="var(--color-secondary)"
+        d="M54 0c0 7-6 13-13 13m26 0c-7 0-13-6-13-13M41 13c7 0 13 6 13 13m0 0c0-7 6-13 13-13M13 30c0 3-3 6-6 6m12 0c-3 0-6-3-6-6m-6 7c3 0 6 3 6 6m0 0c0-3 3-6 6-6m16 23c0 3-3 6-6 6m12 0c-3 0-6-3-6-6m-6 7c3 0 6 3 6 6m0 0c0-3 3-6 6-6" />
+      <path stroke="var(--color-primary)" d="M75 136h69m-93 0h5m-54 0h36m84-29v17m0-48v8m-92 8a47 47 0 0081 15" />
+      <path stroke="var(--color-primary)" d="M94 51l3 3a32 32 0 01-45 45l-5-7m74-8c3-15-2-30-13-41l-3-3" />
+    </g>
+    <path d="M0 0h270v160H0z" />
+  </g>
+</svg>

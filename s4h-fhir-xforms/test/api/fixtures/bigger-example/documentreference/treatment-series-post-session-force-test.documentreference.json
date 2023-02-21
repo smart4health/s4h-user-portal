@@ -1,0 +1,63 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "s4h-treatment-series-final-force-test-docref-example",
+  "meta": {
+    "profile": [
+      "http://fhir.smart4health.eu/StructureDefinition/s4h-documentreference"
+    ]
+  },
+  "status": "current",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "19002-5",
+        "display": "Physical therapy service attachment"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/CD9B26EA-234E-46BB-91A1-D67B23064396",
+    "display": "John Doe"
+  },
+  "date": "2020-03-15T12:08:51.687Z",
+  "content": [
+    {
+      "attachment": {
+        "id": "c270037d-e053-430e-888d-0b5db02b7d51",
+        "contentType": "application/pdf",
+        "size": 3908,
+        "hash": "cfa9fee3a96643fe163801d08492fc56",
+        "title": "Force test document"
+      }
+    }
+  ],
+  "context": {
+    "encounter": [
+      {
+        "identifier": {
+          "system": "http://fhir.smart4health.eu/CodeSystem/ittm-visit-id",
+          "value": "test-final"
+        }
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "19002-5"
+        }
+      ]
+    }
+  ],
+  "contained": [{
+    "resourceType": "PractitionerRole",
+    "id": "prac-role",
+    "practitioner": { "reference": "#dummy" },
+    "specialty": [{
+      "coding": [ { "system": "http://snomed.info/sct", "code": "408467006" } ]
+    }]
+  }]
+}

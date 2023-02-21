@@ -1,0 +1,19 @@
+{
+	"resourceType": "Patient",
+	"id": "e81b5744-3e25-4e0b-bba2-b214170d684e",
+	"name": [
+		{
+			"family": "Koss",
+			"given": [
+				"Albert"
+			]
+		}
+	],
+	"address": [
+		{
+			"country": "Spain"
+		}
+	],
+	"gender": "male",
+	"birthDate": "1969-09-29"
+}

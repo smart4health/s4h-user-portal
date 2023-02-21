@@ -1,0 +1,40 @@
+.PinInput {
+  display: flex;
+  justify-content: center;
+
+  ::-webkit-inner-spin-button,
+  ::-webkit-outer-spin-button {
+    appearance: none;
+  }
+
+  &__cell {
+    appearance: textfield;
+    border-radius: var(--space-xs);
+    width: var(--space-l);
+    height: var(--space-l);
+    padding: var(--space-xs);
+    font-size: var(--font-size-desktop-xl);
+    border: 1px solid var(--color-neutral);
+    margin-left: var(--space-xs);
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__valid-status {
+    text-align: center;
+  }
+
+  &__pin-character {
+    display: none;
+  }
+
+  &--is-invalid {
+    color: var(--color-feedback-alarm);
+  }
+
+  &--is-valid {
+    color: var(--color-feedback-success);
+  }
+}

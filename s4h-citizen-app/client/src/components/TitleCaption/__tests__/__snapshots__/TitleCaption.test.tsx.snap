@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TitleCaption component renders without crashing 1`] = `
+<div
+  class="TitleCaption__title"
+>
+  Title
+</div>
+`;

@@ -1,0 +1,21 @@
+.MedicationInfoItem {
+  display: flex;
+  padding-top: var(--space-s);
+
+  &__bordered {
+    &:not(:nth-child(n + 5)) {
+      border-bottom: 1px solid var(--color-neutral-lighter);
+      padding-bottom: var(--space-s);
+    }
+  }
+
+  &__content {
+    flex: 1 1 50%;
+    padding-right: var(--space-xs);
+  }
+
+  &__content-label {
+    font-size: var(--font-size-mobile-s);
+    color: var(--color-neutral);
+  }
+}

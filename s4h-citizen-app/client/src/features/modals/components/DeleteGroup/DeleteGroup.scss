@@ -1,0 +1,89 @@
+.DeleteGroup__itemList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: var(--space-l);
+
+  &:last-child {
+    margin-bottom: calc(var(--space-m) * -1);
+  }
+}
+
+.DeleteGroup__selectAllCheckbox {
+  margin: var(--space-xs);
+}
+
+.DeleteGroup__divider {
+  border-bottom: 1px solid var(--color-primary);
+  box-sizing: border-box;
+  opacity: 0.1;
+  width: 100%;
+}
+
+.DeleteGroup__deleteableItem {
+  box-sizing: border-box;
+  display: flex;
+  flex: 1 0 50%;
+  max-width: 50%;
+  padding-right: var(--space-xs);
+}
+
+.DeleteGroup__deleteableItemThumbnail {
+  margin: 0 var(--space-xs) var(--space-m);
+  position: relative;
+}
+
+.DeleteGroup__selectOneCheckbox {
+  background: white;
+  border-radius: var(--border-radius-xs);
+  border: 2px solid var(--color-secondary);
+  cursor: pointer;
+  display: block;
+  height: var(--checkbox-size);
+  left: calc(var(--space-xs) * -1);
+  position: absolute;
+  top: calc(var(--space-xs) * -1);
+  width: var(--checkbox-size);
+  appearance: none;
+}
+
+.DeleteGroup__selectOneCheckbox--checked {
+  align-items: flex-start;
+  display: flex;
+  user-select: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: calc(0.27 * var(--checkbox-size));
+    left: calc(0.12 * var(--checkbox-size));
+    border-left: 2px solid var(--color-secondary);
+    border-bottom: 2px solid var(--color-secondary);
+    height: calc(0.27 * var(--checkbox-size));
+    width: calc(0.63 * var(--checkbox-size));
+    transform: rotate(-45deg);
+  }
+}
+
+.DeleteGroup__deleteableItemMeta {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-size: var(--font-size-desktop-s);
+  width: calc(100% - 80px);
+
+  h6 {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  p {
+    color: var(--color-primary);
+    margin-top: 0;
+    opacity: 0.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

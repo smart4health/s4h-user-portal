@@ -1,0 +1,82 @@
+{
+	"resourceType": "QuestionnaireResponse",
+	"id": "8d64caf9-053a-4738-81d5-bb92f7fa2b35",
+	"language": "en",
+	"questionnaire": "http://fhir.smart4health.eu/Questionnaire/post-session-questionnaire|0.1.0",
+	"status": "completed",
+	"item": [
+		{
+			"linkId": "current_pain_level",
+			"text": "Please indicate your current pain level",
+			"answer": [
+				{
+					"valueCoding": {
+						"system": "http://loinc.org",
+						"code": "LA10138-8",
+						"display": "6"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "average_pain_level",
+			"text": "Please indicate your average pain level during the past four weeks",
+			"answer": [
+				{
+					"valueCoding": {
+						"system": "http://loinc.org",
+						"code": "LA10138-8",
+						"display": "6"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "maximimum_pain_level",
+			"text": "Please indicate your maximum pain level during the past four weeks",
+			"answer": [
+				{
+					"valueCoding": {
+						"system": "http://loinc.org",
+						"code": "LA10138-8",
+						"display": "6"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "lower_backpain_reduced",
+			"text": "Can you estimate (in percent %) how much your pain relieved?",
+			"answer": [
+				{
+					"valueDecimal": 12
+				}
+			]
+		},
+		{
+			"linkId": "treatment_success",
+			"text": "Taken together, what is your impression on your present treatment success?",
+			"answer": [
+				{
+					"valueCoding": {
+						"system": "http://loinc.org",
+						"code": "LA8967-7"
+					}
+				}
+			]
+		},
+		{
+			"linkId": "taking_painkillers",
+			"text": "Are you taking painkillers at the moment?",
+			"answer": [
+				{
+					"valueCoding": {
+						"system": "http://loinc.org",
+						"code": "LA33-6",
+						"display": "Yes"
+					}
+				}
+			]
+		}
+	]
+}

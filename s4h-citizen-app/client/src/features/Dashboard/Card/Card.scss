@@ -1,0 +1,72 @@
+.DashboardCard {
+  &#{&} {
+    display: grid;
+    grid-template-rows: auto auto 76px;
+    background-color: var(--color-white);
+    padding: var(--space-m);
+    border-radius: 0;
+  }
+
+  &__header {
+    height: auto;
+  }
+
+  &__title {
+    font: var(--typography-desktop-headline-2);
+    padding-bottom: var(--space-s);
+  }
+
+  &__sub-title {
+    padding-bottom: var(--space-s);
+    color: var(--color-neutral);
+  }
+
+  &__content {
+    display: none;
+  }
+
+  &__footer {
+    border-top: 1px solid var(--color-neutral-lightest);
+    padding-top: var(--space-m);
+    display: flex;
+
+    d4l-button {
+      flex: 1;
+      white-space: nowrap;
+
+      &:nth-of-type(2) {
+        margin-left: var(--space-xs);
+      }
+    }
+  }
+
+  &__no-card-actions-text {
+    font: var(--typography-desktop-body-level-2);
+    color: var(--color-neutral);
+    padding-bottom: var(--space-m);
+    line-height: 2.5;
+  }
+}
+
+@include tablet-up {
+  .DashboardCard {
+    &__content {
+      padding-bottom: var(--space-l);
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  }
+}
+
+@include desktop {
+  .DashboardCard {
+    &#{&} {
+      border-radius: var(--border-radius-s);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

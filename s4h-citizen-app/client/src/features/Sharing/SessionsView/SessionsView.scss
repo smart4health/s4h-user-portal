@@ -1,0 +1,26 @@
+.SessionsView {
+  &__card-description {
+    padding-bottom: var(--space-m);
+  }
+
+  &__session-info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: var(--space-m);
+  }
+
+  &__session-number {
+    color: var(--color-feedback-success);
+  }
+
+  &__revoke-all-button,
+  &__revoke-all-button:hover {
+    &#{&} {
+      color: var(--color-primary);
+    }
+  }
+
+  &__sessions-list {
+    padding-bottom: var(--space-m);
+  }
+}

@@ -1,0 +1,39 @@
+.MedicationListItem {
+  padding: var(--space-s);
+  font-size: var(--font-size-mobile-s);
+  display: flex;
+  flex-direction: column;
+  border-bottom: var(--border-width-s) solid var(--color-neutral-lightest);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__title {
+    color: var(--color-primary);
+  }
+
+  &__ingredients {
+    padding-top: var(--space-xxs);
+    color: var(--color-neutral);
+    font-size: var(--font-size-mobile-xs);
+  }
+
+  &__date {
+    padding-top: var(--space-xs);
+    color: var(--color-primary);
+    font-size: var(--font-size-mobile-xs);
+  }
+
+  &__details {
+    text-transform: uppercase;
+    margin: var(--space-s) 0 0;
+    padding: 0;
+    cursor: pointer;
+    color: var(--color-secondary);
+    font: var(--typography-desktop-button);
+    border: none;
+    background-color: #fff;
+    align-self: flex-end;
+  }
+}
